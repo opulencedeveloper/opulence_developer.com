@@ -24,7 +24,7 @@ const SectionTwo = () => {
   return (
     <>
       <div className="px-5 mt-32 md:px-12">
-        <p className="text-xl">Some Open Source Code</p>
+        <p className="text-xl md:text-2xl">Some Open Source Code</p>
         <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 items-start space-x-auto flex-wrap md:justify-evenly 2xl:justify-start space-x-2">
           {contents.map((content) => (
             <div 
@@ -65,7 +65,7 @@ const SectionTwo = () => {
 
 
       <div className="px-5 mt-40 mb-28 md:px-12">
-        <p className="text-lg">Some brands I've worked with</p>
+        <p className="text-xl md:text-2xl">Some brands I've worked with</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
         <div className="space-x-auto flex space-x-3 h-32">
          

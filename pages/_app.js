@@ -12,7 +12,7 @@ import Footer from '@/components/layouts/Footer';
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${poppins.variable} font-poppins`}>
+    <main className={`${poppins.variable} font-poppins max-w-[120rem] mx-auto`}>
       <Layout>
       <Component {...pageProps} />
     </Layout>

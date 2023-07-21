@@ -1,16 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import Typewriter from "typewriter-effect";
 
 import styles from "./SectionOne.module.css";
 
 const SectionOne = () => {
   return (
     <>
-      <div className="text-center flex flex-col items-center space-y-8 my-20 text-primary1 px-5 md:px-12 lg:my-40">
+      <div className="text-center flex flex-col items-center space-y-8 my-20 text-primary1 px-5 md:my-20 md:px-12 lg:my-40">
         <div className="max-w-6xl">
-          <div className="flex justify-center">
-            <p className="text-3xl">Welcome </p>
+          <div className="flex justify-center items-center">
+            <p className="text-2xl font-medium md:text-3xl">Welcome </p>
             <Image
               src="/images/logo/wave.svg"
               alt="call a doctor logo"
@@ -19,47 +18,27 @@ const SectionOne = () => {
               height={40}
             />
           </div>
-          <span className="text-3xl lg:text-5xl">
+         <div className="text-3xl md:text-6xl">
             <p className="leading-tight">
               What took you so long to find me? I'm{" "}
-              <span className="font-bold text-white">Victor Amobi</span> and I
+              <span className="font-bold text-white underline border-white">Victor Amobi</span> and I
               am a{" "}
-              <span className="font-bold text-white">
+              <span className="font-bold text-white underline">
                 FullStack Software Engineer
               </span>
             </p>
-          </span>
+          </div>
         </div>
-        <div className="max-w-7xl">
+        <div className="max-w-7xl text-base lg:text-xl">
+        <p>It's great to finally connect with you.</p>
+        <p>I can't help but wonder what amazing things we can achieve together now that we've found each other.</p>
+        <p>I am passionate about using technology to solve problems and build innovative solutions. With experience in both frontend and backend development, I am skilled in a variety of programming languages and frameworks. I take pride in delivering high-quality, performant code that meets the needs of my clients and users. Browse my portfolio to see some of my recent projects and get in touch to learn more about how I can help bring your ideas to life.</p>
           {" "}
-          <Typewriter
-          
-            onInit={(typewriter) => {
-              typewriter
-                .pauseFor(100)
-                .deleteAll().typeString(
-                  "<span class=\"text-base lg:text-xl\">It's great to finally connect with you.</span>"
-                ).pauseFor(100)
-                .deleteAll().typeString(
-                  "<span class=\"text-base lg:text-xl\">I can't help but wonder what amazing things we can achieve together now that we've found each other.</span>"
-                )
-                .pauseFor(100)
-                .deleteAll()
-                .typeString(
-                  '<span class="text-base lg:text-xl">I am passionate about using technology to solve problems and build innovative solutions. With experience in both frontend and backend development, I am skilled in a variety of programming languages and frameworks. I take pride in delivering high-quality, performant code that meets the needs of my clients and users. Browse my portfolio to see some of my recent projects and get in touch to learn more about how I can help bring your ideas to life.</span>'
-                )
-                .start();
-            }}
-            options={{
-              typeSpeed: 10,
-              cursor: '<span class="text-xl">|</span>',
-              html: false,
-            }}
-          />
+       
         </div>
 
         <button className="flex items-center bg-black px-5 py-3 text-white rounded-md">
-          Send Message
+         <p>Send Message</p> 
           <Image
             src="/images/icon/arrow-right.svg"
             alt="arrow right icon"
