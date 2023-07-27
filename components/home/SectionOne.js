@@ -6,7 +6,8 @@ import styles from "./SectionOne.module.css";
 const SectionOne = () => {
   return (
     <>
-      <div className="text-center flex flex-col items-center space-y-8 my-20 text-primary1 px-5 md:my-20 md:px-12 lg:my-40">
+   
+      <div className="relative z-20 text-center flex flex-col items-center space-y-8 my-20 text-primary1 px-5 md:my-20 md:px-12 lg:my-40">
         <div className="max-w-6xl">
           <div className="flex justify-center items-center">
             <p className="text-2xl font-medium md:text-3xl">Welcome </p>

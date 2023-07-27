@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head/>
       
-      <body className="bg-primary text-white">
+      <body className="text-white">
       <div id="navigation"></div>
         <Main />
         <NextScript />

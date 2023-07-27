@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background-color: #024554;
+}
+
 /* HAMBURGER MENU */
 
 .hamburger {

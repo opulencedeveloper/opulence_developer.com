@@ -39,7 +39,7 @@ const MainNavigation = () => {
        onClick={toggleDrawer}
      />
    </div>
- </Portal> <header className="flex justify-between items-center h-20 mt-2 px-5 md:px-12">
+ </Portal> <header className="relative z-20 flex justify-between items-center h-20 mt-2 px-5 md:px-12">
       
         <div>
           <h1 className="leading-none text-xl font-bold text-medium md:text-4xl">
@@ -62,24 +62,20 @@ const MainNavigation = () => {
          
         </div>
         <nav className="hidden lg:flex space-x-4 text-lg">
-          <div
-            className={
+          
+            <Link  className={
               activeLink === "/"
                 ? "border border-primary1 rounded-md flex items-center px-4 py-3"
                 : "rounded-md flex items-center px-5"
-            }
-          >
-            <Link href="/">Home</Link>
-          </div>
-          <div
-            className={
+            } href="/">Home</Link>
+          
+          
+            <Link className={
               activeLink === "/about"
                 ? "border border-primary1 rounded-md flex items-center px-4 py-3"
                 : "rounded-md flex items-center px-5"
-            }
-          >
-            <Link href="/about">About</Link>
-          </div>
+            } href="/about">About</Link>
+          
         </nav>
         <button
         className={`${navAnimationClass} z-0 block hamburger lg:hidden focus:outline-none`}
