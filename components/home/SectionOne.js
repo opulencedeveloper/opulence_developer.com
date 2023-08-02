@@ -11,7 +11,7 @@ const SectionOne = () => {
      
         <div className="w-[95%]">
           <div className="flex flex-wrap justify-center items-center">
-            <p className="text-2xl font-medium md:text-4xl">Greetings, esteemed visitor! </p>
+            <p className="text-lg font-medium md:text-4xl">Greetings, esteemed visitor! </p>
            <div className="h-10 w-10"> <Image
               src="/images/logo/wave.svg"
               alt="call a doctor logo"
@@ -20,7 +20,7 @@ const SectionOne = () => {
               height={40}
             /></div>
           </div>
-         <div className="text-3xl space-y-3 md:text-5xl 2xl:text-6xl">
+         <div className="text-2xl space-y-3 md:text-5xl 2xl:text-6xl">
             <p className="leading-tight font-semibold mb-10">
               What took you so long to find me? I'm{" "}
               <span className="text-white font-bold">Victor Amobi</span>, my expertise lies in the realm of
