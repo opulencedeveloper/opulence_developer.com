@@ -7,13 +7,16 @@ import Typewriter from "typewriter-effect";
 const navLinks = [
   {
     title: "Home",
-    links: "/",
+    link: "/",
   },
   {
-    title: "About Me",
-    links: "/about",
+    title: "Shop",
+    link: "/shop",
   },
-
+  {
+    title: "About",
+    link: "/about",
+  },
 ];
 
 const companyName = "<OpulenceDeveloper/>";
@@ -27,10 +30,7 @@ const MobileNavigation = (props) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
-  const bookAppointmentHandler = () => {
-    props.onClick();
-    router.push("/contact-us");
-  };
+ 
 
   return (
     <div className="flex flex-col justify-between bg-white text-white pb-8 w-full h-full">
@@ -70,14 +70,14 @@ const MobileNavigation = (props) => {
         {" "}
        <div> {navLinks.map((linkData, index) => {
           const textColor =
-            activeLink === linkData.links
+            activeLink === linkData.link
               ? "text-primary text-medium"
               : "text-primary1";
           return <Link
               onClick={props.onClick}
               key={index}
               className={`${textColor} my-5 text-lg block py-5 border-b w-full text-center`}
-              href={linkData.links}
+              href={linkData.link}
             >
               {linkData.title}
             </Link>

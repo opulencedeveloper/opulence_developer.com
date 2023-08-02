@@ -7,9 +7,9 @@ const SectionOne = () => {
   return (
     <>
    
-      <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 px-5 md:px-12">
+      <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 px-5 pb-16 md:pb-0 md:px-12">
      
-        <div className="w-[95%]">
+        <div className="w-full md:w-[95%]">
           <div className="flex flex-wrap justify-center items-center">
             <p className="text-lg font-medium md:text-4xl">Greetings, esteemed visitor! </p>
            <div className="h-10 w-10"> <Image
@@ -39,15 +39,15 @@ const SectionOne = () => {
        
         </div> */}
 
-        <button className="flex items-center bg-black px-5 py-3 text-white rounded-md">
-         <p>Send Message</p> 
-          <Image
+        <button className="flex items-center bg-black px-5 h-11 text-white rounded-md md:h-14">
+         <p className="text-sm md:text-lg">Send Message</p> 
+         <div className="h-3 w-3 ml-2 md:h-4 md:w-4"> <Image
             src="/images/icon/arrow-right.svg"
             alt="arrow right icon"
-            className="h-4 w-4 ml-2"
+            className="w-full h-full"
             width={16}
             height={16}
-          />
+          /></div>
         </button>
       </div>
       <div className={`overflow-hidden py-6 -mt-20 bg-primary1 text-black text-xl ${styles.container}`}>
