@@ -24,19 +24,19 @@ const SectionTwo = () => {
   return (
     <>
       <div className="px-5 mt-32 md:px-12">
-        <p className="text-xl md:text-2xl">Some Open Source Code</p>
+        <p className="text-xl">Some Open Source Code</p>
         <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 items-start space-x-auto flex-wrap md:justify-evenly 2xl:justify-start space-x-2">
           {contents.map((content) => (
             <div 
             key={content.description}
-            className="w-96 py-2 space-y-2">
-                <Image
+            className="w-80 py-2 space-y-2">
+             <div className="h-72 w-full rounded-tl-lg rounded-tr-lg overflow-hidden"><Image
                   src={content.imageUrl}
                   alt="call a doctor logo"
-                  className="h-320 w-piw1 rounded-tl-2xl rounded-tr-2xl"
+                  className="h-full w-full"
                   width={540}
                   height={388}
-                />
+                /></div>   
                     <p className="font-medium text-xl text-center">{content.name}</p>
                    
                  
@@ -69,42 +69,42 @@ const SectionTwo = () => {
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
         <div className="space-x-auto flex space-x-3 h-32">
          
-            <div className="w-52">
+            <div className="h-24 w-52">
                 <Image
                   src="/images/logo/best.svg"
                   alt="call a doctor logo"
-                  className="h-24 w-52"
+                  className="h-full w-full"
                   width={208}
                   height={80}
                 />
                   
             </div>
-            <div className="w-52">
+            <div className="h-24 w-52">
                 <Image
                   src="/images/logo/optimum.svg"
                   alt="call a doctor logo"
-                  className="h-24 w-52"
+                  className="h-full w-full"
                   width={208}
                   height={80}
                 />
                   
             </div>
-            <div className="w-52">
+            <div className="h-24 w-52">
                 <Image
                   src="/images/logo/ud.svg"
                   alt="call a doctor logo"
-                  className="h-24 w-52 "
+                  className="w-full h-full"
                   width={208}
                   height={80}
                   
                 />
                   
             </div>
-            <div className="w-52">
+            <div className="h-24 w-52">
                 <Image
                   src="/images/call-a-doc.svg"
                   alt="call a doctor logo"
-                  className="h-24 w-52"
+                  className="w-full h-full"
                   width={208}
                   height={80}
                 />

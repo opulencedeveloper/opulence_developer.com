@@ -73,21 +73,14 @@ const SectionTwo = () => {
       (prevIndex) => (prevIndex - 1 + videoIds.length) % videoIds.length
     );
   };
-  useEffect(() => {
-    const interval = setInterval(goToNextSlide, 2000);
+  // useEffect(() => {
+  //   const interval = setInterval(goToNextSlide, 2000);
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, [activeIndex]);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, [activeIndex]);
 
-  //   const handleNext = () => {
-  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % videoIds.length);
-  // };
-
-  // const handlePrevious = () => {
-  //   setCurrentIndex((prevIndex) => (prevIndex - 1 + videoIds.length) % videoIds.length);
-  // };
   const scrollToFirstSection = () => {
     console.log("clicked");
     section1Ref.current.scrollIntoView({
@@ -103,56 +96,56 @@ const SectionTwo = () => {
 
   const pageContent = [
     {
-      name: "Trade Hub",
-      type: "Crypto Website",
-      imageUrl: "/images/tradehub.png",
+      name: "Real-Estate",
+      type: "Website",
+      imageUrl: "/images/real-estate-image.png",
       description:
-        "Stay up-to-date on the latest news and trends in the world of cryptocurrency. Whether you're a seasoned investor or just getting started, this site has something for you.",
+        "Showcases an extensive range of exceptional properties, catering to diverse needs and preferences",
     },
     {
-      name: "Story Reading App",
-      type: "E-book",
-      imageUrl: "/images/story-book-app.png",
+      name: "Links",
+      type: "Website",
+      imageUrl: "/images/links-image.png",
       description:
-        "A learning tool that helps children develop important literacy skills. With features like word highlighting and pronunciation, kids can practice their reading and comprehension in a fun and engaging way.",
+        "Elevate your social media engagement with this platform's innovative features and strategies",
     },
     {
       name: "Prep",
-      type: "Interview Guide",
+      type: "Website",
       imageUrl: "/images/prep.png",
       description:
-        "With comprehensive guides on topics like interview preparation, common interview questions, and salary negotiation, you'll be well-equipped to impress any interviewer.",
+        "With comprehensive guides on topics like interview preparation, common interview questions, and salary negotiation.",
     },
     {
       name: "Finance App",
-      type: "Fintech",
+      type: "Mobile App.",
       imageUrl: "/images/finance-app.png",
       description:
-        "With a sleek and user-friendly interface, the app makes it easy to stay on top of your finances. You can link your bank accounts, credit cards, and investment accounts, and see all your transactions in one place.",
+        "With a sleek and user-friendly interface, the app makes it easy to stay on top of your finances",
     },
     {
-      name: "Dentals",
-      type: "Medicals",
-      imageUrl: "/images/dentals.png",
+      name: "MacLinks",
+      type: "Website",
+      imageUrl: "/images/mac-links-image.png",
       description:
-        "With a clean and intuitive interface, the site is easy to navigate and use. You can learn about our dental services, read about our team of experienced professionals, and even schedule an appointment online.",
+        "Enjoy the flexibility to choose from an array of customization options, enabling you to brand your academy and create a seamless extension of your professional identity.",
     },
     {
-      name: "Rent Plug",
-      type: "Real Estate",
-      imageUrl: "/images/real-estate.png",
+      name: "EduLab",
+      type: "Website",
+      imageUrl: "/images/edu-lab-image.png",
       description:
-        "With a powerful search engine and filters, you can easily find properties that meet your specific criteria, such as location, price range, and property type. You can also save your favorite properties and receive notifications when new properties that match your preferences become available.",
+        "A vibrant online platform dedicated to celebrating the transformative power of education",
     },
   ];
 
   return (
     <>
       <div className="px-5 mt-32 md:px-12">
-        <p className="text-xl">Some Websites and Mobile Apps Projects</p>
+        <p className="text-xl">Featured Products</p>
         <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 space-x-auto flex-wrap md:justify-evenly 2xl:justify-start space-x-2">
           {pageContent.map((content) => (
-            <div key={content.imageUrl} className="w-96 my-10">
+            <div key={content.imageUrl} className="w-80 my-10">
               <div className="relative bg-primary1 flex justify-center rounded-tr-md rounded-tl-md">
                 <Image
                   src={content.imageUrl}
@@ -162,14 +155,14 @@ const SectionTwo = () => {
                   height={388}
                 />
               </div>
-              <div className="p-5 space-y-2 mt-2 bg-primary2">
+              <div className="px-2 py-5 space-y-2 mt-2 bg-primary2">
                 <div className="flex justify-between">
                   <div className="space-y-2">
-                    <p className="font-semibold text-lg">{content.name}</p>
+                    <p className="font-semibold text-base">{content.name}</p>
                     <p className="text-primary1 text-sm">{content.type}</p>
                   </div>
                   <div className="flex items-center">
-                    <p className="text-sm">Live Project</p>{" "}
+                    <p className="text-xs">Live Project</p>{" "}
                     <div className="ml-1">
                       <Image
                         src="/images/icon/arrow-right.svg"
@@ -181,12 +174,16 @@ const SectionTwo = () => {
                     </div>
                   </div>
                 </div>
-                <p className="text-center">{content.description}</p>
+                <p className="text-base">{content.description}</p>
               </div>
             </div>
           ))}
         </div>
-        <p className="text-xl">My API's</p>
+        <div className="flex justify-center mb-10">
+          <button>See More</button>
+        </div>
+
+        <p className="text-xl">Featured Mobile Apps.</p>
         <hr className="border-t-2 opacity-50 my-5 " />
       </div>
       {/* <div className="flex w-full h-300 overflow-x-hidden whitespace-nowrap relative transition-left ease duration-300" style={{ left: `-${currentIndex * 400}px` }}> */}
@@ -196,7 +193,7 @@ const SectionTwo = () => {
           style={{
             transform: `translateX(-${activeIndex * (100 / videoIds.length)}%)`,
             width: `${videoIds.length * 19}rem`,
-           // marginRight: "100"
+            // marginRight: "100"
           }}
         >
           {videoIds.map((video, index) => (

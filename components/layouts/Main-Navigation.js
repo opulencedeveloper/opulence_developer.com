@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import MobileNavigation from "./MobileNavigation";
 import Portal from "../UI/Portal";
+import Image from "next/image";
 
 let navAnimationClass = "";
 
@@ -39,13 +40,15 @@ const MainNavigation = () => {
        onClick={toggleDrawer}
      />
    </div>
- </Portal> <header className="relative z-20 flex justify-between items-center h-20 mt-2 px-5 md:px-12">
-      
+ </Portal> 
+  
+ <header className="relative z-20 flex justify-between items-center h-20 pt-2 px-5 md:pt-10 md:px-12">
+  
         <div>
-          <h1 className="leading-none text-xl font-bold text-medium md:text-4xl">
+          <h1 className="leading-none text-lg font-bold md:text-4xl">
             {companyName}
           </h1>
-         <div className="italic pl-12 text-[10px] -mt-2 md:mt-0 md:pl-28 md:text-base"><Typewriter
+         <div className="italic pl-12 text-[8.5px] -mt-2 md:mt-0 md:pl-28 md:text-base"><Typewriter
             onInit={(typewriter) => {
               typewriter
                 .typeString(
@@ -75,6 +78,18 @@ const MainNavigation = () => {
                 ? "border border-primary1 rounded-md flex items-center px-4 py-3"
                 : "rounded-md flex items-center px-5"
             } href="/about">About</Link>
+
+<Link className={
+              activeLink === "/abou"
+                ? "border border-primary1 rounded-md flex items-center px-4 py-3"
+                : "rounded-md flex items-center px-5"
+            } href="/about">Products</Link>
+
+<Link className={
+              activeLink === "/abou"
+                ? "border border-primary1 rounded-md flex items-center px-4 py-3"
+                : "rounded-md flex items-center px-5"
+            } href="/about">Projects</Link>
           
         </nav>
         <button

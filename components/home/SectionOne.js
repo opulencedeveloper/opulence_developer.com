@@ -7,36 +7,37 @@ const SectionOne = () => {
   return (
     <>
    
-      <div className="relative z-20 text-center flex flex-col items-center space-y-8 my-20 text-primary1 px-5 md:my-20 md:px-12 lg:my-40">
-        <div className="max-w-6xl">
-          <div className="flex justify-center items-center">
-            <p className="text-2xl font-medium md:text-3xl">Welcome </p>
-            <Image
+      <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 px-5 md:px-12">
+     
+        <div className="w-[95%]">
+          <div className="flex flex-wrap justify-center items-center">
+            <p className="text-2xl font-medium md:text-4xl">Greetings, esteemed visitor! </p>
+           <div className="h-10 w-10"> <Image
               src="/images/logo/wave.svg"
               alt="call a doctor logo"
-              className="h-10 w-10"
+              className="h-full w-full"
               width={40}
               height={40}
-            />
+            /></div>
           </div>
-         <div className="text-3xl md:text-6xl">
-            <p className="leading-tight">
+         <div className="text-3xl space-y-3 md:text-5xl 2xl:text-6xl">
+            <p className="leading-tight font-semibold mb-10">
               What took you so long to find me? I'm{" "}
-              <span className="font-bold text-white underline border-white">Victor Amobi</span> and I
-              am a{" "}
-              <span className="font-bold text-white underline">
-                FullStack Software Engineer
-              </span>
+              <span className="text-white font-bold">Victor Amobi</span>, my expertise lies in the realm of
+               <span className="text-white font-bold">{" "}
+               FullStack Software Engineering. 
+              </span>{""}
+               
             </p>
           </div>
         </div>
-        <div className="max-w-7xl text-base lg:text-xl">
+        {/* <div className="max-w-7xl text-base lg:text-xl">
         <p>It's great to finally connect with you.</p>
         <p>I can't help but wonder what amazing things we can achieve together now that we've found each other.</p>
         <p>I am passionate about using technology to solve problems and build innovative solutions. With experience in both frontend and backend development, I am skilled in a variety of programming languages and frameworks. I take pride in delivering high-quality, performant code that meets the needs of my clients and users. Browse my portfolio to see some of my recent projects and get in touch to learn more about how I can help bring your ideas to life.</p>
           {" "}
        
-        </div>
+        </div> */}
 
         <button className="flex items-center bg-black px-5 py-3 text-white rounded-md">
          <p>Send Message</p> 
@@ -49,7 +50,7 @@ const SectionOne = () => {
           />
         </button>
       </div>
-      <div className={`overflow-hidden py-6 bg-primary1 text-black text-xl ${styles.container}`}>
+      <div className={`overflow-hidden py-6 -mt-20 bg-primary1 text-black text-xl ${styles.container}`}>
       <div className={`inline-block space-x-8 whitespace-nowrap ${styles.textWrapper}`}>
       <span>React.js</span>
             <span>Node.js</span> <span>Next.js</span>
