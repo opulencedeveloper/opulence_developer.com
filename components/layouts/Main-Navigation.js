@@ -73,7 +73,7 @@ const MainNavigation = () => {
               }}
               options={{
                 typeSpeed: 100,
-                cursor: '<span class="text-xl">|</span>',
+                cursor: '<span class="text-base">|</span>',
                 html: false,
               }}
             />

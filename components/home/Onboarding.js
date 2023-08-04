@@ -12,9 +12,9 @@ const Onboarding = (props) => {
     document.body.classList.add("overflow-hidden");
     const interval = setInterval(() => {
       setIsVisible(false);
+      document.body.classList.remove("overflow-hidden");
     }, 4000);
     return () => {
-      document.body.classList.remove("overflow-hidden");
       clearInterval(interval);
     };
   }, []);
