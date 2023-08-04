@@ -96,7 +96,7 @@ const SectionTwo = () => {
   return (
     <>
       <div className="mt-32">
-        <p className="text-xl">Featured Products</p>
+        <p className="text-xl pl-5 md:pl-12">Featured Product</p>
         <Products pageContent={pageContent} />
         <div className="flex justify-center mb-10">
           <button onClick={seeMoreHandler}>See More</button>
