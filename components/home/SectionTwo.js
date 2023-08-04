@@ -102,7 +102,7 @@ const SectionTwo = () => {
           <button onClick={seeMoreHandler}>See More</button>
         </div>
 
-        <p className="text-xl">Featured Mobile Apps.</p>
+        <p className="text-xl pl-5 md:pl-12">Featured Mobile Apps.</p>
         <hr className="border-t-2 opacity-50 my-5 " />
       </div>
       {/* <div className="flex w-full h-300 overflow-x-hidden whitespace-nowrap relative transition-left ease duration-300" style={{ left: `-${currentIndex * 400}px` }}> */}
