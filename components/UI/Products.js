@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const Products = (props) => {
   return (
-    <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 space-x-auto flex-wrap md:justify-evenly 2xl:justify-start space-x-10">
+    <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 px-5 md:px-12 space-x-0 flex-wrap md:justify-evenly 2xl:justify-start space-x-10">
       {props.pageContent.map((content) => (
-        <div key={content.imageUrl} className="w-80 my-10">
+        <div key={content.imageUrl} className="w-80 my-4 md:my-10">
           <div className="relative bg-primary1 flex justify-center rounded-tr-md rounded-tl-md">
             <Image
               src={content.imageUrl}

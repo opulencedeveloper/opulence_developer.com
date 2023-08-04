@@ -95,7 +95,7 @@ const SectionTwo = () => {
 
   return (
     <>
-      <div className=" px-5 mt-32 md:px-12">
+      <div className="mt-32">
         <p className="text-xl">Featured Products</p>
         <Products pageContent={pageContent} />
         <div className="flex justify-center mb-10">
