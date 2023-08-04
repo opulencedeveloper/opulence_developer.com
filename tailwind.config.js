@@ -1,4 +1,4 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const { fontFamily } = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -6,7 +6,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
- 
+
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -28,9 +28,22 @@ module.exports = {
         'piw': '62rem',
         'piw1': '34.2rem',
         "boxw1": '5rem'
-      }
+      },
+      keyframes: {
+        'zoom-out': {
+          '0%': { transform: 'scale(0.0000000000000001)' },
+          '100%': { transform: 'scale(1)' },
+        },
+        slideLeft: {
+          '0%': { transform: 'translateX(100%)'},
+          '100%': { transform: 'translateX(-340px)'},
+        },
+      },
+      animation: {
+        'zoom-out': 'zoom-out 2s',
+        'slide-left': 'slideLeft 1s ease-out 0.5s forwards',
+      },
     },
   },
   plugins: [],
-}
-
+};
