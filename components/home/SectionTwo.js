@@ -3,46 +3,13 @@ import Products from "../UI/Products";
 import { useRouter } from "next/router";
 
 const SectionTwo = () => {
-  const section1Ref = useRef();
-  const section2Ref = useRef();
-  const [activeIndex, setActiveIndex] = useState(0);
   const router = useRouter();
 
   const seeMoreHandler = () => {
     router.replace("/contact-us");
   };
 
-  const videoIds = [
-    { id: "UqOb7JOXNWc", myref: section1Ref },
-    { id: "wp1chKaIYbY", myref: undefined },
-    { id: "OFjW-Sjc_VQ", myref: section2Ref },
-  ];
-
-  const goToNextSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % videoIds.length);
-  };
-
-  const goToPrevSlide = () => {
-    setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + videoIds.length) % videoIds.length
-    );
-  };
-  // useEffect(() => {
-  //   const interval = setInterval(goToNextSlide, 2000);
-
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, [activeIndex]);
-
-  const scrollToFirstSection = () => {
-    console.log("clicked");
-    section1Ref.current.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "start",
-    });
-  };
+  const videoIds = ["UqOb7JOXNWc", "wp1chKaIYbY", "OFjW-Sjc_VQ", "pEygELhyBQw"];
 
   const scrollToLastSection = () => {
     // section2Ref.current.scrollIntoView({ behavior: "smooth", block: 'nearest', inline: 'start' });
@@ -106,12 +73,11 @@ const SectionTwo = () => {
         <hr className="border-t-2 opacity-50 my-5 " />
       </div>
       {/* <div className="flex w-full h-300 overflow-x-hidden whitespace-nowrap relative transition-left ease duration-300" style={{ left: `-${currentIndex * 400}px` }}> */}
-      <div className=" space-x-8 flex pb-3 mx-5 md:mx-12 overflow-x-auto">
-        {videoIds.map((video, index) => (
-          <div className="flex-shrink-0 border" key={video.id}>
+      <div className=" space-x-5 flex pb-3 mx-5 md:mx-12 overflow-x-auto">
+        {videoIds.map((videoId, index) => (
+          <div className="flex-shrink-0 border" key={index}>
             <iframe
-              ref={video.myref}
-              src={`https://www.youtube.com/embed/${video.id}`}
+              src={`https://www.youtube.com/embed/${videoId}`}
               className="h-[200px] w-[300px]"
               allowFullScreen
             ></iframe>

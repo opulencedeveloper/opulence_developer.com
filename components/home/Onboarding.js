@@ -9,13 +9,13 @@ const Onboarding = (props) => {
 
   useEffect(() => {
     setIsPageLoaded(true);
-    document.body.classList.add("overflow-hidden");
+    
     const interval = setInterval(() => {
       setIsVisible(false);
       document.body.classList.remove("overflow-hidden");
       localStorage.setItem("isHomeScreenVisited", "yes");
       
-    }, 3200);
+    }, 3000);
     return () => {
       clearInterval(interval);
     };
@@ -24,7 +24,7 @@ const Onboarding = (props) => {
   return (
     <div
       className={`fixed inset-y-0 z-40 bg-primary h-screen w-screen flex items-center justify-center transform  ${
-        isVisible ? "translate-x-0" : "-translate-x-full opacity-80"
+        isVisible ? "translate-x-0" : "-translate-x-full opacity-90"
       } transition-transform duration-1000 ease-in-out`}
     >
       {isPageLoaded && (

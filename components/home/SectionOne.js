@@ -41,8 +41,8 @@ const SectionOne = () => {
 
         <button className="flex items-center bg-black px-5 h-11 text-white rounded-md md:h-14">
          <p className="text-sm md:text-lg">Send Message</p> 
-         <div className="h-3 w-3 ml-2 md:h-4 md:w-4"> <Image
-            src="/images/icon/arrow-right.svg"
+         <div className="h-3 w-3 ml-2 rounded-full overflow-hidden md:h-7 md:w-7"> <Image
+            src="/images/icon/send.gif"
             alt="arrow right icon"
             className="w-full h-full"
             width={16}
