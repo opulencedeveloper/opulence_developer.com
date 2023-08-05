@@ -1,7 +1,7 @@
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import MobileNavigation from "./MobileNavigation";
 import Portal from "../UI/Portal";
 
@@ -26,6 +26,11 @@ const MainNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const activeLink = router.pathname;
+
+  // useLayoutEffect(() => {
+  //   console.log("in the main effect")
+  //   localStorage.setItem("isHomeScreenVisited", "no");
+  // }, []);
 
   const toggleDrawer = () => {
     if (isOpen) {

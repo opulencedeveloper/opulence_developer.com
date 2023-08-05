@@ -11,11 +11,11 @@ const navLinks = [
   },
   {
     title: "Shop",
-    link: "/shop",
+    link: "shop",
   },
   {
     title: "About",
-    link: "/about",
+    link: "about",
   },
 ];
 

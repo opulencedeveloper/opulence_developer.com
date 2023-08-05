@@ -13,7 +13,9 @@ const Onboarding = (props) => {
     const interval = setInterval(() => {
       setIsVisible(false);
       document.body.classList.remove("overflow-hidden");
-    }, 3800);
+      localStorage.setItem("isHomeScreenVisited", "yes");
+      
+    }, 3200);
     return () => {
       clearInterval(interval);
     };

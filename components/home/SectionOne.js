@@ -12,10 +12,10 @@ const SectionOne = () => {
         <div className="w-full md:w-[95%]">
           <div className="flex flex-wrap justify-center items-center">
             <p className="text-lg font-medium md:text-4xl">Greetings, esteemed visitor! </p>
-           <div className="h-10 w-10"> <Image
-              src="/images/logo/wave.svg"
+           <div className="h-10 w-10 md:h-20 md:w-20"> <Image
+              src="/images/icon/online.gif"
               alt="call a doctor logo"
-              className="h-full w-full"
+              className="h-full w-full bg-transparent"
               width={40}
               height={40}
             /></div>
