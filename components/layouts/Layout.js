@@ -7,7 +7,7 @@ import { useEffect, useLayoutEffect } from "react";
 const Layout = (props) => {
   const router = useRouter();
   const activeLink = router.pathname;
-   useLayoutEffect(() => { useLayoutEffect
+   useEffect(() => { 
     console.log("in the effect layoutt")
     
   }, []);

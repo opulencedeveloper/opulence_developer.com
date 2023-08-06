@@ -3,32 +3,50 @@ import React from "react";
 
 import styles from "./SectionOne.module.css";
 
+const skills = [
+  "Flutter",
+  "React.js",
+  "Next.js",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "Mongoose",
+  "Graphics",
+  "Arduino",
+  "IOT",
+];
+
 const SectionOne = () => {
   return (
     <>
-   
       <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 px-5 pb-16 md:pb-0 md:px-12">
-     
         <div className="w-full md:w-[95%]">
           <div className="flex flex-wrap justify-center items-center">
-            <p className="text-lg font-medium md:text-4xl">Greetings, esteemed visitor! </p>
-           <div className="h-10 w-10 md:h-20 md:w-20"> <Image
-              src="/images/icon/online.gif"
-              alt="call a doctor logo"
-              className="h-full w-full bg-transparent"
-              width={40}
-              height={40}
-            /></div>
-          </div>
-         <div className="text-2xl space-y-3 md:text-5xl 2xl:text-6xl">
-            <p className="leading-tight font-semibold mb-10">
-              What took you so long to find me? I'm{" "}
-              <span className="text-white font-bold">Victor Amobi</span>, my expertise lies in the realm of
-               <span className="text-white font-bold">{" "}
-               FullStack Software Engineering. 
-              </span>{""}
-               
+            <p className="text-lg font-medium md:text-4xl">
+              Greetings, esteemed visitor!{" "}
             </p>
+            <div className="h-10 w-10 md:h-20 md:w-20">
+              {" "}
+              <Image
+                src="/images/icon/online.gif"
+                alt="call a doctor logo"
+                className="h-full w-full bg-transparent"
+                width={40}
+                height={40}
+              />
+            </div>
+          </div>
+          <div className="text-2xl space-y-3 md:text-5xl 2xl:text-6xl">
+            <h2 className="leading-tight font-semibold mb-10">
+              What took you so long to find me? I'm{" "}
+              <span className="text-white font-bold">Victor Amobi</span>, my
+              expertise lies in the realm of
+              <span className="text-white font-bold">
+                {" "}
+                FullStack Software Engineering.
+              </span>
+              {""}
+            </h2>
           </div>
         </div>
         {/* <div className="max-w-7xl text-base lg:text-xl">
@@ -40,25 +58,26 @@ const SectionOne = () => {
         </div> */}
 
         <button className="flex items-center bg-black px-5 h-11 text-white rounded-md md:h-14">
-         <p className="text-sm md:text-lg">Send Message</p> 
-         <div className="h-3 w-3 ml-2 rounded-full overflow-hidden md:h-7 md:w-7"> <Image
-            src="/images/icon/send.gif"
-            alt="arrow right icon"
-            className="w-full h-full"
-            width={16}
-            height={16}
-          /></div>
+          <p className="text-sm md:text-lg">Send Message</p>
+          <div className="h-5 w-5 ml-2 rounded-full overflow-hidden md:h-7 md:w-7">
+            {" "}
+            <Image
+              src="/images/icon/send.gif"
+              alt="arrow right icon"
+              className="w-full h-full"
+              width={16}
+              height={16}
+            />
+          </div>
         </button>
       </div>
-      <div className={`overflow-hidden py-6 -mt-20 bg-primary1 text-black text-xl ${styles.container}`}>
-      <div className={`inline-block space-x-8 whitespace-nowrap ${styles.textWrapper}`}>
-      <span>React.js</span>
-            <span>Node.js</span> <span>Next.js</span>
-            <span>Express.js</span> <span>MongoDB</span> <span>Mongoose</span>
-            <span>Graphics</span> <span>Arduino</span>
-            <span>IOT</span>
+      <div className={`-mt-20 bg-primary1 py-6 flex overflow-hidden`}>
+        <div className={`animate-slideLeftRight space-x-8 text-xl text-black`}>
+          {skills.map((skill, index) => (
+            <span key={index}>{skill}</span>
+          ))}
+        </div>
       </div>
-    </div>
       {/* <div className=" py-6 bg-primary1 text-black text-xl">
         <div className="inline-block overflow-hidden">
           <marquee className="my-marquee space-x-8 flex items-center">

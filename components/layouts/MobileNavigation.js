@@ -11,15 +11,18 @@ const navLinks = [
   },
   {
     title: "Shop",
-    link: "shop",
+    link: "/shop",
   },
   {
     title: "About",
-    link: "about",
+    link: "/about",
   },
+  {
+    title: "Code Support",
+    link: "/code-support",}
 ];
 
-const companyName = "<OpulenceDeveloper/>";
+
 
 const MobileNavigation = (props) => {
   const router = useRouter();
@@ -30,16 +33,16 @@ const MobileNavigation = (props) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
- 
+  const companyName = "<OpulenceDeveloper/>";
 
   return (
     <div className="flex flex-col justify-between bg-white text-white pb-8 w-full h-full">
         <div>
       <div className="bg-primary flex justify-between items-center p-8">
       <div>
-          <h1 className="leading-none text-xl font-bold text-medium md:text-4xl">
+          <p className="font-poppins leading-none text-xl font-bold text-medium md:text-4xl">
             {companyName}
-          </h1>
+          </p>
          <div className="italic pl-12 text-[10px] -mt-2 md:mt-0 md:pl-28 md:text-base"><Typewriter
             onInit={(typewriter) => {
               typewriter

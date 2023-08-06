@@ -9,12 +9,10 @@ const Onboarding = (props) => {
 
   useEffect(() => {
     setIsPageLoaded(true);
-    
+    document.body.classList.add("overflow-hidden");
     const interval = setInterval(() => {
       setIsVisible(false);
       document.body.classList.remove("overflow-hidden");
-      localStorage.setItem("isHomeScreenVisited", "yes");
-      
     }, 3000);
     return () => {
       clearInterval(interval);

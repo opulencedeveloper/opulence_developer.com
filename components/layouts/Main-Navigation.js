@@ -20,6 +20,10 @@ const navLinks = [
     title: "About",
     link: "/about",
   },
+  {
+    title: "Code Support",
+    link: "/code-support",
+  },
 ];
 
 const MainNavigation = () => {

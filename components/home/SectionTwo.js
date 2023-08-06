@@ -73,7 +73,7 @@ const SectionTwo = () => {
         <hr className="border-t-2 opacity-50 my-5 " />
       </div>
       {/* <div className="flex w-full h-300 overflow-x-hidden whitespace-nowrap relative transition-left ease duration-300" style={{ left: `-${currentIndex * 400}px` }}> */}
-      <div className=" space-x-5 flex pb-3 mx-5 md:mx-12 overflow-x-auto">
+      <div className=" space-x-5 flex pb-3 mx-3 md:mx-12 overflow-x-auto">
         {videoIds.map((videoId, index) => (
           <div className="flex-shrink-0 border" key={index}>
             <iframe

@@ -10,10 +10,12 @@ const poppins = Poppins({
 import "@/styles/globals.css";
 import Layout from '@/components/layouts/Layout';
 import Footer from '@/components/layouts/Footer';
+import Onboarding from '@/components/home/Onboarding';
 
 export default function App({ Component, pageProps }) {
   return (
     <main className={`${poppins.variable} font-poppins max-w-[120rem] mx-auto`}>
+      <Onboarding />
       <Layout> 
       
       <Component {...pageProps} />

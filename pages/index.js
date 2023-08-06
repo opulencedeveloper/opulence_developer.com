@@ -10,14 +10,11 @@ export default function Home() {
   //   console.log("in the layout effect")
   //   isHomeScreenVisited=  localStorage.getItem("isHomeScreenVisited");
   // }, [])
-  useEffect(() => {
-    document.body.classList.add("overflow-hidden");
-  }, []);
 
   console.log("isHomeScreenVisited");
   return (
     <section>
-      <Onboarding />
+      {/* <Onboarding /> */}
       <SectionOne />
       <SectionTwo />
       <SectionThree />

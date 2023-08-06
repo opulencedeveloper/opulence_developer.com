@@ -1,4 +1,4 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -14,34 +14,45 @@ module.exports = {
     extend: {
       fontFamily: {
         // 'montserrat': 'Montserrat',
-        poppins: ['var(--font-poppins)', ...fontFamily.sans],
+        poppins: ["var(--font-poppins)", ...fontFamily.sans],
       },
       fontSize: {
-        'fs1': '0.6rem'
+        fs1: "0.6rem",
       },
       colors: {
-        "primary": '#024554',
-        "primary1": "#ACC2C7",
-        "secondary": "#030303"
+        primary: "#024554",
+        primary1: "#ACC2C7",
+        secondary: "#030303",
       },
       width: {
-        'piw': '62rem',
-        'piw1': '34.2rem',
-        "boxw1": '5rem'
+        piw: "62rem",
+        piw1: "34.2rem",
+        boxw1: "5rem",
       },
       keyframes: {
-        'zoom-out': {
-          '0%': { transform: 'scale(0.0000000000000001)' },
-          '100%': { transform: 'scale(1)' },
+        "zoom-out": {
+          "0%": { transform: "scale(0.0000000000000001)" },
+          "100%": { transform: "scale(1)" },
         },
         slideLeft: {
-          '0%': { transform: 'translateX(100%)'},
-          '100%': { transform: 'translateX(-340px)'},
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-340px)" },
+        },
+        marquee: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        slideLeftRight: {
+          '0%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
         },
       },
       animation: {
-        'zoom-out': 'zoom-out 2s',
-        'slide-left': 'slideLeft 1s ease-out 0.5s forwards',
+        "zoom-out": "zoom-out 2s",
+        "slide-left": "slideLeft 1s ease-out 0.5s forwards",
+        marquee: "marquee 25s linear infinite",
+        slideLeftRight: 'slideLeftRight 30s linear infinite',
       },
     },
   },
