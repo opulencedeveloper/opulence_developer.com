@@ -54,18 +54,7 @@ const MainNavigation = () => {
   return (
     <>
       {" "}
-      <Portal>
-        <div
-          className={` fixed inset-y-0 h-screen w-screen lg:hidden transform  ${
-            isOpen ? "translate-y-0 z-50" : "-translate-y-full"
-          } transition-transform duration-1000 ease-in-out`}
-        >
-          <MobileNavigation
-            navAnimationClass={navAnimationClass}
-            onClick={toggleDrawer}
-          />
-        </div>
-      </Portal>
+     
       <header className="relative z-20 flex justify-between items-center h-20 pt-2 px-5 md:pt-10 md:px-12">
         <div>
           <h1 className="leading-none text-lg font-bold md:text-4xl">
@@ -111,6 +100,18 @@ const MainNavigation = () => {
           <span className="hamburger-bottom"></span>
         </button>
       </header>
+      <Portal>
+        <div
+          className={` fixed inset-y-0 h-screen w-screen lg:hidden transform  ${
+            isOpen ? "translate-y-0 z-50" : "-translate-y-full"
+          } transition-transform duration-1000 ease-in-out`}
+        >
+          <MobileNavigation
+            navAnimationClass={navAnimationClass}
+            onClick={toggleDrawer}
+          />
+        </div>
+      </Portal>
     </>
   );
 };

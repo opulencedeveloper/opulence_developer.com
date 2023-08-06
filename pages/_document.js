@@ -7,7 +7,7 @@ export default function Document() {
       <body className="text-white">
         <Main />
         <NextScript />
-        <div id="navigation"></div>
+        <div className="font-poppins" id="navigation"></div>
       </body>
     </Html>
   );
