@@ -38,7 +38,7 @@ const MobileNavigation = (props) => {
   return (
     <div className="flex flex-col justify-between bg-white text-white pb-8 w-full h-full">
         <div>
-      <div className="bg-primary flex justify-between items-center p-8">
+      <div className="bg-primary flex justify-between items-center py-8 px-5">
       <div>
           <p className="font-poppins leading-none text-xl font-bold text-medium md:text-4xl">
             {companyName}
