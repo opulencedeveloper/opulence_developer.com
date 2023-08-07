@@ -13,7 +13,7 @@ const Onboarding = (props) => {
     const interval = setInterval(() => {
       setIsVisible(false);
       document.body.classList.remove("overflow-hidden");
-    }, 3000);
+    }, 3500);
     return () => {
       clearInterval(interval);
     };
