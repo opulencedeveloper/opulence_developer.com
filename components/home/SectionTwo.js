@@ -62,7 +62,7 @@ const SectionTwo = () => {
 
   return (
     <>
-      <div className="mt-32">
+      <div className="mt-20 md:mt-32">
         <p className="text-xl pl-5 md:pl-12">Featured Product</p>
         <Products pageContent={pageContent} />
         <div className="flex justify-center mb-10">

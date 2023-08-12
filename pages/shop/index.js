@@ -58,12 +58,12 @@ const Shop = () => {
     <>
       <div className="flex space-x-2 items-center mt-8 pl-5 md:mt-20 md:pl-12 ">
         {" "}
-        <div className="flex-shrink-0 h-10 w-10 rounded-full overflow-hidden">
+        <div className="flex justify-center items-center bg-white flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
           {" "}
           <Image
-            src="/images/icon/icon.gif"
+            src="/images/icon/cart.gif"
             alt="call a doctor logo"
-            className="h-full w-full bg-transparent"
+            className="h-auto w-auto bg-transparent"
             width={40}
             height={40}
           />

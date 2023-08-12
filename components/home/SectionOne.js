@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 import styles from "./SectionOne.module.css";
 
@@ -15,6 +15,44 @@ const skills = [
   "Arduino",
   "IOT",
 ];
+
+
+
+
+const TextTransition = () => {
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+  const [currentPhrase, setCurrentPhrase] = useState(skills[0]);
+  const [isGlitching, setIsGlitching] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsGlitching(true);
+
+      setTimeout(() => {
+        const newIndex = (currentPhraseIndex + 1) % skills.length;
+        setCurrentPhraseIndex(newIndex);
+        setCurrentPhrase(skills[newIndex]);
+        setIsGlitching(false);
+      }, 500); // Delay before updating phrase
+
+    }, 1500);
+
+    return () => clearInterval(interval);
+  }, [currentPhraseIndex]);
+
+  return (
+    <div className="flex items-center justify-center mt-10">
+      <h1
+        className={`text-4xl font-semibold ${
+          isGlitching ? 'animate-glitch' : ''
+        }`}
+      >
+        {currentPhrase}
+      </h1>
+    </div>
+  );
+};
+
 
 const SectionOne = () => {
   return (
@@ -36,8 +74,10 @@ const SectionOne = () => {
               />
             </div>
           </div>
+          
           <div className="text-2xl space-y-3 md:text-5xl 2xl:text-6xl">
-            <h2 className="leading-tight font-semibold mb-10">
+           
+            <h2 className="leading-tight font-semibold mb-10 animate-float">
               What took you so long to find me? I'm{" "}
               <span className="text-white font-bold">Victor Amobi</span>, my
               expertise lies in the realm of
@@ -78,6 +118,7 @@ const SectionOne = () => {
           ))}
         </div>
       </div>
+      <TextTransition />
       {/* <div className=" py-6 bg-primary1 text-black text-xl">
         <div className="inline-block overflow-hidden">
           <marquee className="my-marquee space-x-8 flex items-center">

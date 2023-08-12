@@ -6,6 +6,52 @@ html {
   background-color: #024554;
 }
 
+/* styles/globals.css */
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  5%, 20% {
+    transform: translate(-2px, 2px);
+    opacity: 0.8;
+  }
+  10%, 25% {
+    transform: translate(2px, -2px);
+    opacity: 0.8;
+  }
+  15%, 30% {
+    transform: translate(-2px, 2px);
+    opacity: 0.8;
+  }
+  20%, 35% {
+    transform: translate(2px, -2px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.animate-glitch {
+  animation: glitch 1s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+
 /* HAMBURGER MENU */
 
 .hamburger {
