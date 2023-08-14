@@ -31,7 +31,7 @@ const Onboarding = (props) => {
       } transition-transform duration-1000 ease-in-out`}
     >
       {isPageLoaded && (
-        <div className="h-48 flex flex-col items-center">
+        <div className="h-56 flex flex-col items-center justify-center">
           {" "}
           <div className="flex flex-col overflow-x-hidden w-max z-50 items-end justify-center h-max animate-zoom-out">
             <h1 className="animate-rainbow-gradient-text leading-none text-xl font-bold md:text-6xl">
@@ -44,11 +44,11 @@ const Onboarding = (props) => {
               </p>
             </div>
           </div>
-          {isThirdText && (
+         <div className="h-10"> {isThirdText && (
             <p className="text-sm mt-1 animate-fade-in-up-text md:mt-5 md:text-2xl">
               Full-Stack Software Engineer
             </p>
-          )}
+          )} </div>
         </div>
       )}
     </div>

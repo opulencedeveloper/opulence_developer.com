@@ -50,28 +50,27 @@ const TextTransition = () => {
 };
 
 const SectionOne = () => {
-  const [addAnimation, setAddAnimation] = useState(false);
+  const [removeAnimation, setRemoveAnimation] = useState(false);
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setAddAnimation(true);
-    }, 6200);
+      setRemoveAnimation(true);
+    }, 6700);
     return () => {
       clearInterval(interval);
     };
   }, []);
+
+  console.log
   return (
     <>
       <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 px-5 pb-16 md:pb-0 md:px-12">
         <div className="w-full md:w-[95%]">
-          <div className="overflow-hidden h-24  flex flex-wrap justify-center items-center md:h-20">
-            <p className={`text-lg font-medium md:text-4xl ${
-                addAnimation ? "animate-fade-in-down-text" : ""
-              }`}>
+          <div className={`flex flex-wrap justify-center items-center animate-text-glitch`}>
+            <p className={"text-lg font-medium md:text-4xl"}>
               Greetings, esteemed visitor!{" "}
             </p>
-            <div className={`h-10 w-10 md:h-20 md:w-20 ${
-                addAnimation ? "animate-fade-in-down-text" : ""
-              }`}>
+            <div className={"h-10 w-10 md:h-20 md:w-20"}>
               {" "}
               <Image
                 src="/images/icon/online.gif"
@@ -88,12 +87,10 @@ const SectionOne = () => {
               Full-Stack Software Engineer
             </p>{" "}
           </div> */}
-          <div className="overflow-hidden text-2xl space-y-3 h-44 md:h-60  md:text-5xl 2xl:text-6xl">
+          <div className=" text-2xl space-y-3  md:text-5xl 2xl:text-6xl">
             {/* animate-float */}
             <h2
-              className={`leading-tight font-semibold mb-10 ${
-                addAnimation ? "animate-fade-in-up-text2" : ""
-              }`}
+              className={`leading-tight font-semibold mb-10`}
             >
               What took you so long to find me? I'm{" "}
               <span className="text-white font-bold">Victor Amobi</span>, my
