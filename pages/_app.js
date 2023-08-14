@@ -19,7 +19,8 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsOnBoarding(false);
-    }, 6700);
+    }, 8000);
+    
     return () => {
       clearInterval(interval);
     };
