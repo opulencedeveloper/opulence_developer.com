@@ -66,11 +66,11 @@ const SectionOne = () => {
     <>
       <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 px-5 pb-16 md:pb-0 md:px-12">
         <div className="w-full md:w-[95%]">
-          <div className={`flex flex-wrap justify-center items-center animate-text-glitch`}>
-            <p className={"text-lg font-medium md:text-4xl"}>
+          <div className="flex flex-wrap justify-center items-center animate-text-glitch">
+            <p className="text-lg font-medium md:text-4xl">
               Greetings, esteemed visitor!{" "}
             </p>
-            <div className={"h-10 w-10 md:h-20 md:w-20"}>
+            <div className="h-10 w-10 md:h-20 md:w-20">
               {" "}
               <Image
                 src="/images/icon/online.gif"
@@ -90,7 +90,7 @@ const SectionOne = () => {
           <div className=" text-2xl space-y-3  md:text-5xl 2xl:text-6xl">
             {/* animate-float */}
             <h2
-              className={`leading-tight font-semibold mb-10`}
+              className="leading-tight font-semibold mb-10 animate-text-glitch"
             >
               What took you so long to find me? I'm{" "}
               <span className="text-white font-bold">Victor Amobi</span>, my
