@@ -43,6 +43,160 @@ html {
   }
 }
 
+
+
+/* styles/globals.css */
+@keyframes flickerNeonAnimation {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.8);
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow: none;
+  }
+}
+
+/* styles/globals.css */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* styles/globals.css */
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* styles/globals.css */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+/* styles/globals.css */
+@keyframes fadeInUpTextAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpTextAnimation2 {
+  0% {
+    opacity: 0;
+    transform: translateY(240px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDownTextAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-240px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* styles/globals.css */
+@keyframes rainbowGradientTextAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* styles/globals.css */
+@keyframes rotateTextAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate-text {
+  animation: rotateTextAnimation 4s linear infinite;
+}
+
+
+.animate-rainbow-gradient-text {
+  background-image: linear-gradient(45deg, #ACC2C7, #FFFFFF, #64c2f8, #667eea, #32de8a);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbowGradientTextAnimation 4s linear infinite;
+}
+
+
+.animate-fade-in-up-text {
+  animation: fadeInUpTextAnimation 2s ease-out;
+}
+
+.animate-fade-in-up-text2 {
+  animation: fadeInUpTextAnimation2 1.5s ease-out;
+}
+
+.animate-fade-in-down-text {
+  animation: fadeInDownTextAnimation 1.5s ease-out;
+}
+
+
+
+
+
+
+/* Here */
+.animate-fade-in {
+  animation: fadeInAnimation 1s ease-out;
+}
+
+
+.animate-float {
+  animation: floatAnimation 2s ease-in-out infinite;
+}
+
+
+
+.animate-flicker-neon {
+  animation: flickerNeonAnimation 2s infinite;
+}
+
+
 .animate-glitch {
   animation: glitch 1s infinite;
 }

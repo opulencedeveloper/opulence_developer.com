@@ -81,7 +81,7 @@ const MainNavigation = () => {
           {navLinks.map((linkData, index) => {
             const navLinkStyle =
               activeLink === linkData.link
-                ? "border border-primary1 rounded-md flex items-center px-4 py-3"
+                ? "border border-primary1 rounded-md flex items-center px-4 py-3 animate-flicker-neon"
                 : "rounded-md flex items-center px-5";
             return (
               <Link className={navLinkStyle} href={linkData.link}>

@@ -66,7 +66,7 @@ const SectionTwo = () => {
         <p className="text-xl pl-5 md:pl-12">Featured Product</p>
         <Products pageContent={pageContent} />
         <div className="flex justify-center mb-10">
-          <button onClick={seeMoreHandler}>See More</button>
+          <button className="transition-transform duration-300 transform hover:scale-105 focus:outline-none border px-4 py-3" onClick={seeMoreHandler}>See More</button>
         </div>
 
         <p className="text-xl pl-5 md:pl-12">Featured Mobile Apps.</p>

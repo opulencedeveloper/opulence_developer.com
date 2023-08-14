@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 import styles from "./SectionOne.module.css";
 
@@ -16,9 +16,6 @@ const skills = [
   "IOT",
 ];
 
-
-
-
 const TextTransition = () => {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [currentPhrase, setCurrentPhrase] = useState(skills[0]);
@@ -34,7 +31,6 @@ const TextTransition = () => {
         setCurrentPhrase(skills[newIndex]);
         setIsGlitching(false);
       }, 500); // Delay before updating phrase
-
     }, 1500);
 
     return () => clearInterval(interval);
@@ -44,7 +40,7 @@ const TextTransition = () => {
     <div className="flex items-center justify-center mt-10">
       <h1
         className={`text-4xl font-semibold ${
-          isGlitching ? 'animate-glitch' : ''
+          isGlitching ? "animate-glitch" : ""
         }`}
       >
         {currentPhrase}
@@ -53,17 +49,29 @@ const TextTransition = () => {
   );
 };
 
-
 const SectionOne = () => {
+  const [addAnimation, setAddAnimation] = useState(false);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAddAnimation(true);
+    }, 6200);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   return (
     <>
       <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 px-5 pb-16 md:pb-0 md:px-12">
         <div className="w-full md:w-[95%]">
-          <div className="flex flex-wrap justify-center items-center">
-            <p className="text-lg font-medium md:text-4xl">
+          <div className="overflow-hidden h-24  flex flex-wrap justify-center items-center md:h-20">
+            <p className={`text-lg font-medium md:text-4xl ${
+                addAnimation ? "animate-fade-in-down-text" : ""
+              }`}>
               Greetings, esteemed visitor!{" "}
             </p>
-            <div className="h-10 w-10 md:h-20 md:w-20">
+            <div className={`h-10 w-10 md:h-20 md:w-20 ${
+                addAnimation ? "animate-fade-in-down-text" : ""
+              }`}>
               {" "}
               <Image
                 src="/images/icon/online.gif"
@@ -74,14 +82,23 @@ const SectionOne = () => {
               />
             </div>
           </div>
-          
-          <div className="text-2xl space-y-3 md:text-5xl 2xl:text-6xl">
-           
-            <h2 className="leading-tight font-semibold mb-10 animate-float">
+          {/* <div className="h-[40px] mt-5 overflow-hidden">
+            {" "}
+            <p className="text-xl animate-fade-in-up-text md:text-2xl">
+              Full-Stack Software Engineer
+            </p>{" "}
+          </div> */}
+          <div className="overflow-hidden text-2xl space-y-3 h-44 md:h-60  md:text-5xl 2xl:text-6xl">
+            {/* animate-float */}
+            <h2
+              className={`leading-tight font-semibold mb-10 ${
+                addAnimation ? "animate-fade-in-up-text2" : ""
+              }`}
+            >
               What took you so long to find me? I'm{" "}
               <span className="text-white font-bold">Victor Amobi</span>, my
               expertise lies in the realm of
-              <span className="text-white font-bold">
+              <span className="animate-scramble-text text-white font-bold">
                 {" "}
                 FullStack Software Engineering.
               </span>
