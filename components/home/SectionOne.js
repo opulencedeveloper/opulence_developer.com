@@ -54,29 +54,29 @@ const SectionOne = () => {
     <>
       <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 px-5 pb-16 md:pb-0 md:px-12">
         <div className="w-full md:w-[95%]">
-          <div className="absolute flex justify-center items-center h-8 w-8 animate-glowing-border">
+          <div className="absolute opacity-25 flex justify-center items-center h-8 w-8 animate-glowing-border">
             <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
           </div>
 
-          <div className="absolute right-10 top-96 flex justify-center items-center h-8 w-8 animate-glowing-border">
+          <div className="absolute opacity-25 right-10 top-96 flex justify-center items-center h-8 w-8 animate-glowing-border">
             <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
           </div>
-          <div className="absolute left-1/3 top-1/2 flex justify-center items-center h-8 w-8 animate-glowing-border">
-            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
-          </div>
-
-          <div className="absolute right-44 top-10 flex justify-center items-center h-8 w-8 animate-glowing-border">
+          <div className="absolute opacity-25 left-1/3 top-1/2 flex justify-center items-center h-8 w-8 animate-glowing-border">
             <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
           </div>
 
-          <div className="absolute left-14 bottom-1/3 flex justify-center items-center h-8 w-8 animate-glowing-border">
-            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
-          </div>
-          <div className="absolute left-1/2 top-44 flex justify-center items-center h-8 w-8 animate-glowing-border">
+          <div className="absolute opacity-25 right-44 top-10 flex justify-center items-center h-8 w-8 animate-glowing-border">
             <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
           </div>
 
-          <div className="absolute left-44 top-36 flex justify-center items-center h-8 w-8 animate-glowing-border">
+          <div className="absolute opacity-25 left-14 bottom-1/3 flex justify-center items-center h-8 w-8 animate-glowing-border">
+            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
+          </div>
+          <div className="absolute opacity-25 left-1/2 top-44 flex justify-center items-center h-8 w-8 animate-glowing-border">
+            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
+          </div>
+
+          <div className="absolute opacity-25 left-44 top-36 flex justify-center items-center h-8 w-8 animate-glowing-border">
             <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
           </div>
 
