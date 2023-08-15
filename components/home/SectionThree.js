@@ -26,9 +26,9 @@ const SectionTwo = () => {
       <div className="px-5 mt-32 md:px-12">
         <p className="text-xl">Some Open Source Code</p>
         <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 items-start space-x-auto flex-wrap md:justify-evenly 2xl:justify-start space-x-2">
-          {contents.map((content) => (
+          {contents.map((content, index) => (
             <div 
-            key={content.description}
+            key={index}
             className="w-80 py-2 space-y-2">
              <div className="h-72 w-full rounded-tl-lg rounded-tr-lg overflow-hidden"><Image
                   src={content.imageUrl}

@@ -43,7 +43,7 @@ const MobileNavigation = (props) => {
           <h1 className="animate-shimmering-silver-text font-poppins leading-none text-xl font-bold text-medium md:text-4xl">
             {companyName}
           </h1>
-         <div className="italic pl-12 text-[10px] -mt-2 md:mt-0 md:pl-28 md:text-base"><Typewriter
+         <div className="italic pl-12 text-[10px] md:pl-28 md:text-base"><Typewriter
             onInit={(typewriter) => {
               typewriter
                 .typeString(

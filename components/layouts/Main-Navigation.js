@@ -60,7 +60,7 @@ const MainNavigation = () => {
           <h1 className="animate-shimmering-silver-text leading-none text-lg font-bold md:text-4xl">
             {companyName}
           </h1>
-          <div className="italic pl-12 text-[8.5px] -mt-2 md:mt-0 md:pl-28 md:text-base">
+          <div className="italic pl-12 text-[8.5px] md:pl-28 md:text-base">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter.pauseFor(500)
@@ -84,7 +84,9 @@ const MainNavigation = () => {
                 ? "border border-primary1 rounded-md flex items-center px-4 py-3 animate-flicker-neon"
                 : "rounded-md flex items-center px-5";
             return (
-              <Link className={navLinkStyle} href={linkData.link}>
+              <Link
+              key={index}
+               className={navLinkStyle} href={linkData.link}>
                 {linkData.title}
               </Link>
             );
