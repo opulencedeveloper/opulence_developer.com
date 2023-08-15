@@ -50,23 +50,38 @@ const TextTransition = () => {
 };
 
 const SectionOne = () => {
-  const [removeAnimation, setRemoveAnimation] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setRemoveAnimation(true);
-    }, 6700);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  console.log
   return (
     <>
       <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 px-5 pb-16 md:pb-0 md:px-12">
         <div className="w-full md:w-[95%]">
-          <div className="flex flex-wrap justify-center items-center animate-text-glitch">
+          <div className="absolute flex justify-center items-center h-8 w-8 animate-glowing-border">
+            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
+          </div>
+
+          <div className="absolute right-10 top-96 flex justify-center items-center h-8 w-8 animate-glowing-border">
+            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
+          </div>
+          <div className="absolute left-1/3 top-1/2 flex justify-center items-center h-8 w-8 animate-glowing-border">
+            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
+          </div>
+
+          <div className="absolute right-44 top-10 flex justify-center items-center h-8 w-8 animate-glowing-border">
+            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
+          </div>
+
+          <div className="absolute left-14 bottom-1/3 flex justify-center items-center h-8 w-8 animate-glowing-border">
+            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
+          </div>
+          <div className="absolute left-1/2 top-44 flex justify-center items-center h-8 w-8 animate-glowing-border">
+            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
+          </div>
+
+          <div className="absolute left-44 top-36 flex justify-center items-center h-8 w-8 animate-glowing-border">
+            <div className="border-2 border-blue-500 h-6 w-6 rounded animate-glowing-border-inner"></div>
+          </div>
+
+          
+          <div className="relative z-50 flex flex-wrap justify-center items-center animate-text-glitch">
             <p className="text-lg font-medium md:text-4xl">
               Greetings, esteemed visitor!{" "}
             </p>
@@ -87,11 +102,9 @@ const SectionOne = () => {
               Full-Stack Software Engineer
             </p>{" "}
           </div> */}
-          <div className=" text-2xl space-y-3  md:text-5xl 2xl:text-6xl">
+          <div className="relative z-50 text-2xl space-y-3  md:text-5xl 2xl:text-6xl">
             {/* animate-float */}
-            <h2
-              className="leading-tight font-semibold mb-10 animate-text-glitch"
-            >
+            <h2 className="leading-tight font-semibold mb-10 animate-text-glitch">
               What took you so long to find me? I'm{" "}
               <span className="text-white font-bold">Victor Amobi</span>, my
               expertise lies in the realm of

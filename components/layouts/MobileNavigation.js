@@ -40,10 +40,10 @@ const MobileNavigation = (props) => {
         <div>
       <div className="bg-primary flex justify-between items-center py-8 px-5">
       <div>
-          <p className="font-poppins leading-none text-xl font-bold text-medium md:text-4xl">
+          <h1 className="animate-shimmering-silver-text font-poppins leading-none text-xl font-bold text-medium md:text-4xl">
             {companyName}
-          </p>
-         <div className="italic pl-12 text-[10px] -mt-2 md:mt-0 md:pl-28 md:text-base"><Typewriter
+          </h1>
+         <div className="animate-shimmering-silver-text italic pl-12 text-[10px] -mt-2 md:mt-0 md:pl-28 md:text-base"><Typewriter
             onInit={(typewriter) => {
               typewriter
                 .typeString(
@@ -74,7 +74,7 @@ const MobileNavigation = (props) => {
        <div> {navLinks.map((linkData, index) => {
           const textColor =
             activeLink === linkData.link
-              ? "text-primary text-medium"
+              ? "text-primary text-medium animate-flicker-neon"
               : "text-primary1";
           return <Link
               onClick={props.onClick}

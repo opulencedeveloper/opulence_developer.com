@@ -57,10 +57,10 @@ const MainNavigation = () => {
      
       <header className="relative z-20 flex justify-between items-center h-20 pt-2 px-5 md:pt-10 md:px-12">
         <div>
-          <h1 className="leading-none text-lg font-bold md:text-4xl">
+          <h1 className="animate-shimmering-silver-text leading-none text-lg font-bold md:text-4xl">
             {companyName}
           </h1>
-          <div className="italic pl-12 text-[8.5px] -mt-2 md:mt-0 md:pl-28 md:text-base">
+          <div className="animate-shimmering-silver-text italic pl-12 text-[8.5px] -mt-2 md:mt-0 md:pl-28 md:text-base">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
