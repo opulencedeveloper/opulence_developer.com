@@ -60,10 +60,10 @@ const MainNavigation = () => {
           <h1 className="animate-shimmering-silver-text leading-none text-lg font-bold md:text-4xl">
             {companyName}
           </h1>
-          <div className="animate-shimmering-silver-text italic pl-12 text-[8.5px] -mt-2 md:mt-0 md:pl-28 md:text-base">
+          <div className="italic pl-12 text-[8.5px] -mt-2 md:mt-0 md:pl-28 md:text-base">
             <Typewriter
               onInit={(typewriter) => {
-                typewriter
+                typewriter.pauseFor(500)
                   .typeString(
                     '<span className="italic">God gives the logic, I write the code</span>'
                   )
@@ -71,7 +71,7 @@ const MainNavigation = () => {
               }}
               options={{
                 typeSpeed: 100,
-                cursor: '<span class="text-base">|</span>',
+                cursor: '<span class="text-[9px] md:text-base">|</span>',
                 html: false,
               }}
             />
