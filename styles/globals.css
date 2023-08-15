@@ -237,7 +237,6 @@ html {
   animation: fadeInAnimation 1s ease-out;
 }
 
-
 .animate-float {
   animation: floatAnimation 2s ease-in-out infinite;
 }
