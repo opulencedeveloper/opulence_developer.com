@@ -183,34 +183,6 @@ html {
   }
 }
 
-/* styles/globals.css */
-@keyframes glowingBorderAnimation {
-  0%, 100% {
-    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(52, 152, 219, 1);
-  }
-}
-
-@keyframes glowingBorderInnerAnimation {
-  0%, 100% {
-    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(52, 152, 219, 1);
-  }
-}
-
-.animate-glowing-border {
-  animation: glowingBorderAnimation 3s infinite;
-}
-
-.animate-glowing-border-inner {
-  animation: glowingBorderInnerAnimation 3s infinite;
-}
-
-
 
 .animate-shimmering-silver-text {
   background-image: linear-gradient(45deg, #ACC2C7, #FFFFFF, #C0C0C0 50%, #D3D3D3);
