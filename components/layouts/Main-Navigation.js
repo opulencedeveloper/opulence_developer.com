@@ -63,7 +63,7 @@ const MainNavigation = () => {
           <div className="italic pl-12 text-[8.5px] md:pl-28 md:text-base">
             <Typewriter
               onInit={(typewriter) => {
-                typewriter.pauseFor(700)
+                typewriter.pauseFor(1000)
                   .typeString(
                     '<span className="italic">God gives the logic, I write the code</span>'
                   )
