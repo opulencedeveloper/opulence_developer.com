@@ -46,7 +46,7 @@ const Onboarding = (props) => {
           </div>
          <div className="h-10"> {isThirdText && (
             <p className="animate-shimmering-silver-text text-sm mt-1 animate-fade-in-up-text md:mt-5 md:text-2xl">
-              Full-Stack Software Engineer
+              FullStack Software Engineer
             </p>
           )} </div>
         </div>
