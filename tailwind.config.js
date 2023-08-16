@@ -20,7 +20,7 @@ module.exports = {
         fs1: "0.6rem",
       },
       colors: {
-        primary: "#024554",
+        primary: "#03262e",
         primary1: "#ACC2C7",
         secondary: "#030303",
       },
