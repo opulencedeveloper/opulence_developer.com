@@ -74,7 +74,7 @@ const MobileNavigation = (props) => {
           <span className="hamburger-bottom"></span>
         </button>
       </div>
-      <div className="flex flex-col overflow-y-auto">
+      <div className="overflow-y-auto">
         {" "}
        <div> {navLinks.map((linkData, index) => {
           const textColor =
@@ -89,10 +89,8 @@ const MobileNavigation = (props) => {
             >
               {linkData.title}
             </Link>
-        })}{" "} </div> </div>
-        
-      </div>
-     <button className="flex items-center mx-auto bg-black px-5 py-3 text-white rounded-md">
+        })}{" "} </div>
+        <button className="flex items-center mx-auto bg-black px-5 py-3 text-white rounded-md">
          <p> Send Message</p>
           
           <Image
@@ -103,6 +101,10 @@ const MobileNavigation = (props) => {
             height={16}
           />
         </button>
+         </div>
+        
+      </div>
+     
     </div>
   );
 };
