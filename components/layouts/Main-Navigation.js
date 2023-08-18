@@ -13,16 +13,20 @@ const navLinks = [
     link: "/",
   },
   {
+    title: "Projects",
+    link: "/projects",
+  },
+  {
     title: "Shop",
     link: "/shop",
   },
-  {
-    title: "About",
-    link: "/about",
-  },
+  
   {
     title: "Code Support",
     link: "/code-support",
+  },{
+    title: "About",
+    link: "/about",
   },
 ];
 
@@ -82,7 +86,7 @@ const MainNavigation = () => {
             const navLinkStyle =
               activeLink === linkData.link
                 ? "border border-primary1 rounded-md flex items-center px-4 py-3 animate-flicker-neon"
-                : "rounded-md flex items-center px-5";
+                : "flex items-center px-5";
             return (
               <Link
               key={index}

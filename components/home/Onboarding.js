@@ -26,7 +26,7 @@ const Onboarding = (props) => {
 
   return (
     <div
-      className={`fixed inset-y-0 z-40 bg-primary h-screen w-screen flex flex-col items-center justify-center transform  ${
+      className={`fixed inset-y-0 z-50 bg-primary h-screen w-screen flex flex-col items-center justify-center transform  ${
         isVisible ? "translate-x-0" : "-translate-x-full opacity-90"
       } transition-transform duration-1000 ease-in-out`}
     >

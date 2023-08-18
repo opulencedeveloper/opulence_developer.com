@@ -10,16 +10,21 @@ const navLinks = [
     link: "/",
   },
   {
+    title: "Projects",
+    link: "/projects",
+  },
+  {
     title: "Shop",
     link: "/shop",
   },
+  
   {
+    title: "Code Support",
+    link: "/code-support",
+  },{
     title: "About",
     link: "/about",
   },
-  {
-    title: "Code Support",
-    link: "/code-support",}
 ];
 
 
