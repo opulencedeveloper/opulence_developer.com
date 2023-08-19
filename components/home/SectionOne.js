@@ -66,6 +66,8 @@ const SectionOne = () => {
               <Image
                 src="/images/icon/online.gif"
                 alt="call a doctor logo"
+                loading="eager"
+                priority
                 className="h-full w-full bg-transparent"
                 width={40}
                 height={40}
@@ -108,6 +110,8 @@ const SectionOne = () => {
               src="/images/icon/send.gif"
               alt="arrow right icon"
               className="w-full h-full"
+              loading="eager"
+                priority
               width={16}
               height={16}
             />
