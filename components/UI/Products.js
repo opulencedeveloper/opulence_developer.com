@@ -18,10 +18,10 @@ const Products = (props) => {
             />
           </div>
           <div className="px-2 py-5 space-y-2 mt-2 bg-primary2">
-            <div className="flex justify-between">
+            <div className="flex justify-between text-white">
               <div className="space-y-2">
                 <p className="font-semibold text-base">{content.name}</p>
-                <p className="text-primary1 text-sm">{content.type}</p>
+                <p className="text-sm">{content.type}</p>
               </div>
               <div className="flex items-center">
                 <p className="text-xs">Live Project</p>{" "}
@@ -36,10 +36,10 @@ const Products = (props) => {
                 </div>
               </div>
             </div>
-            <p className="text-base">{content.description}</p>
-            <div className="flex items-center justify-between">
+            <p className="text-base text-primary1 ">{content.description}</p>
+            <div className="flex items-center justify-between text-primary1">
               {" "}
-              <button className="bg-primary px-5 py-1 text-white rounded-lg shadow-custom-shadow2">Buy</button>
+              <button className=" bg-primary px-5 py-1 rounded-lg shadow-custom-shadow2">Buy</button>
               <p>$ Negotiable</p>
             </div>
           </div>

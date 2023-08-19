@@ -6,7 +6,7 @@ const SectionTwo = () => {
   const router = useRouter();
 
   const seeMoreHandler = () => {
-    router.replace("/contact-us");
+    router.replace("/shop");
   };
 
   const videoIds = ["UqOb7JOXNWc", "wp1chKaIYbY", "OFjW-Sjc_VQ", "pEygELhyBQw"];

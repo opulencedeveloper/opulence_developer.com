@@ -1,3 +1,5 @@
+import Socials from "@/components/UI/Socials";
+
 const projects = [
   {
     title: "Janet Memorial Hospital",
@@ -63,7 +65,7 @@ const SectionTemplate = (props) => {
   return (
     <div
       className={`flex w-full h-max ${
-        type === "left" || index > 0 ? "mt-80" : ""
+        type === "left" || index > 0 ? "mt-40" : "mt-5"
       }`}
     >
       {type === "left" && (
@@ -112,7 +114,7 @@ const SectionTemplate = (props) => {
 // https://chat.openai.com/share/76fa6d41-950c-4897-a21a-03790c927b21
 const Projects = () => {
   return (
-    <section className="px-3 text-primary1 mt-12 md:px-12 md:mt-28">
+    <section className="px-3 text-primary1 mt-10 md:px-12 md:mt-28">
       <div className="flex justify-between mb-8 text-lg font-semibold md:text-3xl">
         <p className="w-[45%] animate-float text-center">Projects</p>
 
@@ -137,6 +139,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
+
     </section>
   );
 };

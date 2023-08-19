@@ -2,7 +2,7 @@ import Image from "next/image";
 import Socials from "../UI/Socials";
 
 
-const SectionTwo = () => {
+const SectionThree = () => {
   const contents = [
     {
       name: "RESTful(Node.js)",
@@ -22,8 +22,8 @@ const SectionTwo = () => {
   
  
   return (
-    <>
-      <div className="px-5 mt-32 md:px-12">
+    <section className="px-5 mt-32 md:px-12">
+      <div >
         <p className="text-xl">Some Open Source Code</p>
         <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 items-start space-x-auto flex-wrap md:justify-evenly 2xl:justify-start space-x-2">
           {contents.map((content, index) => (
@@ -135,12 +135,9 @@ Whether you're looking for a full-time employee, a part-time consultant, looking
         </button>
       </div>
 
-      <div className="px-5 md:px-12"> <Socials /></div>
-      <div  className="leading-loose pb-10 italic text-2xl font-extralight text-center md:text-3xl">"1's and 0's do not lie"</div>
-
      
-    </>
+    </section>
   );
 };
 
-export default SectionTwo;
+export default SectionThree;

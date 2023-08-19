@@ -34,7 +34,7 @@ const pageContent = [
 
 const Socials = () => {
   return (
-    <div className="mt-10 mb-40">
+    <div className="mt-28 mb-16">
       <div className="border border-primary2  flex flex-col justify-center items-center space-y-4 p-6 md:space-x-5 xl:flex-row xl:space-y-0">
         <p className="text-lg ">Find me on:</p>
         {pageContent.map((content) => {
