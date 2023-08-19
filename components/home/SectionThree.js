@@ -114,7 +114,7 @@ const SectionTwo = () => {
       </div>
 
       <div className="px-5 pb-10 space-y-5 md:px-12">
-        <p className="text-lg">Let's build margic together</p>
+        <p className="text-lg">Let's build magic together</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
         <p className="leading-loose text-lg font-light">"I'm passionate about creating elegant, efficient solutions to complex problems and I'm excited to bring my skills to your next project. 
         With experience in both front-end and back-end development, I'm comfortable working with a variety of programming languages and frameworks. From responsive mobile app. and web design to robust server architecture, I have the technical expertise to build scalable, secure systems that meet your needs.

@@ -2,27 +2,31 @@ const { default: Image } = require("next/image");
 
 const pageContent = [
   {
-    imageUrl: "/images/icon/github.svg",
+    imageUrl: "/images/icon/github-icon.gif",
     link: "https://github.com/opulencedeveloper",
     value: "opulencedeveloper",
+    alt: ""
   },
   {
-    imageUrl: "/images/icon/twitter.svg",
+    imageUrl: "/images/icon/twitter-icon.gif",
     link: "https://twitter.com/KudosLucky",
     value: "KudosLucky",
+    alt: ""
   },
   {
-    imageUrl: "/images/icon/linkedin.svg",
+    imageUrl: "/images/icon/linkedin-icon.gif",
     link: "https://www.linkedin.com/in/amobi-victor-232724198",
     value: "amobi-victor-232724198",
+    alt: ""
   },
   {
-    imageUrl: "/images/icon/facebook.svg",
+    imageUrl: "/images/icon/facebook-icon.gif",
     link: "https://facebook.com/opulencedeveloper",
     value: "opulencedeveloper",
+    alt: ""
   },
   {
-    imageUrl: "/images/icon/facebook.svg",
+    imageUrl: "/images/icon/facebook-icon.gif",
     link: "https://facebook.com/victor.opulence",
     value: "Victor Lucky Opulence",
   },
@@ -41,16 +45,16 @@ const Socials = () => {
               target="_blank"
               className="flex items-center"
             >
-              <div>
+              <div className="h-8 w-8 overflow-hidden rounded-full">
                 <Image
                   src={content.imageUrl}
-                  alt="arrow right icon"
-                  className="h-8 w-8"
+                  alt={content.alt}
+                  className="w-full h-full"
                   width={43.7}
                   height={43.7}
                 />
               </div>{" "}
-              <p className="font-extralight">{content.value}</p>
+              <p className="font-extralight ml-2">{content.value}</p>
             </a>
           );
         })}
