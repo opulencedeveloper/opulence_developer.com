@@ -11,36 +11,30 @@ const SectionTwo = () => {
 
   const videoIds = ["UqOb7JOXNWc", "wp1chKaIYbY", "OFjW-Sjc_VQ", "pEygELhyBQw"];
 
-  const scrollToLastSection = () => {
-    // section2Ref.current.scrollIntoView({ behavior: "smooth", block: 'nearest', inline: 'start' });
-  };
-
-  const pageContent = [
-    {
-      name: "Real-Estate",
-      type: "Website",
-      imageUrl: "/images/real-estate-image.png",
-      description:
-        "Showcases an extensive range of exceptional properties, catering to diverse needs and preferences",
-    },
-    {
-      name: "Links",
-      type: "Website",
-      imageUrl: "/images/links-image.png",
-      description:
-        "Elevate your social media engagement with this platform's innovative features and strategies",
-    },
+  const productInfo = [
     {
       name: "Prep",
       type: "Website",
       imageUrl: "/images/prep.png",
+      link: "https://prep-six.vercel.app/",
       description:
         "With comprehensive guides on topics like interview preparation, common interview questions, and salary negotiation.",
     },
+    
+    {
+      name: "Links",
+      type: "Website",
+      imageUrl: "/images/links-image.png",
+      link: "https://links-tan.vercel.app/",
+      description:
+        "Elevate your social media engagement with this platform's innovative features and strategies",
+    },
+    
     {
       name: "Finance App",
       type: "Mobile App.",
       imageUrl: "/images/finance-app.png",
+      link: "https://youtu.be/OFjW-Sjc_VQ",
       description:
         "With a sleek and user-friendly interface, the app makes it easy to stay on top of your finances",
     },
@@ -48,6 +42,7 @@ const SectionTwo = () => {
       name: "MacLinks",
       type: "Website",
       imageUrl: "/images/mac-links-image.png",
+      link: "https://maclink.vercel.app/",
       description:
         "Enjoy the flexibility to choose from an array of customization options, enabling you to brand your academy and create a seamless extension of your professional identity.",
     },
@@ -55,16 +50,25 @@ const SectionTwo = () => {
       name: "EduLab",
       type: "Website",
       imageUrl: "/images/edu-lab-image.png",
+      link: "https://edulab-jet.vercel.app/",
       description:
         "A vibrant online platform dedicated to celebrating the transformative power of education",
+    },
+    {
+      name: "Real-Estate",
+      type: "Website",
+      imageUrl: "/images/real-estate-image.png",
+      link: "https://real-estate-beta-silk.vercel.app/",
+      description:
+        "Showcases an extensive range of exceptional properties, catering to diverse needs and preferences",
     },
   ];
 
   return (
-    <>
-      <div className="mt-20 md:mt-32">
+    <section className="mt-8 md:mt-14">
+      <div >
         <p className="text-xl pl-5 md:pl-12">Featured Product</p>
-        <Products pageContent={pageContent} />
+        <Products productInfo={productInfo} />
         <div className="flex justify-center mb-10">
           <button className="transition-transform duration-300 transform hover:scale-105 focus:outline-none border px-4 py-3" onClick={seeMoreHandler}>See More</button>
         </div>
@@ -72,7 +76,6 @@ const SectionTwo = () => {
         <p className="text-xl pl-5 md:pl-12">Featured Mobile Apps.</p>
         <hr className="border-t-2 opacity-50 my-5 " />
       </div>
-      {/* <div className="flex w-full h-300 overflow-x-hidden whitespace-nowrap relative transition-left ease duration-300" style={{ left: `-${currentIndex * 400}px` }}> */}
       <div className=" space-x-5 flex pb-3 mx-3 md:mx-12 overflow-x-auto">
         {videoIds.map((videoId, index) => (
           <div className="flex-shrink-0 border" key={index}>
@@ -84,7 +87,7 @@ const SectionTwo = () => {
           </div>
         ))}
       </div>{" "}
-    </>
+    </section>
   );
 };
 export default SectionTwo;

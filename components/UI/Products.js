@@ -1,16 +1,24 @@
 import Image from "next/image";
 
+import handleWhatsAppClick from "@/helpers/whatsapp";
+
+const sendMessageHandler = (name, type) => {
+  handleWhatsAppClick(
+    `Hello, I hope you're having a good day. Could you please provide me with the cost estimate for the ${name} ${type}?`
+  );
+};
+
 const Products = (props) => {
   return (
     <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 px-5 space-x- flex-wrap md:justify-evenly md:px-12 md:space-x-10 2xl:justify-start">
-      {props.pageContent.map((content) => (
+      {props.productInfo.map((productData, index) => (
         <div
-          key={content.imageUrl}
+          key={index}
           className="w-80 my-4 mx-2  transform hover:scale-105 transition-transform duration-300 md:my-10"
         >
           <div className="relative bg-primary1 flex justify-center rounded-tr-md rounded-tl-md">
             <Image
-              src={content.imageUrl}
+              src={productData.imageUrl}
               alt="product"
               loading="eager"
               priority
@@ -22,10 +30,14 @@ const Products = (props) => {
           <div className="px-2 py-5 space-y-2 mt-2 bg-primary2">
             <div className="flex justify-between text-white">
               <div className="space-y-2">
-                <p className="font-semibold text-base">{content.name}</p>
-                <p className="text-sm">{content.type}</p>
+                <p className="font-semibold text-base">{productData.name}</p>
+                <p className="text-sm">{productData.type}</p>
               </div>
-              <div className="flex items-center">
+              <a
+                href={productData.link}
+                target="_blank"
+                className="flex items-center"
+              >
                 <p className="text-xs">Live Project</p>{" "}
                 <div className="ml-1">
                   <Image
@@ -38,15 +50,22 @@ const Products = (props) => {
                     height={16}
                   />
                 </div>
-              </div>
+              </a>
             </div>
-            <p className="text-base text-primary1 ">{content.description}</p>
-            <div className="flex items-center justify-between text-primary1">
+            <p className="text-base text-primary1 ">
+              {productData.description}
+            </p>
+            <div className="flex items-center justify-between ">
               {" "}
-              <button className=" bg-primary px-5 py-1 rounded-lg shadow-custom-shadow2">
+              <button
+                onClick={() => {
+                  sendMessageHandler(productData.name, productData.type);
+                }}
+                className="bg-primary px-5 py-1 rounded-lg text-white shadow-custom-shadow2"
+              >
                 Buy
               </button>
-              <p>$ Negotiable</p>
+              <p className="text-primary1">$ Negotiable</p>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const poppins = Poppins({
 import "@/styles/globals.css";
 import Layout from "@/components/layouts/Layout";
 import Footer from "@/components/layouts/Footer";
-import Onboarding from "@/components/home/Onboarding";
+import Onboarding from "@/components/UI/Onboarding";
 
 
 export default function App({ Component, pageProps }) {

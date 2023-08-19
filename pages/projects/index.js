@@ -1,4 +1,3 @@
-import Socials from "@/components/UI/Socials";
 
 const projects = [
   {
@@ -77,21 +76,26 @@ const SectionTemplate = (props) => {
         <p className="font-medium text-lg mb-2 leading-none md:text-2xl">
           {projectData.title}
         </p>
-        <p className="text-sm leading-snug">
-          <span className="font-medium text-base text-white mr-1 ">Type: </span>{" "}
+        <p className="text-sm leading-snug md:text-base">
+          <span className="font-medium text-base text-white mr-1 md:text-lg">
+            Type:{" "}
+          </span>{" "}
           {projectData.type}
         </p>
-        <p className="text-sm leading-snug">
-          <span className="font-medium text-base text-white mr-1">
+        <p className="text-sm leading-snug md:text-base">
+          <span className="font-medium text-base text-white mr-1 md:text-lg">
             Technology:
           </span>{" "}
           {projectData.technology}
         </p>
-        <p className="text-sm leading-snug">
-          <span className="font-medium text-base text-white mr-1">Status:</span> {projectData.status}
+        <p className="text-sm leading-snug md:text-base">
+          <span className="font-medium text-base text-white mr-1 md:text-lg">
+            Status:
+          </span>{" "}
+          {projectData.status}
         </p>
-        <p className="hidden md:block">
-          <span className=" font-medium text-md text-white mr-1">
+        <p className="text-sm leading-snug md:text-base">
+          <span className="font-medium text-base text-white mr-1 md:text-lg">
             Description:
           </span>{" "}
           {projectData.description}
@@ -124,22 +128,29 @@ const Projects = () => {
         <div className="w-[47%] md:w-[49%]">
           {projects.map((projectData, index) => (
             <span key={index}>
-              <SectionTemplate projectData={projectData} index={index} type="right" />
+              <SectionTemplate
+                projectData={projectData}
+                index={index}
+                type="right"
+              />
             </span>
           ))}
         </div>
-     
-                <div className="w-[1%] bg-primary1 mb-40"></div>
-              
+
+        <div className="w-[1%] bg-primary1 mb-40"></div>
+
         <div className="w-[47%] md:w-[49%]">
           {myProjects.map((projectData, index) => (
             <span key={index}>
-              <SectionTemplate projectData={projectData} index={index} type="left" />
+              <SectionTemplate
+                projectData={projectData}
+                index={index}
+                type="left"
+              />
             </span>
           ))}
         </div>
       </div>
-
     </section>
   );
 };

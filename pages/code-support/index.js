@@ -1,4 +1,3 @@
-import Socials from "@/components/UI/Socials";
 import Image from "next/image";
 
 const CodeSupport = () => {
@@ -12,7 +11,9 @@ const CodeSupport = () => {
           <Image
             src="/images/icon/icon.gif"
             alt="call a doctor logo"
-            className="h-full w-full bg-transparent"
+            className="h-full w-full"
+            loading="eager"
+            priority
             width={40}
             height={40}
           />
@@ -40,10 +41,12 @@ const CodeSupport = () => {
           forward to our collaboration!"
         </p>
         <button className="shadow-custom-shadow2 flex items-center bg-black px-5 py-3 text-white rounded-lg">
-         Reach out
+          Reach out
           <Image
             src="/images/icon/arrow-right.svg"
             alt="arrow right icon"
+            loading="eager"
+            priority
             className="h-4 w-4 ml-2"
             width={16}
             height={16}
