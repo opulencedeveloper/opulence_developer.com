@@ -15,11 +15,6 @@ const skills = [
   "IOT",
 ];
 
-const sendMessageHandler = () => {
-  handleWhatsAppClick(
-    "Hello! 👋 I just visited your portfolio and I'm truly inspired by your journey and skills. I'd love to connect and potentially discuss collaboration opportunities or seek advice in the field. Looking forward to chatting with you further! 🚀"
-  );
-};
 
 const TextTransition = () => {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
@@ -55,7 +50,11 @@ const TextTransition = () => {
 };
 
 const SectionOne = () => {
-  
+  const sendMessageHandler = () => {
+    handleWhatsAppClick(
+      "Hello! 👋 I just visited your portfolio and I'm truly inspired by your journey and skills. I'd love to connect and potentially discuss collaboration opportunities or seek advice in the field. Looking forward to chatting with you further! 🚀"
+    );
+  };
   return (
     <section>
       <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 pb-16 px-5 md:px-12 md:pb-0 ">
