@@ -23,7 +23,9 @@ const SectionOne = () => {
           <Image
             src="/images/profile.jpg"
             alt="Newspaper"
-            className=" border border-2 rounded"
+            className="border border-2 rounded"
+            loading="eager"
+            priority
             width={600}
             height={400}
           />

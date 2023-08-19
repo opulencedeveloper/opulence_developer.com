@@ -11,7 +11,9 @@ const Products = (props) => {
           <div className="relative bg-primary1 flex justify-center rounded-tr-md rounded-tl-md">
             <Image
               src={content.imageUrl}
-              alt="call a doctor logo"
+              alt="product"
+              loading="eager"
+              priority
               className="h-320 w-piw1 -mb-6 z-0 rounded"
               width={540}
               height={388}
@@ -29,6 +31,8 @@ const Products = (props) => {
                   <Image
                     src="/images/icon/arrow-right.svg"
                     alt="arrow right icon"
+                    loading="eager"
+                    priority
                     className="h-4 w-4 transform -rotate-45"
                     width={16}
                     height={16}
@@ -39,7 +43,9 @@ const Products = (props) => {
             <p className="text-base text-primary1 ">{content.description}</p>
             <div className="flex items-center justify-between text-primary1">
               {" "}
-              <button className=" bg-primary px-5 py-1 rounded-lg shadow-custom-shadow2">Buy</button>
+              <button className=" bg-primary px-5 py-1 rounded-lg shadow-custom-shadow2">
+                Buy
+              </button>
               <p>$ Negotiable</p>
             </div>
           </div>
