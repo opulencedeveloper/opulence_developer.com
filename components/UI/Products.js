@@ -2,13 +2,14 @@ import Image from "next/image";
 
 import handleWhatsAppClick from "@/helpers/whatsapp";
 
-
-const Products = (props) => {
-  const sendMessageHandler = (name, type) => {
+const sendMessageHandler = (name, type) => {
   handleWhatsAppClick(
     `Hello, I hope you're having a good day. Could you please provide me with the cost estimate for the ${name} ${type}?`
   );
 };
+
+
+const Products = (props) => {
   return (
     <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 px-5 space-x- flex-wrap md:justify-evenly md:px-12 md:space-x-10 2xl:justify-start">
       {props.productInfo.map((productData, index) => (

@@ -1,6 +1,6 @@
 import Products from "@/components/UI/Products";
 import Image from "next/image";
-const pageContent = [
+const productInfo = [
   {
     name: "Fintech",
     type: "Website",
@@ -88,7 +88,7 @@ const Shop = () => {
           Welcome to Opulence Shop
         </p>
       </div>
-      <Products pageContent={pageContent} />
+      <Products productInfo={productInfo} />
     </section>
   );
 };
