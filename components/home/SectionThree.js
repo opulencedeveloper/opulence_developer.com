@@ -64,7 +64,7 @@ const SectionThree = () => {
 
 
 
-      <div className="px-5 mt-40 mb-28 md:px-12">
+      <div className="mt-40 mb-28">
         <p className="text-xl md:text-2xl">Some brands I've worked with</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
         <div className="space-x-auto flex space-x-3 h-32">
@@ -113,7 +113,7 @@ const SectionThree = () => {
         </div>
       </div>
 
-      <div className="px-5 pb-10 space-y-5 md:px-12">
+      <div className="pb-10 space-y-5">
         <p className="text-lg">Let's build magic together</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
         <p className="leading-loose text-lg font-light">"I'm passionate about creating elegant, efficient solutions to complex problems and I'm excited to bring my skills to your next project. 
