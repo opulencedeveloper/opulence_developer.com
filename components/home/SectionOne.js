@@ -114,7 +114,7 @@ const SectionOne = () => {
           </div>
         </button>
       </div>
-      <div className={`-mt-20 bg-primary1 py-6 flex overflow-hidden`}>
+      <div className={`bg-primary1 py-6 flex overflow-hidden`}>
         <div className={`animate-slideLeftRight space-x-8 text-xl text-primary`}>
           {skills.map((skill, index) => (
             <span key={index}>{skill}</span>
