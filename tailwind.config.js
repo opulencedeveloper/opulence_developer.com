@@ -16,6 +16,10 @@ module.exports = {
         // 'montserrat': 'Montserrat',
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
       },
+      boxShadow: {
+        "custom-shadow": " 2px 2px 2px 0px #ACC2C7",
+        "custom-shadow2": " 0px 7px 7px 0px #030303",
+      },
       fontSize: {
         fs1: "0.6rem",
       },

@@ -4,7 +4,10 @@ const Products = (props) => {
   return (
     <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 px-5 space-x- flex-wrap md:justify-evenly md:px-12 md:space-x-10 2xl:justify-start">
       {props.pageContent.map((content) => (
-        <div key={content.imageUrl} className="w-80 my-4 mx-2  transform hover:scale-105 transition-transform duration-300 md:my-10">
+        <div
+          key={content.imageUrl}
+          className="w-80 my-4 mx-2  transform hover:scale-105 transition-transform duration-300 md:my-10"
+        >
           <div className="relative bg-primary1 flex justify-center rounded-tr-md rounded-tl-md">
             <Image
               src={content.imageUrl}
@@ -34,6 +37,11 @@ const Products = (props) => {
               </div>
             </div>
             <p className="text-base">{content.description}</p>
+            <div className="flex items-center justify-between">
+              {" "}
+              <button className="bg-primary px-5 py-1 text-white rounded-lg shadow-custom-shadow2">Buy</button>
+              <p>$ Negotiable</p>
+            </div>
           </div>
         </div>
       ))}

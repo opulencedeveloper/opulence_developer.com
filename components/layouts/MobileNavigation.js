@@ -41,8 +41,8 @@ const MobileNavigation = (props) => {
   const companyName = "<OpulenceDeveloper/>";
 
   return (
-    <div className="flex flex-col justify-between bg-white text-white pb-8 w-full h-full">
-        <div>
+    <div className="overflow-y-auto bg-white text-white pb-8 w-full h-full">
+      
       <div className="bg-primary flex justify-between items-center py-8 px-5">
       <div>
           <h1 className="animate-shimmering-silver-text font-poppins leading-none text-xl font-bold text-medium md:text-4xl">
@@ -74,7 +74,7 @@ const MobileNavigation = (props) => {
           <span className="hamburger-bottom"></span>
         </button>
       </div>
-      <div className="overflow-y-auto">
+      <div className="overflow-y-auto h-[80%]">
         {" "}
        <div> {navLinks.map((linkData, index) => {
           const textColor =
@@ -102,8 +102,6 @@ const MobileNavigation = (props) => {
           />
         </button>
          </div>
-        
-      </div>
      
     </div>
   );

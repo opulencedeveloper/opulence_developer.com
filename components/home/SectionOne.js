@@ -100,7 +100,7 @@ const SectionOne = () => {
        
         </div> */}
 
-        <button className="flex items-center bg-black px-5 h-11 text-white rounded-md md:h-14">
+        <button className="shadow-custom-shadow flex items-center bg-black px-5 h-11 text-white rounded-md md:h-14">
           <p className="text-sm md:text-lg">Send Message</p>
           <div className="h-5 w-5 ml-2 rounded-full overflow-hidden md:h-7 md:w-7">
             {" "}
