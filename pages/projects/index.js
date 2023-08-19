@@ -127,7 +127,7 @@ const Projects = () => {
           ))}
         </div>
      
-                <div className="w-[1%] h-[80.5rem]  bg-primary1"></div>
+                <div className="w-[1%] bg-primary1 mb-40"></div>
               
         <div className="w-[47%] md:w-[49%]">
           {myProjects.map((projectData, index) => (
