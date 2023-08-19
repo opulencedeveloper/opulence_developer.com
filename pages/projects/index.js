@@ -112,7 +112,7 @@ const SectionTemplate = (props) => {
 // https://chat.openai.com/share/76fa6d41-950c-4897-a21a-03790c927b21
 const Projects = () => {
   return (
-    <section className="px-3 text-primary1 mt-28 md:px-12">
+    <section className="px-3 text-primary1 mt-12 md:px-12 md:mt-28">
       <div className="flex justify-between mb-8 text-lg font-semibold md:text-3xl">
         <p className="w-[45%] animate-float text-center">Projects</p>
 
