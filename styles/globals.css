@@ -213,7 +213,7 @@ html {
 .animate-text-glitch {
   animation: textGlitchAnimation 0.5s infinite;
   animation-delay: 8s;
-  animation-iteration-count: 1; /* Stop after 1 iteration */
+  animation-iteration-count: 2; /* Stop after 1 iteration */
 }
 
 
