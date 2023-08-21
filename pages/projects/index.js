@@ -112,7 +112,7 @@ const SectionTemplate = (props) => {
         <div className="flex justify-end mt-3">
           <a
             target="_blank"
-            href={projectData.link}
+            href={projectData.status !== "In Development" && projectData.link}
             className="px-2 py-1 text-xs rounded-lg border border-primary-1 md:text-base"
           >
             {projectData.status === "In Development"
