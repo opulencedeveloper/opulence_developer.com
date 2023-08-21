@@ -1,6 +1,7 @@
-import { useRef, useState } from "react";
-import Products from "../UI/Products";
 import { useRouter } from "next/router";
+
+import Products from "../UI/Products";
+
 
 const SectionTwo = () => {
   const router = useRouter();
@@ -69,7 +70,7 @@ const SectionTwo = () => {
       <div >
         <p className="text-xl pl-5 md:pl-12">Featured Product</p>
         <Products productInfo={productInfo} />
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center my-10">
           <button className="transition-transform duration-300 transform hover:scale-105 focus:outline-none border px-4 py-3" onClick={seeMoreHandler}>See More</button>
         </div>
 

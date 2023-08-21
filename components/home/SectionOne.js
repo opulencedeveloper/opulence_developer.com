@@ -14,7 +14,11 @@ const skills = [
   "Arduino",
   "IOT",
 ];
-
+const sendMessageHandler = () => {
+  handleWhatsAppClick(
+    "Hello! 👋 I just visited your portfolio and I'm truly inspired by your journey and skills. I'd love to connect and potentially discuss collaboration opportunities or seek advice in the field. Looking forward to chatting with you further! 🚀"
+  );
+};
 
 const TextTransition = () => {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
@@ -30,7 +34,7 @@ const TextTransition = () => {
         setCurrentPhraseIndex(newIndex);
         setCurrentPhrase(skills[newIndex]);
         setIsGlitching(false);
-      }, 500); // Delay before updating phrase
+      }, 500); // Delay before updating phase
     }, 1500);
 
     return () => clearInterval(interval);
@@ -50,11 +54,6 @@ const TextTransition = () => {
 };
 
 const SectionOne = () => {
-  const sendMessageHandler = () => {
-    handleWhatsAppClick(
-      "Hello! 👋 I just visited your portfolio and I'm truly inspired by your journey and skills. I'd love to connect and potentially discuss collaboration opportunities or seek advice in the field. Looking forward to chatting with you further! 🚀"
-    );
-  };
   return (
     <section>
       <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1 pb-16 px-5 md:px-12 md:pb-0 ">
@@ -67,8 +66,8 @@ const SectionOne = () => {
             <div className="h-10 w-10 md:h-20 md:w-20">
               {" "}
               <Image
-                src="/images/icon/online.gif"
-                alt="call a doctor logo"
+                src="/images/icon/hi-icon.gif"
+                alt="Hello in Vibrant Typography: A Friendly Greeting from OpulenceDeveloper"
                 loading="eager"
                 priority
                 className="h-full w-full bg-transparent"
@@ -99,8 +98,8 @@ const SectionOne = () => {
           <div className="h-5 w-5 ml-2 rounded-full overflow-hidden md:h-7 md:w-7">
             {" "}
             <Image
-              src="/images/icon/send.gif"
-              alt="arrow right icon"
+              src="/images/icon/send-icon.gif"
+              alt="Message Icon: Reach Out and Connect with OpulenceDeveloper"
               className="w-full h-full"
               loading="eager"
               priority

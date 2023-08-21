@@ -10,8 +10,8 @@ const SectionOne = () => {
       <div className="flex flex-col sm:flex-row">
         <div className=" mb-4 sm:mb-0 sm:mr-8">
           <Image
-            src="/images/profile.jpg"
-            alt="Newspaper"
+            src="/images/amobi-victor-chukwuka-image.jpg"
+            alt="Amobi Victor Chukwuka - Software Developer and Creator of OpulenceDeveloper"
             className="border border-2 rounded"
             loading="eager"
             priority

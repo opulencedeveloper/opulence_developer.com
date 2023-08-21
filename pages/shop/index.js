@@ -77,8 +77,8 @@ const Shop = () => {
         <div className="flex justify-center items-center bg-white flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
           {" "}
           <Image
-            src="/images/icon/cart.gif"
-            alt="call a doctor logo"
+            src="/images/icon/cart-icon.gif"
+            alt="Software Marketplace: Explore and Acquire Cutting-Edge Solutions with OpulenceDeveloper"
             className="h-auto w-auto bg-transparent"
             width={40}
             height={40}

@@ -183,6 +183,23 @@ html {
   }
 }
 
+@keyframes shine {
+  to {
+    background-position: 200% 0;
+  }
+}
+
+.stainless-steel {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  background-size: 200% 100%;
+  animation: shine 3s linear infinite;
+}
+
 
 
 .animate-shimmering-silver-text {

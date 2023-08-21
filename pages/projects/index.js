@@ -1,4 +1,3 @@
-
 const projects = [
   {
     title: "Janet Memorial Hospital",
@@ -7,13 +6,13 @@ const projects = [
     status: "Deployed for Production",
     description:
       "Highlights an intuitive user experience, integrating a dynamic interactive map for location tracking, seamless appointment booking functionality, and a sleek interface presenting hospital services. Witness my ability to blend aesthetics with practicality in this skillfully crafted website.",
-    link: "",
+    link: "https://janetmemorialhospital.com",
   },
   {
     title: "CALL-A-DOC",
     type: "Website",
     technology: "Next.js",
-    status: "In Developement",
+    status: "In Development",
     description:
       "This project showcases my proficiency in creating a seamless platform for scheduling virtual doctor appointments via video calls and chat. ",
     link: "",
@@ -22,7 +21,7 @@ const projects = [
     title: "Maureen Eugene",
     type: "Website",
     technology: "Next.js",
-    status: "In Developement",
+    status: "Deployed for Production",
     description:
       "In building this Content Writer Portfolio Website, I've meticulously orchestrated design and content to harmonize, creating a digital space that truly reflects the essence of the content writer's craft.",
     link: "",
@@ -56,6 +55,16 @@ const myProjects = [
     description:
       "Seamlessly match with compatible roommates and explore a variety of housing options through detailed profiles, location insights, and safety features, simplifying the search for youth services corpers seeking roommates and homes in places they have never been.",
     link: "",
+  },
+
+  {
+    title: "Opulence Calender",
+    type: "Website",
+    technology: "React.js && Tailwind Css",
+    status: "Deployed for Production",
+    description:
+      "The website highlights a dynamic calendar system that offers users daily, weekly, and monthly views. Notably, I developed this system with the intention of making its underlying code accessible for fellow developers to utilize.",
+    link: "https://opulence-calender.vercel.app/",
   },
 ];
 
@@ -101,8 +110,14 @@ const SectionTemplate = (props) => {
           {projectData.description}
         </p>
         <div className="flex justify-end mt-3">
-          <a className="px-2 py-1 text-xs rounded-lg border border-primary-1 md:text-base">
-            Live Project
+          <a
+            target="_blank"
+            href={projectData.link}
+            className="px-2 py-1 text-xs rounded-lg border border-primary-1 md:text-base"
+          >
+            {projectData.status === "In Development"
+              ? "In Dev."
+              : "Live Project"}
           </a>
         </div>
       </div>
@@ -115,7 +130,7 @@ const SectionTemplate = (props) => {
   );
 };
 
-// https://chat.openai.com/share/76fa6d41-950c-4897-a21a-03790c927b21
+
 const Projects = () => {
   return (
     <section className="px-3 text-primary1 mt-10 md:px-12 md:mt-28">
@@ -137,7 +152,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="w-[1%] bg-primary1 mb-40"></div>
+        <div className="w-[1%] bg-primary1 mb-40 rounded-full stainless-steel"></div>
 
         <div className="w-[47%] md:w-[49%]">
           {myProjects.map((projectData, index) => (
@@ -150,6 +165,16 @@ const Projects = () => {
             </span>
           ))}
         </div>
+      </div>
+
+      <div className=" flex justify-center my-10 md:my-20">
+        <a
+        target="_blank"
+          href="https://github.com/opulencedeveloper"
+          className="transition-transform duration-300 transform hover:scale-105 focus:outline-none border px-4 py-3"
+        >
+          See More
+        </a>
       </div>
     </section>
   );

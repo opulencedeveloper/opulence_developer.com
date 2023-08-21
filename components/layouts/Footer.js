@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
+
 import Socials from "../UI/Socials";
+
 const codingQuotes = [
   {
     link: "/",

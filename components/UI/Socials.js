@@ -2,27 +2,27 @@ import Image from "next/image";
 
 const socialInfo = [
   {
-    imageName: "github-icon",
+    imageName: "github",
     link: "https://github.com/opulencedeveloper",
     value: "opulencedeveloper",
   },
   {
-    imageName: "twitter-icon",
+    imageName: "twitter",
     link: "https://twitter.com/KudosLucky",
     value: "KudosLucky",
   },
   {
-    imageName: "linkedin-icon",
+    imageName: "linkedin",
     link: "https://www.linkedin.com/in/amobi-victor-232724198",
     value: "amobi-victor-232724198",
   },
   {
-    imageName: "facebook-icon",
+    imageName: "facebook",
     link: "https://facebook.com/opulencedeveloper",
     value: "opulencedeveloper",
   },
   {
-    imageName: "facebook-icon",
+    imageName: "facebook",
     link: "https://facebook.com/victor.opulence",
     value: "Victor Lucky Opulence",
   },
@@ -43,8 +43,8 @@ const Socials = () => {
             >
               <div className="h-8 w-8 overflow-hidden rounded-full">
                 <Image
-                  src={`/images/icon/${socialInfoData.imageName}.gif`}
-                  alt={socialInfoData.imageName}
+                  src={`/images/icon/${socialInfoData.imageName}-icon.gif`}
+                  alt={`Connect on ${socialInfoData.imageName}: Join OpulenceDeveloper's Network on Social Media`}
                   className="w-full h-full"
                   width={43.7}
                   height={43.7}

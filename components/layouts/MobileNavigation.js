@@ -1,7 +1,9 @@
+import { useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState } from "react";
+
 import Typewriter from "typewriter-effect";
 
 const navLinks = [
@@ -95,7 +97,7 @@ const MobileNavigation = (props) => {
           
           <Image
             src="/images/icon/arrow-right.svg"
-            alt="arrow right icon"
+            alt="Message Icon: Reach Out and Connect with OpulenceDeveloper"
             className="h-4 w-4 ml-2"
             width={16}
             height={16}

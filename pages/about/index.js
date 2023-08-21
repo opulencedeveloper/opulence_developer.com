@@ -1,9 +1,7 @@
 import SectionOne from "@/components/about/SectionOne";
 
 const About = () => {
- return <>
-    <SectionOne />
- </>
-}
+  return <SectionOne />;
+};
 
 export default About;

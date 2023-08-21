@@ -1,5 +1,6 @@
 import handleWhatsAppClick from "@/helpers/whatsapp";
 import Image from "next/image";
+
 const openSourceProjectInfo = [
   {
     name: "RESTful(Node.js)",
@@ -22,16 +23,43 @@ const openSourceProjectInfo = [
     image: "api",
     url: "https://github.com/opulencedeveloper/PHP-API2.git",
   },
+  {
+    name: "Calender(React.js && Tailwind Css)",
+    description:
+      "The code provided could be of significant assistance should the need arise for integrating a functional calendar into your project.By utilizing the provided code as a foundation, you can potentially save valuable development time and effort",
+    image: "react",
+    url: "https://github.com/opulencedeveloper/opulence-calender.git",
+  },
 ];
 
-const sendMessageHandler = () => { 
+const brandsWorkedWith = [
+  {
+    logo: "bestmantech-logo",
+    alt: "BestManTech Collaboration: Partnering with OpulenceDeveloper on a Meaningful Journey",
+  },
+  {
+    logo: "optimum-computers-logo",
+    alt: "Optimum Computers Affiliation: Navigating the Tech Landscape with OpulenceDeveloper",
+  },
+  {
+    logo: "udobatech-logo",
+    alt: "udobatech Collaboration: Fueling Innovation Alongside OpulenceDeveloper",
+  },
+  {
+    logo: "call-a-doc-logo",
+    alt: "Call A Doc Partnership: Empowering Healthcare Technology with OpulenceDeveloper",
+  },
+];
+
+
+const sendMessageHandler = () => {
   handleWhatsAppClick(
     "Hello! 👋 I just visited your portfolio and I'm truly inspired by your journey and skills. I'd love to connect and potentially discuss collaboration opportunities or seek advice in the field. Looking forward to chatting with you further! 🚀"
   );
 };
 
-const SectionThree = () => {
 
+const SectionThree = () => {
   return (
     <section className="px-5 mt-32 md:px-12">
       <div>
@@ -66,7 +94,9 @@ const SectionThree = () => {
                 <div className="ml-1">
                   <Image
                     src="/images/icon/arrow-right.svg"
-                    alt="arrow right icon"
+                    alt="GitHub Link: Explore OpulenceDeveloper's Projects on GitHub"
+                    loading="eager"
+                    priority
                     className="h-4 w-4 transform -rotate-45"
                     width={16}
                     height={16}
@@ -78,46 +108,21 @@ const SectionThree = () => {
         </div>
       </div>
 
-      <div className="mt-40 mb-28">
+      <div className="mt-24 mb-28">
         <p className="text-xl md:text-2xl">Some brands I've worked with</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
         <div className="space-x-auto flex space-x-3 h-32">
-          <div className="h-24 w-52">
-            <Image
-              src="/images/logo/best.svg"
-              alt="call a doctor logo"
-              className="h-full w-full"
-              width={208}
-              height={80}
-            />
-          </div>
-          <div className="h-24 w-52">
-            <Image
-              src="/images/logo/optimum.svg"
-              alt="call a doctor logo"
-              className="h-full w-full"
-              width={208}
-              height={80}
-            />
-          </div>
-          <div className="h-24 w-52">
-            <Image
-              src="/images/logo/ud.svg"
-              alt="call a doctor logo"
-              className="w-full h-full"
-              width={208}
-              height={80}
-            />
-          </div>
-          <div className="h-24 w-52">
-            <Image
-              src="/images/call-a-doc.svg"
-              alt="call a doctor logo"
-              className="w-full h-full"
-              width={208}
-              height={80}
-            />
-          </div>
+          {brandsWorkedWith.map((brandsWorkedWithData, index) => (
+            <div key={index} className="h-24 w-52">
+              <Image
+                src={`/images/logo/${brandsWorkedWithData.logo}.svg`}
+                alt={brandsWorkedWithData.alt}
+                className="h-full w-full"
+                width={208}
+                height={80}
+              />
+            </div>
+          ))}
         </div>
       </div>
 
@@ -154,7 +159,7 @@ const SectionThree = () => {
           Send Message
           <Image
             src="/images/icon/arrow-right.svg"
-            alt="arrow right icon"
+            alt="Message Icon: Reach Out and Connect with OpulenceDeveloper"
             className="h-4 w-4 ml-2"
             width={16}
             height={16}

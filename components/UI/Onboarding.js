@@ -1,9 +1,8 @@
-import Typewriter from "typewriter-effect";
 import { useEffect, useState } from "react";
 
 const companyName = "<OpulenceDeveloper/>";
 
-const Onboarding = (props) => {
+const Onboarding = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isPageLoaded, setIsPageLoaded] = useState(false);
   const [isThirdText, setIsThirdText] = useState(false);

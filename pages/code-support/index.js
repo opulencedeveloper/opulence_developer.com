@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+import handleWhatsAppClick from "@/helpers/whatsapp";
+
+const sendMessageHandler = () => {
+  handleWhatsAppClick(
+    "I'm reaching out through your portfolio website as I've encountered a coding issue and believe you could provide valuable assistance."
+  );
+};
 const CodeSupport = () => {
   return (
     <section>
@@ -9,8 +16,8 @@ const CodeSupport = () => {
         <div className="flex-shrink-0 h-10 w-10 rounded-full overflow-hidden">
           {" "}
           <Image
-            src="/images/icon/icon.gif"
-            alt="call a doctor logo"
+            src="/images/icon/code-support-icon.gif"
+            alt="Code Debugging Zone: Unraveling Complexities with OpulenceDeveloper"
             className="h-full w-full"
             loading="eager"
             priority
@@ -40,11 +47,14 @@ const CodeSupport = () => {
           this bug but also enhance your coding skills in the process. Looking
           forward to our collaboration!"
         </p>
-        <button className="shadow-custom-shadow2 flex items-center bg-black px-5 py-3 text-white rounded-lg">
+        <button
+          onClick={sendMessageHandler}
+          className="shadow-custom-shadow2 flex items-center bg-black px-5 py-3 text-white rounded-lg"
+        >
           Reach out
           <Image
             src="/images/icon/arrow-right.svg"
-            alt="arrow right icon"
+            alt="Code SOS: Tap for Instant WhatsApp Assistance from OpulenceDeveloper"
             loading="eager"
             priority
             className="h-4 w-4 ml-2"
