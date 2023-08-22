@@ -12,6 +12,7 @@ import "@/styles/globals.css";
 import Layout from "@/components/layouts/Layout";
 import Footer from "@/components/layouts/Footer";
 import Onboarding from "@/components/UI/Onboarding";
+import Head from "next/head";
 
 
 export default function App({ Component, pageProps }) {
@@ -27,6 +28,17 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <main className={`${poppins.variable} font-poppins max-w-[120rem] mx-auto`}>
+      <Head>
+        <meta
+          property="og:image"
+          content="https://janetmemorialhospital.com/janet-hospital-images/logo/janet-memorial-hospital-logo.png"
+        />
+        <meta
+          property="og:url"
+          content="https://janetmemorialhospital.com"
+        />
+        <meta property="og:type" content="website" />
+      </Head>
       {isOnboarding && <Onboarding />}
       <Layout>
         <Component {...pageProps} />

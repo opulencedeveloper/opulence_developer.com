@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 const projects = [
   {
     title: "Janet Memorial Hospital",
@@ -130,53 +132,77 @@ const SectionTemplate = (props) => {
   );
 };
 
-
 const Projects = () => {
   return (
-    <section className="px-3 text-primary1 mt-10 md:px-12 md:mt-28">
-      <div className="flex justify-between mb-8 text-lg font-semibold md:text-3xl">
-        <p className="w-[45%] animate-float text-center">Projects</p>
+    <>
+      <Head>
+        <title>Portfolio Projects - OpulenceDeveloper</title>
+        <meta
+          name="description"
+          content="Explore a diverse range of projects on OpulenceDeveloper's portfolio. Discover personal projects and collaborations, showcasing FullStack Software Engineering expertise."
+        />
+        <meta
+          name="keywords"
+          content="OpulenceDeveloper, Portfolio, Personal Projects, Collaborations, FullStack Software Engineer"
+        />
+        <meta name="author" content="Amobi Victor Chukwuka" />
+        {/* Open Graph Meta Tags */}
+        <meta
+          property="og:title"
+          content="Portfolio Projects - OpulenceDeveloper"
+        />
+        <meta
+          property="og:description"
+          content="Browse a diverse collection of FullStack Software Engineering projects by Amobi Victor Chukwuka. Discover personal projects and collaborations with clients."
+        />
+      </Head>
+      <section className="px-3 text-primary1 mt-10 md:px-12 md:mt-28">
+        <div className="flex justify-between mb-8 text-lg font-semibold md:text-3xl">
+          <p className="w-[45%] animate-float text-center">Projects</p>
 
-        <p className="w-[45%] animate-float2 text-center">Personal Projects</p>
-      </div>
-      <div className="flex justify-between">
-        <div className="w-[47%] md:w-[49%]">
-          {projects.map((projectData, index) => (
-            <span key={index}>
-              <SectionTemplate
-                projectData={projectData}
-                index={index}
-                type="right"
-              />
-            </span>
-          ))}
+          <p className="w-[45%] animate-float2 text-center">
+            Personal Projects
+          </p>
+        </div>
+        <div className="flex justify-between">
+          <div className="w-[47%] md:w-[49%]">
+            {projects.map((projectData, index) => (
+              <span key={index}>
+                <SectionTemplate
+                  projectData={projectData}
+                  index={index}
+                  type="right"
+                />
+              </span>
+            ))}
+          </div>
+
+          <div className="w-[1%] bg-primary1 mb-40 rounded-full stainless-steel"></div>
+
+          <div className="w-[47%] md:w-[49%]">
+            {myProjects.map((projectData, index) => (
+              <span key={index}>
+                <SectionTemplate
+                  projectData={projectData}
+                  index={index}
+                  type="left"
+                />
+              </span>
+            ))}
+          </div>
         </div>
 
-        <div className="w-[1%] bg-primary1 mb-40 rounded-full stainless-steel"></div>
-
-        <div className="w-[47%] md:w-[49%]">
-          {myProjects.map((projectData, index) => (
-            <span key={index}>
-              <SectionTemplate
-                projectData={projectData}
-                index={index}
-                type="left"
-              />
-            </span>
-          ))}
+        <div className=" flex justify-center my-10 md:my-20">
+          <a
+            target="_blank"
+            href="https://github.com/opulencedeveloper"
+            className="transition-transform duration-300 transform hover:scale-105 focus:outline-none border px-4 py-3"
+          >
+            See More
+          </a>
         </div>
-      </div>
-
-      <div className=" flex justify-center my-10 md:my-20">
-        <a
-        target="_blank"
-          href="https://github.com/opulencedeveloper"
-          className="transition-transform duration-300 transform hover:scale-105 focus:outline-none border px-4 py-3"
-        >
-          See More
-        </a>
-      </div>
-    </section>
+      </section>{" "}
+    </>
   );
 };
 

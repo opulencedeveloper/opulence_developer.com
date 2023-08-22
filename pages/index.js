@@ -6,32 +6,26 @@ let isHomeScreenVisited;
 export default function Home() {
   return (
     <>
-    {/* <Head>
-        <title>
-        Janet Memorial Hospital - Exceptional Healthcare Services.
-        </title>
+      <Head>
+        <title>OpulenceDeveloper | FullStack Software Engineer Portfolio</title>
         <meta
           name="description"
-          content="Discover comprehensive healthcare services at Janet Memorial Hospital. We provide state-of-the-art medical facilities, expert physicians, and compassionate care to improve your well-being. We are committed to providing exceptional healthcare services tailored to meet the needs of our community, we strive to be the leading healthcare institution in the region Contact us today."
+          content="Welcome to OpulenceDeveloper's portfolio! Explore a collection of projects showcasing FullStack Software Engineering expertise."
         />
         <meta
+          name="keywords"
+          content="OpulenceDeveloper, Portfolio, FullStack Software Engineer, Web Development, Mobile Application Development, Back End Development"
+        />
+        <meta name="author" content="Amobi Victor Chukwuka" />
+        <meta
           property="og:title"
-          content="Janet Memorial Hospital - Exceptional Healthcare Services"
+          content="OpulenceDeveloper | FullStack Software Engineer Portfolio"
         />
         <meta
           property="og:description"
-          content="Discover comprehensive healthcare services at Janet Memorial Hospital. We provide state-of-the-art medical facilities, expert physicians, and compassionate care to improve your well-being. We are committed to providing exceptional healthcare services tailored to meet the needs of our community, we strive to be the leading healthcare institution in the region Contact us today."
+          content="Discover a portfolio of FullStack Software Engineering projects by Amobi Victor Chukwuka. Explore web and application development expertise."
         />
-        <meta
-          property="og:image"
-          content="https://janetmemorialhospital.com/janet-hospital-images/logo/janet-memorial-hospital-logo.png"
-        />
-        <meta
-          property="og:url"
-          content="https://janetmemorialhospital.com"
-        />
-        <meta property="og:type" content="website" />
-      </Head> */}
+      </Head>
       <SectionOne />
       <SectionTwo />
       <SectionThree />

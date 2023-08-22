@@ -1,4 +1,5 @@
 import Products from "@/components/UI/Products";
+import Head from "next/head";
 import Image from "next/image";
 const productInfo = [
   {
@@ -58,7 +59,7 @@ const productInfo = [
     description:
       "A vibrant online platform dedicated to celebrating the transformative power of education",
   },
-  
+
   {
     name: "Real-Estate",
     type: "Website",
@@ -71,25 +72,48 @@ const productInfo = [
 
 const Shop = () => {
   return (
-    <section>
-      <div className="flex space-x-2 items-center mt-8 pl-5 md:mt-20 md:pl-12 ">
-        {" "}
-        <div className="flex justify-center items-center bg-white flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
+    <>
+      <Head>
+        <title>For Sale - OpulenceDeveloper Portfolio</title>
+        <meta
+          name="description"
+          content="Browse a collection of websites and mobile apps for sale on OpulenceDeveloper's portfolio. Find high-quality digital products ready for purchase."
+        />
+        <meta
+          name="keywords"
+          content="OpulenceDeveloper, Portfolio, Websites for Sale, Mobile Apps for Sale, FullStack Software Engineer"
+        />
+        <meta name="author" content="Amobi Victor Chukwuka" />
+        {/* Open Graph Meta Tags */}
+        <meta
+          property="og:title"
+          content="For Sale - OpulenceDeveloper Portfolio"
+        />
+        <meta
+          property="og:description"
+          content="Explore a variety of websites and mobile apps for sale by Amobi Victor Chukwuka. High-quality digital products ready for purchase."
+        />
+      </Head>{" "}
+      <section>
+        <div className="flex space-x-2 items-center mt-8 pl-5 md:mt-20 md:pl-12 ">
           {" "}
-          <Image
-            src="/images/icon/cart-icon.gif"
-            alt="Software Marketplace: Explore and Acquire Cutting-Edge Solutions with OpulenceDeveloper"
-            className="h-auto w-auto bg-transparent"
-            width={40}
-            height={40}
-          />
+          <div className="flex justify-center items-center bg-white flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
+            {" "}
+            <Image
+              src="/images/icon/cart-icon.gif"
+              alt="Software Marketplace: Explore and Acquire Cutting-Edge Solutions with OpulenceDeveloper"
+              className="h-auto w-auto bg-transparent"
+              width={40}
+              height={40}
+            />
+          </div>
+          <p className="font-semibold text-xl md:text-3xl">
+            Welcome to Opulence Shop
+          </p>
         </div>
-        <p className="font-semibold text-xl md:text-3xl">
-          Welcome to Opulence Shop
-        </p>
-      </div>
-      <Products productInfo={productInfo} />
-    </section>
+        <Products productInfo={productInfo} />
+      </section>{" "}
+    </>
   );
 };
 
