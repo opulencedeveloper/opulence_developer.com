@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import Head from "next/head";
+
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
@@ -12,7 +14,6 @@ import "@/styles/globals.css";
 import Layout from "@/components/layouts/Layout";
 import Footer from "@/components/layouts/Footer";
 import Onboarding from "@/components/UI/Onboarding";
-import Head from "next/head";
 
 
 export default function App({ Component, pageProps }) {
@@ -28,7 +29,8 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <main className={`${poppins.variable} font-poppins max-w-[120rem] mx-auto`}>
-      <Head>
+      
+      <Head> 
         <meta
           property="og:image"
           content="https://opulence-developer-com.vercel.app/images/opulence-developer-social-preview-image.png"

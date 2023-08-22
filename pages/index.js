@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import SectionOne from "@/components/home/SectionOne";
 import SectionThree from "@/components/home/SectionThree";
 import SectionTwo from "@/components/home/SectionTwo";
