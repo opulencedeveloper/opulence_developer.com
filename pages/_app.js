@@ -31,11 +31,11 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta
           property="og:image"
-          content="https://janetmemorialhospital.com/janet-hospital-images/logo/janet-memorial-hospital-logo.png"
+          content="https://opulence-developer-com.vercel.app/images/opulence-developer-social-preview-image.png"
         />
         <meta
           property="og:url"
-          content="https://janetmemorialhospital.com"
+          content="https://opulence-developer-com.vercel.app"
         />
         <meta property="og:type" content="website" />
       </Head>
