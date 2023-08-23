@@ -33,11 +33,11 @@ export default function App({ Component, pageProps }) {
       <Head> 
         <meta
           property="og:image"
-          content="https://opulence-developer-com.vercel.app/images/opulence-developer-social-preview-image.png"
+          content="https://opulencedeveloper.com/images/opulence-developer-social-preview-image.png"
         />
         <meta
           property="og:url"
-          content="https://opulence-developer-com.vercel.app"
+          content="https://opulencedeveloper.com"
         />
         <meta property="og:type" content="website" />
       </Head>
