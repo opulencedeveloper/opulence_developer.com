@@ -12,7 +12,7 @@ export default function Home() {
         <title>OpulenceDeveloper | FullStack Software Engineer Portfolio</title>
         <meta
           name="description"
-          content="Welcome to OpulenceDeveloper's portfolio! Explore a collection of projects showcasing FullStack Software Engineering expertise."
+          content="Welcome to OpulenceDeveloper's portfolio! Want a website? Want an App? I'm available for you, Explore a collection of projects showcasing FullStack Software Engineering expertise."
         />
         <meta
           name="keywords"
@@ -25,7 +25,7 @@ export default function Home() {
         />
         <meta
           property="og:description"
-          content="Discover a portfolio of FullStack Software Engineering projects by Amobi Victor Chukwuka. Explore web and application development expertise."
+          content="Want a website? Want an App? I'm available for you, Discover a portfolio of FullStack Software Engineering projects by Amobi Victor Chukwuka. Explore web and application development expertise."
         />
       </Head>
       <SectionOne />
