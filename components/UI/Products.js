@@ -11,7 +11,7 @@ const sendMessageHandler = (name, type) => {
 
 const Products = (props) => {
   return (
-    <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-10 px-5 space-x- flex-wrap md:justify-evenly md:px-12 md:space-x-10 2xl:justify-start">
+    <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center pt-10 px-5 space-x- flex-wrap md:justify-evenly md:px-12 md:space-x-10 2xl:justify-start">
       {props.productInfo.map((productData, index) => (
         <div
           key={index}
