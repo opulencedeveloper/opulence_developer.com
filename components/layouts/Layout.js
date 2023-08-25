@@ -1,14 +1,9 @@
-import { useEffect } from "react";
-
 import Image from "next/image";
 
 import MainNavigation from "./Main-Navigation.js";
 
 
 const Layout = (props) => {
-  useEffect(() => {
-    console.log("in the effect layoutt");
-  }, []);
   return (
     <>
       {" "}

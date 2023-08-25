@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import Head from "next/head";
 
+import 'intersection-observer';
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({

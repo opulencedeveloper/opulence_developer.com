@@ -42,6 +42,10 @@ module.exports = {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-340px)" },
         },
+        slideFromTop: {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(96px)" },
+        },
         marquee: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-100%)" },
@@ -55,8 +59,10 @@ module.exports = {
       animation: {
         "zoom-out": "zoom-out 2s",
         "slide-left": "slideLeft 1s ease-out 0.5s forwards",
+        "slideFromTop": "slideFromTop 1s ease-out 0.1ms forwards",
         marquee: "marquee 25s linear infinite",
         slideLeftRight: 'slideLeftRight 30s linear infinite',
+        
       },
     },
   },

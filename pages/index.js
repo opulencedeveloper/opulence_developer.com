@@ -3,6 +3,7 @@ import Head from "next/head";
 import SectionOne from "@/components/home/SectionOne";
 import SectionThree from "@/components/home/SectionThree";
 import SectionTwo from "@/components/home/SectionTwo";
+import WhatIDo from "@/components/home/WhatIDo";
 
 let isHomeScreenVisited;
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         />
       </Head>
       <SectionOne />
+      <WhatIDo />
       <SectionTwo />
       <SectionThree />
     </>
