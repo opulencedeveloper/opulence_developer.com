@@ -31,7 +31,8 @@ export default function App({ Component, pageProps }) {
   return (
     <main className={`${poppins.variable} font-poppins max-w-[120rem] mx-auto`}>
       
-      <Head> 
+      <Head>
+      <meta name="theme-color" content="#03262e" /> 
         <meta
           property="og:image"
           content="https://opulencedeveloper.com/images/opulence-developer-social-preview-image.png"
