@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 
 const WhatIDo = () => {
   const [ref, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     rootMargin: "-140px", //triggers when the div is -50px up
   });
   inView;
