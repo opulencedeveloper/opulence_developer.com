@@ -6,7 +6,7 @@ const skills = [
 
 import { useInView } from "react-intersection-observer";
 
-const WhatIDo = () => {
+const MyServices = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     rootMargin: "-140px", //triggers when the div is -50px up
@@ -14,7 +14,7 @@ const WhatIDo = () => {
   inView;
   return (
     <section ref={ref} className="mt-24 mb-32 ">
-      <h2 className="text-3xl text-center font-medium md:text-4xl">What I do</h2>
+      <h2 className="text-3xl text-center font-medium md:text-4xl">My Services</h2>
       <div
         className={`flex flex-wrap justify-between items-center max-w-7xl mx-auto mt-7 px-5 lg:px-0`}
       >
@@ -38,4 +38,4 @@ const WhatIDo = () => {
   );
 };
 
-export default WhatIDo;
+export default MyServices;
