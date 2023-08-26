@@ -38,7 +38,7 @@ const MyServices = () => {
                   <div className="flex-shrink-0 h-7 w-7 border-[5px] border-primary1 border-opacity-60"></div>
                 </div>
               </div>
-              <p className="font-medium text-xl text-primary1 lg:text-2xl">
+              <p className="font-medium text-xl lg:text-2xl">
                 {skill}
               </p>
             </div>{" "}
