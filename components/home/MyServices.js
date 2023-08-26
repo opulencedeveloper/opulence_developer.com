@@ -18,7 +18,7 @@ const MyServices = () => {
         My Services
       </h2>
       <div
-        className={`flex flex-wrap justify-center items-center max-w-7xl mx-auto mt-7 px-5 lg:px-8 xl:px-0`}
+        className={`flex flex-wrap justify-center items-center max-w-7xl mx-auto mt-7 px-8 xl:px-0`}
       >
         {" "}
         {skills.map((skill, index) => (
