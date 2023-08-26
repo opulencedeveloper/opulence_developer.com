@@ -14,7 +14,7 @@ const MyServices = () => {
   inView;
   return (
     <section ref={ref} className="mt-24 mb-32 space-y-10">
-      <h2 className="text-3xl text-center font-medium md:text-4xl">
+      <h2 className="text-3xl text-primary1 text-center font-semibold md:text-4xl">
         My Services
       </h2>
       <div
