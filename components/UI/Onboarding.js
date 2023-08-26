@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 const companyName = "<OpulenceDeveloper/>";
 
@@ -6,10 +6,12 @@ const Onboarding = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isPageLoaded, setIsPageLoaded] = useState(false);
   const [isThirdText, setIsThirdText] = useState(false);
-
+  useLayoutEffect(() => {
+    document.body.classList.add("overflow-hidden");
+  }, []);
   useEffect(() => {
     setIsPageLoaded(true);
-    document.body.classList.add("overflow-hidden");
+
     const interval2 = setInterval(() => {
       setIsThirdText(true);
     }, 3000);
@@ -43,11 +45,14 @@ const Onboarding = () => {
               </p>
             </div>
           </div>
-         <div className="h-10"> {isThirdText && (
-            <p className="animate-shimmering-silver-text text-sm mt-1 animate-fade-in-up-text md:mt-5 md:text-2xl">
-              FullStack Software Engineer
-            </p>
-          )} </div>
+          <div className="h-10">
+            {" "}
+            {isThirdText && (
+              <p className="animate-shimmering-silver-text text-sm mt-1 animate-fade-in-up-text md:mt-5 md:text-2xl">
+                FullStack Software Engineer
+              </p>
+            )}{" "}
+          </div>
         </div>
       )}
     </div>

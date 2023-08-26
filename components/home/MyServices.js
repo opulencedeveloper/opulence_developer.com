@@ -1,7 +1,7 @@
 const skills = [
   "Web Development",
   "Mobile App. Development",
-  "Back End Development",
+  "Back - End Development",
 ];
 
 import { useInView } from "react-intersection-observer";
