@@ -11,7 +11,11 @@ export default function Home() {
     <>
       <Head>
         <title>OpulenceDeveloper | FullStack Software Engineer Portfolio</title>
+       
         <meta
+          property="title"
+          content="OpulenceDeveloper | FullStack Software Engineer Portfolio"
+        /> <meta
           name="description"
           content="Welcome to OpulenceDeveloper's portfolio! Want a website? Want an App? I'm available for you, Explore a collection of projects showcasing FullStack Software Engineering expertise."
         />

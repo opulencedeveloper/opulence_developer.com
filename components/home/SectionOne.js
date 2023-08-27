@@ -42,13 +42,13 @@ const TextTransition = () => {
 
   return (
     <div className="flex items-center justify-center mt-10">
-      <h1
+      <h2
         className={`text-4xl font-semibold ${
           isGlitching ? "animate-glitch" : ""
         }`}
       >
         {currentPhrase}
-      </h1>
+      </h2>
     </div>
   );
 };
