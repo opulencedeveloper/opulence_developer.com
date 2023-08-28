@@ -11,7 +11,6 @@ const MyServices = () => {
     triggerOnce: true,
     rootMargin: "-140px", //triggers when the div is -50px up
   });
-  inView;
   return (
     <section ref={ref} className="mt-24 mb-32 space-y-10">
       <h2 className="text-3xl text-primary1 text-center font-semibold md:text-4xl">
