@@ -21,7 +21,7 @@ const Products = (props) => {
         <div
           key={index}
           className={`w-80 my-4 mx-2  transform hover:scale-105 transition-transform duration-[3000ms] md:my-10  ${
-            inView ? "translate-y-0" : "translate-y-[200rem]"
+            inView ? "translate-y-0" : "translate-y-full"
           }`}
         >
           <div className="relative bg-primary1 flex justify-center rounded-tr-md rounded-tl-md">
