@@ -47,7 +47,7 @@ module.exports = {
           "100%": { transform: "translateY(96px)" },
         },
         slideFromBottom: {
-          "0%": { transform: "translateY(0)" },
+          "0%": { transform: "translateY(30rem)" },
           "100%": { transform: "translateY(-28rem)" },
         },
         slideFromLeft: {

@@ -12,15 +12,17 @@ const sendMessageHandler = (name, type) => {
 
 const Products = (props) => { 
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     rootMargin: "-140px", //triggers when the div is -50px up
   });
   return (
-    <div ref={ref} className="border-primary1 border-t-2 border-opacity-50 flex justify-center pt-[30rem] mt-5 px-5 flex-wrap md:justify-evenly md:px-12 md:space-x-10 2xl:justify-start">
+    <div ref={ref} className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 px-5 flex-wrap md:justify-evenly md:px-12 md:space-x-10 2xl:justify-start">
       {props.productInfo.map((productData, index) => (
         <div
           key={index}
-          className={`w-80 my-4 mx-2  transform hover:scale-105 transition-transform duration-300 md:my-10 ${inView ? "animate-slideFromBottom" : ""}`}
+          className={`w-80 my-4 mx-2  transform hover:scale-105 transition-transform duration-[3000ms] md:my-10  ${
+            inView ? "translate-y-0" : "translate-y-[200rem]"
+          }`}
         >
           <div className="relative bg-primary1 flex justify-center rounded-tr-md rounded-tl-md">
             <Image

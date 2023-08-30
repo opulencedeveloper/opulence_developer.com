@@ -37,7 +37,7 @@ const CodeSupport = () => {
         {" "}
         <div className="relative rounded-tl rounded-tr overflow-hidden flex items-center mt-8 ml-5 md:mt-20 md:ml-12 ">
           {" "}
-          <div className="flex-shrink-0 h-10 w-10 rounded-full overflow-hidden">
+          <div className="z-10 flex-shrink-0 h-10 w-10 rounded-full overflow-hidden">
             {" "}
             <Image
               src="/images/icon/code-support-icon.gif"
@@ -51,7 +51,7 @@ const CodeSupport = () => {
           </div>
           <p className="absolute -left-[38rem] z-0 animate-slideFromLeft font-semibold text-xl md:text-3xl">Code Doctor</p>
         </div>
-        <div className="pt-8 px-5 flex flex-col items-center md:px-12">
+        <div className="pt-8 px-5 flex flex-col items-center md:pt-20 md:px-12">
           <p className="text-center mb-8 text-primary1 leading-loose text-base md:text-lg">
             "Ah, it seems like you've encountered a stubborn bug within your
             code. But don't fret, there's no need to worry - I'm here to help!

@@ -107,8 +107,8 @@ const Shop = () => {
               height={40}
             />
           </div>
-          <p className="absolute -left-[38rem] z-0 animate-slideFromLeft font-semibold text-xl md:text-3xl">
-            Welcome to Opulence Shop
+          <p className=" absolute container -left-[38rem] z-0 animate-slideFromLeft font-semibold text-xl md:text-3xl">
+            Opulence Shop
           </p>
         </div>
         <Products productInfo={productInfo} />
