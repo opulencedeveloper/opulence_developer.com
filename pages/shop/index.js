@@ -95,7 +95,7 @@ const Shop = () => {
         />
       </Head>{" "}
       <section>
-        <div className="relative rounded-tl rounded-tr overflow-hidden flex space-x-2 items-center mt-8 ml-5 md:mt-20 md:ml-12 ">
+        <div className="relative rounded-tl rounded-tr overflow-hidden flex items-center mt-8 ml-5 md:mt-20 md:ml-12 ">
           {" "}
           <div className="z-10 flex justify-center items-center bg-white flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
             {" "}
