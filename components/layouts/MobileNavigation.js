@@ -38,7 +38,7 @@ const MobileNavigation = (props) => {
 
   const companyName = "<OpulenceDeveloper/>";
 
-  const sendMessageHandler = () => { handleWhatsAppClick
+  const sendMessageHandler = () => { 
     handleWhatsAppClick(
       "Hello! 👋 I just visited your portfolio and I'm truly inspired by your journey and skills. I'd love to connect and potentially discuss collaboration opportunities or seek advice in the field. Looking forward to chatting with you further! 🚀"
     );
