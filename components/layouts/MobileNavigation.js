@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import Typewriter from "typewriter-effect";
+import handleWhatsAppClick from "@/helpers/whatsapp";
 
 const navLinks = [
   {
@@ -34,13 +35,14 @@ const navLinks = [
 const MobileNavigation = (props) => {
   const router = useRouter();
   const activeLink = router.pathname;
-  const [activeIndex, setActiveIndex] = useState(0); 
-
-  const handleToggle = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
 
   const companyName = "<OpulenceDeveloper/>";
+
+  const sendMessageHandler = () => { handleWhatsAppClick
+    handleWhatsAppClick(
+      "Hello! 👋 I just visited your portfolio and I'm truly inspired by your journey and skills. I'd love to connect and potentially discuss collaboration opportunities or seek advice in the field. Looking forward to chatting with you further! 🚀"
+    );
+  };
 
   return (
     <div className="overflow-y-auto bg-white text-white pb-8 w-full h-full">
@@ -92,7 +94,9 @@ const MobileNavigation = (props) => {
               {linkData.title}
             </Link>
         })}{" "} </div>
-        <button className="flex items-center mx-auto bg-black px-5 py-3 text-white rounded-md">
+        <button 
+        onClick={sendMessageHandler}
+        className="flex items-center mx-auto bg-black px-5 py-3 text-white rounded-md">
          <p> Send Message</p>
           
           <Image

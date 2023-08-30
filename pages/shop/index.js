@@ -95,9 +95,9 @@ const Shop = () => {
         />
       </Head>{" "}
       <section>
-        <div className="flex space-x-2 items-center mt-8 pl-5 md:mt-20 md:pl-12 ">
+        <div className="relative rounded-tl rounded-tr overflow-hidden flex space-x-2 items-center mt-8 ml-5 md:mt-20 md:ml-12 ">
           {" "}
-          <div className="flex justify-center items-center bg-white flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
+          <div className="z-10 flex justify-center items-center bg-white flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
             {" "}
             <Image
               src="/images/icon/cart-icon.gif"
@@ -107,7 +107,7 @@ const Shop = () => {
               height={40}
             />
           </div>
-          <p className="font-semibold text-xl md:text-3xl">
+          <p className="absolute -left-[38rem] z-0 animate-slideFromLeft font-semibold text-xl md:text-3xl">
             Welcome to Opulence Shop
           </p>
         </div>

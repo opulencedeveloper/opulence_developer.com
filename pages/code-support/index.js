@@ -35,7 +35,7 @@ const CodeSupport = () => {
       </Head>{" "}
       <section>
         {" "}
-        <div className="flex space-x-2 items-center mt-8 pl-5 md:mt-20 md:pl-12 ">
+        <div className="relative rounded-tl rounded-tr overflow-hidden flex items-center mt-8 ml-5 md:mt-20 md:ml-12 ">
           {" "}
           <div className="flex-shrink-0 h-10 w-10 rounded-full overflow-hidden">
             {" "}
@@ -49,7 +49,7 @@ const CodeSupport = () => {
               height={40}
             />
           </div>
-          <p className="font-semibold text-xl md:text-3xl">Code Doctor</p>
+          <p className="absolute -left-[38rem] z-0 animate-slideFromLeft font-semibold text-xl md:text-3xl">Code Doctor</p>
         </div>
         <div className="pt-8 px-5 flex flex-col items-center md:px-12">
           <p className="text-center mb-8 text-primary1 leading-loose text-base md:text-lg">

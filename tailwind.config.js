@@ -46,6 +46,14 @@ module.exports = {
           "0%": { transform: "translateY(100%)" },
           "100%": { transform: "translateY(96px)" },
         },
+        slideFromBottom: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(-28rem)" },
+        },
+        slideFromLeft: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(42rem)" },
+        },
         marquee: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-100%)" },
@@ -60,6 +68,8 @@ module.exports = {
         "zoom-out": "zoom-out 2s",
         "slide-left": "slideLeft 1s ease-out 0.5s forwards",
         "slideFromTop": "slideFromTop 1s ease-out 0.1ms forwards",
+        "slideFromBottom": "slideFromBottom 1s ease-out 0.1ms forwards",
+        "slideFromLeft": "slideFromLeft 1s ease-out 0.1ms forwards",
         marquee: "marquee 25s linear infinite",
         slideLeftRight: 'slideLeftRight 30s linear infinite',
         
