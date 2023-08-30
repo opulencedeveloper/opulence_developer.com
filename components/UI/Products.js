@@ -12,7 +12,7 @@ const sendMessageHandler = (name, type) => {
 
 const Products = (props) => { 
   const [ref, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     rootMargin: "-140px", //triggers when the div is -50px up
   });
   return (
