@@ -352,6 +352,7 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: #718096;
   border-radius: 4px;
+  height: 8px
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -361,5 +362,4 @@ html {
 ::-webkit-scrollbar-track {
   background-color: #f7fafc;
   border-radius: 4px;
-  height: 8px;
 }
