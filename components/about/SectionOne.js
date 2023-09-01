@@ -11,7 +11,7 @@ const SectionOne = () => {
         <div className=" mb-4 sm:mb-0 sm:mr-8">
           <Image
             src="/images/amobi-victor-chukwuka-image.jpg"
-            alt="Amobi Victor Chukwuka - Software Developer and Creator of OpulenceDeveloper"
+            alt="Amobi Victor Chukwuka - Fullstack Software Developer and Creator of opulencedeveloper.com image"
             className="border border-2 rounded"
             loading="eager"
             priority
