@@ -61,9 +61,9 @@ const sendMessageHandler = () => {
 
 const SectionThree = () => {
   return (
-    <section className="px-5 mt-32 md:px-12">
+    <section className="mt-32 ">
       <div>
-        <p className="text-xl">Some Open Source Code</p>
+        <p className="text-xl px-5 md:px-12 md:text-2xl">Some Open Source Code</p>
         <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 items-start space-x-auto flex-wrap pt-5 md:pt-8 md:justify-evenly 2xl:justify-start space-x-2">
           {openSourceProjectInfo.map((openSourceProjectData, index) => (
             <div key={index} className="w-80 py-2 space-y-2">
@@ -108,7 +108,7 @@ const SectionThree = () => {
         </div>
       </div>
 
-      <div className="mt-24 mb-28">
+      <div className="mt-24 mb-28 px-5 md:px-12">
         <p className="text-xl md:text-2xl">Some brands I've worked with</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
         <div className="space-x-auto flex space-x-3 h-32">
@@ -126,7 +126,7 @@ const SectionThree = () => {
         </div>
       </div>
 
-      <div className="pb-10 space-y-5">
+      <div className="pb-10 space-y-5 px-5 md:px-12">
         <p className="text-lg">Let's build magic together</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
         <p className="leading-loose text-lg font-light">

@@ -68,13 +68,13 @@ const SectionTwo = () => {
   return (
     <section className="mt-8 md:mt-14">
       <div >
-        <p className="text-2xl pl-5 md:pl-12">Featured Product</p>
+        <p className="text-2xl pl-5 md:pl-12 md:text-2xl">Featured Product</p>
         <Products productInfo={productInfo} />
         <div className="flex justify-center my-10">
           <button className="transition-transform duration-300 transform hover:scale-105 focus:outline-none border px-4 py-3" onClick={seeMoreHandler}>See More</button>
         </div>
 
-        <p className="text-xl pl-5 md:pl-12">Featured Mobile Apps.</p>
+        <p className="text-xl pl-5 md:pl-12 md:text-2xl">Featured Mobile Apps.</p>
         <hr className="border-t-2 opacity-50 my-5 " />
       </div>
       <div className=" space-x-5 flex pb-3 mx-3 md:mx-12 overflow-x-auto">
