@@ -32,6 +32,18 @@ export default function App({ Component, pageProps }) {
     <main className={`${poppins.variable} font-poppins max-w-[120rem] mx-auto`}>
       
       <Head>
+       <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Opulence Developer | FullStack Software Engineer',
+              url: 'https://opulencedeveloper.com',
+              logo: 'https://opulencedeveloper.com/favicon.ico', // URL to your logo image
+            }),
+          }}
+        />
       <meta name="theme-color" content="#03262e" /> 
         <meta
           property="og:image"
