@@ -4,6 +4,7 @@ import SectionOne from "@/components/home/SectionOne";
 import SectionThree from "@/components/home/SectionThree";
 import SectionTwo from "@/components/home/SectionTwo";
 import MyServices from "@/components/home/MyServices";
+import SuccessfulProjects from "@/components/home/SuccessfulProjects";
 
 let isHomeScreenVisited;
 export default function Home() {
@@ -35,6 +36,8 @@ export default function Home() {
       </Head>
       <SectionOne />
       <MyServices />
+      <SuccessfulProjects />
+      
       <SectionTwo />
       <SectionThree />
     </>

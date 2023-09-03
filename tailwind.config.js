@@ -33,6 +33,10 @@ module.exports = {
         piw1: "34.2rem",
         boxw1: "5rem",
       },
+      backgroundColor: {
+        'transparent': 'transparent',
+        'black-50': 'rgba(0, 0, 0, 0.5)', // Adjust the opacity value as needed
+      },
       keyframes: {
         "zoom-out": {
           "0%": { transform: "scale(0.0000000000000001)" },
