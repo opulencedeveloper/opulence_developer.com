@@ -111,9 +111,9 @@ const SectionThree = () => {
       <div className="relative mt-24 mb-32 px-5 md:px-12">
         <p className="text-xl font-medium md:text-2xl">Some brands I've worked with</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
-        <div className="space-x-auto flex flex-wrap justify-evenly space-x-3 pt-3 h-max">
+        <div className="space-x-auto flex flex-wrap justify-evenly pt-3 h-max">
           {brandsWorkedWith.map((brandsWorkedWithData, index) => (
-            <div key={index} className="h-24 mb-5 w-40 md:w-52">
+            <div key={index} className="h-24 mb-5 mx-3 w-40 md:w-52">
               <Image
                 src={`/images/logo/${brandsWorkedWithData.logo}.svg`}
                 alt={brandsWorkedWithData.alt}
