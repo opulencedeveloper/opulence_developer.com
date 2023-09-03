@@ -35,12 +35,12 @@ const SuccessfulProjects = () => {
   });
   return (
     <section className="z-0 bg-black-50 py-16 flex mt-10">
-      <div className=" flex flex-col justify-evenly max-w-[120rem] mx-auto md:flex-row">
+      <div className=" flex flex-col justify-center max-w-[120rem] mx-auto md:justify-evenly md:flex-row">
         {projects.map((projectData, index) => (
           <div
             ref={ref}
             key={index}
-            className="relative z-40 my-8 flex space-y-2 flex-col items-center justify-center mx-5 text-center"
+            className="w-full my-8 flex space-y-2 flex-col items-center justify-center text-center  md:mx-5 md:w-44"
           >
             <div className="h-24 w-24 bg-white overflow-hidden rounded-full p-1">
               <Image
