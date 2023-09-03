@@ -32,7 +32,6 @@ const projects = [
 const SuccessfulProjects = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    rootMargin: "-100px",
   });
   return (
     <section className="z-0 bg-black-50 py-16 flex mt-10">
@@ -46,7 +45,7 @@ const SuccessfulProjects = () => {
             <div className="h-24 w-24 bg-white overflow-hidden rounded-full p-1">
               <Image
                 src={`/images/icon/${projectData.image}`}
-                alt="Message Icon: Reach Out and Connect with OpulenceDeveloper"
+                alt={projectData.alt}
                 className="w-full h-full"
                 loading="eager"
                 priority
