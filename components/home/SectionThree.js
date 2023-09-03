@@ -64,10 +64,10 @@ const SectionThree = () => {
     <section className="mt-32 ">
       <div>
         <p className="text-xl px-5 md:px-12 md:text-2xl">Some Open Source Code</p>
-        <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 items-start space-x-auto flex-wrap pt-5 px-5 md:px-12 md:pt-8 md:justify-evenly 2xl:justify-start space-x-2">
+        <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 items-start space-x-auto flex-wrap pt-5 mx-5 md:mx-12 md:pt-8 md:justify-evenly 2xl:justify-start space-x-2">
           {openSourceProjectInfo.map((openSourceProjectData, index) => (
-            <div key={index} className="w-80 py-2 space-y-2">
-              <div className="h-72 w-full rounded-tl-lg rounded-tr-lg overflow-hidden">
+            <div key={index} className="w-80 py-2 mb-8 space-y-2">
+              <div className="h-52 w-full rounded-tl-lg rounded-tr-lg overflow-hidden md:h-72">
                 <Image
                   src={`/images/${openSourceProjectData.image}.jpg`}
                   loading="eager"
@@ -109,9 +109,9 @@ const SectionThree = () => {
       </div>
 
       <div className="mt-24 mb-28 px-5 md:px-12">
-        <p className="text-xl md:text-2xl">Some brands I've worked with</p>
+        <p className="text-xl font-medium md:text-2xl">Some brands I've worked with</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
-        <div className="space-x-auto flex space-x-3 h-32">
+        <div className="space-x-auto flex justify-evenly space-x-3 pt-3 h-32">
           {brandsWorkedWith.map((brandsWorkedWithData, index) => (
             <div key={index} className="h-24 w-52">
               <Image
@@ -129,7 +129,7 @@ const SectionThree = () => {
       <div className="pb-10 space-y-5 px-5 md:px-12">
         <p className="text-lg">Let's build magic together</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
-        <p className="leading-loose text-lg font-light">
+        <p className="leading-loose text-lg font-light ">
           "I am deeply passionate about crafting elegant and efficient solutions
           for intricate challenges, and I am thrilled at the opportunity to
           apply my skills to your forthcoming project. With comprehensive

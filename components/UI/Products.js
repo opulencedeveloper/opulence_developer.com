@@ -11,19 +11,19 @@ const sendMessageHandler = (name, type) => {
 
 const Products = (props) => { 
   return (
-    <div className="border-primary1 border-t-2 border-opacity-50 flex justify-center mt-5 pt-7 px-5 flex-wrap md:justify-evenly md:px-12 md:space-x-10 2xl:justify-start">
+    <div className="border-primary1 border-t-2 border-opacity-50  flex flex-wrap justify-evenly mx-5 pt-3 mt-3 md:pt-7 md:mt-9 md:mx-12">
       {props.productInfo.map((productData, index) => (
         <div
           key={index}
-          className={"w-80 my-4 mx-2  transform hover:scale-105 transition-transform duration-100 md:my-1"}
+          className={"w-full my-4 mx-2 pb-6  md:w-[30%] md:my-1"}
         >
-          <div className="relative bg-primary1 flex justify-center rounded-tr-md rounded-tl-md">
+          <div className="relative px-3 bg-gray-700 flex justify-center rounded-tr-md rounded-tl-md md:px-5">
             <Image
               src={productData.imageUrl}
               alt="product"
               loading="eager"
               priority
-              className="h-320 w-piw1 -mb-6 z-0 rounded"
+              className="h-auto w-piw1 -mb-3 pt-3 rounded transform hover:scale-105 transition-transform duration-100 md:pt-5"
               width={540}
               height={388}
             />
@@ -31,8 +31,8 @@ const Products = (props) => {
           <div className="px-2 py-5 space-y-2 mt-2 bg-primary2">
             <div className="flex justify-between text-white">
               <div className="space-y-2">
-                <p className="font-semibold text-base">{productData.name}</p>
-                <p className="text-sm">{productData.type}</p>
+                <p className="font-semibold text-base md:text-lg">{productData.name}</p>
+                <p className="text-sm md:text-base">{productData.type}</p>
               </div>
               <a
                 href={productData.link}
