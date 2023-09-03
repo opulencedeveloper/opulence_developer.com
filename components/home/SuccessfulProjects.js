@@ -34,7 +34,7 @@ const SuccessfulProjects = () => {
     triggerOnce: true,
   });
   return (
-    <section ref={ref} className="z-0 bg-black-50 mb-14 py-16 flex mt-10 md:mb-20">
+    <section ref={ref} className="z-0 bg-black-50 mb-14 py-16 flex md:mb-20">
       <div className=" flex flex-col justify-center max-w-[120rem] mx-auto md:justify-evenly md:flex-row">
         {projects.map((projectData, index) => (
           <div
