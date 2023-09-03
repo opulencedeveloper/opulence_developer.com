@@ -17,13 +17,13 @@ const MyServices = () => {
         My Services
       </h2>
       <div
-        className={`flex flex-col justify-center items-center max-w-4xl mx-auto mt-7 px-8 lg:justify-evenly lg:flex-row xl:px-0`}
+        className={`flex flex-col justify-center items-center max-w-4xl mx-auto mt-7 px-5 lg:justify-evenly lg:flex-row xl:px-0`}
       >
         {" "}
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex-shrink-0 h-28 w-full overflow-hidden mr-5 md:w-64"
+            className="flex-shrink-0 h-28 w-full overflow-hidden md:mx-2.5 md:w-64"
           >
             {" "}
             <div
