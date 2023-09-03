@@ -34,11 +34,10 @@ const SuccessfulProjects = () => {
     triggerOnce: true,
   });
   return (
-    <section className="z-0 bg-black-50 py-16 flex mt-10">
+    <section ref={ref} className="z-0 bg-black-50 mb-14 py-16 flex mt-10 md:mb-20">
       <div className=" flex flex-col justify-center max-w-[120rem] mx-auto md:justify-evenly md:flex-row">
         {projects.map((projectData, index) => (
           <div
-            ref={ref}
             key={index}
             className="w-full my-8 flex space-y-2 flex-col items-center justify-center text-center  md:mx-5 md:w-44"
           >
