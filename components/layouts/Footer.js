@@ -54,7 +54,7 @@ const Footer = (props) => {
       <div className=" py-10 bg-black space-y-2 text-center">
         <p>© 2023 Amobi Victor Chukwuka. All Righs Reserved</p>
         <a href="mailto:conatct@opulencedeveloper.com" className="underline">
-        conatct@opulencedeveloper.com
+        victorkudos@gmail.com
         </a>
       </div>
     </footer>
