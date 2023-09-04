@@ -22,7 +22,7 @@ const projects = [
     image: "hardware-projects-icon.png",
   },
   {
-    title: "Developers Bugs Solved",
+    title: "Developers Bugs Fixed",
     number: "212",
     alt: "Amobi Victor Hardware Bugs Solved Icon",
     image: "bugs-solved-icon.jpg",
