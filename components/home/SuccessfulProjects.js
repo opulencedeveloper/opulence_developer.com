@@ -32,7 +32,7 @@ const projects = [
 const SuccessfulProjects = () => {
  
   return (
-    <section className="z-0 bg-black-50 mb-14 py-16 flex md:mb-20">
+    <section className="z-0 bg-black-50 py-16 flex">
       <div className=" flex flex-col justify-center max-w-[120rem] mx-auto lg:justify-evenly lg:flex-row">
         {projects.map((projectData, index) => (
           <span key={index}>

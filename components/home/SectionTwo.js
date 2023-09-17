@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 
 import Products from "../UI/Products";
 
-
 const SectionTwo = () => {
   const router = useRouter();
 
@@ -21,7 +20,7 @@ const SectionTwo = () => {
       description:
         "With comprehensive guides on topics like interview preparation, common interview questions, and salary negotiation.",
     },
-    
+
     {
       name: "Links",
       type: "Website",
@@ -30,7 +29,7 @@ const SectionTwo = () => {
       description:
         "Elevate your social media engagement with this platform's innovative features and strategies",
     },
-    
+
     {
       name: "Finance App",
       type: "Mobile App.",
@@ -66,15 +65,39 @@ const SectionTwo = () => {
   ];
 
   return (
-    <section className="mt-8 md:mt-14">
-      <div className="w-full">
-        <p className="text-xl font-medium mx-5 md:mx-12 md:text-2xl">Featured Product</p>
+    <>
+      <div className="relative px-3 max-w-4xl mx-auto bg-black-50 overflow-hidden flex justify-between items-center h-[20rem] md:px-12">
+        <div className="absolute -top-32 -left-12 bg-primary rounded-[80px] -rotate-12 h-[30rem] w-1/2 md:-left-24"></div>
+<p className="absolute bottom-2 right-2 text-sm opacity-30">opulencedeveloper</p>
+        <p className="leading-normal w-1/2 z-20 flex flex-col justify-center  font-bold text-xl md:text-4xl">
+          My Gurantee
+        </p>
+
+        <div className="w-1/2 z-20 flex flex-col text-2xl md:text-5xl justify-center font-bold">
+          <p className="text-7xl -mb-10">''</p>
+          <p className="leading-normal ">
+            I give you, <br />
+            The best of myself
+          </p>
+        </div>
+      </div>
+      <div className="w-full mt-8 md:mt-14">
+        <p className="text-xl font-medium mx-5 md:mx-12 md:text-2xl">
+          Featured Product
+        </p>
         <Products productInfo={productInfo} />
         <div className="flex justify-center my-10">
-          <button className="transition-transform duration-300 transform hover:scale-105 focus:outline-none border px-4 py-3" onClick={seeMoreHandler}>See More</button>
+          <button
+            className="transition-transform duration-300 transform hover:scale-105 focus:outline-none border px-4 py-3"
+            onClick={seeMoreHandler}
+          >
+            See More
+          </button>
         </div>
 
-        <p className="text-xl pl-5 font-medium md:pl-12 md:text-2xl">Featured Mobile Apps.</p>
+        <p className="text-xl pl-5 font-medium md:pl-12 md:text-2xl">
+          Featured Mobile Apps.
+        </p>
         <hr className="border-t-2 opacity-50 my-5 mx-3 md:mx-12" />
       </div>
       <div className=" space-x-5 flex pb-3 mx-5 md:mx-20 overflow-x-auto">
@@ -88,7 +111,7 @@ const SectionTwo = () => {
           </div>
         ))}
       </div>{" "}
-    </section>
+    </>
   );
 };
 export default SectionTwo;
