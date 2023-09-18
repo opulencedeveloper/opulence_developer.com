@@ -76,7 +76,7 @@ const SectionTwo = () => {
         <div className="w-1/2 z-20 flex flex-col text-2xl md:text-5xl justify-center font-bold">
           <p className="text-7xl -mb-10">''</p>
           <p className="leading-normal ">
-            I give you, <br />
+            I leave you, <br />
             The best of myself
           </p>
         </div>
