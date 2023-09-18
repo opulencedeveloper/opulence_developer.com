@@ -6,7 +6,6 @@ import SectionTwo from "@/components/home/SectionTwo";
 import MyServices from "@/components/home/MyServices";
 import SuccessfulProjects from "@/components/home/SuccessfulProjects";
 
-let isHomeScreenVisited;
 export default function Home() {
   return (
     <>
