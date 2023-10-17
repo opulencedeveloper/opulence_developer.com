@@ -83,11 +83,7 @@ const SectionOne = () => {
               expertise lies in the realm of
               <span className="animate-scramble-text text-white font-bold">
                 {" "}
-                FullStack(MERN) Software Engineering 
-              </span> 
-               with over 
-              <span className="animate-scramble-text text-white font-bold">
-               3 years experience.
+                FullStack Software Engineering.
               </span>
               {""}
             </h2>
