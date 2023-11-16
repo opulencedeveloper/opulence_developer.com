@@ -11,7 +11,7 @@ const projects = [
     link: "https://janetmemorialhospital.com",
   },
   {
-    title: "Telecomsdata (Customer)",
+    title: "Tidier (Customer)",
     type: "Mobile App.",
     technology: "Flutter, Node.js, MongoDB",
     status: "Deployed to Production",
@@ -19,7 +19,7 @@ const projects = [
     link: "https://play.google.com/store/apps/details?id=com.app.tidier",
   },
   {
-    title: "Telecomsdata (Workers)",
+    title: "Tidier (Workers)",
     type: "Mobile App.",
     technology: "Flutter, Node.js, MongoDB",
     status: "Deployed to Production",
