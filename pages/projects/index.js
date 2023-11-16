@@ -19,6 +19,13 @@ const projects = [
       "Duoiba helps merchants and vendors sell more to customers online by providing an e-commerce marketplace for them to get their own online stores, because online shops help businesses sell more to customers online. ",
     link: "https://duoiba.com",
   },
+    title: "Lizzy Match Tips",
+    type: "Mobile App.",
+    technology: "Flutter",
+    status: "Deployed for Production",
+    description: "Elevate your football predictions with the Match Tips app, your go-to companion for unlocking the secrets of every match. Immerse yourself in a world of expert analyses, strategic insights, and precise predictions",
+    link: "https://play.google.com/store/apps/details?id=tester.kma.lizzyfixedmatchtips",
+  },
   {
     title: "CALL-A-DOC",
     type: "Website",
