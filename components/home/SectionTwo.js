@@ -96,7 +96,7 @@ const SectionTwo = () => {
         </div>
 
         <p className="text-xl pl-5 font-medium md:pl-12 md:text-2xl">
-          Featured Mobile Apps.
+          Few of many Mobile Apps.
         </p>
         <hr className="border-t-2 opacity-50 my-5 mx-3 md:mx-12" />
       </div>
