@@ -83,7 +83,7 @@ const SectionTwo = () => {
       </div>
       <div className="w-full mt-20">
         <p className="text-xl font-medium mx-5 md:mx-12 md:text-2xl">
-          Featured Product
+          Few of many Product
         </p>
         <Products productInfo={productInfo} />
         <div className="flex justify-center my-10">
