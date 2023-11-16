@@ -4,11 +4,20 @@ const projects = [
   {
     title: "Janet Memorial Hospital",
     type: "Website",
-    technology: "Next.js",
+    technology: "Next.js, TailwindCss",
     status: "Deployed for Production",
     description:
       "Highlights an intuitive user experience, integrating a dynamic interactive map for location tracking, seamless appointment booking functionality, and a sleek interface presenting hospital services. Witness my ability to blend aesthetics with practicality in this skillfully crafted website.",
     link: "https://janetmemorialhospital.com",
+  },
+  {
+    title: "Duoiba",
+    type: "Website",
+    technology: "Next.js, Node.js, TailwindCss, MongoDB",
+    status: "Deployed for Production",
+    description:
+      "Duoiba helps merchants and vendors sell more to customers online by providing an e-commerce marketplace for them to get their own online stores, because online shops help businesses sell more to customers online. ",
+    link: "https://duoiba.com",
   },
   {
     title: "CALL-A-DOC",
@@ -26,7 +35,7 @@ const projects = [
     status: "Deployed for Production",
     description:
       "In building this Content Writer Portfolio Website, I've meticulously orchestrated design and content to harmonize, creating a digital space that truly reflects the essence of the content writer's craft.",
-    link: "",
+    link: "https://maureenportfoliowebsite.vercel.app/",
   },
 ];
 
