@@ -1,21 +1,24 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 import SectionOne from "@/components/home/SectionOne";
 import SectionThree from "@/components/home/SectionThree";
 import SectionTwo from "@/components/home/SectionTwo";
 import MyServices from "@/components/home/MyServices";
 import SuccessfulProjects from "@/components/home/SuccessfulProjects";
+import Portal from "@/components/UI/Portal";
 
 export default function Home() {
+const router = useRouter();
   return (
     <>
       <Head>
         <title>OpulenceDeveloper | FullStack Software Engineer Portfolio</title>
-       
         <meta
           property="title"
           content="OpulenceDeveloper | FullStack Software Engineer Portfolio"
-        /> <meta
+        />{" "}
+        <meta
           name="description"
           content="Welcome to OpulenceDeveloper's portfolio! Want a website? Want an App? I'm available for you, Explore a collection of projects showcasing FullStack Software Engineering expertise."
         />
@@ -32,13 +35,23 @@ export default function Home() {
           property="og:description"
           content="Want a website? Want an App? I'm available for you, Discover a portfolio of FullStack Software Engineering projects by Amobi Victor Chukwuka. Explore web and application development expertise."
         />
-      </Head>
+      </Head> 
+      <Portal>
+      <div className="flex flex-col items-center justify-center fixed z-40 right-0 h-40 w-10 top-1/2 transform -translate-y-1/2 bg-black text-white">
+        <button
+        onClick={() => router.push("/projects")}
+         className="-rotate-90 h-10  w-40 border-1.5 border-primary1 text-primary1 text-center">
+          View Projects_
+        </button>
+      </div>
+      </Portal>
       <SectionOne />
       <MyServices />
       <SuccessfulProjects />
-      
+
       <SectionTwo />
       <SectionThree />
+     
     </>
   );
 }
