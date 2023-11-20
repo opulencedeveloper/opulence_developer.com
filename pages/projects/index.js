@@ -61,14 +61,14 @@ const projects = [
       "In building this Content Writer Portfolio Website, I've meticulously orchestrated design and content to harmonize, creating a digital space that truly reflects the essence of the content writer's craft.",
     link: "https://maureenportfoliowebsite.vercel.app/",
   },
-  {
-    title: "Lizzy Match Tips",
-    type: "Mobile App.",
-    technology: "Flutter",
-    status: "Deployed to Production",
-    description: "Elevate your football predictions with the Match Tips app, your go-to companion for unlocking the secrets of every match. Immerse yourself in a world of expert analyses, strategic insights, and precise predictions",
-    link: "https://play.google.com/store/apps/details?id=tester.kma.lizzyfixedmatchtips",
-  },
+//{
+ //   title: "Lizzy Match Tips",
+ //   type: "Mobile App.",
+ //   technology: "Flutter",
+  //  status: "Deployed to Production",
+  //  description: "Elevate your football predictions with the Match Tips app, your go-to companion for unlocking the secrets of every match. Immerse yourself in a world of expert analyses, strategic insights, and precise predictions",
+   // link: "https://play.google.com/store/apps/details?id=tester.kma.lizzyfixedmatchtips",
+  //},
 ];
 
 const myProjects = [
