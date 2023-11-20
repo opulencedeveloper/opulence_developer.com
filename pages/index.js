@@ -37,7 +37,7 @@ const router = useRouter();
         />
       </Head> 
       <Portal>
-      <div className="flex flex-col items-center justify-center rounded-tl-[8px] rounded-bl-[8px] overflow-hidden stainless-steel-2 fixed z-40 right-0 h-32 w-7 top-1/2 transform -translate-y-1/2 bg-black text-white md:top2 md:h-40 md:w-10">
+      <div className="flex flex-col items-center justify-center rounded-tl-[8px] rounded-bl-[8px] overflow-hidden stainless-steel-2 fixed z-40 right-0 h-32 w-7 top-1/3 transform -translate-y-1/2 bg-black text-white md:top-1/2 md:h-40 md:w-10">
         <button
         onClick={() => router.push("/projects")}
          className="-rotate-90 h-7 w-32 text-black text-sm text-center md:text-base md:h-max md:w-max">
