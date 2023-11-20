@@ -30,6 +30,13 @@ const openSourceProjectInfo = [
     image: "react",
     url: "https://github.com/opulencedeveloper/opulence-calender.git",
   },
+  {
+    name: "App wide state management tool(React.js)",
+    description:
+      "This tool provides centralized state management, effortless integration, React Hooks compatibility, and a performance boost, pass a flag to components that you wish to exclude from rebuilding during state updates, Say goodbye to prop drilling and hello to streamlined state management.",
+    image: "react",
+    url: "https://github.com/opulencedeveloper/My-React-state-Magament-Solution-Code-using-customHooks.git",
+  },
 ];
 
 const brandsWorkedWith = [
