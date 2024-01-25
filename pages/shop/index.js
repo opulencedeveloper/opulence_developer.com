@@ -1,108 +1,52 @@
-import Products from "@/components/UI/Products";
-import Footer from "@/components/layouts/Footer";
-import Head from "next/head";
+import Link from "next/link";
+
+import { useRef, useState } from "react";
+import CSSTransition from "react-transition-group/CSSTransition";
+
+import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
 import Image from "next/image";
-const productInfo = [
-  {
-    name: "Fintech",
-    type: "Website",
-    imageUrl: "/images/money-hub-image.png",
-    link: "https://moneyhub.vercel.app/",
-    description:
-      "Offers a range of innovative tools and services to help you achieve your financial goals with confidence and ease",
-  },
-  {
-    name: "E-book",
-    type: "Mobile App.",
-    imageUrl: "/images/story-book-app.png",
-    link: "https://youtu.be/UqOb7JOXNWc",
-    description:
-      "Introduce young minds to the joy of reading with 'Wonderland Tales,' an enchanting story book mobile app designed especially for kids",
-  },
 
-  {
-    name: "Prep",
-    type: "Website",
-    link: "https://prep-six.vercel.app/",
-    imageUrl: "/images/prep.png",
-    description:
-      "With comprehensive guides on topics like interview preparation, common interview questions, and salary negotiation.",
-  },
-  {
-    name: "Finance App",
-    type: "Mobile App.",
-    imageUrl: "/images/finance-app.png",
-    link: "https://youtu.be/OFjW-Sjc_VQ",
-    description:
-      "With a sleek and user-friendly interface, the app makes it easy to stay on top of your finances",
-  },
-  {
-    name: "MacLinks",
-    type: "Website",
-    imageUrl: "/images/mac-links-image.png",
-    link: "https://maclink.vercel.app/",
-    description:
-      "Enjoy the flexibility to choose from an array of customization options, enabling you to brand your academy and create a seamless extension of your professional identity.",
-  },
-  {
-    name: "Links",
-    type: "Website",
-    imageUrl: "/images/links-image.png",
-    link: "https://links-tan.vercel.app/",
-    description:
-      "Elevate your social media engagement with this platform's innovative features and strategies",
-  },
-  {
-    name: "EduLab",
-    type: "Website",
-    imageUrl: "/images/edu-lab-image.png",
-    link: "https://edulab-jet.vercel.app/",
-    description:
-      "A vibrant online platform dedicated to celebrating the transformative power of education",
-  },
+const animationTiming = {
+  enter: 400,
+  exit: 0,
+};
 
+const shopCategory = [
   {
-    name: "Real-Estate",
-    type: "Website",
-    imageUrl: "/images/real-estate-image.png",
-    link: "https://real-estate-beta-silk.vercel.app/",
-    description:
-      "Showcases an extensive range of exceptional properties, catering to diverse needs and preferences",
+    title: "Software",
+    sub: [
+      { title: "Website and Mobile App", link: "/opulence-developer-software" },
+     
+    ],
   },
+  {
+    title: "Telecommunications",
+    sub: [
+      { title: "Cyndi Data Vendor", link: "/cyndi-data-vendor" }
+    ],
+  },
+ 
 ];
 
-const Shop = () => {
+const HelpCenterInfo = (props) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const nodeRef = useRef(null);
+
+  const handleToggle = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+
   return (
-    <>
-      <Head>
-        <title>For Sale - OpulenceDeveloper Portfolio</title>
-        <meta
-          name="description"
-          content="Browse a collection of websites and mobile apps for sale on OpulenceDeveloper's portfolio. Find high-quality digital products ready for purchase."
-        />
-        <meta
-          name="keywords"
-          content="OpulenceDeveloper, Portfolio, Websites for Sale, Mobile Apps for Sale, FullStack Software Engineer"
-        />
-        <meta name="author" content="Amobi Victor Chukwuka" />
-        {/* Open Graph Meta Tags */}
-        <meta
-          property="og:title"
-          content="For Sale - OpulenceDeveloper Portfolio"
-        />
-        <meta
-          property="og:description"
-          content="Explore a variety of websites and mobile apps for sale by Amobi Victor Chukwuka. High-quality digital products ready for purchase."
-        />
-      </Head>{" "}
-      <section>
-        <div className="relative rounded-tl rounded-tr overflow-hidden flex items-center mt-8 ml-5 md:mt-20 md:ml-12 ">
+    <div className="">
+       <div className="relative rounded-tl rounded-tr overflow-hidden flex items-center mt-8 ml-5 md:mt-20 md:ml-12 ">
           {" "}
           <div className="z-10 flex justify-center items-center bg-white flex-shrink-0 h-12 w-12 rounded-full overflow-hidden">
             {" "}
             <Image
               src="/images/icon/cart-icon.gif"
               alt="Software Marketplace: Explore and Acquire Cutting-Edge Solutions with OpulenceDeveloper"
+              priority
+              loading="eager"
               className="h-auto w-auto bg-transparent"
               width={40}
               height={40}
@@ -112,11 +56,63 @@ const Shop = () => {
             Opulence Shop
           </p>
         </div> 
-        <Products productInfo={productInfo} />
-      </section>{" "}
-      <Footer />
-    </>
+      <div className=" mx-auto mt-10 px-5 md:mt-16 md:px-8">
+        {shopCategory.map((shop, index) => (
+          <div
+            key={index}
+            className="border border-primary1 rounded-xl px-5 py-3 mb-5 md:px-8"
+          >
+            <button
+              className="flex items-center justify-between w-full py-3 transition duration-300 ease-in-out"
+              onClick={() => handleToggle(index)}
+            >
+              <span className="text-[16px] text-start font-medium text-gray-1 md:text-[24px]">
+                {shop.title}
+              </span>
+              <div className="relative flex-shrink-0 h-[28px] w-[28px] md:h-[32px] md:w-[32px] border-[3px] border-white  rounded-full">
+                <div
+                  className={`absolute w-[50%] rounded-full h-[2px] bg-white inset-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
+                    activeIndex === index ? "rotate-90" : ""
+                  } transition duration-300 ease-in-out`}
+                ></div>
+                <div
+                  className={`absolute w-[50%] rounded-full h-[2px] bg-white inset-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
+                    activeIndex === index ? "rotate-180" : ""
+                  } transition duration-300 ease-in-out`}
+                ></div>
+              </div>
+            </button>
+
+            <CSSTransition
+              nodeRef={nodeRef}
+              mountOnEnter
+              unmountOnExit
+              in={activeIndex === index}
+              timeout={animationTiming}
+              classNames={{
+                enter: "",
+                enterActive: "OpenShop",
+                exit: "",
+                exitActive: "",
+              }}
+            >
+              <div
+                ref={nodeRef}
+                className="max-w-[50rem] pb-2 px-2 pt-5 space-y-3 text-custom4 text-[14px] md:text-[20px]"
+              >
+                {shop.sub.map((store, index) => (
+                  <Link className="flex justify-between items-center border-t py-3" key={index} href={store.link}>
+                   <p>{store.title}</p> 
+                   <Image alt={`${store.title} icon`} src={arrowRightIcon} priority loading="eager" />
+                  </Link>
+                ))}
+              </div>
+            </CSSTransition>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
-export default Shop;
+export default HelpCenterInfo;
