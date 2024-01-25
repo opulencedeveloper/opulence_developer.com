@@ -43,9 +43,10 @@ html {
   }
 }
 
+.OpenShop {
+  animation: openBookingAppointment 0.4s ease-out forwards;
+}
 
-
-/* styles/globals.css */
 @keyframes flickerNeonAnimation {
   0%, 100% {
     opacity: 1;
@@ -57,7 +58,6 @@ html {
   }
 }
 
-/* styles/globals.css */
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;

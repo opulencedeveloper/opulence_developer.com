@@ -2,10 +2,12 @@ import Image from "next/image";
 
 import handleWhatsAppClick from "@/helpers/whatsapp";
 import Head from "next/head";
+import Footer from "@/components/layouts/Footer";
 
 const sendMessageHandler = () => {
   handleWhatsAppClick(
-    "I'm reaching out through your portfolio website as I've encountered a coding issue and believe you could provide valuable assistance."
+    "I'm reaching out through your portfolio website as I've encountered a coding issue and believe you could provide valuable assistance.",
+    "+2348184297165"
   );
 };
 const CodeSupport = () => {
@@ -86,8 +88,9 @@ const CodeSupport = () => {
               height={16}
             />
           </button>
-        </div>
+        </div> 
       </section>
+      <Footer />
     </>
   );
 };

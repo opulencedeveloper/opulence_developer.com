@@ -1,3 +1,4 @@
+import Footer from "@/components/layouts/Footer";
 import Head from "next/head";
 
 const projects = [
@@ -60,6 +61,16 @@ const projects = [
     description:
       "In building this Content Writer Portfolio Website, I've meticulously orchestrated design and content to harmonize, creating a digital space that truly reflects the essence of the content writer's craft.",
     link: "https://maureenportfoliowebsite.vercel.app/",
+  },
+
+  {
+    title: "Ologwu Samuel",
+    type: "Website",
+    technology: "Next.js",
+    status: "Deployed to Production",
+    description:
+      "Portfolio website of a product designer",
+    link: " https://ologwusamuel.vercel.app/",
   },
 //{
  //   title: "Lizzy Match Tips",
@@ -243,6 +254,8 @@ const Projects = () => {
           </a>
         </div>
       </section>{" "}
+      
+      <Footer />
     </>
   );
 };

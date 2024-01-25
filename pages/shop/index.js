@@ -1,4 +1,5 @@
 import Products from "@/components/UI/Products";
+import Footer from "@/components/layouts/Footer";
 import Head from "next/head";
 import Image from "next/image";
 const productInfo = [
@@ -110,9 +111,10 @@ const Shop = () => {
           <p className=" absolute container -left-[38rem] z-0 animate-slideFromLeft font-semibold text-xl md:text-3xl">
             Opulence Shop
           </p>
-        </div>
+        </div> 
         <Products productInfo={productInfo} />
       </section>{" "}
+      <Footer />
     </>
   );
 };

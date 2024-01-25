@@ -26,6 +26,7 @@ const About = () => {
         />
       </Head>
       <SectionOne />
+      <Footer />
     </>
   );
 };
