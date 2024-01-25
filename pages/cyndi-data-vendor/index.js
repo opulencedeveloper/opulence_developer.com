@@ -192,7 +192,7 @@ const CyndiDataVendor = () => {
             </div>
           ))}
           <div
-            className={`flex flex-col items-center justify-center rounded-lg bg-black-50 py-3 mb-10 min-[484px]:w-full min-[500px]:w-[47%] min-[1251px]:w-[28.3%]`}
+            className={`flex flex-col shadow-2xl transform hover:scale-105 transition-transform duration-100 rounded-lg bg-black-50 py-3 mb-10 max-[584px]:w-full max-[918px]:w-[47%] w-[28.3%]`}
           >
             <p className="text-[27px] mt-3 mb-2 text-center font-medium">
               OTHER SERVICES
