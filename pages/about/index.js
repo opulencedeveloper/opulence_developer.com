@@ -1,4 +1,5 @@
 import SectionOne from "@/components/about/SectionOne";
+import Footer from "@/components/layouts/Footer";
 import Head from "next/head";
 
 const About = () => {
@@ -25,7 +26,7 @@ const About = () => {
           content="Explore the profile of Amobi Victor Chukwuka, a skilled FullStack Software Engineer. Discover my journey, expertise, and passion for creating digital solutions."
         />
       </Head>
-      <SectionOne />
+      <SectionOne /> 
       <Footer />
     </>
   );
