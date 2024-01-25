@@ -146,7 +146,7 @@ const CyndiDataVendor = () => {
         <p className="text-center mb-10 animate-float font-light text-sm md:text-base">
           All subscription plan is valid for 30 days
         </p>
-        <div className="flex justify-between flex-wrap max-[918px]:gap-[6%] gap-[7.5%]">
+        <div className="flex justify-between flex-wrap max-[918px]:gap-[6%] gap-[7.5%] px-5 md:px-0">
           {" "}
           {listOfMtnDataSub.map((subInfo, index) => (
             <div
