@@ -170,7 +170,7 @@ const CyndiDataVendor = () => {
                   >
                     <p>{subInfo.data}</p>{" "}
                     <p>
-                      <span className="text-sm mr-1">₦</span>
+                      <span className="text-sm">₦</span>
                       {subInfo.price}
                     </p>
                   </div>
