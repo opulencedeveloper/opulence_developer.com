@@ -7,6 +7,7 @@ import SectionTwo from "@/components/home/SectionTwo";
 import MyServices from "@/components/home/MyServices";
 import SuccessfulProjects from "@/components/home/SuccessfulProjects";
 import Portal from "@/components/UI/Portal";
+import Footer from "@/components/layouts/Footer";
 
 export default function Home() {
 const router = useRouter();
@@ -51,7 +52,7 @@ const router = useRouter();
 
       <SectionTwo />
       <SectionThree />
-     
+     <Footer />
     </>
   );
 }
