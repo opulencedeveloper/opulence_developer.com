@@ -8,11 +8,12 @@ import gloLogo from "../../public/images/logo/glo-logo.jpg";
 
 import goTVLogo from "../../public/images/logo/gotv-logo.jpg";
 import dsTVLogo from "../../public/images/logo/dstv-logo.jpg";
-import starTimesLogo from "../../public/images/logo/star-times-logo.jpg";
+
 import handleWhatsAppClick from "@/helpers/whatsapp";
+import OtherServices from "@/components/cyndi-data-vendor/OtherServices";
 
 const CyndiDataVendor = () => {
-  const listOfMtnDataSub = [
+  const listOfSub = [
     {
       logo: mtnLogo,
       type: "MTN",
@@ -80,6 +81,20 @@ const CyndiDataVendor = () => {
     },
 
     {
+      logo: goTVLogo,
+      type: "GoTv",
+      companyColor: "bg-green-400",
+      companyBorderColor: "border-green-400",
+      dataInfo: [
+        { data: "Smallie", price: "1,500" },
+        { data: "Jinja", price: "2,900" },
+        { data: "Jolli", price: "4,200" },
+        { data: "Max", price: "5,900" },
+        { data: "Supa", price: "7,800" },
+        { data: "Supa+", price: "12,800" },
+      ],
+    },
+    {
       logo: dsTVLogo,
       type: "DSTV",
       companyColor: "bg-blue-400",
@@ -97,20 +112,7 @@ const CyndiDataVendor = () => {
       ],
     },
 
-    {
-      logo: goTVLogo,
-      type: "GoTv",
-      companyColor: "bg-green-400",
-      companyBorderColor: "border-green-400",
-      dataInfo: [
-        { data: "Smallie", price: "1,500" },
-        { data: "Jinja", price: "2,900" },
-        { data: "Jolli", price: "4,200" },
-        { data: "Max", price: "5,900" },
-        { data: "Supa", price: "7,800" },
-        { data: "Supa+", price: "12,800" },
-      ],
-    },
+    
   ];
   return (
     <>
@@ -146,12 +148,12 @@ const CyndiDataVendor = () => {
         <p className="text-center mb-10 animate-float font-light text-sm md:text-base">
           All subscription plan is valid for 30 days
         </p>
-        <div className="flex justify-between flex-wrap max-[918px]:gap-[6%] gap-[7.5%] max-[918px]:px-3 px-0">
+        <div className="flex justify-between flex-wrap max-[950px]:gap-[6%] gap-[7.5%] max-[950px]:px-3 px-20">
           {" "}
-          {listOfMtnDataSub.map((subInfo, index) => (
-            <div
+          {listOfSub.map((subInfo, index) => {
+            return <div
               key={index}
-              className={`border ${subInfo.companyBorderColor} flex flex-col shadow-2xl transform hover:scale-105 transition-transform duration-100 rounded-lg bg-black-50 py-3 mb-10 max-[584px]:w-full max-[918px]:w-[47%] w-[28.3%]`}
+              className={`border ${subInfo.companyBorderColor} max-[584px]:sticky max-[584px]:top-10 static top-0 flex flex-col shadow-2xl transform hover:scale-105 transition-transform duration-100 rounded-lg ${subInfo.companyColor} py-3 mb-10 max-[584px]:w-full max-[950px]:w-[47%] w-[28.3%]`}
             >
               <div className="h-20 rounded-full overflow-hidden mt-3 mb-5 w-20 mx-auto">
                 <Image
@@ -166,7 +168,7 @@ const CyndiDataVendor = () => {
                 {subInfo.dataInfo.map((subInfo, index) => (
                   <div
                     key={index}
-                    className="flex justify-between w-full bg-black/70 py-1 px-3"
+                    className="flex justify-between w-full rounded-md bg-black-50 py-1.5 px-4"
                   >
                     <p>{subInfo.data}</p>{" "}
                     <p>
@@ -184,47 +186,17 @@ const CyndiDataVendor = () => {
                       "+2347064891660"
                     )
                   }
-                  className={`rounded-sm ${subInfo.companyColor} h-10 px-3`}
+                  className={`rounded-sm bg-black-50 h-10 px-3`}
                 >
                   Contact Vendor
                 </button>
               </div></div> 
             </div>
-          ))}
-          <div
-            className={`flex flex-col shadow-2xl transform hover:scale-105 transition-transform duration-100 rounded-lg bg-black-50 py-3 mb-10 max-[584px]:w-full max-[918px]:w-[47%] w-[28.3%]`}
-          >
-            <p className="text-[27px] mt-3 mb-2 text-center font-medium">
-              OTHER SERVICES
-            </p>
-            <div className="w-full px-5 space-y-3 text-center">
-              <div className="h-20 rounded-full overflow-hidden mb-5 w-20 mx-auto">
-                <Image
-                  src={starTimesLogo}
-                  alt="Star Times subscription"
-                  className="w-full"
-                  priority
-                  loading="eager"
-                />
-              </div>
-              <p className="w-full bg-black/70  py-1 px-3">
-                StarTimes Subscription
-              </p>
-            </div>
-            <div className="flex justify-center my-4">
-              <button
-               onClick={() =>
-                handleWhatsAppClick(
-                  `Hello! Cyndi Data Vendor, I want to purchase subscription for StarTimes`,
-                  "+2347064891660"
-                )}
-               className={`rounded-sm bg-black/70  h-10 px-3`}>
-                Contact Vendor
-              </button>
-            </div>
-          </div>
+})}
+          <OtherServices style="max-[584px]:hidden flex"/>
+          
         </div>
-
+        <OtherServices style="max-[584px]:flex hidden"/>
         <p className="animate-float text-center mt-10 underline">We are TRUSTED, REALIABLE & LEGIT</p>
       </section>
       {/* <SectionOne /> */}
