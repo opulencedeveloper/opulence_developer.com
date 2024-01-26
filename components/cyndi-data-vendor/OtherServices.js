@@ -1,7 +1,7 @@
 import handleWhatsAppClick from "@/helpers/whatsapp";
 import Image from "next/image";
 
-import starTimesLogo from "../../public/images/logo/star-times-logo.jpg";
+import starTimesLogo from "../../public/images/logo/star-times-logo.png";
 
 const OtherServices = ({style}) => {
     return <div
@@ -15,7 +15,7 @@ const OtherServices = ({style}) => {
         <Image
           src={starTimesLogo}
           alt="Star Times subscription"
-          className="w-full"
+          className="w-full h-full object-cover"
           priority
           loading="eager"
         />

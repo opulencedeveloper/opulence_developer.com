@@ -159,7 +159,7 @@ const CyndiDataVendor = () => {
                 <Image
                   src={subInfo.logo}
                   alt="data subscription plan"
-                  className="w-full"
+                  className="w-full h-full object-cover"
                   priority
                   loading="eager"
                 />
