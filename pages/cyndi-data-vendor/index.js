@@ -153,7 +153,7 @@ const CyndiDataVendor = () => {
           {listOfSub.map((subInfo, index) => {
             return <div
               key={index}
-              className={`border ${subInfo.companyBorderColor} max-[584px]:sticky max-[584px]:top-10 static top-0 flex flex-col shadow-2xl transform hover:scale-105 transition-transform duration-100 rounded-lg ${subInfo.companyColor} py-3 mb-10 max-[584px]:w-full max-[950px]:w-[47%] w-[28.3%]`}
+              className={`border ${subInfo.companyBorderColor} max-[584px]:sticky max-[584px]:top-10 static top-0 flex flex-col shadow-2xl rounded-lg ${subInfo.companyColor} py-3 mb-10 max-[584px]:w-full max-[950px]:w-[47%] w-[28.3%]`}
             >
               <div className="h-20 rounded-full overflow-hidden mt-3 mb-5 w-20 mx-auto">
                 <Image
@@ -178,7 +178,7 @@ const CyndiDataVendor = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-center my-4">
+              <div className="flex justify-center mb-4 mt-6">
                 <button
                   onClick={() =>
                     handleWhatsAppClick(
@@ -186,7 +186,7 @@ const CyndiDataVendor = () => {
                       "+2347064891660"
                     )
                   }
-                  className={`rounded-sm bg-black-50 h-10 px-3`}
+                  className={`hover:scale-105 transition-transform duration-100 rounded-md bg-black/70 h-10 px-7`}
                 >
                   Contact Vendor
                 </button>
