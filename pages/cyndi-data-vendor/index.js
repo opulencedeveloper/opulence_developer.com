@@ -153,7 +153,7 @@ const CyndiDataVendor = () => {
           {listOfSub.map((subInfo, index) => {
             return <div
               key={index}
-              className={`border ${subInfo.companyBorderColor} max-[584px]:sticky max-[584px]:top-10 static top-0 flex flex-col shadow-2xl rounded-lg ${subInfo.companyColor} py-3 mb-10 max-[584px]:w-full max-[950px]:w-[47%] w-[28.3%]`}
+              className={`border ${subInfo.companyBorderColor} max-[584px]:sticky max-[584px]:top-7 static top-0 flex flex-col shadow-2xl rounded-lg ${subInfo.companyColor} py-3 mb-10 max-[584px]:w-full max-[950px]:w-[47%] w-[28.3%]`}
             >
               <div className="h-20 rounded-full overflow-hidden mt-3 mb-5 w-20 mx-auto">
                 <Image
