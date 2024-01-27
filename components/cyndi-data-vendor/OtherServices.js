@@ -20,7 +20,11 @@ const OtherServices = ({style}) => {
           loading="eager"
         />
       </div>
-      <p className="w-full bg-black/70  py-1 px-3">
+      <p onClick={() => 
+        handleWhatsAppClick(
+          `Hello! Cyndi Data Vendor, I want to purchase subscription for StarTimes`,
+          "+2347064891660"
+        )} className="w-full bg-black/70  py-1 px-3">
         StarTimes Subscription
       </p>
     </div>
