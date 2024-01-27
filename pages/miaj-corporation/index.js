@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Head from "next/head";
 
 import mtnLogo from "../../public/images/logo/mtn-logo.jpg";
@@ -9,7 +8,7 @@ import maijCorperationLogo from "../../public/images/shop/maij-corperation/maij-
 import TeleCommunications from "@/components/shop/Telecommunications";
 import OtherServices from "@/components/cyndi-data-vendor/OtherServices";
 
-const CyndiDataVendor = () => {
+const MiajCorporation = () => {
   const listOfSub = [
     {
       logo: mtnLogo,
@@ -40,23 +39,6 @@ const CyndiDataVendor = () => {
       ],
     },
     {
-      logo: etisalatLogo,
-      type: "9Mobile",
-      companyColor: "bg-green-500",
-      companyBorderColor: "border-green-500",
-      dataInfo: [
-        { data: "500MB", price: "250" },
-        { data: "1GB", price: "350" },
-        { data: "2GB", price: "450" },
-        { data: "3GB", price: "1000" },
-        { data: "4GB", price: "1500" },
-        { data: "5GB", price: "2000" },
-        { data: "10GB", price: "3000" },
-        { data: "20GB", price: "5500" },
-        { data: "30GB", price: "7500" },
-      ],
-    },
-    {
       logo: gloLogo,
       type: "Glo",
       companyColor: "bg-green-950",
@@ -70,6 +52,23 @@ const CyndiDataVendor = () => {
         { data: "10GB", price: "3200" }
       ],
     },
+    {
+        logo: etisalatLogo,
+        type: "9Mobile",
+        companyColor: "bg-green-500",
+        companyBorderColor: "border-green-500",
+        dataInfo: [
+          { data: "500MB", price: "250" },
+          { data: "1GB", price: "350" },
+          { data: "2GB", price: "450" },
+          { data: "3GB", price: "1000" },
+          { data: "4GB", price: "1500" },
+          { data: "5GB", price: "2000" },
+          { data: "10GB", price: "3000" },
+          { data: "20GB", price: "5500" },
+          { data: "30GB", price: "7500" },
+        ],
+      },
   ];
 
   const writingServices = ["Ghost Writing", "Project Writing", "Short Story Writing", "Editing"]
@@ -116,4 +115,4 @@ const CyndiDataVendor = () => {
   );
 };
 
-export default CyndiDataVendor;
+export default MiajCorporation;
