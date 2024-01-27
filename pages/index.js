@@ -49,7 +49,6 @@ const router = useRouter();
       <SectionOne />
       <MyServices />
       <SuccessfulProjects />
-
       <SectionTwo />
       <SectionThree />
      <Footer />
