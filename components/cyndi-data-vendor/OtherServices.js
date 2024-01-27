@@ -34,7 +34,7 @@ const OtherServices = (props) => {
        onClick={() => 
         handleWhatsAppClick(
           `Hello! Cyndi Data Vendor, I want to purchase subscription for StarTimes`,
-          "+2347064891660"
+          whatsappNumber
         )}
        className={`hover:scale-105 transition-transform duration-100 rounded-sm bg-black/70 flex items-center space-x-2  h-10 px-4`}>
          <p>Contact Vendor</p>  <Image alt={"arrow right icon"} src={arrowRightIcon} priority loading="eager" />
