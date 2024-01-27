@@ -166,21 +166,21 @@ const CyndiDataVendor = () => {
                 />
               </div>
            <div className="flex-1 flex flex-col justify-between ">   <div className="w-full px-5 space-y-3">
-                {subInfo.dataInfo.map((subInfo, index) => (
+                {subInfo.dataInfo.map((subInfoObj, index) => (
                   <div
                     key={index}
                     onClick={() =>
                       handleWhatsAppClick(
-                        `Hello! Cyndi Data Vendor, I want to purchase subscription for ${subInfo.type} ${subInfo.data} whose price is ₦${subInfo.price} as advertise on the webiste`,
+                        `Hello! Cyndi Data Vendor, I want to purchase subscription for ${subInfo.type} ${subInfoObj.data} whose price is ₦${subInfo.price} as advertise on the webiste`,
                         "+2347064891660"
                       )
                     }
                     className="flex justify-between cursor-pointer w-full rounded-md bg-black-50 py-1.5 px-4"
                   >
-                    <p>{subInfo.data}</p>{" "}
+                    <p>{subInfoObj.data}</p>{" "}
                     <p>
                       <span className="text-sm">₦</span>
-                      {subInfo.price}
+                      {subInfoObj.price}
                     </p>
                   </div>
                 ))}
