@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import MainNavigation from "./Main-Navigation.js";
 
+import heroImage from "../../public//images/hero.gif";
 
 const Layout = (props) => {
   return (
@@ -10,19 +11,17 @@ const Layout = (props) => {
       <div className="fixed z-0 bottom-0 right-0 left-0 top-0 z-20 bg-primary h-screen w-full">
         {" "}
         <Image
-          src="/images/hero.gif"
+          src={heroImage}
           alt="Dynamic Horizon: The Visual Canvas of OpulenceDeveloper's Portfolio"
-          style={{ filter: "brightness(0.2)" }}
+          style={{ filter: "brightness(0.6)" }}
           className="h-full w-full object-cover"
           priority
           loading="eager"
-          width={600}
-          height={400}
         />{" "}
       </div>
       <div className="relative">
         <MainNavigation />
-        <main className="relative z-40">{props.children}</main>
+        <main className="relative z-40 bg-black-50">{props.children}</main>
       </div>
     </>
   );

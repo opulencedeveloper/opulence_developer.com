@@ -168,7 +168,13 @@ const CyndiDataVendor = () => {
                 {subInfo.dataInfo.map((subInfo, index) => (
                   <div
                     key={index}
-                    className="flex justify-between w-full rounded-md bg-black-50 py-1.5 px-4"
+                    onClick={() =>
+                      handleWhatsAppClick(
+                        `Hello! Cyndi Data Vendor, I want to purchase subscription for ${subInfo.type} ${subInfo.data} whose price is ₦${subInfo.price} as advertise on the webiste`,
+                        "+2347064891660"
+                      )
+                    }
+                    className="flex justify-between cursor-pointer w-full rounded-md bg-black-50 py-1.5 px-4"
                   >
                     <p>{subInfo.data}</p>{" "}
                     <p>

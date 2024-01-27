@@ -58,7 +58,7 @@ const MainNavigation = () => {
     <>
       {" "}
      
-      <header className="relative z-20 flex justify-between items-center h-20 pt-2 px-5 md:pt-10 md:px-8">
+      <header className="relative bg-black/70 z-20 flex justify-between items-center h-max py-2 px-5 md:py-7 md:px-8">
         <div className="relative z-50" >
           <h1 className="animate-shimmering-silver-text leading-none text-lg font-bold md:text-4xl">
             {companyName}

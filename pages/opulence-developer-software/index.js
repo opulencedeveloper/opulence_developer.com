@@ -95,7 +95,7 @@ const Shop = () => {
           content="Explore a variety of websites and mobile apps for sale by Amobi Victor Chukwuka. High-quality digital products ready for purchase."
         />
       </Head>{" "}
-      <section className="mt-8">
+      <section className="pt-8">
        
         <Products productInfo={productInfo} />
       </section>{" "}

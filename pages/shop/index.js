@@ -60,7 +60,7 @@ const HelpCenterInfo = (props) => {
         {shopCategory.map((shop, index) => (
           <div
             key={index}
-            className="border border-primary1 rounded-xl px-5 py-3 mb-5 md:px-8"
+            className="border border-primary1 bg-black/70 rounded-xl px-5 py-3 mb-5 md:px-8"
           >
             <button
               className="flex items-center justify-between w-full py-3 transition duration-300 ease-in-out"
@@ -72,12 +72,12 @@ const HelpCenterInfo = (props) => {
               <div className="relative flex-shrink-0 h-[28px] w-[28px] md:h-[32px] md:w-[32px] border-[3px] border-white  rounded-full">
                 <div
                   className={`absolute w-[50%] rounded-full h-[2px] bg-white inset-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
-                    activeIndex === index ? "rotate-90" : ""
+                    activeIndex !== index ? "rotate-90" : ""
                   } transition duration-300 ease-in-out`}
                 ></div>
                 <div
                   className={`absolute w-[50%] rounded-full h-[2px] bg-white inset-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
-                    activeIndex === index ? "rotate-180" : ""
+                    activeIndex !== index ? "rotate-180" : ""
                   } transition duration-300 ease-in-out`}
                 ></div>
               </div>
