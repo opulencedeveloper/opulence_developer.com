@@ -78,7 +78,7 @@ const SectionOne = () => {
             </div>
           </div>
           <div className="relative z-50 text-2xl space-y-3  md:text-5xl 2xl:text-6xl">
-            <h2 className="leading-tight font-semibold mb-10 animate-text-glitch">
+            <h2 className="shadow-2xl shadow-inner leading-tight font-semibold mb-10 animate-text-glitch">
               What took you so long to find me? I'm{" "}
               <span className="text-white font-bold">Victor Amobi</span>, my
               expertise lies in the realm of
