@@ -5,6 +5,7 @@ import mtnLogo from "../../public/images/logo/mtn-logo.jpg";
 import airtelLogo from "../../public/images/logo/airtel-logo.jpg";
 import etisalatLogo from "../../public/images/logo/etisalat-logo.jpg";
 import gloLogo from "../../public/images/logo/glo-logo.jpg";
+import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
 
 import goTVLogo from "../../public/images/logo/gotv-logo.jpg";
 import dsTVLogo from "../../public/images/logo/dstv-logo.jpg";
@@ -192,9 +193,9 @@ const CyndiDataVendor = () => {
                       "+2347064891660"
                     )
                   }
-                  className={`hover:scale-105 transition-transform duration-100 rounded-md bg-black/70 h-10 px-7`}
+                  className={`hover:scale-105 transition-transform duration-100 flex items-center space-x-2 rounded-md bg-black/70 h-10 px-7`}
                 >
-                  Contact Vendor
+                 <p>Contact Vendor</p>  <Image alt={"arrow right icon"} src={arrowRightIcon} priority loading="eager" />
                 </button>
               </div></div> 
             </div>

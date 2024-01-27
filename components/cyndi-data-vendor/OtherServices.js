@@ -1,5 +1,7 @@
-import handleWhatsAppClick from "@/helpers/whatsapp";
 import Image from "next/image";
+
+import handleWhatsAppClick from "@/helpers/whatsapp";
+import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
 
 import starTimesLogo from "../../public/images/logo/star-times-logo.png";
 
@@ -35,8 +37,8 @@ const OtherServices = ({style}) => {
           `Hello! Cyndi Data Vendor, I want to purchase subscription for StarTimes`,
           "+2347064891660"
         )}
-       className={`hover:scale-105 transition-transform duration-100 rounded-sm bg-black/70  h-10 px-7`}>
-        Contact Vendor
+       className={`hover:scale-105 transition-transform duration-100 rounded-sm bg-black/70 flex items-center space-x-2  h-10 px-7`}>
+         <p>Contact Vendor</p>  <Image alt={"arrow right icon"} src={arrowRightIcon} priority loading="eager" />
       </button>
     </div>
   </div>
