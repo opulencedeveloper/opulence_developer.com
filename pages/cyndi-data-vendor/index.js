@@ -1,16 +1,14 @@
-import Image from "next/image";
 import Head from "next/head";
 
 import mtnLogo from "../../public/images/logo/mtn-logo.jpg";
 import airtelLogo from "../../public/images/logo/airtel-logo.jpg";
 import etisalatLogo from "../../public/images/logo/etisalat-logo.jpg";
 import gloLogo from "../../public/images/logo/glo-logo.jpg";
-import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
-
+import starTimesLogo from "../../public/images/logo/star-times-logo.png";
+import cyndyDataVendorFlyer from "../../public/images/shop/cyndy-data-vendor/cyndy-data-vendor-flyer.jpg";
 import goTVLogo from "../../public/images/logo/gotv-logo.jpg";
 import dsTVLogo from "../../public/images/logo/dstv-logo.jpg";
-
-import handleWhatsAppClick from "@/helpers/whatsapp";
+import TeleCommunications from "@/components/shop/Telecommunications";
 import OtherServices from "@/components/cyndi-data-vendor/OtherServices";
 
 const CyndiDataVendor = () => {
@@ -112,9 +110,9 @@ const CyndiDataVendor = () => {
         { data: "Premium", price: "29,800" },
       ],
     },
-
-    
   ];
+
+  const otherServices = ["StarTimes Subscription"];
   return (
     <>
       <Head>
@@ -127,7 +125,7 @@ const CyndiDataVendor = () => {
           name="keywords"
           content="Cyndi Data Vendor, data subscriptions, DSTV subscriptions, GOTV subscriptions, high-speed data plans, online subscriptions, affordable subscriptions, reliable service"
         />
-        <meta name="author" content="Amobi Victor Chukwuka" />
+        <meta name="author" content="Cyndi Data Vendor" />
         <meta
           property="og:title"
           content="Cyndi Data Vendor: Data, DSTV and GOTV Subscriptions"
@@ -136,16 +134,53 @@ const CyndiDataVendor = () => {
           property="og:description"
           content="Cyndi Data Vendor: Your Source for Data, DSTV and GOTV Subscriptions. Get high-speed data plans, DSTV, and GOTV subscriptions conveniently online. Affordable prices and reliable service."
         />
-         <meta 
+        <meta
           property="og:image"
           content="https://opulencedeveloper.com/images/cynthia-data-vendor-image.png"
         />
       </Head>
-
-      <section className="relative z-20 mt-5 py-10 px-5 md:px-8">
-        <h1 className="text-center mb-5 animate-shimmering-silver-text leading-none text-2xl font-bold md:text-4xl">
+      <TeleCommunications
+        header="Cyndi Data Vendor"
+        title="We sell affordable data plan & cable subscriptions"
+        logo={cyndyDataVendorFlyer}
+        dataSubs={listOfSub}
+        whatsappNumber="+2347064891660"
+        motto="We are TRUSTED, REALIABLE & LEGIT"
+        otherServicesMobieView={
+          <OtherServices
+            title="OTHER SERVICES"
+            storeName="Cyndi Data Vendor"
+            servicesInfo={otherServices}
+            image={starTimesLogo}
+            style="max-[584px]:flex hidden"
+          />
+        }
+        otherServicesDesktopView={
+          <OtherServices
+            title="OTHER SERVICES"
+            storeName="Cyndi Data Vendor"
+            servicesInfo={otherServices}
+            image={starTimesLogo}
+            style="max-[584px]:hidden flex"
+          />
+        }
+      />
+      {/* <section className="relative z-20 mt-5 pt-10 px-5 md:px-8">
+        <p className="text-center mb-2 animate-shimmering-silver-text leading-none text-2xl font-bold md:text-4xl">
           Cyndi Data Vendor
-        </h1>
+        </p>
+        <p className="text-center font-light mb-7 text-sm md:text-base">
+          We sell affordable data plan & cable subscriptions
+        </p>
+        <div className="w-80 h-80 mx-auto rounded-full overflow-hidden max-[584px]:h-52 max-[584px]:w-52">
+        <Image
+                  src={cyndyDataVendorFlyer}
+                  alt="cyndy data vendor flyer"
+                  className="w-full h-full object-cover"
+                  priority
+                  loading="eager"
+                />
+        </div>
         <p className="text-center mb-10 animate-float font-light text-sm md:text-base">
           All subscription plan is valid for 30 days
         </p>
@@ -171,7 +206,7 @@ const CyndiDataVendor = () => {
                     key={index}
                     onClick={() =>
                       handleWhatsAppClick(
-                        `Hello! Cyndi Data Vendor, I want to purchase subscription for ${subInfo.type} ${subInfoObj.data} whose price is ₦${subInfo.price} as advertise on the webiste`,
+                        `Hello! Cyndi Data Vendor, I want to purchase subscription for ${subInfo.type} ${subInfoObj.data} whose price is ₦${subInfoObj.price} as advertise on the webiste`,
                         "+2347064891660"
                       )
                     }
@@ -193,7 +228,7 @@ const CyndiDataVendor = () => {
                       "+2347064891660"
                     )
                   }
-                  className={`hover:scale-105 transition-transform duration-100 flex items-center space-x-2 rounded-md bg-black/70 h-10 px-7`}
+                  className={`hover:scale-105 transition-transform duration-100 flex items-center space-x-2 rounded-md bg-black/70 h-10 px-4`}
                 >
                  <p>Contact Vendor</p>  <Image alt={"arrow right icon"} src={arrowRightIcon} priority loading="eager" />
                 </button>
@@ -205,7 +240,7 @@ const CyndiDataVendor = () => {
         </div>
         <OtherServices style="max-[584px]:flex hidden"/>
         <p className="animate-float text-center mt-10 underline">We are TRUSTED, REALIABLE & LEGIT</p>
-      </section>
+      </section> */}
       {/* <SectionOne /> */}
     </>
   );

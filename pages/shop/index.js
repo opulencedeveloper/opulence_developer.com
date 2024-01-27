@@ -22,10 +22,16 @@ const shopCategory = [
   {
     title: "Telecommunications",
     sub: [
-      { title: "Cyndi Data Vendor", link: "/cyndi-data-vendor" }
+      { title: "Cyndi Data Vendor", link: "/cyndi-data-vendor" },
+      { title: "Miaj Corporation", link: "/miaj-corporation" }
     ],
   },
- 
+  {
+    title: "Writing agency",
+    sub: [
+      { title: "Miaj Corporation", link: "/miaj-corporation" }
+    ],
+  },
 ];
 
 const HelpCenterInfo = (props) => {

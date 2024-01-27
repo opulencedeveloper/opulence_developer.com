@@ -8,7 +8,7 @@ const Layout = (props) => {
   return (
     <>
       {" "}
-      <div className="fixed z-0 bottom-0 right-0 left-0 top-0 opacity-30 z-20 bg-primary h-screen w-full">
+      <div className="fixed z-0 bottom-0 right-0 left-0 top-0 opacity-10 z-20 bg-primary h-screen w-full">
         {" "}
         <Image
           src={heroImage}
