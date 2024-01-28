@@ -86,8 +86,8 @@ const VenerableEnterprice = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit
               amet sodales ipsum. Nulla facilisi.
             </p> */}
-           <ul key={index} className="text-white mypapers bg-black-50 px-3 py-7 space-y-5 text-base md:px-4 md:text-lg">{service.info.map((serviceDetails, index) => 
-              <li><span className="mr-2">&#8658;</span>{serviceDetails}</li>
+           <ul className="text-white mypapers bg-black-50 px-3 py-7 space-y-5 text-base md:px-4 md:text-lg">{service.info.map((serviceDetails, index) => 
+              <li  key={index}><span className="mr-2">&#8658;</span>{serviceDetails}</li>
               
            )} </ul>
           </div>
