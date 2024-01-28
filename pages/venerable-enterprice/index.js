@@ -7,6 +7,7 @@ import ShopHeader from "@/components/shop/ShopHeader";
 import venerableEnterpriceLogo from "../../public/images/shop/venerable-enterprice/venerable-enterprice-logo.jpg";
 import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
 import Head from "next/head";
+import handleWhatsAppClick from "@/helpers/whatsapp";
 
 const venerableEnterpriceServies = [
   {
