@@ -29,9 +29,12 @@ const shopCategory = [
   {
     title: "Writing agency",
     sub: [
+      { title: "Venerable Enterprice", link: "/venerable-enterprice" },
       { title: "Miaj Corporation", link: "/miaj-corporation" }
     ],
   },
+
+  
 ];
 
 const HelpCenterInfo = (props) => {

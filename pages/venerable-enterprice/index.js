@@ -1,10 +1,12 @@
-import ShopHeader from "@/components/shop/ShopHeader";
-import React from "react";
-
-import venerableEnterpriceLogo from "../public/images/shop/venerable-enterprice/venerable-enterprice-logo.jpg";
-import arrowRightIcon from "../public/images/icon/arrow-right.svg";
 import Link from "next/link";
 import Image from "next/image";
+import React from "react";
+
+import ShopHeader from "@/components/shop/ShopHeader";
+
+import venerableEnterpriceLogo from "../../public/images/shop/venerable-enterprice/venerable-enterprice-logo.jpg";
+import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
+import Head from "next/head";
 
 const venerableEnterpriceServies = [
   {
@@ -15,6 +17,7 @@ const venerableEnterpriceServies = [
       "Proof reading",
       "Seminar writing",
       "Sourcing of project & seminar topics",
+      "Thesis"
     ],
   },
 
@@ -28,9 +31,34 @@ const venerableEnterpriceServies = [
   },
 ];
 
-const BookDesign = () => {
+const VenerableEnterprice = () => {
   return (
-    <section className="py-20 px-5 md:px-8">
+    <> 
+      <Head>
+        <title>Venerable Enterprise: Professional Services for Project Writing, Analysis, and More</title>
+        <meta
+          name="description"
+          content="Venerable Enterprise offers comprehensive solutions for project writing, analysis, proofreading, seminar development, and more. Our expert team provides project proposals, statistical analysis, and training services to empower success. Explore our professional services today."
+        />
+        <meta
+          name="keywords"
+          content="Venerable Enterprise, project writing, project analysis, proofreading services, seminar development, statistical analysis, project proposals, training services, research support, data analysis, proposal writing, project management, statistical consulting, data interpretation, research methodology, academic suppor"
+        />
+        <meta name="author" content="Cyndi Data Vendor" />
+        <meta
+          property="og:title"
+          content="Venerable Enterprise: Professional Services for Project Writing, Analysis, and More"
+        />
+        <meta
+          property="og:description"
+          content="Venerable Enterprise offers comprehensive solutions for project writing, analysis, proofreading, seminar development, and more. Our expert team provides project proposals, statistical analysis, and training services to empower success. Explore our professional services today."
+        />
+        <meta
+          property="og:image"
+          content="https://opulencedeveloper.com/images/shop/venerable-enterprice/venerable-enterprice-social-preview.png"
+        /> 
+      </Head>
+      <section className="py-20 px-5 md:px-8">
       <ShopHeader
         header="Venerable Enterprice"
         title="We ensure quality and timely delivery of service"
@@ -97,7 +125,9 @@ const BookDesign = () => {
                     />
                   </Link>
     </section>
+     
+    </>
   );
 };
 
-export default BookDesign;
+export default VenerableEnterprice;

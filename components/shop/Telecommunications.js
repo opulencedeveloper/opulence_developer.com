@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import handleWhatsAppClick from "@/helpers/whatsapp";
 import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
+import ShopHeader from "./ShopHeader";
 
 const TeleCommunications = (props) => {
   const {
@@ -16,7 +17,8 @@ const TeleCommunications = (props) => {
   } = props;
   return (
     <section className="relative z-20 mt-5 pt-10 px-5 md:px-8">
-      <p className="text-center mb-2 animate-shimmering-silver-text leading-none text-2xl font-bold md:text-4xl">
+      <ShopHeader header={header} title={title} logo={logo} subTitle=" All subscription plan is valid for 30 days" />
+      {/* <p className="text-center mb-2 animate-shimmering-silver-text leading-none text-2xl font-bold md:text-4xl">
         {header}
       </p>
       <p className="text-center font-light mb-7 text-sm md:text-base">
@@ -34,7 +36,7 @@ const TeleCommunications = (props) => {
       </div>
       <p className="text-center mb-10 animate-float font-light text-sm md:text-base">
         All subscription plan is valid for 30 days
-      </p>
+      </p> */}
       <div className="flex flex-wrap max-[950px]:gap-[6%] gap-[7.5%] max-[950px]:px-3 px-20">
         {" "}
         {dataSubs.map((subInfo, index) => {
