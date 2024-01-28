@@ -8,6 +8,8 @@ import maijCorperationLogo from "../../public/images/shop/maij-corperation/maij-
 import TeleCommunications from "@/components/shop/Telecommunications";
 import OtherServices from "@/components/cyndi-data-vendor/OtherServices";
 
+const whatsappContact = "+2347063285552";
+
 const MiajCorporation = () => {
   const listOfSub = [
     {
@@ -49,33 +51,40 @@ const MiajCorporation = () => {
         { data: "2GB", price: "800" },
         { data: "3GB", price: "1150" },
         { data: "5GB", price: "1600" },
-        { data: "10GB", price: "3200" }
+        { data: "10GB", price: "3200" },
       ],
     },
     {
-        logo: etisalatLogo,
-        type: "9Mobile",
-        companyColor: "bg-green-500",
-        companyBorderColor: "border-green-500",
-        dataInfo: [
-          { data: "500MB", price: "250" },
-          { data: "1GB", price: "350" },
-          { data: "2GB", price: "450" },
-          { data: "3GB", price: "1000" },
-          { data: "4GB", price: "1500" },
-          { data: "5GB", price: "2000" },
-          { data: "10GB", price: "3000" },
-          { data: "20GB", price: "5500" },
-          { data: "30GB", price: "7500" },
-        ],
-      },
+      logo: etisalatLogo,
+      type: "9Mobile",
+      companyColor: "bg-green-500",
+      companyBorderColor: "border-green-500",
+      dataInfo: [
+        { data: "500MB", price: "250" },
+        { data: "1GB", price: "350" },
+        { data: "2GB", price: "450" },
+        { data: "3GB", price: "1000" },
+        { data: "4GB", price: "1500" },
+        { data: "5GB", price: "2000" },
+        { data: "10GB", price: "3000" },
+        { data: "20GB", price: "5500" },
+        { data: "30GB", price: "7500" },
+      ],
+    },
   ];
 
-  const writingServices = ["Ghost Writing", "Project Writing", "Short Story Writing", "Editing"]
+  const writingServices = [
+    "Ghost Writing",
+    "Project Writing",
+    "Short Story Writing",
+    "Editing",
+  ];
   return (
     <>
       <Head>
-        <title>Miaj Corporation | Data Subscriptions & Professional Writing Services</title>
+        <title>
+          Miaj Corporation | Data Subscriptions & Professional Writing Services
+        </title>
         <meta
           name="description"
           content="Welcome to Miaj Corporation, your premier destination for top-quality data subscriptions and professional writing services. Explore our diverse range of offerings, including ghostwriting, project writing, short story creation, and meticulous editing. Whether you're seeking insightful data or expertly crafted content, Miaj Corporation is your trusted partner in achieving excellence."
@@ -103,13 +112,31 @@ const MiajCorporation = () => {
         title="Data vendor and writing expert"
         logo={maijCorperationLogo}
         dataSubs={listOfSub}
-        whatsappNumber="+2347063285552"
+        whatsappNumber={whatsappContact}
         motto="Intentional all at once"
         style="max-[584px]:flex hidden"
-        otherServicesMobieView={<OtherServices image={maijCorperationLogo} whatsappNumber="+2347063285552" title="Writing Service" storeName="Miaj Corporation" servicesInfo={writingServices} style="max-[584px]:flex hidden"/>}
-        otherServicesDesktopView={ <OtherServices image={maijCorperationLogo} whatsappNumber="+2347063285552" title="Writing Service" storeName="Miaj Corporation" servicesInfo={writingServices} style="max-[584px]:hidden flex"/>}
+        otherServicesMobieView={
+          <OtherServices
+            image={maijCorperationLogo}
+            whatsappNumber={whatsappContact}
+            title="Writing Service"
+            storeName="Miaj Corporation"
+            servicesInfo={writingServices}
+            style="max-[584px]:flex hidden"
+          />
+        }
+        otherServicesDesktopView={
+          <OtherServices
+            image={maijCorperationLogo}
+            whatsappNumber={whatsappContact}
+            title="Writing Service"
+            storeName="Miaj Corporation"
+            servicesInfo={writingServices}
+            style="max-[584px]:hidden flex"
+          />
+        }
       />
-      
+
       {/* <SectionOne /> */}
     </>
   );

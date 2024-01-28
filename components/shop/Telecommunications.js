@@ -1,5 +1,5 @@
 import Image from "next/image";
-import OtherServices from "../cyndi-data-vendor/OtherServices";
+import Link from "next/link";
 import handleWhatsAppClick from "@/helpers/whatsapp";
 import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
 
@@ -22,10 +22,11 @@ const TeleCommunications = (props) => {
       <p className="text-center font-light mb-7 text-sm md:text-base">
         {title}
       </p>
-      <div className="w-80 h-80 mx-auto rounded-full overflow-hidden max-[584px]:h-52 max-[584px]:w-52">
+      
+      <div className="w-80 h-80 mx-auto bg-gray-400 rounded-full overflow-hidden max-[584px]:h-52 max-[584px]:w-52">
         <Image
           src={logo}
-          alt="cyndy data vendor flyer"
+          alt={`${header} logo`}
           className="w-full h-full object-cover"
           priority
           loading="eager"
@@ -102,6 +103,20 @@ const TeleCommunications = (props) => {
       <p className="animate-float text-center mt-10 underline">
        {motto} 
       </p>
+
+
+      <Link
+                  href="/shop"
+                    className={`hover:scale-105 transition-transform duration-100 my-7 w-max mx-auto flex items-center space-x-2 rounded-md bg-black/70 h-10 px-5`}
+                  >
+                    <p>Go to shop</p>{" "}
+                    <Image
+                      alt={"arrow right icon"}
+                      src={arrowRightIcon}
+                      priority
+                      loading="eager"
+                    />
+                  </Link>
     </section>
   );
 };
