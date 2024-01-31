@@ -5,14 +5,14 @@ const SectionOne = () => {
     <section className="relative z-20 mt-5 py-8 px-5 md:px-12">
       <h1 className="text-3xl text-primary1 font-bold mb-4">
         My Name is <span className="text-white">Amobi Victor Chukwuka,</span> I
-        am a <span className="text-white">Full Software Enginneer.</span>
+        am a <span className="text-white">Full Software Engineer.</span>
       </h1>
       <div className="flex flex-col sm:flex-row">
         <div className=" mb-4 sm:mb-0 sm:mr-8">
           <Image
             src="/images/opulence-developer-image.jpg"
             alt="Opulence Developer"
-            className="border border-2 rounded"
+            className="border-2 rounded"
             loading="eager"
             priority
             width={600}

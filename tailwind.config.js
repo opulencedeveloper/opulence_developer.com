@@ -16,6 +16,11 @@ module.exports = {
         // 'montserrat': 'Montserrat',
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
       },
+      screens: {
+        'size1': '690px',
+        'size2': '1200px',
+        'size4': '1300px',
+      },
       boxShadow: {
         "custom-shadow": " 2px 2px 2px 0px #ACC2C7",
         "custom-shadow2": " 0px 7px 7px 0px #030303",
@@ -27,6 +32,7 @@ module.exports = {
         primary: "#03262e",
         primary1: "#ACC2C7",
         secondary: "#030303",
+        color1: "#561C24"
       },
       width: {
         piw: "62rem",

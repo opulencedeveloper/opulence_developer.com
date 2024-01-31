@@ -10,7 +10,7 @@ const ShopHeader = (props) => {
       <p className="text-center font-light mb-7 text-sm md:text-base">
         {title}
       </p>
-      <div className="w-80 h-80 mx-auto bg-gray-400 rounded-full overflow-hidden max-[584px]:h-52 max-[584px]:w-52">
+      <div className=" mx-auto bg-gray-400 rounded-full overflow-hidden h-52 w-52 size1:w-80 size1:h-80">
         <Image
           src={logo}
           alt={`${header} logo`}

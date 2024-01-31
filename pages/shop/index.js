@@ -34,11 +34,18 @@ const shopCategory = [
     ],
   },
 
+  {
+    title: "Catering",
+    sub: [
+      { title: "Splendor Cakes and Pasteries", link: "/splendor-cakes-and-pasteries" }
+    ],
+  },
+
   
 ];
 
 const HelpCenterInfo = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(null);
   const nodeRef = useRef(null);
 
   const handleToggle = (index) => {
