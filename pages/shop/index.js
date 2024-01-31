@@ -35,9 +35,10 @@ const shopCategory = [
   },
 
   {
-    title: "Catering",
+    title: "Catering", 
     sub: [
-      { title: "Splendor Cakes and Pasteries", link: "/splendor-cakes-and-pasteries" }
+      { title: "Splendor Cakes and Pasteries", link: "/splendor-cakes-and-pasteries" },
+      { title: "Mercy's Cuisine", link: "/mercy-cuisine" }
     ],
   },
 
