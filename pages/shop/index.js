@@ -44,7 +44,7 @@ const shopCategory = [
   
 ];
 
-const HelpCenterInfo = (props) => {
+const Shop = (props) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const nodeRef = useRef(null);
 
@@ -131,4 +131,4 @@ const HelpCenterInfo = (props) => {
   );
 };
 
-export default HelpCenterInfo;
+export default Shop;
