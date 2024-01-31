@@ -13,8 +13,8 @@ const Layout = (props) => {
         <Image
           src={heroImage}
           alt="Dynamic Horizon: The Visual Canvas of OpulenceDeveloper's Portfolio"
-          style={{ filter: "brightness(0.1)" }}
-          className="h-full w-full object-cover"
+          // style={{ filter: "brightness(0.1)" }}
+          className="h-full w-full object-cover opacity-15"
           priority
           loading="eager"
         />{" "}
