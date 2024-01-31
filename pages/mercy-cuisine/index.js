@@ -19,7 +19,7 @@ const MercyCuisine = () => {
         </title>
         <meta
           name="description"
-          content="Mercy's Cuisine specializes in freshly cooked pots of delicious meals made to order. Discover authentic homemade dishes crafted with care and delivered straight to your door. Order now for a taste of home-cooked goodness"
+          content="Specializes in freshly cooked pots of delicious meals made to order. Discover authentic homemade dishes crafted with care and delivered straight to your door. Order now for a taste of home-cooked goodness"
         />
         <meta
           name="keywords"
@@ -32,7 +32,7 @@ const MercyCuisine = () => {
         />
         <meta
           property="og:description"
-          content="Mercy's Cuisine specializes in freshly cooked pots of delicious meals made to order. Discover authentic homemade dishes crafted with care and delivered straight to your door. Order now for a taste of home-cooked goodness"
+          content="Specializes in freshly cooked pots of delicious meals made to order. Discover authentic homemade dishes crafted with care and delivered straight to your door. Order now for a taste of home-cooked goodness"
         />
         <meta
           property="og:image"
