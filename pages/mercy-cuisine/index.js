@@ -28,7 +28,7 @@ const MercyCuisine = () => {
         <meta name="author" content="Mercy Cuisine specializes" />
         <meta
           property="og:title"
-          content="Mercy's Cuisine: Pot Cooking On Order | Authentic Homemade Meals Online"
+          content="Mercy's Cuisine: Order Pot of food online | Authentic Homemade Meals Online"
         />
         <meta
           property="og:description"
