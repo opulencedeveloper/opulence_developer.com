@@ -16,6 +16,8 @@ const products = [
   { name: "Chin Chin", imageUrl: "chin-chin.jpg" },
   { name: "Fruit cake", imageUrl: "fruit-cake.jpg" },
   { name: "Donut", imageUrl: "donut.jpg" },
+  { name: "Puf Puf", imageUrl: "puf-puf.jpg" },
+  { name: "Special Meatpie", imageUrl: "special-meatpie.jpg" },
   { name: "Banana Bread", imageUrl: "banana-bread.jpg" },
   { name: "Whipped Cream Iced Cake", imageUrl: "whipped-cream-iced-cake.jpg" },
   { name: "Butter Iced Cake", imageUrl: "butter-iced-cake.jpg" },
@@ -67,7 +69,7 @@ const VenerableEnterprice = () => {
 
         <div className="w-full pt-10 grid gap-7 relative grid-cols-1 size1:grid-cols-2 size2:grid-cols-3 size4:grid-cols-4">
           {products.map((product, index) => (
-              <div key={index} className="bg-color1 h-[550px] rounded-2xl overflow-hidden w-full relative ">
+              <div key={index} className="bg-color1 h-[550px] rounded-tl-3xl rounded-tr-3xl overflow-hidden w-full relative ">
                 <div className="bg-white rounded-br-2xl w-max px-5 flex items-end h-max text-color1 absolute top-0">
                   {product.name}
                 </div>
