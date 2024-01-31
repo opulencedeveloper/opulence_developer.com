@@ -67,8 +67,7 @@ const VenerableEnterprice = () => {
 
         <div className="w-full pt-10 grid gap-7 relative grid-cols-1 size1:grid-cols-2 size2:grid-cols-3 size4:grid-cols-4">
           {products.map((product, index) => (
-            <div key={index} className="sticky top-5 size1:static size1:top-0">
-              <div className="bg-color1 h-[550px] rounded-2xl overflow-hidden w-full relative ">
+              <div key={index} className="bg-color1 h-[550px] rounded-2xl overflow-hidden w-full relative ">
                 <div className="bg-white rounded-br-2xl w-max px-5 flex items-end h-max text-color1 absolute top-0">
                   {product.name}
                 </div>
@@ -109,8 +108,8 @@ const VenerableEnterprice = () => {
                     </div>
                   </div>
                 </button>
-              </div>{" "}
-            </div>
+              </div>
+            
           ))}
         </div>
 
