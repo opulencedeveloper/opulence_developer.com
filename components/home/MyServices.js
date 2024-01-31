@@ -12,7 +12,7 @@ const MyServices = () => {
     rootMargin: "-140px", //triggers when the div is -50px up
   });
   return (
-    <section ref={ref} className="mt-6 space-y-10 backdrop-filter backdrop-blur-md py-16">
+    <section ref={ref} className="mt-6 space-y-10 backdrop-filter backdrop-blur-sm py-16">
       <h2 className="text-3xl text-primary1 text-center font-semibold md:text-4xl">
         My Services
       </h2>
