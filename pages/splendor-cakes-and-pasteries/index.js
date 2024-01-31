@@ -52,7 +52,7 @@ const VenerableEnterprice = () => {
         />
         <meta
           property="og:description"
-          content="Welcome to Splendor Cakes and Pastries! We specialize in creating custom cakes and pastries tailored to your preferences. Whether you're celebrating a birthday, wedding, or any special occasion, our delicious treats are crafted with care and creativity. Order now to experience the sweetness of Splendor!"
+          content="We specialize in creating custom cakes and pastries tailored to your preferences. Whether you're celebrating a birthday, wedding, or any special occasion, our delicious treats are crafted with care and creativity. Order now to experience the sweetness of Splendor!"
         />
         <meta
           property="og:image"
