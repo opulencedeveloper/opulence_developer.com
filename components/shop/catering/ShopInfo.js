@@ -68,7 +68,7 @@ const ShopInfo = (props) => {
       <button
         onClick={() =>  
           handleWhatsAppClick(
-            "Hello! ${header} Cakes and Pastries, I want to make enquiry of your services.",
+            `Hello! ${header} Cakes and Pastries, I want to make enquiry of your services.`,
             whatsappNumber
           )
         }
