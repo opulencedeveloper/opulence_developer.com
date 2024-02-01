@@ -50,7 +50,7 @@ const ShopInfo = (props) => {
               </div>
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-7 h-2 bg-gray-300 rounded-full"></div>
 
-              <div className="flex  items-center absolute border border-bg-gray-500 text-lg py-1 px-5 bottom-[4rem] left-1/2 transform -translate-x-1/2 w-max h-7 backdrop-filter backdrop-blur-lg rounded-full">
+              <div className="flex  items-center absolute border border-bg-gray-500 text-lg py-1 px-5 bottom-[4.5rem] left-1/2 transform -translate-x-1/2 w-max h-7 backdrop-filter backdrop-blur-lg rounded-full">
                 {product.name}
               </div>
               <button
@@ -60,7 +60,7 @@ const ShopInfo = (props) => {
                     whatsappNumber
                   )
                 }
-                className="flex  items-center space-x-1 absolute text-lg py-1 px-5 border border-bg-gray-500 bottom-[2rem] left-1/2 transform -translate-x-1/2 w-max h-7 backdrop-filter backdrop-blur-lg rounded-full"
+                className="flex  items-center space-x-1 absolute text-lg px-5 border border-bg-gray-500 bottom-[2rem] left-1/2 transform -translate-x-1/2 w-max h-9 backdrop-filter backdrop-blur-lg rounded-full"
               >
                 <p>Contact Vendor</p>{" "}
                 <Image
