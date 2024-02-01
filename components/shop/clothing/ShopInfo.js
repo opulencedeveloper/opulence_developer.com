@@ -28,8 +28,8 @@ const ShopInfo = (props) => {
              <div className="absolute top-2 left-2 right-2 bottom-2 bg-gray-400">
              <Image
               src={`/images/shop/clothing/${shopImageFolder}/${product.imageUrl}`}
-              loading={index < 5 ? "eager" : "lazy"}
-              priority={index < 5 ? true : false}
+              loading={index < 7 ? "eager" : "lazy"}
+              priority={index < 7 ? true : false}
               height={717}
               alt={`${header} ${product.name}`}
               width={960}
