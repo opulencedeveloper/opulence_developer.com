@@ -14,7 +14,7 @@ const ShopInfo = (props) => {
       logo={logo}
       subTitle={subTitle}
     />
-
+<p className="text-center text-base font-medium size1:text-2xl">Highlights</p>
     <div className="w-full pt-10 grid gap-7 relative grid-cols-1 size1:grid-cols-2 size2:grid-cols-3 size4:grid-cols-4">
       {products.map((product, index) => {
         const style = products.length - 1 === index ? "" : "sticky top-7 size1:static size1:top-0";
@@ -28,8 +28,8 @@ const ShopInfo = (props) => {
              <div className="absolute top-2 left-2 right-2 bottom-2 bg-gray-400">
              <Image
               src={`/images/shop/clothing/${shopImageFolder}/${product.imageUrl}`}
-              loading="eager"
-              priority
+              loading={index < 5 ? "eager" : "lazy"}
+              priority={index < 5 ? true : false}
               height={717}
               alt={`${header} ${product.name}`}
               width={960}
