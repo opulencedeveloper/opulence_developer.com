@@ -16,8 +16,9 @@ const ShopInfo = (props) => {
     />
 
     <div className="w-full pt-10 grid gap-7 relative grid-cols-1 size1:grid-cols-2 size2:grid-cols-3 size4:grid-cols-4">
-      {products.map((product, index) => (
-        <div key={index} className="sticky top-7 size1:static size1:top-0">
+      {products.map((product, index) => {
+        const style = products.length - 1 === index ? "" : "sticky top-7 size1:static size1:top-0";
+        return <div key={index} className={style}>
            <div className="relative w-full h-[28rem]  bg-gray-300 rounded-lg overflow-hidden">
            
              <div className="absolute top-0 left-0 w-full h-2 bg-gray-500"></div>
@@ -54,7 +55,7 @@ const ShopInfo = (props) => {
              </button>
             
          </div>  </div>
-      ))}
+})}
     </div>
 
     <div className="flex justify-center mb-12 mt-14">
