@@ -56,7 +56,6 @@ const YdcClothing = () => {
         />
       </Head>
 
-
       <ShopInfo
         header="YDC Clothing"
         title="We make and sell any kinds clothing."
