@@ -6,7 +6,17 @@ const whatsappNumber = "+2347065508780";
 
 const products = [
   { name: "Egusi Soup", imageUrl: "egusi-soup.jpg" },
+  { name: "Fried Rice", imageUrl: "fried-rice.jpg" },
+  { name: "Bitter Leaf Soup", imageUrl: "bitter-leaf-soup.jpg" },
   { name: "Jollof Rice", imageUrl: "jollof-rice.jpg" },
+  { name: "Uziza Soup", imageUrl: "uziza-soup.jpg" },
+  { name: "Tomato Stew", imageUrl: "tomato-stew.jpg" }, 
+  { name: "White Rice", imageUrl: "white-rice.jpg" },
+  { name: "Oha Soup", imageUrl: "oha-soup.jpg" },
+  { name: "Spaghetti", imageUrl: "spaghetti.jpg" },
+  { name: "Ukazi Soup", imageUrl: "ukazi-soup.jpg" },
+  { name: "Yam Porridge", imageUrl: "porridge-yam.jpg" },
+  { name: "Okro and Ogbono Soup", imageUrl: "okoro-ogbono-soup.jpg" },
   { name: "Vegetable Soup", imageUrl: "vegetable-soup.jpg" },
 ];
 
