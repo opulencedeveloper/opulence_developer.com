@@ -49,6 +49,20 @@ const MercyCuisine = () => {
           content="https://opulencedeveloper.com/images/shop/catering/mercy-cuisine/mercy-cuisine-social-preview.png"
         />
       </Head>
+    
+{/* <div className="flex justify-center items-center h-96">
+      <div className="relative w-20 h-40 bg-gray-300 rounded-lg overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-2 bg-gray-500"></div>
+        <div className="absolute top-0 right-0 w-2 h-full bg-gray-500"></div>
+        <div className="absolute bottom-0 left-0 w-full h-2 bg-gray-500"></div>
+        <div className="absolute bottom-0 right-0 w-2 h-full bg-gray-500"></div>
+        <div className="absolute top-2 left-2 right-2 bottom-2 bg-gray-400"></div>
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-6 h-2 bg-gray-500 rounded-full"></div>
+      </div>
+    </div> */}
+
+
+
 
       <ShopInfo
         header="Mercy's Cuisine"

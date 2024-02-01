@@ -23,7 +23,7 @@ const OtherServices = (props) => {
       </div>
       {servicesInfo.map((service, index) => <p key={index} onClick={() => 
         handleWhatsAppClick(
-          `Hello! ${storeName}, what is the price for ${service}`,
+          `Hello! ${storeName}, I am contacting you from your website, please what is the price for ${service}`,
           whatsappNumber
         )} className="w-full bg-black/70 cursor-pointer py-1 px-3">
        {service}
@@ -33,7 +33,7 @@ const OtherServices = (props) => {
       <button
        onClick={() => 
         handleWhatsAppClick(
-          `Hello! ${storeName}, I want prices for your ${title}`,
+          `Hello! ${storeName}, I am contacting you from your website, please I want prices for your ${title}`,
           whatsappNumber
         )}
        className={`hover:scale-105 transition-transform duration-100 rounded-sm bg-black/70 flex items-center space-x-2  h-10 px-4`}>

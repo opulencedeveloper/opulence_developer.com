@@ -42,7 +42,12 @@ const shopCategory = [
     ],
   },
 
-  
+  {
+    title: "Clothing", 
+    sub: [
+      { title: "YDC Clothing", link: "/ydc-clothing" }
+    ],
+  },
 ];
 
 const Shop = (props) => {

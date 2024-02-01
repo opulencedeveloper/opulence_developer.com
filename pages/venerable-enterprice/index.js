@@ -98,7 +98,7 @@ const VenerableEnterprice = () => {
                   <button
                     onClick={() =>
                       handleWhatsAppClick(
-                        "Hello! Venerable Enterprice, how much is your services",
+                        "Hello! Venerable Enterprice, I am contacting you from your website, please how much is your services",
                         "+2348097189764"
                       )
                     }

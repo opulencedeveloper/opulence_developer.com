@@ -17,12 +17,16 @@ const ShopInfo = (props) => {
 
     <div className="w-full pt-10 grid gap-7 relative grid-cols-1 size1:grid-cols-2 size2:grid-cols-3 size4:grid-cols-4">
       {products.map((product, index) => (
-          <div key={index} className="bg-color1 shadow-md h-[550px] rounded-tl-3xl rounded-tr-3xl overflow-hidden w-full relative ">
-            <div className="bg-white rounded-br-2xl w-max px-5 flex items-end h-max text-color1 absolute top-0">
-              {product.name}
-            </div>
-            <Image
-              src={`/images/shop/catering/${shopImageFolder}/${product.imageUrl}`}
+        <div key={index} className="sticky top-7 size1:static size1:top-0">
+           <div className="relative w-full h-[28rem]  bg-gray-300 rounded-lg overflow-hidden">
+           
+             <div className="absolute top-0 left-0 w-full h-2 bg-gray-500"></div>
+             <div className="absolute top-0 right-0 w-2 h-full bg-gray-500"></div>
+             <div className="absolute bottom-0 left-0 w-full h-2 bg-gray-500"></div>
+             <div className="absolute bottom-0 right-0 w-2 h-full bg-gray-500"></div>
+             <div className="absolute top-2 left-2 right-2 bottom-2 bg-gray-400">
+             <Image
+              src={`/images/shop/clothing/${shopImageFolder}/${product.imageUrl}`}
               loading="eager"
               priority
               height={717}
@@ -30,37 +34,26 @@ const ShopInfo = (props) => {
               width={960}
               className="h-full w-full object-cover"
             />
-            <button
-              onClick={() =>
+             </div>
+             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-7 h-2 bg-gray-300 rounded-full"></div>
+             
+             <div className="flex  items-center absolute border border-bg-gray-500 text-lg py-1 px-5 bottom-[4rem] left-1/2 transform -translate-x-1/2 w-max h-7 backdrop-filter backdrop-blur-lg rounded-full">
+             {product.name}
+             </div>
+             <button  onClick={() =>
                 handleWhatsAppClick(
                   `Hello! ${header}, I am contacting you from your website, please what is the price for ${product.name}`,
                   whatsappNumber
-                )
-              }
-              className="absolute bottom-3 overflow-hidden rounded- right-3 left-3 h-20 "
-            >
-              <div className="flex flex-col items-center justify-center text-base h-28 w-full body relative">
-                <div className="light x1"></div> <div className="light x2"></div>{" "}
-                <div className="light x3"></div> <div className="light x4"></div>{" "}
-                <div className="light x5"></div> <div className="light x6"></div>{" "}
-                <div className="light x7"></div> <div className="light x8"></div>{" "}
-                <div className="light x9"></div>
-                <p className="font-semibold border-b pb-0.5 mb-0.5 border-blue-100 text-sm size1:text-base">
-                  {product.name}
-                </p>
-                <div className="flex shadow-md items-center space-x-2">
-                  <p>Contact vendor</p>
-                  <Image
+                )} className="flex  items-center space-x-1 absolute text-lg py-1 px-5 border border-bg-gray-500 bottom-[2rem] left-1/2 transform -translate-x-1/2 w-max h-7 backdrop-filter backdrop-blur-lg rounded-full">
+               <p>Contact Vendor</p>   <Image
                     alt={"arrow right icon"}
                     src={arrowRightIcon}
                     priority
                     loading="eager"
                   />
-                </div>
-              </div>
-            </button>
-          </div>
-        
+             </button>
+            
+         </div>  </div>
       ))}
     </div>
 
@@ -72,7 +65,7 @@ const ShopInfo = (props) => {
             whatsappNumber
           )
         }
-        className={`hover:scale-105 transition-transform duration-100 flex items-center space-x-2 rounded-md bg-black/70 py-5 px-4`}
+        className={`hover:scale-105 transition-transform duration-100 text-black flex items-center space-x-2 rounded-md bg-cartonColor py-5 px-4`}
       >
         <p>Contact {header}</p>{" "}
         <Image

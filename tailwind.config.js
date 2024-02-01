@@ -32,7 +32,8 @@ module.exports = {
         primary: "#03262e",
         primary1: "#ACC2C7",
         secondary: "#030303",
-        color1: "#561C24"
+        color1: "#561C24",
+        cartonColor: '#D9CFA6'
       },
       width: {
         piw: "62rem",

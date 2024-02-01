@@ -62,7 +62,7 @@ const TeleCommunications = (props) => {
                       key={index}
                       onClick={() =>
                         handleWhatsAppClick(
-                          `Hello! ${header}, I want to purchase subscription for ${subInfo.type} ${subInfoObj.data} whose price is ₦${subInfoObj.price} as advertise on the webiste`,
+                          `Hello! ${header}, I am contacting you from your website, please I want to purchase subscription for ${subInfo.type} ${subInfoObj.data} whose price is ₦${subInfoObj.price} as advertise on the webiste`,
                           whatsappNumber
                         )
                       }
@@ -80,7 +80,7 @@ const TeleCommunications = (props) => {
                   <button
                     onClick={() =>
                       handleWhatsAppClick(
-                        `Hello! ${header}, I want to purchase subscription for ${subInfo.type}`,
+                        `Hello! ${header}, I am contacting you from your website, please I want to purchase subscription for ${subInfo.type}`,
                         whatsappNumber
                       )
                     }
