@@ -31,20 +31,20 @@ const YdcClothing = () => {
     <>
       <Head>
         <title>
-          YDC Clothing: Designer Clothes for Every Occasion
+          YDC Clothings: Designer Clothes for Every Occasion
         </title>
         <meta
           name="description"
-          content="Discover stylish and unique designer clothes at YDC Clothing. Explore our latest collections for men and women, featuring high-quality fabrics and on-trend designs. Elevate your wardrobe with fashion that speaks to your individual style."
+          content="Discover stylish and unique designer clothes at YDC Clothings. Explore our latest collections for men and women, featuring high-quality fabrics and on-trend designs. Elevate your wardrobe with fashion that speaks to your individual style."
         />
         <meta
           name="keywords"
-          content="YDC Clothing, designer clothes, fashion, men's clothing, women's clothing, stylish apparel, high-quality fabrics, trendsetting designs"
+          content="YDC Clothings, designer clothes, fashion, men's clothing, women's clothing, stylish apparel, high-quality fabrics, trendsetting designs"
         />
         <meta name="author" content="Mercy Cuisine specializes" />
         <meta
           property="og:title"
-          content="YDC Clothing: Designer Clothes for Every Occasion"
+          content="YDC Clothings: Designer Clothes for Every Occasion"
         />
         <meta
           property="og:description"
@@ -57,7 +57,7 @@ const YdcClothing = () => {
       </Head>
 
       <ShopInfo
-        header="YDC Clothing"
+        header="YDC Clothings"
         title="We make and sell any kinds clothing."
         logo={ydcClothingLogo}
         subTitle="Your looking good is our business..."
