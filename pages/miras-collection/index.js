@@ -37,12 +37,12 @@ const MirasCollection = () => {
         />
         <meta
           name="keywords"
-          content="YDC Clothings, designer clothes, fashion, men's clothing, women's clothing, stylish apparel, high-quality fabrics, trendsetting designs"
+          content="Mira's Collection, bags, jewelry, slippers, fashion accessories"
         />
         <meta name="author" content="Mercy Cuisine specializes" />
         <meta
           property="og:title"
-          content="Mira's Collection, bags, jewelry, slippers, fashion accessories"
+          content="Mira's Collection - Purchase Jewelry, Bags, and Slippers"
         />
         <meta
           property="og:description"
