@@ -80,7 +80,7 @@ const MainNavigation = () => {
             />
           </div>
         </div>
-        <nav className="hidden lg:flex space-x-4 text-lg">
+        <nav className="hidden text-sm space-x-1 lg:flex xl:space-x-4 xl:text-lg">
           {navLinks.map((linkData, index) => {
             const navLinkStyle =
               activeLink === linkData.link

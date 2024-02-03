@@ -31,9 +31,9 @@ const socialInfo = [
 const Socials = () => {
   return (
     <div className="mt-28 mb-16">
-      <div className="border border-primary2 backdrop-filter backdrop-blur-sm  flex flex-col justify-center items-center space-y-4 p-6 md:space-x-5 xl:flex-row xl:space-y-0">
+      <div className="border border-primary2 backdrop-filter backdrop-blur-sm flex gap-4 p-6 flex-col justify-center items-center size1:flex-row">
         <p className="text-lg ">Find me on:</p>
-        {socialInfo.map((socialInfoData, index) => {
+      <div className="flex justify-evenly flex-wrap gap-4">  {socialInfo.map((socialInfoData, index) => {
           return (
             <a
               key={index}
@@ -50,10 +50,10 @@ const Socials = () => {
                   height={43.7}
                 />
               </div>{" "}
-              <p className="font-extralight ml-2">{socialInfoData.value}</p>
+              {/* <p className="font-extralight ml-2">{socialInfoData.value}</p> */}
             </a>
           );
-        })}
+        })} </div>
       </div>
     </div>
   );

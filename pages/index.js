@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import SectionOne from "@/components/home/SectionOne";
-import SectionThree from "@/components/home/SectionThree";
+import OpenSourceCode from "@/components/home/OpenSourceCode";
 import SectionTwo from "@/components/home/SectionTwo";
 import MyServices from "@/components/home/MyServices";
 import SuccessfulProjects from "@/components/home/SuccessfulProjects";
@@ -49,8 +49,8 @@ const router = useRouter();
       <SectionOne />
       <MyServices />
       <SuccessfulProjects />
+      <OpenSourceCode />
       <SectionTwo />
-      <SectionThree />
      <Footer />
     </>
   );

@@ -41,7 +41,7 @@ const Footer = (props) => {
   const router = useRouter();
   const activeLink = router.pathname;
   return (
-    <footer className="relative z-40">
+    <footer className="relative z-40 ">
       <div className="px-5 md:px-12">
         <Socials />
 
@@ -55,7 +55,7 @@ const Footer = (props) => {
           </p>
         ))}
       </div>
-      <div className=" py-10 bg-black space-y-2 text-center">
+      <div className=" py-10 bg-black space-y-2 px-5 text-center">
         <p>{footerText}</p>
         <a href="mailto:victorkudos@gmail.com" className="underline">
         victorkudos@gmail.com
