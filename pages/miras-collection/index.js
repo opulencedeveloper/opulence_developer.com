@@ -39,7 +39,7 @@ const MirasCollection = () => {
           name="keywords"
           content="Mira's Collection, bags, jewelry, slippers, fashion accessories"
         />
-        <meta name="author" content="Mercy Cuisine specializes" />
+        <meta name="author" content="Mira's Collection" />
         <meta
           property="og:title"
           content="Mira's Collection - Purchase Jewelry, Bags, and Slippers"

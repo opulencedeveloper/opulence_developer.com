@@ -41,7 +41,7 @@ const YdcClothing = () => {
           name="keywords"
           content="YDC Clothings, designer clothes, fashion, men's clothing, women's clothing, stylish apparel, high-quality fabrics, trendsetting designs"
         />
-        <meta name="author" content="Mercy Cuisine specializes" />
+        <meta name="author" content="YDC Clothings" />
         <meta
           property="og:title"
           content="YDC Clothings: Designer Clothes for Every Occasion"

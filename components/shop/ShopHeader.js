@@ -4,7 +4,7 @@ const ShopHeader = (props) => {
     const {header, title, logo, subTitle} = props;
   return (
     <>
-      <p className="text-center mb-2 animate-shimmering-silver-text leading-none text-2xl font-bold md:text-4xl">
+      <p className="text-center pb-2 animate-shimmering-silver-text leading-none text-2xl font-bold md:text-4xl">
         {header}
       </p>
       <p className="text-center font-light mb-7 text-sm md:text-base">
