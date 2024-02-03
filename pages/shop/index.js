@@ -46,7 +46,8 @@ const shopCategory = [
     title: "Fashion", 
     sub: [
       { title: "YDC Clothings", link: "/ydc-clothing" },
-      { title: "Mira's Collection", link: "/miras-collection" }
+      { title: "Mira's Collection", link: "/miras-collection" },
+      { title: "Kings's Collection", link: "/kings-collection" }
     ],
   },
 ];
