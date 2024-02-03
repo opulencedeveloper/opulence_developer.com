@@ -32,6 +32,10 @@ const codingQuotes = [
     cite: "https://techvify-software.com/35-best-coding-programming-quotes/#:~:text=Coding%20Quotes%201%20Coding%20like%20poetry%20should%20be,course%2C%20bad%20code%20can%20be%20cleaned%20up.%20",
   },
 ];
+var currentDate = new Date();
+
+var currentYear = currentDate.getFullYear();
+const footerText = `©${currentYear} Amobi Victor Chukwuka. All Righs Reserved`
 
 const Footer = (props) => {
   const router = useRouter();
@@ -52,8 +56,8 @@ const Footer = (props) => {
         ))}
       </div>
       <div className=" py-10 bg-black space-y-2 text-center">
-        <p>© 2023 Amobi Victor Chukwuka. All Righs Reserved</p>
-        <a href="mailto:conatct@opulencedeveloper.com" className="underline">
+        <p>{footerText}</p>
+        <a href="mailto:victorkudos@gmail.com" className="underline">
         victorkudos@gmail.com
         </a>
       </div>
