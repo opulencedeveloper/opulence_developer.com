@@ -57,7 +57,7 @@ const TextTransition = () => {
 const SectionOne = () => {
   return (
     <section>
-      <div className="relative z-20 text-center flex flex-col h-screen items-center justify-center space-y-8 text-primary1/85 pb-16 px-5 md:px-12 md:pb-0 ">
+      <div className="relative z-20 text-center flex flex-col h-[100dvh] items-center justify-center space-y-8 text-primary1/85 pb-16 px-5 md:px-12 md:pb-0 ">
         <div className="w-full md:w-[95%] pt-5 backdrop-filter backdrop-blur-sm">
           {" "}
           <div className="relative z-50 flex flex-wrap justify-center items-center animate-text-glitch">

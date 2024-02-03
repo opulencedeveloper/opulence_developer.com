@@ -96,7 +96,9 @@ const Shop = () => {
         />
       </Head>{" "}
       <section className="pt-8">
-       
+      <p className="text-xl font-medium mx-5 md:mx-12 md:text-2xl">
+         Software for sale
+        </p>
         <Products productInfo={productInfo} />
       </section>{" "}
       <Footer />
