@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 
 import Socials from "../UI/Socials";
+import AnalogClock from "../home/AnalogClock";
 
 const codingQuotes = [
   {
@@ -46,7 +47,7 @@ const Footer = (props) => {
         <Socials />
 
         {codingQuotes.map((codingQuotesData, index) => (
-          <p key={index} className="leading-loose pb-10 italic text-2xl font-extralight text-center md:text-3xl">
+          <p key={index} className="leading-loose pb-5 italic text-2xl font-extralight text-center md:text-3xl">
             {codingQuotesData.link === activeLink && (
               <q cite={codingQuotesData.cite} >
                 {codingQuotesData.quotes}
@@ -55,6 +56,7 @@ const Footer = (props) => {
           </p>
         ))}
       </div>
+     <div className="flex justify-center px-5"><AnalogClock /></div> 
       <div className=" py-10 bg-black space-y-2 px-5 text-center">
         <p>{footerText}</p>
         <a href="mailto:victorkudos@gmail.com" className="underline">
