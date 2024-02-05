@@ -47,7 +47,7 @@ const OpenSourceCode = () => {
         <p className="text-xl px-5 md:px-12 md:text-2xl">Some Open Source Code</p>
         <div className="border-primary1 border-t-2 border-opacity-50 mt-5 space-x-auto pt-5 mx-4 md:mx-12 md:pt-8 gap-7 grid col-span-1 size1:grid-cols-2 size2:grid-cols-3 size4:grid-cols-4">
           {openSourceProjectInfo.map((openSourceProjectData, index) => (
-            <div key={index} className="py-2 w-full grid-cols-1 sticky top-7 size1:static size1:top-0 flex flex-col flex-grow">
+            <div key={index} className="py-2 w-full grid-cols-1 sticky top-16 size1:static size1:top-0 flex flex-col flex-grow">
               
               <div className="h-64 w-full rounded-tl-lg rounded-tr-lg  overflow-hidden md:h-72">
                 <Image
