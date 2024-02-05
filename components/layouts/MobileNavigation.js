@@ -46,7 +46,7 @@ const MobileNavigation = (props) => {
   };
 
   return (
-    <div className="overflow-y-auto bg-white text-white pb-8 w-full h-full">
+    <div className="flex flex-col overflow-y-auto bg-white text-white w-full h-full">
       
       <div className="bg-primary flex justify-between items-center py-8 px-5">
       <div>
@@ -79,7 +79,7 @@ const MobileNavigation = (props) => {
           <span className="hamburger-bottom"></span>
         </button>
       </div>
-      <div className="overflow-y-auto h-[80%]">
+      <div className="overflow-y-auto flex-1 pb-8">
         {" "}
        <div> {navLinks.map((linkData, index) => {
           const textColor =

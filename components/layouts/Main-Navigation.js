@@ -58,8 +58,8 @@ const MainNavigation = () => {
     <>
       {" "}
      
-      <header className="relative bg-black/70 z-20 flex justify-between items-center h-max py-4 px-5 md:py-7 md:px-8">
-        <div className="relative z-50" >
+      <header className="sticky top-0 backdrop-filter backdrop-blur-xl z-40 flex justify-between items-center h-max py-3 px-5 md:py-7 md:px-8">
+        <div className="relative z-30" >
           <h1 className="animate-shimmering-silver-text leading-none text-lg font-bold md:text-4xl">
             {companyName}
           </h1>

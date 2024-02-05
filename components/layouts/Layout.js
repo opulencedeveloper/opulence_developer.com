@@ -21,7 +21,7 @@ const Layout = (props) => {
       </div>
       <div className="relative">
         <MainNavigation />
-        <main className="relative z-40">{props.children}</main>
+        <main className="relative z-30">{props.children}</main>
       </div>
     </>
   );

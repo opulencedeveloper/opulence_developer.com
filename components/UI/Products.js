@@ -18,7 +18,7 @@ const Products = (props) => {
       {props.productInfo.map((productData, index) => (
         <div
           key={index}
-          className={"w-full grid-cols-1 my-4 mx-2 pb-6 sticky top-7 size1:static size1:top-0 flex flex-col"} // Ensure each grid item behaves as a flex container
+          className={"w-full grid-cols-1 my-4 mx-2 pb-6 sticky top-16 size1:static size1:top-0 flex flex-col"} // Ensure each grid item behaves as a flex container
         >
           <div className="relative px-3 bg-gray-700">
             <Image
