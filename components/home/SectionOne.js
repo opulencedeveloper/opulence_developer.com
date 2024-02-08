@@ -3,16 +3,16 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const skills = [
-  "Flutter",
-  "React.js",
-  "Next.js",
-  "Node.js",
-  "Express.js",
-  "MongoDB",
-  "Mongoose",
-  "Graphics",
-  "Arduino",
-  "IOT",
+  "Javascript",
+  "Typescript",
+  "Php",
+  "Java",
+  "Phython",
+  "HTML",
+  "CSS",
+  "SCSS",
+  "Dart",
+  "C++",
 ];
 const sendMessageHandler = () => {
   handleWhatsAppClick(
@@ -112,11 +112,10 @@ const SectionOne = () => {
       </div>
       <div className={`bg-primary1 py-6 flex overflow-hidden`}>
         <div
-          className={`animate-slideLeftRight space-x-8 text-xl text-primary`}
+          className={`animate-slideLeftRight text-xl text-primary`}
         >
-          {skills.map((skill, index) => (
-            <span key={index}>{skill}</span>
-          ))}
+         Crafting digital masterpieces line by line, OpulenceDeveloper transforms code into innovation, bytes into brilliance, and algorithms into art. Embrace the elegance of technology with me.
+       
         </div>
       </div>
       <TextTransition />

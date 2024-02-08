@@ -14,7 +14,7 @@ const Layout = (props) => {
           src={heroImage}
           alt="Dynamic Horizon: The Visual Canvas of OpulenceDeveloper's Portfolio"
           // style={{ filter: "brightness(0.1)" }}
-          className="h-full w-full object-cover opacity-15"
+          className="h-full w-full object-cover opacity-10"
           priority
           loading="eager"
         />{" "}

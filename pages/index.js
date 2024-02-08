@@ -8,6 +8,7 @@ import MyServices from "@/components/home/MyServices";
 import SuccessfulProjects from "@/components/home/SuccessfulProjects";
 import Portal from "@/components/UI/Portal";
 import Footer from "@/components/layouts/Footer";
+import SkillSet from "@/components/home/SkillSet";
 
 export default function Home() {
 const router = useRouter();
@@ -48,6 +49,7 @@ const router = useRouter();
       </Portal>
       <SectionOne />
       <MyServices />
+      <SkillSet />
       <SuccessfulProjects />
       <OpenSourceCode />
       <SectionTwo />
