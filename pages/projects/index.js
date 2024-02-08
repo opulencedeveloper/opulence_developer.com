@@ -2,6 +2,15 @@ import Footer from "@/components/layouts/Footer";
 import Head from "next/head";
 
 const projects = [
+  // {
+  //   title: "Jack",
+  //   type: "Website, Andriod & IOS App.",
+  //   technology: "Next.js, TailwindCss, Flutter",
+  //   status: "Deployed to Production",
+  //   description:
+  //     "Market for car parts",
+  //   link: "https://staging.jack.parts",
+  // },
   {
     title: "Janet Memorial Hospital",
     type: "Website",

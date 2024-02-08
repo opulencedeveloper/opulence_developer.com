@@ -10,7 +10,7 @@ const codingQuotes = [
     cite: "https://opulencedeveloper.com",
   },
   {
-    link: "/shop",
+    link: "/opulence-developer-software",
     quotes: "Programming is not about typing, it's about thinking",
     cite: "https://dev.to/cleancodestudio/10-insightful-programming-wisdom-quotes-18ba",
   },
@@ -31,6 +31,12 @@ const codingQuotes = [
     quotes:
       "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.",
     cite: "https://techvify-software.com/35-best-coding-programming-quotes/#:~:text=Coding%20Quotes%201%20Coding%20like%20poetry%20should%20be,course%2C%20bad%20code%20can%20be%20cleaned%20up.%20",
+  },
+  {
+    link: "/shop",
+    quotes:
+      "Crafting digital masterpieces line by line, OpulenceDeveloper transforms code into innovation, bytes into brilliance, and algorithms into art. Embrace the elegance of technology with me.",
+    cite: "https://opulencedeveloper.com/shop",
   },
 ];
 var currentDate = new Date();

@@ -5,6 +5,8 @@ import CSSTransition from "react-transition-group/CSSTransition";
 
 import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
 import Image from "next/image";
+import Head from "next/head";
+import Footer from "@/components/layouts/Footer";
 
 const animationTiming = {
   enter: 400,
@@ -61,6 +63,27 @@ const Shop = (props) => {
   };
 
   return (
+    <>
+    <Head>
+        <title>Opulence Shop - Explore Our Range of Products and Services</title>
+        <meta
+          name="description"
+          content="Browse Opulence Shop for a diverse range of products and services, including software solutions, telecommunications, writing agency services, and much more. Elevate your business and personal projects with our top-notch offerings."
+        />
+        <meta name="author" content="Opulence Developer" />
+        <meta
+          property="og:title"
+          content="Opulence Shop - Explore Our Range of Products and Services"
+        />
+        <meta
+          property="og:description"
+          content="Browse Opulence Shop for a diverse range of products and services, including software solutions, telecommunications, writing agency services, and much more. Elevate your business and personal projects with our top-notch offerings."
+        />
+        <meta
+          property="og:image"
+          content="https://opulencedeveloper.com/images/shop/opulence-shop-socialpreview.png"
+        />
+      </Head>
     <div className="">
        <div className="relative rounded-tl rounded-tr overflow-hidden flex items-center mt-8 ml-5 md:mt-20 md:ml-12 ">
           {" "}
@@ -136,6 +159,8 @@ const Shop = (props) => {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
