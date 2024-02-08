@@ -111,12 +111,12 @@ const SectionOne = () => {
         </button>
       </div>
       <div className={`bg-primary1 py-6 flex overflow-hidden`}>
-        <div
-          className={`animate-slideLeftRight text-xl text-primary`}
+        <p
+          className={`text-base md:text-xl text-center text-primary px-5`}
         >
          Crafting digital masterpieces line by line, OpulenceDeveloper transforms code into innovation, bytes into brilliance, and algorithms into art. Embrace the elegance of technology with me.
        
-        </div>
+        </p>
       </div>
       <TextTransition />
     </section>
