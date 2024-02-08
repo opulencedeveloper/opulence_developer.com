@@ -20,7 +20,7 @@ const ProgressBar = (props) => {
       <p className="text-[14px] mb-1 text-primary1 md:text-lg font-medium">{label}</p>
       <div className="flex justify-between w-full h-[10px] items-center md:h-[14px]">
         {" "}
-        <div className="relative w-full h-full w-[92%] mr-2 bg-primary1 rounded-lg booder border-primary overflow-hidden">
+        <div className="relative w-full h-full w-[92%] mr-2 bg-primary1 rounded-lg border border-primary overflow-hidden">
           <div
             className="absolute h-full bg-primary rounded-lg"
             style={{ width: `${progress}%` }}
