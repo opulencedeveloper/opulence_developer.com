@@ -66,7 +66,7 @@ const router = useRouter();
 
 
       <MyServices />
-      {/* <SkillSet /> */}
+      <SkillSet />
       <SuccessfulProjects />
       <OpenSourceCode />
       <SectionTwo />
