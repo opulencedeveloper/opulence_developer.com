@@ -10,6 +10,9 @@ import Portal from "@/components/UI/Portal";
 import Footer from "@/components/layouts/Footer";
 import SkillSet from "@/components/home/SkillSet";
 
+const commonStyle = "absolute w-[200px] h-[200px] flex items-center justify-center text-[20px]"
+
+
 export default function Home() {
 const router = useRouter();
   return (
@@ -48,8 +51,22 @@ const router = useRouter();
       </div>
       </Portal>
       <SectionOne />
+   
+  
+     <div className="flex justify-center  mt-20"> <div className="cube h-[15rem] w-[200px] relative">
+      <div className={`${commonStyle} front`}>4 years experience</div>
+      <div className={`${commonStyle} back`}>4 years experience</div>
+      <div className={`${commonStyle} left`}>4 years experience</div>
+      <div className={`${commonStyle} right`}>4 years experience</div>
+      <div className={`${commonStyle} top`}>4 years experience</div>
+      <div className={`${commonStyle} bottom`}>4 years experience</div>
+    </div>
+    </div>
+
+
+
       <MyServices />
-      <SkillSet />
+      {/* <SkillSet /> */}
       <SuccessfulProjects />
       <OpenSourceCode />
       <SectionTwo />

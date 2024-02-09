@@ -697,3 +697,30 @@ to{opacity: 1;}
 80%{opacity: .9;}
 100%{opacity: 1;}
 }
+
+/* styles.css */
+/* CrystalCube.css */
+
+.cube {
+  
+  transform-style: preserve-3d;
+  animation: rotate 10s linear infinite;
+}
+
+.side {
+ 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.front { transform: translateZ(100px); background: linear-gradient(45deg, #03262e, #ACC2C7); }
+.back { transform: translateZ(-100px); background: linear-gradient(45deg, #ACC2C7, #03262e); }
+.left { transform: rotateY(-90deg) translateZ(100px); background: linear-gradient(45deg, #ACC2C7, #03262e); }
+.right { transform: rotateY(90deg) translateZ(100px); background: linear-gradient(45deg, #ACC2C7, #03262e); }
+.top { transform: rotateX(90deg) translateZ(100px); background: linear-gradient(45deg, #03262e, #ACC2C7); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); background: linear-gradient(45deg, #ACC2C7, #03262e); }
+
+@keyframes rotate {
+  0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}
+
