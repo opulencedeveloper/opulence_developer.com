@@ -53,7 +53,7 @@ const router = useRouter();
       <SectionOne />
    
   
-     {/* <div className="flex justify-center  mt-20"> <div className="cube h-[15rem] w-[200px] relative">
+     <div className="flex justify-center  mt-20"> <div className="cube h-[15rem] w-[200px] relative">
       <div className={`${commonStyle} front`}>4 years experience</div>
       <div className={`${commonStyle} back`}>4 years experience</div>
       <div className={`${commonStyle} left`}>4 years experience</div>
@@ -61,12 +61,12 @@ const router = useRouter();
       <div className={`${commonStyle} top`}>4 years experience</div>
       <div className={`${commonStyle} bottom`}>4 years experience</div>
     </div>
-    </div> */}
+    </div>
 
 
 
       <MyServices />
-      {/* <SkillSet /> */}
+      <SkillSet />
       <SuccessfulProjects />
       <OpenSourceCode />
       <SectionTwo />
