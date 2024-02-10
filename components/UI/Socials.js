@@ -31,7 +31,7 @@ const socialInfo = [
 const Socials = () => {
   return (
     <div className="mt-28 mb-16">
-      <div className="border border-primary2 backdrop-filter backdrop-blur-sm flex gap-4 p-6 flex-col justify-center items-center size1:flex-row">
+      <div className="border border-primary1 backdrop-filter backdrop-blur-sm flex gap-4 p-6 flex-col justify-center items-center size1:flex-row">
         <p className="text-lg ">Find me on:</p>
       <div className="flex justify-evenly flex-wrap gap-4">  {socialInfo.map((socialInfoData, index) => {
           return (

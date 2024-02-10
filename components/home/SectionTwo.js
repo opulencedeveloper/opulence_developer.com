@@ -143,10 +143,10 @@ const SectionTwo = () => {
         </div>
       </div>
 
-      <div className="pb-10 space-y-5 px-5 md:px-12">
+      {/* <div className="pb-10 space-y-5 px-5 md:px-12">
         <p className="text-lg">Let's build magic together</p>
         <hr className="border-t-2 my-3 border-primary1 opacity-50" />
-        <p className="leading-loose text-lg font-light ">
+        {/* <p className="leading-loose text-lg font-light ">
           "I am deeply passionate about crafting elegant and efficient solutions
           for intricate challenges, and I am thrilled at the opportunity to
           apply my skills to your forthcoming project. With comprehensive
@@ -168,7 +168,7 @@ const SectionTwo = () => {
           social media channels - I am eager to initiate our collaboration. Your
           project holds great promise, and I am eagerly looking forward to
           joining forces with you to embark on this journey."
-        </p>
+        </p> 
         <button
           onClick={sendMessageHandler}
           className="flex items-center bg-black px-5 py-3 text-white rounded-sm"
@@ -182,7 +182,7 @@ const SectionTwo = () => {
             height={16}
           />
         </button>
-      </div>
+      </div> */}
     </>
   );
 };
