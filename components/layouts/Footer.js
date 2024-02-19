@@ -42,7 +42,7 @@ const codingQuotes = [
 var currentDate = new Date();
 
 var currentYear = currentDate.getFullYear();
-const footerText = `©${currentYear} Amobi Victor Chukwuka. All Righs Reserved`
+const footerText = `©${currentYear} Amobi Victor Chukwuka. All Rights Reserved`
 
 const Footer = (props) => {
   const router = useRouter();
