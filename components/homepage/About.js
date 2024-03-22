@@ -57,7 +57,7 @@ export default function About() {
               A brief intro, who am I?
             </h3>
             <p ref={body} className=" translate-y-10 text-body-1 2xl:text-4xl opacity-0">
-             My name is Amobi Victor Opulence, What took you so long to find me?
+             My name is Amobi Victor Chukwuka, What took you so long to find me?
               <br></br>
               <br></br>I am an independent fullstack software engineer based in
               Port-Harcourt, Nigeria. 😎
