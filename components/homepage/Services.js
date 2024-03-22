@@ -11,10 +11,11 @@ export default function Services() {
 
   const toolBoxItems = [
     "JavaScript",
+    "Typescript",
     "Flutter",
     "ReactJS",
     "NextJS", 
-    "Typescript",
+    "TailwindCSS",
     "Node.js (ExpressJS)",
     "MongoDB",
     "PostgreSQL",
