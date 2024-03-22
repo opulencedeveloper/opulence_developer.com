@@ -1,10 +1,17 @@
-export default function Footer() {
-  const currentDate = new Date();
+import { useEffect, useState } from "react";
 
-const currentYear = currentDate.getFullYear();
+
+export default function Footer() {
+  const [currentYear, setCurrentYear] = useState();
+  useEffect(()=> {
+    const currentDate = new Date();
+    setCurrentYear(currentDate.getFullYear())
+  }, [])
+  
     function toTop() {
       window.scrollTo(0, 0)
     }
+
   
     return (
       <footer className="mt-14 flex items-end justify-between px-5 py-4 sm:flex text-body-4 md:text-body-3">

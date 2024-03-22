@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Projects({ name, img, alt, type, link, year, tools }) {
   return (
     <div>
@@ -5,14 +7,14 @@ export default function Projects({ name, img, alt, type, link, year, tools }) {
         target="_blank"
         rel="noreferrer"
         href={link}
-        className="img group inline-block overflow-hidden duration-200 ease-linear hover:rounded-3xl"
+        className="h-max bg-white img group inline-block overflow-hidden duration-200 ease-linear hover:rounded-3xl"
       >
-        <img
+        <Image
           className="w-screen duration-700 ease-in-out group-hover:scale-105"
           src={img}
           alt={alt}
-          width="800"
-          height="600"
+          width="900"
+          height="700"
         />
       </a>
       <div className="mt-4">

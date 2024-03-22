@@ -14,7 +14,7 @@ const sendMessageHandler = () => {
 
 
 export default function Contact() {
-  const [time, setTime] = useState(new Date().toLocaleTimeString());
+  const [time, setTime] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -33,6 +33,7 @@ export default function Contact() {
   };
 
   useEffect(() => {
+    setTime(new Date().toLocaleTimeString());
     ScrollTrigger.create({
       trigger: contactSection.current,
       start: "180px bottom",
