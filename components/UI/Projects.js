@@ -7,7 +7,7 @@ export default function Projects({ name, img, alt, type, link, year, tools }) {
         target="_blank"
         rel="noreferrer"
         href={link}
-        className="h-max bg-white img group inline-block overflow-hidden duration-200 ease-linear hover:rounded-3xl"
+        className="h-max bg-gray-400 img group inline-block overflow-hidden duration-200 ease-linear hover:rounded-3xl"
       >
         <Image
           className="w-screen duration-700 ease-in-out group-hover:scale-105"
