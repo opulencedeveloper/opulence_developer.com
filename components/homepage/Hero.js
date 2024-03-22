@@ -38,7 +38,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="hero relative flex h-screen w-full select-none items-center justify-center mt-0 md:mt-20"
+      className="hero relative flex h-[100dvh] w-full select-none overflow-hidden items-center justify-center mt-0 md:mt-20"
       aria-label="hero"
     >
       <div className="z-10 flex w-full  flex-col items-center text-title font-bold uppercase text-accent-300  2xl:space-y-16 2xl:text-[10vw]">
@@ -61,7 +61,7 @@ export default function Hero() {
       </div>
       <div
         ref={imgContainer}
-        className="absolute mx-auto  w-[72%] overflow-hidden rounded-md"
+        className="absolute mx-auto  w-dvw overflow-hidden rounded-md"
       >
         <img
           ref={img}
