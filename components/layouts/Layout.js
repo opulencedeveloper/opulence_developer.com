@@ -1,8 +1,15 @@
 import Image from "next/image";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 import MainNavigation from "./Main-Navigation.js";
 
-import heroImage from "../../public//images/hero.png";
+import heroImage from "@/public/assets/images/hero.png";
 
 const Layout = (props) => {
   return (
@@ -19,9 +26,9 @@ const Layout = (props) => {
           loading="eager"
         />{" "}
       </div>
-      <div className="relative">
+      <div className="relative text-white">
         <MainNavigation />
-        <main className="relative z-30">{props.children}</main>
+        <main className={`relative z-30 ${poppins.variable} font-poppins max-w-[120rem] mx-auto`}>{props.children}</main>
       </div>
     </>
   );

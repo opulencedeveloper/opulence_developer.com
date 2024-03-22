@@ -1,23 +1,54 @@
+import { useEffect, useRef } from "react";
 import Head from "next/head";
-import { useRouter } from "next/router";
 
-import SectionOne from "@/components/home/SectionOne";
-import OpenSourceCode from "@/components/home/OpenSourceCode";
-import SectionTwo from "@/components/home/SectionTwo";
-import MyServices from "@/components/home/MyServices";
-import SuccessfulProjects from "@/components/home/SuccessfulProjects";
-import Portal from "@/components/UI/Portal";
-import Footer from "@/components/layouts/Footer";
-import SkillSet from "@/components/home/SkillSet";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const commonStyle = "absolute w-[200px] h-[200px] flex items-center justify-center text-[20px]"
+import NavBar from "@/components/UI/NavBar";
+import Hero from "@/components/homepage/Hero";
+import Role from "@/components/homepage/Role";
+import About from "@/components/homepage/About";
+import Services from "@/components/homepage/Services";
+import Works from "@/components/homepage/Works";
+import Contact from "@/components/homepage/Contact";
+import Footer from "@/components/UI/Footer";
 
+const HomePage = () => {
+  const sectionRefs = useRef([]);
+  gsap.registerPlugin(ScrollTrigger);
 
-export default function Home() {
-const router = useRouter();
+  // Scrub animation of section headings
+  useEffect(() => {
+    //TODO Learn useContext and useRef here
+    const sectionHeadings = document.querySelectorAll(".section-heading");
+    sectionHeadings.forEach((heading) => {
+      const headings = heading.querySelectorAll(".heading");
+
+      headings.forEach((individualHeading) => {
+        ScrollTrigger.create({
+          trigger: heading,
+          start: "top 550px",
+          end: "bottom 550px",
+          animation: gsap.to(individualHeading, {
+            opacity: 1,
+            y: 0,
+            ease: "power4.out",
+            color: "#000000",
+            duration: 1,
+          }),
+          toggleActions: "play none none none",
+
+        });
+        ScrollTrigger.refresh()
+      });
+    });
+  }, []);
+
+  
+
   return (
-    <>
-      <Head>
+   <>
+    <Head>
         <title>OpulenceDeveloper | FullStack Software Engineer Portfolio</title>
         <meta
           property="title"
@@ -40,37 +71,24 @@ const router = useRouter();
           property="og:description"
           content="Want a website? Want an App? I'm available for you, Discover a portfolio of FullStack Software Engineering projects by Amobi Victor Chukwuka. Explore web and application development expertise."
         />
-      </Head> 
-      <Portal>
-      <div className="flex flex-col items-center justify-center rounded-tl-[8px] rounded-bl-[8px] overflow-hidden stainless-steel-2 fixed z-40 right-0 h-32 w-7 top-1/3 transform -translate-y-1/2 bg-black text-white md:top-1/2 md:h-40 md:w-10">
-        <button
-        onClick={() => router.push("/projects")}
-         className="-rotate-90 h-7 w-32 text-black text-sm text-center md:text-base md:h-max md:w-max">
-          View_Projects
-        </button>
-      </div>
-      </Portal>
-      <SectionOne />
-   
-  
-     <div className="flex justify-center  mt-20"> <div className="cube h-[15rem] w-[200px] relative">
-      <div className={`${commonStyle} front`}>4 years experience</div>
-      <div className={`${commonStyle} back`}>4 years experience</div>
-      <div className={`${commonStyle} left`}>4 years experience</div>
-      <div className={`${commonStyle} right`}>4 years experience</div>
-      <div className={`${commonStyle} top`}>4 years experience</div>
-      <div className={`${commonStyle} bottom`}>4 years experience</div>
+      </Head>
+
+      <div className="bg-secondary-100">
+      <NavBar sectionRefs={sectionRefs.current} />{" "}
+      {/* passing sectionRefs props to give access to Navbar, Navbar can then access the props which have access to the array of sectionRef and loop over it */}
+      <Hero />
+      <main className="px-5 md:px-10 xl:px-20 2xl:px-28">
+        <Role forwardedRef={(el) => (sectionRefs.current[0] = el)} />{" "}
+        {/* forwardedRef props to pass into the child component to access the ref, then this will go into the useRef array  */}
+        <About />
+        <Services />
+        <Works forwardedRef={(el) => (sectionRefs.current[1] = el)} />
+        <Contact />
+      </main>
+      <Footer />
     </div>
-    </div>
-
-
-
-      <MyServices />
-      <SkillSet />
-      <SuccessfulProjects />
-      <OpenSourceCode />
-      <SectionTwo />
-     <Footer />
-    </>
+   </> 
   );
-}
+};
+
+export default HomePage;

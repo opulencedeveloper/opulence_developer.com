@@ -3,6 +3,7 @@ import Image from "next/image";
 import handleWhatsAppClick from "@/helpers/whatsapp";
 import Head from "next/head";
 import Footer from "@/components/layouts/Footer";
+import Layout from "@/components/layouts/Layout";
 
 const sendMessageHandler = () => {
   handleWhatsAppClick(
@@ -35,6 +36,7 @@ const CodeSupport = () => {
         />
         {/* Add more Open Graph tags as needed */}
       </Head>{" "}
+      <Layout>
       <section>
         {" "}
         <div className="relative rounded-tl rounded-tr overflow-hidden flex items-center mt-8 ml-5 md:mt-20 md:ml-12 ">
@@ -90,6 +92,7 @@ const CodeSupport = () => {
           </button>
         </div> 
       </section>
+      </Layout>
       <Footer />
     </>
   );

@@ -1,4 +1,5 @@
 import Footer from "@/components/layouts/Footer";
+import Layout from "@/components/layouts/Layout";
 import Head from "next/head";
 
 const projects = [
@@ -217,7 +218,7 @@ const Projects = () => {
           content="Browse a diverse collection of FullStack Software Engineering projects by Amobi Victor Chukwuka. Discover personal projects and collaborations with clients."
         />
       </Head>
-      <section className="px-3 text-primary1 mt-10 md:px-12 md:mt-28">
+    <Layout>  <section className="px-3 text-primary1 mt-10 md:px-12 md:mt-28">
         <div className="flex justify-between mb-8 text-lg font-semibold md:text-3xl">
           <p className="w-[45%] animate-float text-center">Projects</p>
 
@@ -263,7 +264,7 @@ const Projects = () => {
           </a>
         </div>
       </section>{" "}
-      
+      </Layout>
       <Footer />
     </>
   );

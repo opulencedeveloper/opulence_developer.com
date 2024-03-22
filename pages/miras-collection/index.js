@@ -1,6 +1,7 @@
 import Head from "next/head";
 import mirasCollectionLogo from "../../public/images/shop/clothing/miras-collection/miras-collection-logo.jpg";
 import ShopInfo from "@/components/shop/clothing/ShopInfo";
+import Layout from "@/components/layouts/Layout";
 
 const whatsappNumber = "+2348106443888";
 
@@ -53,7 +54,7 @@ const MirasCollection = () => {
           content="https://opulencedeveloper.com/images/shop/clothing/miras-collection/miras-collection-social-preview.png"
         />
       </Head>
-
+<Layout>
       <ShopInfo
         header="Mira's collection"
         title="We deal on all kinds of bags, jewelry and slippers"
@@ -63,6 +64,7 @@ const MirasCollection = () => {
         whatsappNumber={whatsappNumber}
         shopImageFolder="miras-collection"
       />
+      </Layout>
     </>
   );
 };

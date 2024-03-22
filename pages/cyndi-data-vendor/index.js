@@ -10,6 +10,7 @@ import goTVLogo from "../../public/images/logo/gotv-logo.jpg";
 import dsTVLogo from "../../public/images/logo/dstv-logo.jpg";
 import TeleCommunications from "@/components/shop/Telecommunications";
 import OtherServices from "@/components/cyndi-data-vendor/OtherServices";
+import Layout from "@/components/layouts/Layout";
 
 const whatsappContact = "+2347064891660"
 
@@ -141,6 +142,7 @@ const CyndiDataVendor = () => {
           content="https://opulencedeveloper.com/images/cynthia-data-vendor-image.png"
         />
       </Head>
+      <Layout>
       <TeleCommunications
         header="Cyndi Data Vendor"
         title="We sell affordable data plan & cable subscriptions"
@@ -169,7 +171,7 @@ const CyndiDataVendor = () => {
           />
         }
       />
-     
+     </Layout>
     </>
   );
 };

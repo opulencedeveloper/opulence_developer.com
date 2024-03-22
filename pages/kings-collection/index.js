@@ -1,6 +1,7 @@
 import Head from "next/head";
 import mirasCollectionLogo from "../../public/images/shop/clothing/kings-collection/kings-collection-logo.jpg";
 import ShopInfo from "@/components/shop/clothing/ShopInfo";
+import Layout from "@/components/layouts/Layout";
 
 const whatsappNumber = "+2348167912229";
 
@@ -54,7 +55,7 @@ const KingsCollection = () => {
           content="https://opulencedeveloper.com/images/shop/clothing/kings-collection/kings-collection-social-preview.png"
         />
       </Head>
-
+<Layout>
       <ShopInfo
         header="Kings's Collection"
         title="We deal on all kinds of sneakers, t-shirt, polo, jeans, boxers, men's cooperate shoe"
@@ -64,6 +65,7 @@ const KingsCollection = () => {
         whatsappNumber={whatsappNumber}
         shopImageFolder="kings-collection"
       />
+      </Layout>
     </>
   );
 };

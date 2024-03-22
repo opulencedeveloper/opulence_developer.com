@@ -1,5 +1,6 @@
 import Products from "@/components/UI/Products";
 import Footer from "@/components/layouts/Footer";
+import Layout from "@/components/layouts/Layout";
 import Head from "next/head";
 import Image from "next/image";
 const productInfo = [
@@ -95,12 +96,14 @@ const Shop = () => {
           content="Explore a variety of websites and mobile apps for sale by Amobi Victor Chukwuka. High-quality digital products ready for purchase."
         />
       </Head>{" "}
+      <Layout>
       <section className="pt-8">
       <p className="text-xl font-medium mx-5 md:mx-12 md:text-2xl">
          Software for sale
         </p>
         <Products productInfo={productInfo} />
       </section>{" "}
+      </Layout>
       <Footer />
     </>
   );

@@ -4,6 +4,7 @@ import Head from "next/head";
 
 import splendorCakesAndPasteriesLogo from "../../public/images/shop/catering/splendor-cakes-and-pasteries/splendor-cakes-and-pasteries-logo.jpg";
 import ShopInfo from "@/components/shop/catering/ShopInfo";
+import Layout from "@/components/layouts/Layout";
 
 const whatsappNumber = "+2348133916916";
 
@@ -62,7 +63,7 @@ const SplendorCakesAndPasteries = () => {
           content="https://opulencedeveloper.com/images/shop/catering/splendor-cakes-and-pasteries/splendor-cakes-and-pasteries-social-preview.png"
         />
       </Head>
-
+<Layout>
       <ShopInfo
         header="Splendor Cakes and Pasteries"
         title="We make custom cakes and pastries on order."
@@ -72,6 +73,7 @@ const SplendorCakesAndPasteries = () => {
         shopImageFolder="splendor-cakes-and-pasteries"
         whatsappNumber="+2348133916916"
       />
+      </Layout>
     </>
   );
 };

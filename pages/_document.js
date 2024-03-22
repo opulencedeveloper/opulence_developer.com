@@ -4,10 +4,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="text-white">
+      <body>
         <Main />
         <NextScript />
-        <div className="font-poppins" id="navigation"></div>
+        <div id="navigation"></div>
       </body>
     </Html>
   );

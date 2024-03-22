@@ -48,7 +48,7 @@ const Footer = (props) => {
   const router = useRouter();
   const activeLink = router.pathname;
   return (
-    <footer className="relative z-40 ">
+    <footer className="relative z-40 text-white">
       <div className="px-5 md:px-12">
         <Socials />
 

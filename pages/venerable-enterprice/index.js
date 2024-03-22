@@ -9,6 +9,7 @@ import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
 import Head from "next/head";
 import handleWhatsAppClick from "@/helpers/whatsapp";
 import CommonShopUI from "@/components/shop/UI/CommShopUI";
+import Layout from "@/components/layouts/Layout";
 
 const venerableEnterpriceServies = [
   {
@@ -60,6 +61,7 @@ const VenerableEnterprice = () => {
           content="https://opulencedeveloper.com/images/shop/venerable-enterprice/venerable-enterprice-social-preview.png"
         /> 
       </Head>
+      <Layout>
       <section className="py-20 px-5 md:px-8">
       <ShopHeader
         header="Venerable Enterprice"
@@ -101,6 +103,7 @@ const VenerableEnterprice = () => {
                     />
                   </Link>
     </section>
+    </Layout>
      
     </>
   );

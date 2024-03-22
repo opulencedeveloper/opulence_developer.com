@@ -1,6 +1,7 @@
 import Head from "next/head";
 import ydcClothingLogo from "../../public/images/shop/clothing/ydc-clothing/ydc-clothing-logo.jpg";
 import ShopInfo from "@/components/shop/clothing/ShopInfo";
+import Layout from "@/components/layouts/Layout";
 
 const whatsappNumber = "+2348132304065";
 
@@ -56,6 +57,8 @@ const YdcClothing = () => {
         />
       </Head>
 
+      <Layout>
+
       <ShopInfo
         header="YDC Clothings"
         title="We make and sell any kinds clothing."
@@ -65,6 +68,7 @@ const YdcClothing = () => {
         whatsappNumber={whatsappNumber}
         shopImageFolder="ydc-clothing"
       />
+      </Layout>
     </>
   );
 };

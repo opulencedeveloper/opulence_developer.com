@@ -1,6 +1,7 @@
 import Head from "next/head";
 import mercyCuisineLogo from "../../public/images/shop/catering/mercy-cuisine/mercy-cuisine-logo.jpg";
 import ShopInfo from "@/components/shop/catering/ShopInfo";
+import Layout from "@/components/layouts/Layout";
 
 const whatsappNumber = "+2347065508780";
 
@@ -62,7 +63,7 @@ const MercyCuisine = () => {
     </div> */}
 
 
-
+<Layout>
 
       <ShopInfo
         header="Mercy's Cuisine"
@@ -73,6 +74,7 @@ const MercyCuisine = () => {
         whatsappNumber={whatsappNumber}
         shopImageFolder="mercy-cuisine"
       />
+      </Layout>
     </>
   );
 };

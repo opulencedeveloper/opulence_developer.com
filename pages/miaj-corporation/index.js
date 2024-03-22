@@ -7,6 +7,7 @@ import gloLogo from "../../public/images/logo/glo-logo.jpg";
 import maijCorperationLogo from "../../public/images/shop/maij-corperation/maij-corperation-logo.jpg";
 import TeleCommunications from "@/components/shop/Telecommunications";
 import OtherServices from "@/components/cyndi-data-vendor/OtherServices";
+import Layout from "@/components/layouts/Layout";
 
 const whatsappContact = "+2347063285552";
 
@@ -107,6 +108,7 @@ const MiajCorporation = () => {
           content="https://opulencedeveloper.com/images/shop/maij-corperation/maij-corperation-social-preview.png"
         />
       </Head>
+      <Layout>
       <TeleCommunications
         header="Miaj Corporation"
         title="Data vendor and writing expert"
@@ -136,7 +138,7 @@ const MiajCorporation = () => {
           />
         }
       />
-
+</Layout>
       {/* <SectionOne /> */}
     </>
   );
