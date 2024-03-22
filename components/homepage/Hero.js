@@ -36,7 +36,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="hero" className="hero relative mt-10 flex w-full h-screen select-none items-center justify-center" aria-label="hero">
+    <section id="hero" className="hero relative mt-10 flex w-full h-[100dvh] select-none items-center justify-center" aria-label="hero">
       <div className="z-10 flex flex-col  w-full items-center text-title 2xl:text-[10vw] 2xl:space-y-16 font-bold  uppercase text-accent-300">
         <div className="title 2xl:py-16">
           {/* Learn more about useRef */}

@@ -58,7 +58,7 @@ export default function NavBar({ sectionRefs }) {
       <a href="#hero" aria-label="Logo" className="z-50">
         <svg
           ref={logo}
-          className="h-[40px] w-[90px] md2:h-[80px] size7:w-[100px] md:w-[250px] "
+          className="h-[40px] w-[90px] md:h-[80px] size7:w-[100px] md:w-[250px] "
           height="45"
           viewBox="0 0 451 45"
           fill="currentColor"
