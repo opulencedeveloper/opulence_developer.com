@@ -42,6 +42,10 @@ export default function Contact() {
       animation: gsap
         .timeline()
         .to(
+          ".contactsection",
+          { backgroundColor: "#FFFFF" },
+          0
+        ).to(
           heading.current,
           { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 },
           0
@@ -66,7 +70,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="my-[10%] overflow-hidden"
+      className="my-[10%] overflow-hidden contactsection"
       aria-label="contact me"
     >
       <Heading title="Contact" />

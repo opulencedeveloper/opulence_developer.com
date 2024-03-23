@@ -1,8 +1,3 @@
-import ibgroup from "/public/assets/images/ib-group-desktop.webp";
-import memento from "@/public/assets/images/memento-desktop.webp";
-import acc from "@/public/assets/images/acc-square.webp";
-import daddy from "@/public/assets/images/godaddy-desktop.webp";
-import sunnyside from "@/public/assets/images/sunnyside-desktop.webp";
 import Projects from "../UI/Projects";
 import Heading from "../UI/Heading";
 
