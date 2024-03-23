@@ -63,7 +63,7 @@ export default function About() {
               Port-Harcourt, Nigeria. 😎
               <br></br>
               <br></br>
-              When I am not developing or coding,  I indulge in watching sci-fi and tech movies for inspiration and to boost productivity..
+              When I am not developing or coding,  I indulge in watching sci-fi and tech movies for inspiration and to boost productivity.
                <a
                 className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1"
                 href="https://youtube.com/shorts/f7kedhflEpc?si=dXaI28b4v1SsK0M8"
