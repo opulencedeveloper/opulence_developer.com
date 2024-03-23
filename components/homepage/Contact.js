@@ -31,37 +31,25 @@ export default function Contact() {
     const mailtoLink = `mailto:victorkudos@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
   };
-
   useEffect(() => {
-    setTime(new Date().toLocaleTimeString());
     ScrollTrigger.create({
       trigger: contactSection.current,
-      start: "180px bottom",
+      start:"180px bottom",
 
       // markers: true,
       animation: gsap
         .timeline()
-        .to(
-          ".contactsection",
-          { backgroundColor: "#FFFFF" },
-          0
-        ).to(
-          heading.current,
-          { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 },
-          0
-        )
-        .to(
-          body.current,
-          { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 },
-          0.2
-        ),
+        .to(heading.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 }, 0)
+        .to(body.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 }, 0.2),
 
       toggleActions: "play none none none",
     });
     ScrollTrigger.refresh();
-  }, [contactSection]);
+
+  }, [contactSection])
 
   useEffect(() => {
+    setTime(new Date().toLocaleTimeString());
     setInterval(() => {
       setTime(new Date().toLocaleTimeString());
     }, 1000);
@@ -70,7 +58,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="my-[10%] overflow-hidden contactsection bg-white"
+      className="my-[10%] overflow-hidden"
       aria-label="contact me"
     >
       <Heading title="Contact" />

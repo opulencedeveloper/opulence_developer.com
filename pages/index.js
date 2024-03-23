@@ -14,8 +14,9 @@ import Contact from "@/components/homepage/Contact";
 import Footer from "@/components/UI/Footer";
 
 const HomePage = () => {
-  const sectionRefs = useRef([]);
   gsap.registerPlugin(ScrollTrigger);
+
+  const sectionRefs = useRef([]); // Creating a sectionRefs array
 
   // Scrub animation of section headings
   useEffect(() => {
@@ -33,7 +34,6 @@ const HomePage = () => {
             opacity: 1,
             y: 0,
             ease: "power4.out",
-            color: "#000000",
             duration: 1,
           }),
           toggleActions: "play none none none",
