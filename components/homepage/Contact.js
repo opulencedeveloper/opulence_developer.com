@@ -70,7 +70,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="my-[10%] overflow-hidden contactsection"
+      className="my-[10%] overflow-hidden contactsection bg-white"
       aria-label="contact me"
     >
       <Heading title="Contact" />
