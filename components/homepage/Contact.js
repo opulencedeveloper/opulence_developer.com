@@ -27,7 +27,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const subject = encodeURIComponent("Reaching out From your Website");
-    const body = encodeURIComponent(`Hello Victor! I'm ${name}. ${message}`);
+    const body = encodeURIComponent(`Hello I'm ${name}. ${message}`);
     const mailtoLink = `mailto:victorkudos@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
   };

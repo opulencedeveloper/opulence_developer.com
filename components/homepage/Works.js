@@ -59,7 +59,7 @@ export default function Works({ forwardedRef }) {
         </div>
         <div className="col-span-1 h-fit md:col-span-4">
         <Projects
-            link="https://sunnysidechallenge.netlify.app"
+            link="https://outstandingdot.com"
             img={'/assets/images/outstanding-dot.png'}
             alt="Outstanding dot website"
             name="Outstanding dot website"
