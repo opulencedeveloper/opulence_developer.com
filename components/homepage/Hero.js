@@ -72,7 +72,7 @@ export default function Hero() {
       </div>
       <div
         ref={scroll}
-        className="absolute bottom-16 right-0 flex flex-col items-center justify-center space-y-8"
+        className="absolute bottom-24 right-0 flex flex-col items-center justify-center space-y-8"
       >
         <span className=" rotate-90 text-body-3">scroll</span>
         <div className="relative h-1 w-10 rotate-90 overflow-hidden">
