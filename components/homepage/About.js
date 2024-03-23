@@ -59,18 +59,24 @@ export default function About() {
             <p ref={body} className=" translate-y-10 text-body-1 2xl:text-4xl opacity-0">
              My name is Amobi Victor Chukwuka, What took you so long to find me?
               <br></br>
-              <br></br>I am an independent fullstack software engineer based in
+              <br></br>I am an independent fullstack software engineer with <strong>4 (years)</strong> experience, based in
               Port-Harcourt, Nigeria. 😎
               <br></br>
               <br></br>
-              When I am not developing or coding, I look for more technology to add to my expertises, 
-              I also enjoy watching sci-fi
-              movies that helps me get inspiration and productivity.
-              <a
-                className="underline duration-300 ease-in-out hover:text-secondary-700"
+              When I am not developing or coding,  I indulge in watching sci-fi and tech movies for inspiration and to boost productivity..
+               <a
+                className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1"
                 href="https://youtube.com/shorts/f7kedhflEpc?si=dXaI28b4v1SsK0M8"
               >
-                YouTube 📸
+                 YouTube 📸
+              </a>
+<br/>
+              <a
+              target="_blank"
+                className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1"
+                href="/assets/cv/amobivictor_CV.pdf"
+              >
+                 View CV
               </a>
             </p>
           </div>
