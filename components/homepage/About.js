@@ -59,7 +59,7 @@ export default function About() {
             <p ref={body} className=" translate-y-10 text-body-1 2xl:text-4xl opacity-0">
              My name is Amobi Victor Chukwuka, What took you so long to find me?
               <br></br>
-              <br></br>I am an independent fullstack software engineer with <strong>4 (years)</strong> experience, based in
+              <br></br>I am an independent fullstack software engineer, based in
               Port-Harcourt, Nigeria. 😎
               <br></br>
               <br></br>
