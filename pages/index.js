@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Head from "next/head";
 
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
