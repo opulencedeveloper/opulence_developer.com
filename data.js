@@ -5,7 +5,7 @@ import acc from './assets/images/acc-square.webp';
 import daddy from './assets/images/godaddy-desktop.webp';
 import sunnyside from './assets/images/sunny-side-square.webp';
 
-const projectsData = [
+const projectsData = [  
   {
     title: 'IB Group Vietnam Website',
     description: 'Web Design / Frontend Development',
