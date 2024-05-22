@@ -1,4 +1,4 @@
-     // projectsData.js
+  // projectsData.js
 import ibgroup from './assets/images/ib-group-desktop.webp';
 import memento from './assets/images/memento-desktop.webp';
 import acc from './assets/images/acc-square.webp';
