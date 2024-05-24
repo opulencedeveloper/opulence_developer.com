@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+ 
 const ShopHeader = (props) => {
     const {header, title, logo, subTitle} = props;
   return (
