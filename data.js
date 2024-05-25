@@ -5,6 +5,7 @@ import acc from './assets/images/acc-square.webp';
 import daddy from './assets/images/godaddy-desktop.webp';
 import sunnyside from './assets/images/sunny-side-square.webp';
 
+
 const projectsData = [  
   {
     title: 'IB Group Vietnam Website',
