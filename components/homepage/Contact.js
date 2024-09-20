@@ -231,6 +231,18 @@ export default function Contact() {
                   <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
                 </div>
               </a>
+                  <a
+                href="https://www.facebook.com/victor.opulence"
+                className="group flex items-center space-x-2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon icon="mdi:twitter" color="#666" />
+                <div className="relative">
+                  <span>Facebook</span>
+                  <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+                </div>
+              </a>
             </div>
           </div>
           <div className="space-y-3 ">
