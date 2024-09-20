@@ -6,7 +6,7 @@ export default function Services() {
     "Web Development",
     "App. Development",
     "Backend Dev.",
-    "Hardware Dev.",
+    "Web 3",
   ];
 
   const toolBoxItems = [
