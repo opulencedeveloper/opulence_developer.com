@@ -42,7 +42,7 @@ export default function About() {
             ref={profile}
             loading="lazy"
             className="aspect-square h-auto w-full rounded-md object-cover object-center md:aspect-auto"
-            src={'../../assets/images/profile.jpg'}
+            src={'../../assets/images/profile.svg'}
             width="600"
             height="800"
             alt="portrait image of Amobi Victor Chukwuka also known as Opulence Developer"
