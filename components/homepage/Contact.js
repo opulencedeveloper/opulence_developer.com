@@ -237,7 +237,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Icon icon="mdi:twitter" color="#666" />
+                <Icon icon="mdi:facebook" color="#666" />
                 <div className="relative">
                   <span>Facebook</span>
                   <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
