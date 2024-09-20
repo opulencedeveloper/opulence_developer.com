@@ -13,7 +13,7 @@ export default function Works({ forwardedRef }) {
         {/* Project #1 */}
         <div className=" col-span-1 md:col-span-12">
           <Projects
-            link="https://staging.jack.parts"
+            link="https://jack.parts"
             img={'/assets/images/staging-jack.png'}
             alt="Staging Jack landing page"
             name="Staging Jack"
