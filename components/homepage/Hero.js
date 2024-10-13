@@ -55,7 +55,7 @@ export default function Hero() {
          </div>
          <div className=" title 2xl:py-16">
            <h1 ref={(el) => (titles.current[2] = el)} className="translate-y-96">
-             Visitor
+             Client
            </h1>
          </div>
       </div>
