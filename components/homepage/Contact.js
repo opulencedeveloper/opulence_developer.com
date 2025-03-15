@@ -77,7 +77,7 @@ export default function Contact() {
             ref={body}
             className="mt-4 max-w-md translate-y-10 text-body-2 text-accent-100 opacity-0 2xl:max-w-2xl 2xl:text-4xl"
           >
-            I am currently available for freelance work. I am accepting new projects starting from today.
+            I am currently available for work. I am accepting new projects starting from today.
           </p>
           <form
             onSubmit={handleSubmit}
