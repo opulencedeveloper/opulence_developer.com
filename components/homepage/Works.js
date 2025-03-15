@@ -90,7 +90,7 @@ export default function Works({ forwardedRef }) {
             name="Ebocab"
             type="Web • Front end Development"
             year="2024"
-            tools="Next.js • Typescript • PostgreSql • Flutter"
+            tools="Next.js • Node.js • PostgreSql • Flutter"
           />
          
         </div>
