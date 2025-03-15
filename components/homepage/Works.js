@@ -78,7 +78,7 @@ export default function Works({ forwardedRef }) {
             name="Uchecrypt"
             type="Full stack • Backend and Front end Development"
             year="2023"
-            tools="Next.js • TailwindCSS • Node.js • Typescript • MongoDb"
+            tools="Next.js • TailwindCSS • Node.js • MongoDb"
           />
          
         </div>
