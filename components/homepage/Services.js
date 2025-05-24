@@ -3,10 +3,10 @@ import Heading from "../UI/Heading";
 
 export default function Services() {
   const expertiseItems = [
+    "AI Engineering",
     "Web Development",
     "App. Development",
-    "Backend Dev.",
-    "Web 3",
+    "Backend Dev."
   ];
 
   const toolBoxItems = [
