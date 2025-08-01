@@ -62,18 +62,14 @@ export default function About() {
             >
               Hi, I'm Amobi Victor Chukwuka, glad you finally found me.
               <br></br>
-              <br></br>I am an independent fullstack software engineer based in
-              Port-Harcourt, Nigeria, with a passion for building scalable
-              applications that solve real world problems. With a
-              solid foundation in both frontend and backend development, I
-              thrive on taking products from concept to launch, combining clean
-              code with thoughtful design to deliver high impact solutions.😎
+              <br></br>I'm a fullstack software engineer based in Port Harcourt,
+              Nigeria, passionate about building scalable web, backend and mobile applications.
+              I enjoy taking products from concept to launch, combining clean
+              code with thoughtful design. 😎
               <br></br>
               <br></br>
-              Outside of work, I invest time in exploring emerging technologies,
-              reading engineering blogs, and staying updated with industry
-              trends, all of which keep me inspired, sharp, and constantly
-              improving.
+              Beyond coding, I stay sharp by exploring new technologies and
+              reading tech. related blogs, always learning, always improving.
               <a
                 className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1"
                 href="https://youtube.com/shorts/f7kedhflEpc?si=dXaI28b4v1SsK0M8"
