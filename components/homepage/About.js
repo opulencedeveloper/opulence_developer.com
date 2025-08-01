@@ -60,7 +60,7 @@ export default function About() {
   ref={body}
   className="translate-y-10 text-body-1 2xl:text-4xl opacity-0"
 >
-  Hi, I'm Amobi Victor Chukwuka, glad you finally found me.
+  Hi, My name is Amobi Victor Chukwuka, glad you finally found me.
   <br /><br />
   I'm a fullstack software engineer based in Port Harcourt, Nigeria, passionate about building scalable web, mobile-app, and backend applications. I enjoy taking products from concept to launch, combining clean code with thoughtful design. 😎
   <br /><br />
