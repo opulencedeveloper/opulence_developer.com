@@ -18,7 +18,7 @@ export default function Works({ forwardedRef }) {
             img={'/assets/images/staging-jack.png'}
             alt="Staging Jack landing page"
             name="Staging Jack"
-            type="Fullstack • Backend and App. Development"
+            type="Role: App. Development • Backend Dev."
             year="2021"
             tools="Flutter • Node.js • TypeScript • MongoDB "
 
@@ -31,7 +31,7 @@ export default function Works({ forwardedRef }) {
             img={'/assets/images/rei-capital.png'} 
             alt="REI capital growth"
             name="REI capital growth"
-            type="Web • Frontend Development"
+            type="Role: Frontend Development"
             year="2021"
             tools="HTML • CSS • Javascript"
           />
@@ -42,7 +42,7 @@ export default function Works({ forwardedRef }) {
             img={'/assets/images/aanbestedingsjurist.png'}
             alt="Aanbestedingsjurist"
             name="AI Assistant"
-            type="Web • Frontend Development"
+            type="Role: Frontend Development"
             year="2023"
             tools="HTML • TailwindCSS • Javascript"
           />
@@ -53,7 +53,7 @@ export default function Works({ forwardedRef }) {
              img={'/assets/images/contentmatch.png'}
              alt="Contentmatch"
              name="Contentmatch"
-             type="Web • Frontend Development"
+             type="Role: Frontend Development"
              year="2023"
             tools="HTML • TailwindCSS • Javascript"
           />
@@ -64,7 +64,7 @@ export default function Works({ forwardedRef }) {
             img={'/assets/images/outstanding-dot.png'}
             alt="Outstanding dot website"
             name="Outstanding dot website"
-            type="Web • Backend Development"
+            type="Role: Backend Development"
             year="2023"
             tools="Node.js • Typescript • PostgreSql"
           />
@@ -76,7 +76,7 @@ export default function Works({ forwardedRef }) {
             img={'/assets/images/uchecrypt.png'}
             alt="Uchecrypt website"
             name="Uchecrypt"
-            type="Full stack • Backend and Front end Development"
+            type="Role: Backend • Front end Development"
             year="2023"
             tools="Next.js • TailwindCSS • Node.js • MongoDb"
           />
@@ -88,7 +88,7 @@ export default function Works({ forwardedRef }) {
             img={'/assets/images/ebocab.png'}
             alt="Ebocab website"
             name="Ebocab"
-            type="Web • Front end Development"
+            type="Role: Front end Development"
             year="2024"
             tools="Next.js • Node.js • PostgreSql • Flutter"
           />
