@@ -73,7 +73,7 @@ export default function About() {
 <br/>
               <a
               target="_blank"
-                className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1"
+                className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1 shake-infinite"
                 href="/assets/cv/Amobi_Victor_CV.pdf"
               >
                  View CV

@@ -345,6 +345,23 @@
 
 
 
+@keyframes shake-pause {
+  0%, 20%, 100% {
+    transform: rotate(0deg);
+  }
+  40%, 60% {
+    transform: rotate(-10deg);
+  }
+  50%, 70% {
+    transform: rotate(10deg);
+  }
+}
+
+.shake-infinite {
+  display: inline-block; /* to allow transform */
+  animation: shake-pause 4s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
 
 
 
