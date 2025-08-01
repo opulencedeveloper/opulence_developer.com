@@ -88,9 +88,9 @@ export default function Works({ forwardedRef }) {
             img={'/assets/images/ebocab.png'}
             alt="Ebocab website"
             name="Ebocab"
-            type="Role: Front end Development"
+           type="Role: Backend • Front end Development"
             year="2024"
-            tools="Next.js • Node.js • PostgreSql • Flutter"
+            tools="Next.js • Node.js"
           />
          
         </div>
