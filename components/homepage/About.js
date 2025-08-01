@@ -42,7 +42,7 @@ export default function About() {
             ref={profile}
             loading="lazy"
             className="aspect-square h-auto w-full rounded-md object-cover object-center md:aspect-auto"
-            src={'../../assets/images/profile.svg'}
+            src={"../../assets/images/profile.svg"}
             width="600"
             height="800"
             alt="portrait image of Amobi Victor Chukwuka also known as Opulence Developer"
@@ -56,27 +56,37 @@ export default function About() {
             >
               A brief intro, who am I?
             </h3>
-            <p ref={body} className=" translate-y-10 text-body-1 2xl:text-4xl opacity-0">
-             My name is Amobi Victor Chukwuka, What took you so long to find me?
+            <p
+              ref={body}
+              className=" translate-y-10 text-body-1 2xl:text-4xl opacity-0"
+            >
+              Hi, I'm Amobi Victor Chukwuka, glad you finally found me.
               <br></br>
               <br></br>I am an independent fullstack software engineer based in
-              Port-Harcourt, Nigeria. 😎
+              Port-Harcourt, Nigeria, with a passion for building scalable
+              applications that solve real world problems. With a
+              solid foundation in both frontend and backend development, I
+              thrive on taking products from concept to launch, combining clean
+              code with thoughtful design to deliver high impact solutions.😎
               <br></br>
               <br></br>
-              When I am not developing or coding,  I indulge in watching sci-fi and tech movies for inspiration and to boost productivity.
-               <a
+              Outside of work, I invest time in exploring emerging technologies,
+              reading engineering blogs, and staying updated with industry
+              trends, all of which keep me inspired, sharp, and constantly
+              improving.
+              <a
                 className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1"
                 href="https://youtube.com/shorts/f7kedhflEpc?si=dXaI28b4v1SsK0M8"
               >
-                 YouTube 📸
+                YouTube 📸
               </a>
-<br/>
+              <br />
               <a
-              target="_blank"
+                target="_blank"
                 className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1 shake-infinite"
                 href="/assets/cv/Amobi_Victor_CV.pdf"
               >
-                 View CV
+                View CV
               </a>
             </p>
           </div>
