@@ -14,13 +14,13 @@ export default function Works({ forwardedRef }) {
         {/* Project #1 */}
         <div className=" col-span-1 md:col-span-12">
           <Projects
-            link="https://jack.parts"
-            img={'/assets/images/staging-jack.png'}
-            alt="Staging Jack landing page"
-            name="Staging Jack"
+            link="https://www.ebocab.com/"
+            img={'/assets/images/ebocab-app.png'}
+            alt="Ebocab Passenger and Driver App"
+            name="Ebocab Passenger and Driver App."
             type="Role: App. Development • Backend Dev."
-            year="2021"
-            tools="Flutter • Node.js • TypeScript • MongoDB "
+            year="2025"
+            tools="Flutter • Node.js • TypeScript"
 
           />
         </div>

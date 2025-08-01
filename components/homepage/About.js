@@ -56,31 +56,36 @@ export default function About() {
             >
               A brief intro, who am I?
             </h3>
-          <p
-  ref={body}
-  className="translate-y-10 text-body-1 2xl:text-4xl opacity-0"
->
-  Hi, My name is Amobi Victor Chukwuka, glad you finally found me.🙂
-  <br /><br />
-  I'm a fullstack software engineer based in Port Harcourt, Nigeria, passionate about building scalable Web, Mobile, A.I. and Backend Applications. I enjoy taking products from concept to launch, combining clean code with thoughtful design. 😎
-  <br /><br />
-  Beyond coding, I stay sharp by exploring emerging technologies and reading tech. related blogs, always learning, always improving.
-  <a
-    className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1"
-    href="https://youtube.com/shorts/f7kedhflEpc?si=dXaI28b4v1SsK0M8"
-  >
-    YouTube 📸
-  </a>
-  <br />
-  <a
-    target="_blank"
-    className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1 shake-infinite"
-    href="/assets/cv/Amobi_Victor_CV.pdf"
-  >
-    View CV
-  </a>
-</p>
-
+            <p
+              ref={body}
+              className="translate-y-10 text-body-1 2xl:text-4xl opacity-0"
+            >
+              Hi, My name is Amobi Victor Chukwuka, glad you finally found me.🙂
+              <br />
+              <br />
+              I'm a fullstack software engineer based in Port Harcourt, Nigeria,
+              passionate about building scalable Web, Mobile, A.I. and Backend
+              Applications. I enjoy taking products from concept to launch,
+              combining clean code with thoughtful design. 😎
+              <br />
+              <br />
+              Beyond coding, I stay sharp by exploring emerging technologies and
+              reading tech. related blogs, always learning, always improving.
+              <a
+                className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1"
+                href="https://youtube.com/shorts/f7kedhflEpc?si=dXaI28b4v1SsK0M8"
+              >
+                YouTube 📸
+              </a>
+              <br />
+              <a
+                target="_blank"
+                className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1 shake-infinite"
+                href="/assets/cv/Amobi_Victor_CV.pdf"
+              >
+                View CV
+              </a>
+            </p>
           </div>
         </div>
       </div>
