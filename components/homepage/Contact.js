@@ -172,7 +172,7 @@ export default function Contact() {
               </a>
               <button
               onClick={sendMessageHandler}
-                className="group relative w-fit cursor-pointer"
+                className="group relative w-fit cursor-pointer shake-infinite"
                
               >
                 <span>Click to whatsapp me</span>
