@@ -113,6 +113,7 @@ module.exports = {
         "slideFromLeft": "slideFromLeft 1s ease-out 0.1ms forwards",
         marquee: "marquee 25s linear infinite",
         slideLeftRight: 'slideLeftRight 30s linear infinite',
+        'fast-spin': 'spin 0.2s linear infinite'
         
       },
       backgroundColor: {

@@ -3,7 +3,9 @@ import { useEffect, useState, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
 import Heading from "../UI/Heading";
+import emailjs from "@emailjs/browser";
 import handleWhatsAppClick from "@/helpers/whatsapp";
+import { toast } from "sonner";
 
 const sendMessageHandler = () => {
   handleWhatsAppClick(
@@ -12,41 +14,98 @@ const sendMessageHandler = () => {
   );
 };
 
-
 export default function Contact() {
   const [time, setTime] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+  const formRef = useRef(null);
 
   const heading = useRef(null);
   const body = useRef(null);
   const contactSection = useRef(null);
 
   // Handle Form Submit
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const subject = encodeURIComponent("Reaching out From your Website");
+  //   const body = encodeURIComponent(`Hello I'm ${name}. ${message}`);
+  //   const mailtoLink = `mailto:victorkudos@gmail.com?subject=${subject}&body=${body}`;
+  //   window.location.href = mailtoLink;
+  // };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const subject = encodeURIComponent("Reaching out From your Website");
-    const body = encodeURIComponent(`Hello I'm ${name}. ${message}`);
-    const mailtoLink = `mailto:victorkudos@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
+console.log("1")
+    if (!formRef.current) return;
+    
+console.log("2")
+    const serviceKey = "service_rhk8qwg";
+    const emailTemplateId = "template_bgfdld9";
+    const publicKey = "-oles9XgV4Y9QAYEN";
+
+    if (!serviceKey || !emailTemplateId || !publicKey) {
+      console.error(
+        "EmailJS configuration missing: SERVICE_KEY, EMAIL_TEMPLATE_ID, or EMAIL_PUBLIC_KEY is not set."
+      );
+      return;
+    }
+
+    setLoading(true);
+    try {
+      await emailjs.sendForm(
+        serviceKey,
+        emailTemplateId,
+        formRef.current,
+        publicKey
+      );
+
+      toast.success(
+        `Thanks ${name} for reaching out! 🙌 I've received your message and will get back to you shortly.`
+      );
+      formRef.current.reset();
+    } catch (error) {
+      let errorMessage = "Something went wrong!";
+
+      if (error.code === "ERR_NETWORK") {
+        errorMessage = "Network error. Please check your internet connection.";
+      } else if (error.code === "ECONNABORTED") {
+        errorMessage = "Request timed out. Please try again.";
+      } else if (error?.response?.data?.description) {
+        errorMessage = error.response.data.description;
+      }
+
+      toast.error(errorMessage);
+      console.error("Failed to send email:", error);
+    } finally {
+      setLoading(false);
+    }
   };
+
   useEffect(() => {
     ScrollTrigger.create({
       trigger: contactSection.current,
-      start:"180px bottom",
+      start: "180px bottom",
 
       // markers: true,
       animation: gsap
         .timeline()
-        .to(heading.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 }, 0)
-        .to(body.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 }, 0.2),
+        .to(
+          heading.current,
+          { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 },
+          0
+        )
+        .to(
+          body.current,
+          { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 },
+          0.2
+        ),
 
       toggleActions: "play none none none",
     });
     ScrollTrigger.refresh();
-
-  }, [contactSection])
+  }, [contactSection]);
 
   useEffect(() => {
     setTime(new Date().toLocaleTimeString());
@@ -77,9 +136,11 @@ export default function Contact() {
             ref={body}
             className="mt-4 max-w-md translate-y-10 text-body-2 text-accent-100 opacity-0 2xl:max-w-2xl 2xl:text-4xl"
           >
-            I am currently available for work. I am accepting new projects starting from today.
+            I am currently available for work. I am accepting new projects
+            starting from today.
           </p>
           <form
+          ref={formRef}
             onSubmit={handleSubmit}
             name="contact"
             autoComplete="off"
@@ -144,22 +205,27 @@ export default function Contact() {
                 </label>
               </div>
             </div>
-            <button
-              type="submit"
-              className="button group mt-10 border duration-200 hover:border-accent-400 hover:bg-transparent"
-            >
-              <span className="relative">
-                <span className="absolute bottom-2 h-1 w-0 bg-secondary-700 opacity-90 duration-300 ease-out group-hover:w-full"></span>
-                <span className="group-hover:text-accent-400">
-                  Send Message
-                  </span>
-              </span>
-            </button>
+         <button
+  type="submit"
+  className="transition-all button group mt-10 border duration-200 hover:border-accent-400 hover:bg-transparent"
+>
+  {loading ? (
+    <div className="spinner" />
+  ) : (
+    <span className="relative">
+      <span className="group-hover:text-accent-400">Send Message</span>
+    </span>
+  )}
+</button>
+
+
           </form>
         </div>
         <div className="col-span-2 grid grid-cols-1 gap-x-4 gap-y-8 text-accent-300 sm:grid-cols-2 sm:gap-y-0 md:grid-cols-1">
           <div className="space-y-3 ">
-            <h4 className="text-body-1 2xl:text-4xl font-semibold">Contact Details</h4>
+            <h4 className="text-body-1 2xl:text-4xl font-semibold">
+              Contact Details
+            </h4>
             <div className="flex flex-col space-y-3 text-body-2 2xl:text-3xl">
               <a
                 href="mailto:hello@huyng.xyz"
@@ -171,9 +237,8 @@ export default function Contact() {
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
               </a>
               <button
-              onClick={sendMessageHandler}
+                onClick={sendMessageHandler}
                 className="group relative w-fit cursor-pointer shake-infinite"
-               
               >
                 <span>Click to whatsapp me</span>
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
@@ -181,7 +246,9 @@ export default function Contact() {
             </div>
           </div>
           <div className="space-y-3 ">
-            <h4 className="text-body-1 2xl:text-4xl font-semibold">My Digital Spaces</h4>
+            <h4 className="text-body-1 2xl:text-4xl font-semibold">
+              My Digital Spaces
+            </h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
               {/* <a
                 href="https://bento.me/huyng"
@@ -231,7 +298,7 @@ export default function Contact() {
                   <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
                 </div>
               </a>
-                  <a
+              <a
                 href="https://www.facebook.com/victor.opulence"
                 className="group flex items-center space-x-2"
                 target="_blank"

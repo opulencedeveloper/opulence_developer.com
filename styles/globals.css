@@ -344,6 +344,26 @@
 }
 
 
+.spinner {
+  border: 2px solid white;
+  border-top-color: transparent;
+  border-radius: 9999px;
+  width: 22px;
+  height: 22px;
+  animation: spin 0.2s linear infinite;
+  transition: border-color 0.2s ease;
+}
+
+.group:hover .spinner {
+  border-color: black;
+  border-top-color: transparent;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
 
 @keyframes shake-pause {
   0%, 20%, 100% {

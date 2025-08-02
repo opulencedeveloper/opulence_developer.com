@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Cursor from "@/components/UI/Cursor.js";
 
 import Head from "next/head";
+import { Toaster } from 'sonner';
 
 // import 'intersection-observer';
 
@@ -49,6 +50,7 @@ export default function App({ Component, pageProps }) {
       {/* {isOnboarding && <Onboarding />} */}
       {/* <Layout> */}
       <Cursor />
+       <Toaster richColors position="top-right" />
         <Component {...pageProps} />
       {/* </Layout> */}
       
