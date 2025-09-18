@@ -51,8 +51,8 @@ console.log("2")
       );
       return;
     }
-
-    setLoading(true);
+//comment update
+    setLoading(true); 
     try {
       await emailjs.sendForm(
         serviceKey,
