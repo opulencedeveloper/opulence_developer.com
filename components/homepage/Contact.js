@@ -41,9 +41,9 @@ console.log("1")
     if (!formRef.current) return;
     
 console.log("2")
-    const serviceKey = "service_rhk8qwg";
-    const emailTemplateId = "template_bgfdld9";
-    const publicKey = "-oles9XgV4Y9QAYEN";
+    const serviceKey = "service_rkwrql8";
+    const emailTemplateId = "template_08fnxef";
+    const publicKey = "QDK-arcfAZ4PWrCUp";
 
     if (!serviceKey || !emailTemplateId || !publicKey) {
       console.error(
