@@ -51,7 +51,6 @@ console.log("2")
       );
       return;
     }
-//comment update
     setLoading(true); 
     try {
       await emailjs.sendForm(
