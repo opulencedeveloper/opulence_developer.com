@@ -65,8 +65,8 @@ const Footer = (props) => {
      <div className="flex justify-center px-5"><AnalogClock /></div> 
       <div className=" py-10 bg-black space-y-2 px-5 text-center">
         <p>{footerText}</p>
-        <a href="mailto:victorkudos@gmail.com" className="underline">
-        victorkudos@gmail.com
+        <a href="mailto:opulencedeveloper@gmail.com" className="underline">
+        opulencedeveloper@gmail.com
         </a>
       </div>
     </footer>

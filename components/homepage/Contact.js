@@ -31,7 +31,7 @@ export default function Contact() {
   //   e.preventDefault();
   //   const subject = encodeURIComponent("Reaching out From your Website");
   //   const body = encodeURIComponent(`Hello I'm ${name}. ${message}`);
-  //   const mailtoLink = `mailto:victorkudos@gmail.com?subject=${subject}&body=${body}`;
+  //   const mailtoLink = `mailto:opulencedeveloper@gmail.com?subject=${subject}&body=${body}`;
   //   window.location.href = mailtoLink;
   // };
 
@@ -232,7 +232,7 @@ console.log("2")
                 target="_blank"
                 rel="noreferrer"
               >
-                <span>victorkudos@gmail.com</span>
+                <span>opulencedeveloper@gmail.com</span>
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
               </a>
               <button
