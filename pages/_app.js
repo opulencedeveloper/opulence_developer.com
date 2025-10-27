@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
           content="https://opulencedeveloper.com/images/opulence-developer-social-preview-image.png"
         />
         <meta
-          property="og:url"
+          property="og:url" 
           content="https://opulencedeveloper.com"
         />
         <meta property="og:type" content="website" />
