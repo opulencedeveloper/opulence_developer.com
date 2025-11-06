@@ -1,6 +1,7 @@
 import Footer from "@/components/layouts/Footer";
 import Layout from "@/components/layouts/Layout";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
+import { defaultSEO, generatePortfolioSchema, generateKeywords } from "@/lib/seo";
 
 const projects = [
   // {
@@ -195,29 +196,40 @@ const SectionTemplate = (props) => {
 };
 
 const Projects = () => {
+  // Combine all projects for structured data
+  const allProjects = [
+    ...projects.map(p => ({ name: p.title, description: p.description, link: p.link, year: p.status, tools: p.technology, type: p.type })),
+    ...myProjects.map(p => ({ name: p.title, description: p.description, link: p.link || '', year: p.status, tools: p.technology, type: p.type }))
+  ];
+
+  const seoConfig = {
+    ...defaultSEO,
+    title: "Portfolio Projects - FullStack Software Engineering Projects | OpulenceDeveloper",
+    description: "Explore a diverse collection of FullStack Software Engineering projects by OpulenceDeveloper. Discover web applications, mobile apps, AI projects, and backend systems built with React, Next.js, Flutter, Node.js, MongoDB, PostgreSQL, and more. View live projects and case studies.",
+    keywords: generateKeywords(['Portfolio Projects', 'Web Development Projects', 'Mobile App Projects', 'React Projects', 'Next.js Projects', 'Flutter Projects', 'Node.js Projects', 'Case Studies', 'Project Showcase']),
+    canonical: "https://opulencedeveloper.com/projects",
+    openGraph: {
+      ...defaultSEO.openGraph,
+      title: "Portfolio Projects - FullStack Software Engineering Projects | OpulenceDeveloper",
+      description: "Explore a diverse collection of FullStack Software Engineering projects including web applications, mobile apps, AI projects, and backend systems.",
+      url: "https://opulencedeveloper.com/projects",
+    },
+    twitter: {
+      ...defaultSEO.twitter,
+      title: "Portfolio Projects - FullStack Software Engineering Projects",
+      description: "Explore a diverse collection of FullStack Software Engineering projects by OpulenceDeveloper.",
+    },
+  };
+
   return (
     <>
-      <Head>
-        <title>Portfolio Projects - OpulenceDeveloper</title>
-        <meta
-          name="description"
-          content="Explore a diverse range of projects on OpulenceDeveloper's portfolio. Discover personal projects and collaborations, showcasing FullStack Software Engineering expertise."
-        />
-        <meta
-          name="keywords"
-          content="OpulenceDeveloper, Portfolio, Personal Projects, Collaborations, FullStack Software Engineer"
-        />
-        <meta name="author" content="Amobi Victor Chukwuka" />
-        {/* Open Graph Meta Tags */}
-        <meta
-          property="og:title"
-          content="Portfolio Projects - OpulenceDeveloper"
-        />
-        <meta
-          property="og:description"
-          content="Browse a diverse collection of FullStack Software Engineering projects by Amobi Victor Chukwuka. Discover personal projects and collaborations with clients."
-        />
-      </Head>
+      <NextSeo {...seoConfig} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generatePortfolioSchema(allProjects)),
+        }}
+      />
     <Layout>  <section className="px-3 text-primary1 mt-10 md:px-12 md:mt-28">
         <div className="flex justify-between mb-8 text-lg font-semibold md:text-3xl">
           <p className="w-[45%] animate-float text-center">Projects</p>

@@ -50,12 +50,12 @@ export default function About() {
         </div>
         <div className="top-20 sm:sticky md:top-28 lg:top-32 md:w-1/2">
           <div className="w-full space-y-4 2xl:space-y-10">
-            <h3
+            <h2
               ref={heading}
               className="translate-y-10 text-heading-3 2xl:text-7xl font-semibold leading-tight opacity-0"
             >
               A brief intro, who am I?
-            </h3>
+            </h2>
             <p
               ref={body}
               className="translate-y-10 text-body-1 2xl:text-4xl opacity-0"

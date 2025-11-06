@@ -7,12 +7,13 @@ export default function Works({ forwardedRef }) {
       ref={forwardedRef}
       id="works"
       className="nav-change overflow-hidden my-[10%]"
+      aria-label="Featured projects portfolio"
     >
      <Heading title="Projects" />
-      <span className="text-sm sm:text-lg text-secondary-600">Project Highlight</span>
-      <div className="mt-10 grid grid-cols-1 gap-16 gap-y-10 md:grid-cols-12">
+      <p className="text-sm sm:text-lg text-secondary-600">Project Highlight</p>
+      <div className="mt-10 grid grid-cols-1 gap-16 gap-y-10 md:grid-cols-12" role="list">
         {/* Project #1 */}
-        <div className=" col-span-1 md:col-span-12">
+        <div className=" col-span-1 md:col-span-12" role="listitem">
           <Projects
             link="https://www.ebocab.com/"
             img={'/assets/images/ebocab-app.png'}
@@ -25,7 +26,7 @@ export default function Works({ forwardedRef }) {
           />
         </div>
         {/* Project #2 */}
-        <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
+        <div className="col-span-1 pt-0 md:col-span-7 md:pt-16" role="listitem">
           <Projects
             link="https://reicapitalgrowth.com/"
             img={'/assets/images/rei-capital.png'} 
@@ -36,7 +37,7 @@ export default function Works({ forwardedRef }) {
             tools="HTML • CSS • Javascript"
           />
         </div>
-        <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
+        <div className="col-span-1 pt-0 md:col-span-5 md:pt-80" role="listitem">
           <Projects
             link="https://aanbestedingsjurist.ai"
             img={'/assets/images/aanbestedingsjurist.png'}
@@ -47,7 +48,7 @@ export default function Works({ forwardedRef }) {
             tools="HTML • TailwindCSS • Javascript"
           />
         </div>
-        <div className="col-span-1 h-fit pt-0 md:col-span-8 md:pt-20">
+        <div className="col-span-1 h-fit pt-0 md:col-span-8 md:pt-20" role="listitem">
           <Projects
              link="https://contentmatch.io"
              img={'/assets/images/contentmatch.png'}
@@ -58,7 +59,7 @@ export default function Works({ forwardedRef }) {
             tools="HTML • TailwindCSS • Javascript"
           />
         </div>
-        <div className="col-span-1 h-fit md:col-span-4">
+        <div className="col-span-1 h-fit md:col-span-4" role="listitem">
         <Projects
             link="https://outstandingdot.com"
             img={'/assets/images/outstanding-dot.png'}
@@ -70,7 +71,7 @@ export default function Works({ forwardedRef }) {
           />
          
         </div>
-        <div className="col-span-1 h-fit md:col-span-7">
+        <div className="col-span-1 h-fit md:col-span-7" role="listitem">
         <Projects
             link="https://uchecrypt.com"
             img={'/assets/images/uchecrypt.png'}
@@ -82,7 +83,7 @@ export default function Works({ forwardedRef }) {
           />
          
         </div>
-        <div className="col-span-1 h-fit md:col-span-5">
+        <div className="col-span-1 h-fit md:col-span-5" role="listitem">
         <Projects
             link="https://www.ebocab.com"
             img={'/assets/images/ebocab.png'}

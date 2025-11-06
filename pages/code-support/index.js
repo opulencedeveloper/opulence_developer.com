@@ -1,9 +1,10 @@
 import Image from "next/image";
 
 import handleWhatsAppClick from "@/helpers/whatsapp";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Footer from "@/components/layouts/Footer";
 import Layout from "@/components/layouts/Layout";
+import { defaultSEO, generateKeywords } from "@/lib/seo";
 
 const sendMessageHandler = () => {
   handleWhatsAppClick(
@@ -12,30 +13,28 @@ const sendMessageHandler = () => {
   );
 };
 const CodeSupport = () => {
+  const seoConfig = {
+    ...defaultSEO,
+    title: "Code Debugging Services - Professional Code Support | OpulenceDeveloper",
+    description: "Get professional code debugging assistance from OpulenceDeveloper. Expert help with JavaScript, TypeScript, React, Next.js, Node.js, Flutter, and more. Unlock solutions to coding issues, errors, and challenges to enhance your projects. Available for freelance debugging support.",
+    keywords: generateKeywords(['Code Debugging', 'Developer Support', 'Code Help', 'Bug Fixing', 'Programming Assistance', 'Code Review', 'Technical Support', 'Debug Services']),
+    canonical: "https://opulencedeveloper.com/code-support",
+    openGraph: {
+      ...defaultSEO.openGraph,
+      title: "Code Debugging Services - Professional Code Support | OpulenceDeveloper",
+      description: "Get professional code debugging assistance. Expert help with JavaScript, TypeScript, React, Next.js, Node.js, Flutter, and more.",
+      url: "https://opulencedeveloper.com/code-support",
+    },
+    twitter: {
+      ...defaultSEO.twitter,
+      title: "Code Debugging Services - Professional Code Support",
+      description: "Expert code debugging assistance for JavaScript, TypeScript, React, Next.js, Node.js, Flutter, and more.",
+    },
+  };
+
   return (
     <>
-      <Head>
-        <title>Code Debugging Services - OpulenceDeveloper</title>
-        <meta
-          name="description"
-          content="Get professional code debugging assistance from OpulenceDeveloper. Unlock solutions to coding issues, errors, and challenges to enhance your projects."
-        />
-        <meta
-          name="keywords"
-          content="OpulenceDeveloper, Code Debugging, Developer Support, FullStack Software Engineer"
-        />
-        <meta name="author" content="Amobi Victor Chukwuka" />
-        {/* Open Graph Meta Tags */}
-        <meta
-          property="og:title"
-          content="Code Debugging Services - OpulenceDeveloper"
-        />
-        <meta
-          property="og:description"
-          content="Unlock solutions to coding issues and errors with professional debugging assistance by Amobi Victor Chukwuka. Enhance your projects today."
-        />
-        {/* Add more Open Graph tags as needed */}
-      </Head>{" "}
+      <NextSeo {...seoConfig} />
       <Layout>
       <section>
         {" "}

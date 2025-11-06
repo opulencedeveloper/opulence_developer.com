@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
-import Head from "next/head";
-
+import { NextSeo } from "next-seo";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -13,6 +12,7 @@ import Services from "@/components/homepage/Services";
 import Works from "@/components/homepage/Works";
 import Contact from "@/components/homepage/Contact";
 import Footer from "@/components/UI/Footer";
+import { defaultSEO, generatePersonSchema, generateServiceSchema, generateWebsiteSchema, generatePortfolioSchema, generateKeywords } from "@/lib/seo";
 
 const HomePage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -47,32 +47,135 @@ const HomePage = () => {
 
   
 
+  // Projects data for structured data
+  const projects = [
+    {
+      name: "Ebocab Passenger and Driver App",
+      description: "Mobile application for passenger and driver management",
+      link: "https://www.ebocab.com/",
+      year: "2025",
+      tools: "Flutter • Node.js • TypeScript",
+      type: "App. Development • Backend Dev."
+    },
+    {
+      name: "REI capital growth",
+      description: "Financial services platform",
+      link: "https://reicapitalgrowth.com/",
+      year: "2021",
+      tools: "HTML • CSS • Javascript",
+      type: "Frontend Development"
+    },
+    {
+      name: "AI Assistant",
+      description: "AI-powered assistant platform",
+      link: "https://aanbestedingsjurist.ai",
+      year: "2023",
+      tools: "HTML • TailwindCSS • Javascript",
+      type: "Frontend Development"
+    },
+    {
+      name: "Contentmatch",
+      description: "Content matching platform",
+      link: "https://contentmatch.io",
+      year: "2023",
+      tools: "HTML • TailwindCSS • Javascript",
+      type: "Frontend Development"
+    },
+    {
+      name: "Outstanding dot website",
+      description: "Business website platform",
+      link: "https://outstandingdot.com",
+      year: "2023",
+      tools: "Node.js • Typescript • PostgreSql",
+      type: "Backend Development"
+    },
+    {
+      name: "Uchecrypt",
+      description: "Cryptocurrency platform",
+      link: "https://uchecrypt.com",
+      year: "2023",
+      tools: "Next.js • TailwindCSS • Node.js • MongoDb",
+      type: "Backend • Front end Development"
+    },
+    {
+      name: "Ebocab",
+      description: "Transportation platform",
+      link: "https://www.ebocab.com",
+      year: "2024",
+      tools: "Next.js • Node.js",
+      type: "Backend • Front end Development"
+    }
+  ];
+
+  const seoConfig = {
+    ...defaultSEO,
+    title: "OpulenceDeveloper | FullStack Software Engineer Portfolio",
+    description: "FullStack Software Engineer specializing in AI Engineering, Web Development, Mobile App Development, and Backend Development. Expert in JavaScript, TypeScript, Flutter, React, Next.js, Node.js, MongoDB, and PostgreSQL. Available for freelance projects. Want a website? Want an App? I'm available for you.",
+    keywords: generateKeywords(['Portfolio', 'Freelance Developer', 'Available for Hire', 'Web Developer Nigeria', 'React Developer', 'Next.js Expert']),
+    canonical: "https://opulencedeveloper.com",
+    openGraph: {
+      ...defaultSEO.openGraph,
+      title: "OpulenceDeveloper | FullStack Software Engineer Portfolio",
+      description: "FullStack Software Engineer specializing in AI Engineering, Web Development, Mobile App Development, and Backend Development. Expert in JavaScript, TypeScript, Flutter, React, Next.js, Node.js, MongoDB, and PostgreSQL. Available for freelance projects.",
+      url: "https://opulencedeveloper.com",
+    },
+    twitter: {
+      ...defaultSEO.twitter,
+      title: "OpulenceDeveloper | FullStack Software Engineer Portfolio",
+      description: "FullStack Software Engineer specializing in AI Engineering, Web Development, Mobile App Development, and Backend Development.",
+    },
+    additionalMetaTags: [
+      ...defaultSEO.additionalMetaTags,
+      {
+        name: "language",
+        content: "English",
+      },
+      {
+        name: "geo.region",
+        content: "NG-RI",
+      },
+      {
+        name: "geo.placename",
+        content: "Port Harcourt",
+      },
+      {
+        name: "geo.position",
+        content: "4.8156;7.0498",
+      },
+      {
+        name: "ICBM",
+        content: "4.8156, 7.0498",
+      },
+    ],
+  };
+
   return (
    <>
-    <Head>
-        <title>OpulenceDeveloper | FullStack Software Engineer Portfolio</title>
-        <meta
-          property="title"
-          content="OpulenceDeveloper | FullStack Software Engineer Portfolio"
-        />{" "}
-        <meta
-          name="description"
-          content="Welcome to OpulenceDeveloper's portfolio! Want a website? Want an App? I'm available for you, Explore a collection of projects showcasing FullStack Software Engineering expertise."
-        />
-        <meta
-          name="keywords"
-          content="OpulenceDeveloper, Portfolio, FullStack Software Engineer, Web Development, Mobile Application Development, Back End Development"
-        />
-        <meta name="author" content="Amobi Victor Chukwuka" />
-        <meta
-          property="og:title"
-          content="OpulenceDeveloper | FullStack Software Engineer Portfolio"
-        />
-        <meta
-          property="og:description"
-          content="Want a website? Want an App? I'm available for you, Discover a portfolio of FullStack Software Engineering projects by Amobi Victor Chukwuka. Explore web and application development expertise."
-        />
-      </Head>
+    <NextSeo {...seoConfig} />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(generatePersonSchema()),
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(generateServiceSchema()),
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(generateWebsiteSchema()),
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(generatePortfolioSchema(projects)),
+      }}
+    />
 
       <div className="bg-secondary-100">
       <NavBar sectionRefs={sectionRefs.current} />{" "}

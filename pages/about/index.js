@@ -1,32 +1,39 @@
 import SectionOne from "@/components/about/SectionOne";
 import Footer from "@/components/layouts/Footer";
 import Layout from "@/components/layouts/Layout";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
+import { defaultSEO, generatePersonSchema, generateKeywords } from "@/lib/seo";
 
 const About = () => {
+  const seoConfig = {
+    ...defaultSEO,
+    title: "About Amobi Victor Chukwuka - FullStack Software Engineer | OpulenceDeveloper",
+    description: "Learn about Amobi Victor Chukwuka (OpulenceDeveloper), a FullStack Software Engineer based in Port Harcourt, Nigeria. Specializing in AI Engineering, Web Development, Mobile App Development, and Backend Development. Expert in JavaScript, TypeScript, Flutter, React, Next.js, Node.js, MongoDB, and PostgreSQL.",
+    keywords: generateKeywords(['About Me', 'Developer Profile', 'Software Engineer Nigeria', 'FullStack Developer Port Harcourt', 'Amobi Victor Chukwuka']),
+    canonical: "https://opulencedeveloper.com/about",
+    openGraph: {
+      ...defaultSEO.openGraph,
+      title: "About Amobi Victor Chukwuka - FullStack Software Engineer | OpulenceDeveloper",
+      description: "Learn about Amobi Victor Chukwuka, a FullStack Software Engineer specializing in AI Engineering, Web Development, Mobile App Development, and Backend Development. Based in Port Harcourt, Nigeria.",
+      url: "https://opulencedeveloper.com/about",
+      type: "profile",
+    },
+    twitter: {
+      ...defaultSEO.twitter,
+      title: "About Amobi Victor Chukwuka - FullStack Software Engineer",
+      description: "FullStack Software Engineer specializing in AI Engineering, Web Development, Mobile App Development, and Backend Development.",
+    },
+  };
+
   return (
     <>
-      <Head>
-        <title>About Amobi Victor Chukwuka - OpulenceDeveloper</title>
-        <meta
-          name="description"
-          content="Learn about Amobi Victor Chukwuka, a FullStack Software Engineer specializing in web development, application development and Back End development. Discover his passion for coding and creating meaningful digital experiences."
-        />
-        <meta
-          name="keywords"
-          content="OpulenceDeveloper, About Me, FullStack Software Engineer, Web Development, Application Development, Back End Development"
-        />
-        <meta name="author" content="Amobi Victor Chukwuka" />
-        {/* Open Graph Meta Tags */}
-        <meta
-          property="og:title"
-          content="About Amobi Victor Chukwuka - OpulenceDeveloper"
-        />
-        <meta
-          property="og:description"
-          content="Explore the profile of Amobi Victor Chukwuka, a skilled FullStack Software Engineer. Discover my journey, expertise, and passion for creating digital solutions."
-        />
-      </Head>
+      <NextSeo {...seoConfig} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generatePersonSchema()),
+        }}
+      />
       <Layout>
       <SectionOne /> 
       </Layout>
