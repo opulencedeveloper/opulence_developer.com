@@ -1,6 +1,8 @@
+"use client";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Lenis from "@studio-freight/lenis";
+import { motion } from "framer-motion";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -82,28 +84,66 @@ export default function NavBar({ sectionRefs }) {
         </svg>
       </a>
       <nav className=" space-x-7 font-grotesk text-body-3 sm:block">
-        <a href="#about" className="group relative hidden md:inline-block">
+        <motion.a 
+          href="#about" 
+          className="group relative hidden md:inline-block"
+          whileHover={{ scale: 1.1, y: -2 }}
+          transition={{ type: "spring", stiffness: 400 }}
+        >
           <span>About</span>
-          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-        </a>
-        <a href="#services" className="group relative hidden md:inline-block">
+          <motion.span 
+            className="absolute bottom-0 left-0 h-[0.125em] rounded-full bg-secondary-600"
+            initial={{ width: 0 }}
+            whileHover={{ width: "100%" }}
+            transition={{ duration: 0.3 }}
+          />
+        </motion.a>
+        <motion.a 
+          href="#services" 
+          className="group relative hidden md:inline-block"
+          whileHover={{ scale: 1.1, y: -2 }}
+          transition={{ type: "spring", stiffness: 400 }}
+        >
           <span>Services</span>
-          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-        </a>
-        <a href="#works" className="group relative hidden md:inline-block">
+          <motion.span 
+            className="absolute bottom-0 left-0 h-[0.125em] rounded-full bg-secondary-600"
+            initial={{ width: 0 }}
+            whileHover={{ width: "100%" }}
+            transition={{ duration: 0.3 }}
+          />
+        </motion.a>
+        <motion.a 
+          href="#works" 
+          className="group relative hidden md:inline-block"
+          whileHover={{ scale: 1.1, y: -2 }}
+          transition={{ type: "spring", stiffness: 400 }}
+        >
           <span>Projects</span>
-          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-        </a>
-        <a
+          <motion.span 
+            className="absolute bottom-0 left-0 h-[0.125em] rounded-full bg-secondary-600"
+            initial={{ width: 0 }}
+            whileHover={{ width: "100%" }}
+            transition={{ duration: 0.3 }}
+          />
+        </motion.a>
+        <motion.a
           ref={cta}
           className="button group relative hover:bg-transparent"
           href="#contact"
+          whileHover={{ scale: 1.05, y: -2 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 400 }}
         >
           <span className="relative w-fit">
-            <span className="absolute bottom-2  w-0 h-[0.1em] bg-secondary-700 opacity-90 duration-300 ease-out group-hover:w-full size7:h-[0.15em]"></span>
+            <motion.span 
+              className="absolute bottom-2 h-[0.1em] bg-secondary-700 opacity-90 size7:h-[0.15em]"
+              initial={{ width: 0 }}
+              whileHover={{ width: "100%" }}
+              transition={{ duration: 0.3 }}
+            />
             <span className="text-sm size5:text-base ">Let&apos;s Talk.</span>
           </span>
-        </a>
+        </motion.a>
       </nav>
     </header>
   );

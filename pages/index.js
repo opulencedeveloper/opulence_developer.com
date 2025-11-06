@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import { generateNextSeo } from "next-seo/pages";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -151,7 +152,9 @@ const HomePage = () => {
 
   return (
    <>
-    <NextSeo {...seoConfig} />
+    <Head>
+      {generateNextSeo(seoConfig)}
+    </Head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{

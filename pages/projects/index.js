@@ -1,6 +1,7 @@
 import Footer from "@/components/layouts/Footer";
 import Layout from "@/components/layouts/Layout";
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import { generateNextSeo } from "next-seo/pages";
 import { defaultSEO, generatePortfolioSchema, generateKeywords } from "@/lib/seo";
 
 const projects = [
@@ -223,7 +224,9 @@ const Projects = () => {
 
   return (
     <>
-      <NextSeo {...seoConfig} />
+      <Head>
+        {generateNextSeo(seoConfig)}
+      </Head>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

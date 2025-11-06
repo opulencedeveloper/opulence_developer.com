@@ -1,6 +1,8 @@
+"use client";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import {useRef, useEffect} from "react"
+import {useRef, useEffect} from "react";
+import { motion } from "framer-motion";
 
 
 export default function ServiceUi({ title, description, items }) {
@@ -46,9 +48,26 @@ export default function ServiceUi({ title, description, items }) {
       <div ref={services}  className=" select-none leading-[2.3rem] text-secondary-500 md:leading-[2.5rem] lg:leading-[3.4rem]  translate-y-10 opacity-0">
         {items.map((item, index) => {
           return (
-            <p key={index} className="font-general text-special 2xl:text-7xl font-extrabold ">
+            <motion.p 
+              key={index} 
+              className="font-general text-special 2xl:text-7xl font-extrabold"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ 
+                delay: index * 0.1 + 0.5, 
+                duration: 0.6,
+                ease: [0.22, 1, 0.36, 1]
+              }}
+              whileHover={{ 
+                scale: 1.1, 
+                x: 20,
+                color: "#D1D1C7",
+                textShadow: "0 0 30px rgba(209, 209, 199, 0.5)"
+              }}
+            >
               {item}
-            </p>
+            </motion.p>
           );
         })}
       </div>

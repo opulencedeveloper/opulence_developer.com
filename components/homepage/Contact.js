@@ -1,7 +1,9 @@
+"use client";
 import { Icon } from "@iconify/react";
 import { useEffect, useState, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
+import { motion } from "framer-motion";
 import Heading from "../UI/Heading";
 import emailjs from "@emailjs/browser";
 import handleWhatsAppClick from "@/helpers/whatsapp";
@@ -138,7 +140,7 @@ console.log("2")
             I am currently available for work. I am accepting new projects
             starting from today.
           </p>
-          <form
+          <motion.form
           ref={formRef}
             onSubmit={handleSubmit}
             name="contact"
@@ -146,10 +148,21 @@ console.log("2")
             // eslint-disable-next-line react/no-unknown-property
             className="mt-10 font-grotesk"
             method="POST"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 0.6 }}
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2">
-              <div className="relative z-0">
+              <motion.div 
+                className="relative z-0"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                whileHover={{ scale: 1.02, x: 5 }}
+              >
                 <input
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -166,8 +179,15 @@ console.log("2")
                 >
                   Your name
                 </label>
-              </div>
-              <div className="relative z-0">
+              </motion.div>
+              <motion.div 
+                className="relative z-0"
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+                whileHover={{ scale: 1.02, x: -5 }}
+              >
                 <input
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -184,8 +204,15 @@ console.log("2")
                 >
                   Your email
                 </label>
-              </div>
-              <div className="relative z-0 sm:col-span-2">
+              </motion.div>
+              <motion.div 
+                className="relative z-0 sm:col-span-2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+                whileHover={{ scale: 1.01 }}
+              >
                 <textarea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -202,11 +229,17 @@ console.log("2")
                 >
                   Your message
                 </label>
-              </div>
+              </motion.div>
             </div>
-         <button
+         <motion.button
   type="submit"
   className="transition-all button group mt-10 border duration-200 hover:border-accent-400 hover:bg-transparent"
+  initial={{ opacity: 0, scale: 0.9 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  viewport={{ once: true }}
+  transition={{ delay: 0.7, duration: 0.5 }}
+  whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(209, 209, 199, 0.3)" }}
+  whileTap={{ scale: 0.95 }}
 >
   {loading ? (
     <div className="spinner" />
@@ -215,36 +248,69 @@ console.log("2")
       <span className="group-hover:text-accent-400">Send Message</span>
     </span>
   )}
-</button>
+</motion.button>
 
 
-          </form>
+          </motion.form>
         </div>
-        <div className="col-span-2 grid grid-cols-1 gap-x-4 gap-y-8 text-accent-300 sm:grid-cols-2 sm:gap-y-0 md:grid-cols-1">
-          <div className="space-y-3 ">
+        <motion.div 
+          className="col-span-2 grid grid-cols-1 gap-x-4 gap-y-8 text-accent-300 sm:grid-cols-2 sm:gap-y-0 md:grid-cols-1"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+        >
+          <motion.div 
+            className="space-y-3"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+          >
             <h4 className="text-body-1 2xl:text-4xl font-semibold">
               Contact Details
             </h4>
             <div className="flex flex-col space-y-3 text-body-2 2xl:text-3xl">
-              <a
+              <motion.a
                 href="mailto:hello@huyng.xyz"
                 className="group relative w-fit cursor-pointer"
                 target="_blank"
                 rel="noreferrer"
+                whileHover={{ x: 5, scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 400 }}
               >
                 <span>opulencedeveloper@gmail.com</span>
-                <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-              </a>
-              <button
+                <motion.span 
+                  className="absolute bottom-0 left-0 h-[0.12em] rounded-full bg-secondary-600"
+                  initial={{ width: 0 }}
+                  whileHover={{ width: "100%" }}
+                  transition={{ duration: 0.3 }}
+                />
+              </motion.a>
+              <motion.button
                 onClick={sendMessageHandler}
                 className="group relative w-fit cursor-pointer shake-infinite"
+                whileHover={{ x: 5, scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400 }}
               >
                 <span>Click to whatsapp me</span>
-                <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-              </button>
+                <motion.span 
+                  className="absolute bottom-0 left-0 h-[0.12em] rounded-full bg-secondary-600"
+                  initial={{ width: 0 }}
+                  whileHover={{ width: "100%" }}
+                  transition={{ duration: 0.3 }}
+                />
+              </motion.button>
             </div>
-          </div>
-          <div className="space-y-3 ">
+          </motion.div>
+          <motion.div 
+            className="space-y-3"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
             <h4 className="text-body-1 2xl:text-4xl font-semibold">
               My Digital Spaces
             </h4>
@@ -261,66 +327,123 @@ console.log("2")
                   <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
                 </div>
               </a> */}
-              <a
+              <motion.a
                 href="https://github.com/opulencedeveloper"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
+                whileHover={{ x: 5, scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 400 }}
               >
-                <Icon icon="mdi:github" color="#666" />
+                <motion.div whileHover={{ rotate: [0, -10, 10, -10, 0] }}>
+                  <Icon icon="mdi:github" color="#666" />
+                </motion.div>
                 <div className="relative">
                   <span>Github</span>
-                  <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+                  <motion.span 
+                    className="absolute bottom-0 left-0 h-[0.10em] rounded-full bg-secondary-600"
+                    initial={{ width: 0 }}
+                    whileHover={{ width: "100%" }}
+                    transition={{ duration: 0.3 }}
+                  />
                 </div>
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="https://www.linkedin.com/in/opulencedeveloper"
                 className="group group flex w-fit items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
+                whileHover={{ x: 5, scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 400 }}
               >
-                <Icon icon="mdi:linkedin" color="#666" />
+                <motion.div whileHover={{ rotate: [0, -10, 10, -10, 0] }}>
+                  <Icon icon="mdi:linkedin" color="#666" />
+                </motion.div>
                 <div className="relative">
                   <span>LinkedIn</span>
-                  <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+                  <motion.span 
+                    className="absolute bottom-0 left-0 h-[0.12em] rounded-full bg-secondary-600"
+                    initial={{ width: 0 }}
+                    whileHover={{ width: "100%" }}
+                    transition={{ duration: 0.3 }}
+                  />
                 </div>
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="https://twitter.com/KudosLucky"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
+                whileHover={{ x: 5, scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 400 }}
               >
-                <Icon icon="mdi:twitter" color="#666" />
+                <motion.div whileHover={{ rotate: [0, -10, 10, -10, 0] }}>
+                  <Icon icon="mdi:twitter" color="#666" />
+                </motion.div>
                 <div className="relative">
                   <span>Twitter(X)</span>
-                  <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+                  <motion.span 
+                    className="absolute bottom-0 left-0 h-[0.10em] rounded-full bg-secondary-600"
+                    initial={{ width: 0 }}
+                    whileHover={{ width: "100%" }}
+                    transition={{ duration: 0.3 }}
+                  />
                 </div>
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="https://www.facebook.com/victor.opulence"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
+                whileHover={{ x: 5, scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 400 }}
               >
-                <Icon icon="mdi:facebook" color="#666" />
+                <motion.div whileHover={{ rotate: [0, -10, 10, -10, 0] }}>
+                  <Icon icon="mdi:facebook" color="#666" />
+                </motion.div>
                 <div className="relative">
                   <span>Facebook</span>
-                  <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+                  <motion.span 
+                    className="absolute bottom-0 left-0 h-[0.10em] rounded-full bg-secondary-600"
+                    initial={{ width: 0 }}
+                    whileHover={{ width: "100%" }}
+                    transition={{ duration: 0.3 }}
+                  />
                 </div>
-              </a>
+              </motion.a>
             </div>
-          </div>
-          <div className="space-y-3 ">
+          </motion.div>
+          <motion.div 
+            className="space-y-3"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+          >
             <h4 className="text-body-1 font-semibold 2xl:text-4xl">Location</h4>
-            <div className="space-y-2 text-body-2 2xl:text-3xl">
-              <p>
+            <motion.div 
+              className="space-y-2 text-body-2 2xl:text-3xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.7, duration: 0.5 }}
+            >
+              <motion.p
+                animate={{ 
+                  opacity: [1, 0.8, 1],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
                 PortHarcourt, Nigeria <br></br>
                 {time}
-              </p>
-            </div>
-          </div>
-        </div>
+              </motion.p>
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

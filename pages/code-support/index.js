@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 import handleWhatsAppClick from "@/helpers/whatsapp";
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import { generateNextSeo } from "next-seo/pages";
 import Footer from "@/components/layouts/Footer";
 import Layout from "@/components/layouts/Layout";
 import { defaultSEO, generateKeywords } from "@/lib/seo";
@@ -34,7 +35,9 @@ const CodeSupport = () => {
 
   return (
     <>
-      <NextSeo {...seoConfig} />
+      <Head>
+        {generateNextSeo(seoConfig)}
+      </Head>
       <Layout>
       <section>
         {" "}

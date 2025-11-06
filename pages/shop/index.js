@@ -5,7 +5,8 @@ import CSSTransition from "react-transition-group/CSSTransition";
 
 import arrowRightIcon from "../../public/images/icon/arrow-right.svg";
 import Image from "next/image";
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import { generateNextSeo } from "next-seo/pages";
 import Footer from "@/components/layouts/Footer";
 import Layout from "@/components/layouts/Layout";
 import { defaultSEO, generateKeywords } from "@/lib/seo";
@@ -93,7 +94,9 @@ const Shop = (props) => {
 
   return (
     <>
-      <NextSeo {...seoConfig} />
+      <Head>
+        {generateNextSeo(seoConfig)}
+      </Head>
       <Layout>
        <div className="relative rounded-tl rounded-tr overflow-hidden flex items-center mt-8 ml-5 md:mt-20 md:ml-12 ">
           {" "}

@@ -1,7 +1,8 @@
 import SectionOne from "@/components/about/SectionOne";
 import Footer from "@/components/layouts/Footer";
 import Layout from "@/components/layouts/Layout";
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import { generateNextSeo } from "next-seo/pages";
 import { defaultSEO, generatePersonSchema, generateKeywords } from "@/lib/seo";
 
 const About = () => {
@@ -27,7 +28,9 @@ const About = () => {
 
   return (
     <>
-      <NextSeo {...seoConfig} />
+      <Head>
+        {generateNextSeo(seoConfig)}
+      </Head>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

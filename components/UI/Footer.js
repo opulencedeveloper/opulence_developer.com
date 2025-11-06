@@ -1,4 +1,6 @@
+"use client";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 
 export default function Footer() {
@@ -14,20 +16,76 @@ export default function Footer() {
 
   
     return (
-      <footer className="mt-14 flex items-end justify-between px-5 py-4 sm:flex text-body-4 md:text-body-3">
-        <div className="flex flex-col md:flex-row md:w-[62.5vw] lg:w-[57.5vw] justify-between">
-          <div className="flex space-x-1" >
+      <motion.footer 
+        className="mt-14 flex items-end justify-between px-5 py-4 sm:flex text-body-4 md:text-body-3"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <motion.div 
+          className="flex flex-col md:flex-row md:w-[62.5vw] lg:w-[57.5vw] justify-between"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
+          <motion.div 
+            className="flex space-x-1"
+            whileHover={{ scale: 1.05, x: 5 }}
+          >
             <span>&copy;</span>
             <span>{currentYear}</span>
             <span className="font-extrabold uppercase 2xl:text-body-1">Amobi Victor</span>
-          </div>
-          <div>
-            <span className=" text-body-4 2xl:text-body-1">Site designed and coded with ❤️‍🔥</span>
-          </div>
-        </div>
-        <button onClick={toTop} className="col-span-2 flex items-center space-x-2 w-fit group 2xl:text-body-1">
-          <span className="font-extrabold uppercase hover:font-black duration-200">BACK TO TOP</span>
-          <span className="group-hover:-translate-y-3 duration-300 ease-in-out">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+          >
+            <motion.span 
+              className="text-body-4 2xl:text-body-1"
+              animate={{ 
+                scale: [1, 1.1, 1],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              Site designed and coded with ❤️‍🔥
+            </motion.span>
+          </motion.div>
+        </motion.div>
+        <motion.button 
+          onClick={toTop} 
+          className="col-span-2 flex items-center space-x-2 w-fit group 2xl:text-body-1"
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          whileHover={{ scale: 1.1, y: -5 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <motion.span 
+            className="font-extrabold uppercase hover:font-black duration-200"
+            whileHover={{ x: -5 }}
+          >
+            BACK TO TOP
+          </motion.span>
+          <motion.span
+            animate={{ 
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            whileHover={{ 
+              y: -15,
+              rotate: [0, -10, 10, -10, 0],
+            }}
+          >
             <svg
               className="-rotate-90"
               width="24"
@@ -61,9 +119,9 @@ export default function Footer() {
                 </linearGradient>{" "}
               </defs>{" "}
             </svg>
-          </span>
-        </button>
-      </footer>
+          </motion.span>
+        </motion.button>
+      </motion.footer>
     );
   }
   
