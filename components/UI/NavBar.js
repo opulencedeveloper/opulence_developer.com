@@ -33,23 +33,163 @@ export default function NavBar({ sectionRefs }) {
 
 
   useEffect(() => {
-    sectionRefs.forEach((section) => {
+    // Apply dark theme for Role section (sectionRefs[0])
+    if (sectionRefs[0]) {
       ScrollTrigger.create({
-        trigger: section,
+        trigger: sectionRefs[0],
         start: "top 375px",
         end: "bottom 300px",
         // markers: true,
-        animation: gsap
-          .timeline()
-          .to(navBar.current, { color: "#DDDDD5" })
-          .to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C" }, 0)
-          .to(".bg-secondary-100", { backgroundColor: "#0E0E0C" }, 0),
-
-        toggleActions: "restart reverse restart reverse",
+        onEnter: () => {
+          // Dark theme when entering Role section
+          gsap.to(navBar.current, { color: "#DDDDD5", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#0E0E0C", duration: 0.3 });
+        },
+        onLeave: () => {
+          // Don't revert to light here - Works section will maintain dark theme
+        },
+        onEnterBack: () => {
+          // Dark theme when scrolling back into Role section
+          gsap.to(navBar.current, { color: "#DDDDD5", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#0E0E0C", duration: 0.3 });
+        },
+        onLeaveBack: () => {
+          // Revert to light theme when scrolling back out of Role section (going to Hero)
+          gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
       });
-    });
+    }
 
-  }, []);
+    // Apply dark theme for Works section (sectionRefs[1]) - maintains dark theme
+    if (sectionRefs[1]) {
+      ScrollTrigger.create({
+        trigger: sectionRefs[1],
+        start: "top 375px",
+        end: "bottom 300px",
+        // markers: true,
+        onEnter: () => {
+          // Dark theme when entering Works section
+          gsap.to(navBar.current, { color: "#DDDDD5", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#0E0E0C", duration: 0.3 });
+        },
+        onLeave: () => {
+          // Revert to light theme when leaving Works section (going to Services)
+          gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
+        onEnterBack: () => {
+          // Dark theme when scrolling back into Works section
+          gsap.to(navBar.current, { color: "#DDDDD5", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#0E0E0C", duration: 0.3 });
+        },
+        onLeaveBack: () => {
+          // Don't revert here - Role section will maintain dark theme
+        },
+      });
+    }
+
+    // Services section should be light mode - ensure it reverts from Works dark theme
+    if (sectionRefs[3]) {
+      ScrollTrigger.create({
+        trigger: sectionRefs[3],
+        start: "top 375px",
+        end: "bottom 300px",
+        // markers: true,
+        onEnter: () => {
+          // Light theme when entering Services section
+          gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
+        onLeave: () => {
+          // Don't change here - About will maintain light theme
+        },
+        onEnterBack: () => {
+          // Light theme when scrolling back into Services section
+          gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
+        onLeaveBack: () => {
+          // Don't change here - Works section will maintain dark theme
+        },
+      });
+    }
+
+    // About section should be light mode
+    if (sectionRefs[4]) {
+      ScrollTrigger.create({
+        trigger: sectionRefs[4],
+        start: "top 375px",
+        end: "bottom 300px",
+        // markers: true,
+        onEnter: () => {
+          // Light theme when entering About section
+          gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
+        onLeave: () => {
+          // Don't change here - Certifications will handle its own theme
+        },
+        onEnterBack: () => {
+          // Light theme when scrolling back into About section
+          gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
+        onLeaveBack: () => {
+          // Don't change here - Services section will maintain light theme
+        },
+      });
+    }
+
+    // Apply dark theme for Certifications section (sectionRefs[2])
+    if (sectionRefs[2]) {
+      ScrollTrigger.create({
+        trigger: sectionRefs[2],
+        start: "center 60%",
+        end: "bottom 40%",
+        // markers: true,
+        onEnter: () => {
+          // Dark theme when entering Certifications section
+          gsap.to(navBar.current, { color: "#DDDDD5", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#0E0E0C", duration: 0.3 });
+        },
+        onLeave: () => {
+          // Revert to light theme when leaving Certifications section (going to Contact)
+          gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
+        onEnterBack: () => {
+          // Dark theme when scrolling back into Certifications section
+          gsap.to(navBar.current, { color: "#DDDDD5", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#0E0E0C", duration: 0.3 });
+        },
+        onLeaveBack: () => {
+          // Revert to light theme when scrolling back out of Certifications section
+          gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
+      });
+    }
+
+    // Refresh ScrollTrigger to ensure all triggers are properly initialized
+    ScrollTrigger.refresh();
+
+
+  }, [sectionRefs]);
 
   return (
     <header

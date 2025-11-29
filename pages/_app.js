@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Cursor from "@/components/UI/Cursor.js";
 
 import Head from "next/head";
+import Script from "next/script";
 import { Toaster } from 'sonner';
 
 // import 'intersection-observer';
@@ -29,7 +30,7 @@ export default function App({ Component, pageProps }) {
     alternateName: 'OpulenceDeveloper',
     url: 'https://opulencedeveloper.com',
     logo: 'https://opulencedeveloper.com/images/opulence-developer-social-preview-image.png',
-    description: 'FullStack Software Engineer specializing in AI Engineering, Web Development, Mobile App Development, and Backend Development',
+    description: 'FullStack Software Engineer specializing in AI Application Development, Web Development, Mobile App Development, and Backend Development',
     founder: {
       '@type': 'Person',
       name: 'Amobi Victor Chukwuka',
@@ -74,6 +75,20 @@ export default function App({ Component, pageProps }) {
       {/* </Layout> */}
       
     {/* </main> */}
+    {/* Tawk.to Chat Script */}
+    <Script id="tawk-to" strategy="afterInteractive">
+      {`
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/692ac2062e3bec197df6f5c3/1jb7gbrjf';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+        })();
+      `}
+    </Script>
     </>
   );
 }

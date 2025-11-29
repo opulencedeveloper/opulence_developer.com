@@ -31,19 +31,28 @@ export default function Works({ forwardedRef }) {
     <section
       ref={forwardedRef}
       id="works"
-      className="nav-change overflow-hidden my-[10%] relative"
+      className="nav-change my-[10%] relative"
       aria-label="Featured projects portfolio"
+      style={{ overflow: 'visible' }}
     >
-      {/* Animated background gradient */}
+      {/* Animated background gradient - extended to allow overflow */}
       <motion.div
-        className="absolute inset-0 opacity-30 pointer-events-none"
+        className="absolute opacity-30 pointer-events-none"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.3 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
+        style={{ 
+          top: '-25%', 
+          bottom: '-25%',
+          left: '-10%',
+          right: '-10%',
+          width: '120%',
+          height: '150%'
+        }}
       >
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-secondary-600 rounded-full blur-3xl mix-blend-multiply animate-pulse" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-200 rounded-full blur-3xl mix-blend-multiply animate-pulse" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-[30%] left-1/4 w-96 h-96 bg-secondary-600 rounded-full blur-3xl mix-blend-multiply animate-pulse" />
+        <div className="absolute bottom-[30%] right-1/4 w-96 h-96 bg-primary-200 rounded-full blur-3xl mix-blend-multiply animate-pulse" style={{ animationDelay: "1s" }} />
       </motion.div>
 
       <motion.div
@@ -65,7 +74,7 @@ export default function Works({ forwardedRef }) {
       </motion.div>
 
       <motion.div 
-        className="mt-10 grid grid-cols-1 gap-16 gap-y-10 md:grid-cols-12 relative z-10" 
+        className="mt-10 grid grid-cols-1 gap-16 gap-y-10 md:grid-cols-12 relative z-10 overflow-visible" 
         role="list"
         variants={containerVariants}
         initial="hidden"

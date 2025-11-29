@@ -1,9 +1,9 @@
 import ServiceUi from "../UI/ServiceUi";
 import Heading from "../UI/Heading";
 
-export default function Services() {
+export default function Services({ forwardedRef }) {
   const expertiseItems = [
-    "AI Engineering",
+    "AI Application Development",
     "Web Development",
     "App. Development",
     "Backend Dev."
@@ -24,7 +24,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="my-[10%]" aria-label="services">
+    <section ref={forwardedRef} id="services" className="my-[10%]" aria-label="services">
       <Heading title="services" />
       <div className="space-y-14">
         <article aria-labelledby="expertises-heading">

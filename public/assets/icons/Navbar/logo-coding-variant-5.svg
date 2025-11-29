@@ -1,0 +1,119 @@
+<svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="codeGradient5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0E0E0C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2A2A28;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0E0E0C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Class/Object style -->
+  <g transform="translate(0, 10)">
+    <!-- Class declaration style -->
+    <text 
+      x="0" 
+      y="40" 
+      font-family="'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, sans-serif" 
+      font-size="42" 
+      font-weight="900" 
+      fill="url(#codeGradient5)"
+      letter-spacing="-0.02em"
+    >
+      opulence
+    </text>
+    
+    <!-- Dot notation -->
+    <text 
+      x="180" 
+      y="40" 
+      font-family="monospace" 
+      font-size="42" 
+      font-weight="900" 
+      fill="#0E0E0C"
+      opacity="0.6"
+    >
+      .
+    </text>
+    
+    <!-- Method/property -->
+    <text 
+      x="195" 
+      y="40" 
+      font-family="'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, sans-serif" 
+      font-size="42" 
+      font-weight="900" 
+      fill="url(#codeGradient5)"
+      letter-spacing="-0.02em"
+    >
+      developer
+    </text>
+    
+    <!-- Opening brace for object -->
+    <text 
+      x="0" 
+      y="80" 
+      font-family="monospace" 
+      font-size="42" 
+      font-weight="900" 
+      fill="#0E0E0C"
+      opacity="0.5"
+    >
+      {
+    </text>
+    
+    <!-- Property name -->
+    <text 
+      x="25" 
+      y="80" 
+      font-family="'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, sans-serif" 
+      font-size="42" 
+      font-weight="900" 
+      fill="url(#codeGradient5)"
+      letter-spacing="-0.02em"
+    >
+      opulence
+    </text>
+    
+    <!-- Colon -->
+    <text 
+      x="180" 
+      y="80" 
+      font-family="monospace" 
+      font-size="42" 
+      font-weight="900" 
+      fill="#0E0E0C"
+      opacity="0.6"
+    >
+      :
+    </text>
+    
+    <!-- Property value -->
+    <text 
+      x="195" 
+      y="80" 
+      font-family="'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, sans-serif" 
+      font-size="42" 
+      font-weight="900" 
+      fill="url(#codeGradient5)"
+      letter-spacing="-0.02em"
+    >
+      _developer
+    </text>
+    
+    <!-- Closing brace -->
+    <text 
+      x="370" 
+      y="80" 
+      font-family="monospace" 
+      font-size="42" 
+      font-weight="900" 
+      fill="#0E0E0C"
+      opacity="0.5"
+    >
+      }
+    </text>
+  </g>
+</svg>
+
+
+

@@ -1,0 +1,96 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0E0E0C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2A2A28;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0E0E0C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0E0E0C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A4A48;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main text: opulence -->
+  <text 
+    x="20" 
+    y="55" 
+    font-family="'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, sans-serif" 
+    font-size="48" 
+    font-weight="900" 
+    fill="url(#textGradient)"
+    letter-spacing="-0.02em"
+  >
+    opulence
+  </text>
+  
+  <!-- Secondary text: _developer -->
+  <text 
+    x="20" 
+    y="95" 
+    font-family="'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, sans-serif" 
+    font-size="48" 
+    font-weight="900" 
+    fill="url(#textGradient)"
+    letter-spacing="-0.02em"
+  >
+    _developer
+  </text>
+  
+  <!-- Enhanced geometric icon - Modernized "O" shape -->
+  <g transform="translate(320, 30)">
+    <!-- Outer ring with gradient -->
+    <circle 
+      cx="30" 
+      cy="30" 
+      r="28" 
+      fill="none" 
+      stroke="url(#iconGradient)" 
+      stroke-width="3"
+      filter="url(#glow)"
+    />
+    
+    <!-- Inner geometric pattern -->
+    <path 
+      d="M30 8 L42 18 L42 42 L30 52 L18 42 L18 18 Z" 
+      fill="url(#iconGradient)" 
+      opacity="0.8"
+    />
+    
+    <!-- Center accent -->
+    <circle 
+      cx="30" 
+      cy="30" 
+      r="8" 
+      fill="#0E0E0C"
+    />
+    
+    <!-- Decorative corner elements -->
+    <rect x="2" y="2" width="6" height="6" fill="url(#iconGradient)" opacity="0.6"/>
+    <rect x="52" y="2" width="6" height="6" fill="url(#iconGradient)" opacity="0.6"/>
+    <rect x="2" y="52" width="6" height="6" fill="url(#iconGradient)" opacity="0.6"/>
+    <rect x="52" y="52" width="6" height="6" fill="url(#iconGradient)" opacity="0.6"/>
+  </g>
+  
+  <!-- Subtle underline accent -->
+  <line 
+    x1="20" 
+    y1="105" 
+    x2="300" 
+    y2="105" 
+    stroke="url(#iconGradient)" 
+    stroke-width="2" 
+    opacity="0.3"
+    stroke-linecap="round"
+  />
+</svg>
+
+
+

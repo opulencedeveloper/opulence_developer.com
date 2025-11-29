@@ -335,7 +335,10 @@ console.log("2")
                 whileHover={{ x: 5, scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400 }}
               >
-                <motion.div whileHover={{ rotate: [0, -10, 10, -10, 0] }}>
+                <motion.div 
+                  whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+                  transition={{ type: "keyframes", duration: 0.5, ease: "easeInOut" }}
+                >
                   <Icon icon="mdi:github" color="#666" />
                 </motion.div>
                 <div className="relative">
@@ -356,7 +359,10 @@ console.log("2")
                 whileHover={{ x: 5, scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400 }}
               >
-                <motion.div whileHover={{ rotate: [0, -10, 10, -10, 0] }}>
+                <motion.div 
+                  whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+                  transition={{ type: "keyframes", duration: 0.5, ease: "easeInOut" }}
+                >
                   <Icon icon="mdi:linkedin" color="#666" />
                 </motion.div>
                 <div className="relative">
@@ -377,7 +383,10 @@ console.log("2")
                 whileHover={{ x: 5, scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400 }}
               >
-                <motion.div whileHover={{ rotate: [0, -10, 10, -10, 0] }}>
+                <motion.div 
+                  whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+                  transition={{ type: "keyframes", duration: 0.5, ease: "easeInOut" }}
+                >
                   <Icon icon="mdi:twitter" color="#666" />
                 </motion.div>
                 <div className="relative">
@@ -398,7 +407,10 @@ console.log("2")
                 whileHover={{ x: 5, scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400 }}
               >
-                <motion.div whileHover={{ rotate: [0, -10, 10, -10, 0] }}>
+                <motion.div 
+                  whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+                  transition={{ type: "keyframes", duration: 0.5, ease: "easeInOut" }}
+                >
                   <Icon icon="mdi:facebook" color="#666" />
                 </motion.div>
                 <div className="relative">

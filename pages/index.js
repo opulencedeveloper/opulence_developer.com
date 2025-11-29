@@ -11,6 +11,7 @@ import Role from "@/components/homepage/Role";
 import About from "@/components/homepage/About";
 import Services from "@/components/homepage/Services";
 import Works from "@/components/homepage/Works";
+import Certifications from "@/components/homepage/Certifications";
 import Contact from "@/components/homepage/Contact";
 import Footer from "@/components/UI/Footer";
 import { defaultSEO, generatePersonSchema, generateServiceSchema, generateWebsiteSchema, generatePortfolioSchema, generateKeywords } from "@/lib/seo";
@@ -111,19 +112,19 @@ const HomePage = () => {
   const seoConfig = {
     ...defaultSEO,
     title: "OpulenceDeveloper | FullStack Software Engineer Portfolio",
-    description: "FullStack Software Engineer specializing in AI Engineering, Web Development, Mobile App Development, and Backend Development. Expert in JavaScript, TypeScript, Flutter, React, Next.js, Node.js, MongoDB, and PostgreSQL. Available for freelance projects. Want a website? Want an App? I'm available for you.",
+    description: "FullStack Software Engineer specializing in AI Application Development, Web Development, Mobile App Development, and Backend Development. Expert in JavaScript, TypeScript, Flutter, React, Next.js, Node.js, MongoDB, and PostgreSQL. Available for freelance projects. Want a website? Want an App? I'm available for you.",
     keywords: generateKeywords(['Portfolio', 'Freelance Developer', 'Available for Hire', 'Web Developer Nigeria', 'React Developer', 'Next.js Expert']),
     canonical: "https://opulencedeveloper.com",
     openGraph: {
       ...defaultSEO.openGraph,
       title: "OpulenceDeveloper | FullStack Software Engineer Portfolio",
-      description: "FullStack Software Engineer specializing in AI Engineering, Web Development, Mobile App Development, and Backend Development. Expert in JavaScript, TypeScript, Flutter, React, Next.js, Node.js, MongoDB, and PostgreSQL. Available for freelance projects.",
+      description: "FullStack Software Engineer specializing in AI Application Development, Web Development, Mobile App Development, and Backend Development. Expert in JavaScript, TypeScript, Flutter, React, Next.js, Node.js, MongoDB, and PostgreSQL. Available for freelance projects.",
       url: "https://opulencedeveloper.com",
     },
     twitter: {
       ...defaultSEO.twitter,
       title: "OpulenceDeveloper | FullStack Software Engineer Portfolio",
-      description: "FullStack Software Engineer specializing in AI Engineering, Web Development, Mobile App Development, and Backend Development.",
+      description: "FullStack Software Engineer specializing in AI Application Development, Web Development, Mobile App Development, and Backend Development.",
     },
     additionalMetaTags: [
       ...defaultSEO.additionalMetaTags,
@@ -187,9 +188,11 @@ const HomePage = () => {
       <main className="px-5 md:px-10 xl:px-20 2xl:px-28">
         <Role forwardedRef={(el) => (sectionRefs.current[0] = el)} />{" "}
         {/* forwardedRef props to pass into the child component to access the ref, then this will go into the useRef array  */}
-        <About />
-        <Services />
         <Works forwardedRef={(el) => (sectionRefs.current[1] = el)} />
+        <Services forwardedRef={(el) => (sectionRefs.current[3] = el)} />
+        <About forwardedRef={(el) => (sectionRefs.current[4] = el)} />
+       
+        <Certifications forwardedRef={(el) => (sectionRefs.current[2] = el)} />
         <Contact />
       </main>
       <Footer />

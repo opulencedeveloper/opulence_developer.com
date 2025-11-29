@@ -4,9 +4,10 @@ import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Heading from "../UI/Heading";
 
-export default function About() {
+export default function About({ forwardedRef }) {
   const profile = useRef(null);
   const aboutSection = useRef(null);
   const heading = useRef(null);
@@ -36,7 +37,16 @@ export default function About() {
 
   return (
     // Try using max width to contain the size of the container
-    <section ref={aboutSection} aria-label="about me">
+    <section ref={(el) => {
+      aboutSection.current = el;
+      if (forwardedRef) {
+        if (typeof forwardedRef === 'function') {
+          forwardedRef(el);
+        } else {
+          forwardedRef.current = el;
+        }
+      }
+    }} aria-label="about me">
       <Heading title="about me" />
       <div className="mt-10 flex flex-col items-start gap-8 md:flex-row lg:gap-10 ">
         <motion.div 
@@ -109,7 +119,7 @@ export default function About() {
                 className="cursor-pointer underline duration-300 ease-in-out hover:text-secondary-700 pl-1 shake-infinite"
                 href="/assets/cv/Amobi_Victor_CV.pdf"
                 whileHover={{ scale: 1.1, x: 5, rotate: [0, -5, 5, -5, 0] }}
-                transition={{ type: "spring", stiffness: 400 }}
+                transition={{ type: "keyframes", duration: 0.5, ease: "easeInOut" }}
               >
                 View CV
               </motion.a>

@@ -146,7 +146,7 @@ This portfolio has been comprehensively optimized for maximum discoverability ac
 - FullStack Software Engineer
 - Web Developer
 - Mobile App Developer
-- AI Engineer
+- AI Application Developer
 - Backend Developer
 
 ### Technology Keywords:
@@ -162,12 +162,12 @@ This portfolio has been comprehensively optimized for maximum discoverability ac
 - "Next.js developer with SEO expertise"
 - "FullStack developer Nigeria"
 - "React developer Port Harcourt"
-- "AI engineer portfolio"
+- "AI Application Developer portfolio"
 - "mobile app developer portfolio"
 - "backend developer Node.js"
 
 ### Service Keywords:
-- AI Engineering Services
+- AI Application Development Services
 - Web Development Services
 - Mobile Application Development
 - Backend Development Services
