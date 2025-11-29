@@ -181,7 +181,7 @@ const HomePage = () => {
       }}
     />
 
-      <div className="bg-secondary-100">
+      <div className="bg-secondary-100 overflow-x-hidden">
       <NavBar sectionRefs={sectionRefs.current} />{" "}
       {/* passing sectionRefs props to give access to Navbar, Navbar can then access the props which have access to the array of sectionRef and loop over it */}
       <Hero />

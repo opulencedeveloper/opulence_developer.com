@@ -82,7 +82,7 @@ export default function About({ forwardedRef }) {
 
       {/* Personal Section */}
       <div className="mt-20 pt-12 border-t border-secondary-600/10">
-       <Heading title="about me" />
+       <Heading title="about our CEO" />
         <div className="mt-10 flex flex-col items-start gap-8 md:flex-row lg:gap-10 ">
           <motion.div 
             className="top-28 overflow-hidden rounded-md md:sticky md:w-1/2"
