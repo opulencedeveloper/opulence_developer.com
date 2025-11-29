@@ -8,21 +8,21 @@ import { defaultSEO, generatePersonSchema, generateKeywords } from "@/lib/seo";
 const About = () => {
   const seoConfig = {
     ...defaultSEO,
-    title: "About Amobi Victor Chukwuka - FullStack Software Engineer | OpulenceDeveloper",
-    description: "Learn about Amobi Victor Chukwuka (OpulenceDeveloper), a FullStack Software Engineer based in Port Harcourt, Nigeria. Specializing in AI Application Development, Web Development, Mobile App Development, and Backend Development. Expert in JavaScript, TypeScript, Flutter, React, Next.js, Node.js, MongoDB, and PostgreSQL.",
-    keywords: generateKeywords(['About Me', 'Developer Profile', 'Software Engineer Nigeria', 'FullStack Developer Port Harcourt', 'Amobi Victor Chukwuka']),
+    title: "About Us - OpulenceDeveloper LLC | Software Development Company",
+    description: "Learn about OpulenceDeveloper, a registered Limited Liability Company (LLC) and CAC certified software development company. Led by CEO Amobi Victor Chukwuka, specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development.",
+    keywords: generateKeywords(['About Us', 'Company Profile', 'Software Development Company', 'LLC Nigeria', 'CAC Certified Company', 'CEO Amobi Victor Chukwuka', 'Software Company Enugu']),
     canonical: "https://opulencedeveloper.com/about",
     openGraph: {
       ...defaultSEO.openGraph,
-      title: "About Amobi Victor Chukwuka - FullStack Software Engineer | OpulenceDeveloper",
-      description: "Learn about Amobi Victor Chukwuka, a FullStack Software Engineer specializing in AI Application Development, Web Development, Mobile App Development, and Backend Development. Based in Port Harcourt, Nigeria.",
+      title: "About Us - OpulenceDeveloper LLC | Software Development Company",
+      description: "Learn about OpulenceDeveloper, a registered Limited Liability Company (LLC) and CAC certified software development company. Led by CEO Amobi Victor Chukwuka.",
       url: "https://opulencedeveloper.com/about",
-      type: "profile",
+      type: "website",
     },
     twitter: {
       ...defaultSEO.twitter,
-      title: "About Amobi Victor Chukwuka - FullStack Software Engineer",
-      description: "FullStack Software Engineer specializing in AI Application Development, Web Development, Mobile App Development, and Backend Development.",
+      title: "About Us - OpulenceDeveloper LLC | Software Development Company",
+      description: "Registered Limited Liability Company (LLC) led by CEO Amobi Victor Chukwuka, and CAC certified software development company specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development.",
     },
   };
 

@@ -155,8 +155,8 @@ export default function NavBar({ sectionRefs }) {
     if (sectionRefs[2]) {
       ScrollTrigger.create({
         trigger: sectionRefs[2],
-        start: "center 60%",
-        end: "bottom 40%",
+        start: "center center",
+        end: "bottom center",
         // markers: true,
         onEnter: () => {
           // Dark theme when entering Certifications section
@@ -181,6 +181,34 @@ export default function NavBar({ sectionRefs }) {
           gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
           gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
           gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
+      });
+    }
+
+    // Contact section should be light mode
+    if (sectionRefs[5]) {
+      ScrollTrigger.create({
+        trigger: sectionRefs[5],
+        start: "top 375px",
+        end: "bottom 300px",
+        // markers: true,
+        onEnter: () => {
+          // Light theme when entering Contact section
+          gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
+        onLeave: () => {
+          // Don't change here - Contact is the last section
+        },
+        onEnterBack: () => {
+          // Light theme when scrolling back into Contact section
+          gsap.to(navBar.current, { color: "#0E0E0C", duration: 0.3 });
+          gsap.to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C", duration: 0.3 });
+          gsap.to(".bg-secondary-100", { backgroundColor: "#FAFAF9", duration: 0.3 });
+        },
+        onLeaveBack: () => {
+          // Don't change here - Certifications will handle its own theme
         },
       });
     }

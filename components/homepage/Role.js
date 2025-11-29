@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 export default function Role({forwardedRef}) {
-  const words = "I craft digital masterpiece line by line, transforming code into innovation, bytes into brilliance, and algorithms into art.".split(" ");
+  const words = "We craft digital masterpiece line by line, transforming code into innovation, bytes into brilliance, and algorithms into art.".split(" ");
 
   return (
     <section ref={forwardedRef} id="about" className="select-none flex my-20 md:my-[12%] py-10 flex-col items-center justify-center overflow-hidden nav-change" aria-label="">

@@ -26,20 +26,36 @@ export default function App({ Component, pageProps }) {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Opulence Developer | FullStack Software Engineer',
+    name: 'OpulenceDeveloper',
+    legalName: 'OpulenceDeveloper LLC',
     alternateName: 'OpulenceDeveloper',
     url: 'https://opulencedeveloper.com',
     logo: 'https://opulencedeveloper.com/images/opulence-developer-social-preview-image.png',
-    description: 'FullStack Software Engineer specializing in AI Application Development, Web Development, Mobile App Development, and Backend Development',
+    description: 'Registered Limited Liability Company (LLC) led by CEO Amobi Victor Chukwuka, specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development. CAC certified.',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Enugu',
+      addressCountry: 'NG',
+    },
     founder: {
       '@type': 'Person',
       name: 'Amobi Victor Chukwuka',
       alternateName: 'OpulenceDeveloper',
+      jobTitle: 'Chief Executive Officer',
     },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Professional Services',
       url: 'https://opulencedeveloper.com',
+    },
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'Business Registration',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Corporate Affairs Commission of Nigeria',
+        alternateName: 'CAC',
+      },
     },
     sameAs: [
       // Add social media URLs here when available

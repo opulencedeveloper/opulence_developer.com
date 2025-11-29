@@ -11,12 +11,12 @@ import { toast } from "sonner";
 
 const sendMessageHandler = () => {
   handleWhatsAppClick(
-    "Hello! 👋 I just visited your portfolio and I'm truly inspired by your skills. I'd love to connect and potentially discuss collaboration opportunities or seek advice in the field. Looking forward to chatting with you further! 🚀",
+    "Hello! 👋 I just visited your website and I'm truly inspired by your work. I'd love to connect and potentially discuss collaboration opportunities. Looking forward to chatting with you further! 🚀",
     "+2348184297165"
   );
 };
 
-export default function Contact() {
+export default function Contact({ forwardedRef }) {
   const [time, setTime] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -63,7 +63,7 @@ console.log("2")
       );
 
       toast.success(
-        `Thanks ${name} for reaching out! 🙌 I've received your message and will get back to you shortly.`
+        `Thanks ${name} for reaching out! 🙌 We've received your message and will get back to you shortly.`
       );
       formRef.current.reset();
     } catch (error) {
@@ -117,6 +117,16 @@ console.log("2")
 
   return (
     <section
+      ref={(el) => {
+        contactSection.current = el;
+        if (forwardedRef) {
+          if (typeof forwardedRef === 'function') {
+            forwardedRef(el);
+          } else {
+            forwardedRef.current = el;
+          }
+        }
+      }}
       id="contact"
       className="my-[10%] overflow-hidden"
       aria-label="contact me"
@@ -137,7 +147,7 @@ console.log("2")
             ref={body}
             className="mt-4 max-w-md translate-y-10 text-body-2 text-accent-100 opacity-0 2xl:max-w-2xl 2xl:text-4xl"
           >
-            I am currently available for work. I am accepting new projects
+            We are currently available for work. We are accepting new projects
             starting from today.
           </p>
           <motion.form
@@ -294,7 +304,7 @@ console.log("2")
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400 }}
               >
-                <span>Click to whatsapp me</span>
+                <span>Click to whatsapp us</span>
                 <motion.span 
                   className="absolute bottom-0 left-0 h-[0.12em] rounded-full bg-secondary-600"
                   initial={{ width: 0 }}
@@ -312,7 +322,7 @@ console.log("2")
             transition={{ delay: 0.5, duration: 0.5 }}
           >
             <h4 className="text-body-1 2xl:text-4xl font-semibold">
-              My Digital Spaces
+              Digital Spaces
             </h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
               {/* <a
@@ -450,7 +460,7 @@ console.log("2")
                   ease: "easeInOut",
                 }}
               >
-                PortHarcourt, Nigeria <br></br>
+                Enugu, Nigeria <br></br>
                 {time}
               </motion.p>
             </motion.div>

@@ -11,7 +11,10 @@ export default function Footer() {
   }, [])
   
     function toTop() {
-      window.scrollTo(0, 0)
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
     }
 
   
@@ -36,7 +39,7 @@ export default function Footer() {
           >
             <span>&copy;</span>
             <span>{currentYear}</span>
-            <span className="font-extrabold uppercase 2xl:text-body-1">Amobi Victor</span>
+            <span className="font-extrabold uppercase 2xl:text-body-1">OpulenceDeveloper LLC</span>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.05 }}

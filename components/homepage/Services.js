@@ -29,17 +29,17 @@ export default function Services({ forwardedRef }) {
       <div className="space-y-14">
         <article aria-labelledby="expertises-heading">
           <ServiceUi
-            title="my expertises."
-            description="I focus on all things, tech and web related. With each of my
-            services, my goal is to deliver an impactful and elevating
+            title="expertises."
+            description="We focus on all things, tech and web related. With each of our
+            services, our goal is to deliver an impactful and elevating
             digital experience for everyone."
             items={expertiseItems}
           />
         </article>
         <article aria-labelledby="toolbox-heading">
           <ServiceUi
-            title="my digital tool box."
-            description="These are my go to tech stack to make any projects happen. I am always eager of learning more about my current stack, and new technologies that could expand my horizons."
+            title="digital tool box."
+            description="These are our go to tech stack to make any projects happen. We are always eager of learning more about our current stack, and new technologies that could expand our horizons."
             items={toolBoxItems}
           />
         </article>
