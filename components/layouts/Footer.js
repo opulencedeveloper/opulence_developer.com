@@ -6,6 +6,11 @@ import AnalogClock from "../home/AnalogClock";
 const codingQuotes = [
   {
     link: "/",
+    quotes: "God gives the logic, we write the code",
+    cite: "https://opulencedeveloper.com",
+  },
+  {
+    link: "/home",
     quotes: "1's and 0's do not lie",
     cite: "https://opulencedeveloper.com",
   },

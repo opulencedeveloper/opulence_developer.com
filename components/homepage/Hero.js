@@ -40,11 +40,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="hero relative flex h-screen w-full select-none overflow-hidden items-center justify-center mt-0 md:mt-20"
+      className="hero relative flex min-h-screen w-full select-none overflow-hidden items-center justify-center pt-20 md:pt-24 pb-12 md:pb-16 2xl:pb-20"
       aria-label="hero"
     >
       <motion.div 
-        className="z-10 flex w-full  flex-col items-center text-title font-bold uppercase text-accent-300  2xl:space-y-16 2xl:text-[10vw]"
+        className="z-10 flex w-full flex-col items-center text-title font-bold uppercase text-accent-300 2xl:space-y-16 2xl:text-[10vw] mt-16 md:mt-24 2xl:mt-32"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -83,6 +83,74 @@ export default function Hero() {
              Client
            </h1>
          </motion.div>
+         <motion.div
+           className="mt-4 md:mt-6 2xl:mt-8 text-center relative px-5 z-20"
+           initial={{ opacity: 0, y: 30 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+         >
+           {/* Sleek software company style slogan */}
+           <motion.div
+             className="relative inline-flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 border-l-2 border-secondary-600/40 bg-secondary-600/5 backdrop-blur-sm rounded-r-md"
+             initial={{ opacity: 0, x: -20, scale: 0.98 }}
+             whileInView={{ opacity: 1, x: 0, scale: 1 }}
+             viewport={{ once: true }}
+             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+             whileHover={{ 
+               borderColor: "rgba(140, 140, 115, 0.6)",
+               backgroundColor: "rgba(140, 140, 115, 0.08)",
+               transition: { duration: 0.3 }
+             }}
+           >
+             {/* Subtle left border accent */}
+             <motion.div
+               className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-secondary-600/60 via-secondary-600/40 to-secondary-600/20 rounded-l-md"
+               initial={{ scaleY: 0 }}
+               whileInView={{ scaleY: 1 }}
+               viewport={{ once: true }}
+               transition={{ duration: 0.5, ease: "easeOut" }}
+             />
+             
+             {/* Comment prefix */}
+             <motion.span
+               className="text-sm md:text-base font-mono text-secondary-600/50"
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true }}
+               transition={{ duration: 0.4 }}
+             >
+               //
+             </motion.span>
+             
+             <motion.p
+               className="text-base md:text-xl 2xl:text-2xl font-mono text-secondary-600 relative"
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               viewport={{ once: true }}
+               transition={{ duration: 0.8 }}
+             >
+               <motion.span
+                 className="inline-block text-secondary-600/80"
+                 initial={{ opacity: 0, x: -5 }}
+                 whileInView={{ opacity: 1, x: 0 }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 0.6 }}
+               >
+                 God gives the logic,
+               </motion.span>
+               <motion.span
+                 className="inline-block ml-2 font-semibold text-secondary-600"
+                 initial={{ opacity: 0, x: -5 }}
+                 whileInView={{ opacity: 1, x: 0 }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 0.6 }}
+               >
+                 we write the code
+               </motion.span>
+             </motion.p>
+           </motion.div>
+         </motion.div>
       </motion.div>
       <motion.div
         ref={imgContainer}
@@ -116,7 +184,7 @@ export default function Hero() {
       </motion.div>
       <motion.div
         ref={scroll}
-        className="absolute bottom-24 right-0 flex flex-col items-center justify-center space-y-8"
+        className="absolute top-1/3 right-4 md:right-8 flex flex-col items-center justify-center space-y-8"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2, duration: 1 }}

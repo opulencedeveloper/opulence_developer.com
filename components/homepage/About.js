@@ -130,7 +130,7 @@ export default function About({ forwardedRef }) {
                 transition={{ delay: 0.2, duration: 0.6 }}
               >
                 I am Amobi Victor Chukwuka, Chief Executive Officer and fullstack software engineer.
-                We lead our team in delivering scalable solutions across web, mobile, AI, and backend technologies.
+                I lead our team in delivering scalable solutions across web, mobile, AI, and backend technologies.
                 <br />
                 <br />
                 Our approach combines technical expertise with strategic vision, ensuring that every project

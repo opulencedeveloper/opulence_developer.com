@@ -57,7 +57,7 @@ const MobileNavigation = (props) => {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  '<span className="italic">God gives the logic, I write the code</span>'
+                  '<span className="italic">God gives the logic, we write the code</span>'
                 )
                 .start();
             }}
