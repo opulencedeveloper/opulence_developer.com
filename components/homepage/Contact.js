@@ -63,7 +63,7 @@ console.log("2")
       );
 
       toast.success(
-        `Thanks ${name} for reaching out! 🙌 We've received your message and will get back to you shortly.`
+        `Thanks ${name} for reaching out! 🙌 I've received your message and will get back to you shortly.`
       );
       formRef.current.reset();
     } catch (error) {
@@ -147,7 +147,7 @@ console.log("2")
             ref={body}
             className="mt-4 max-w-md translate-y-10 text-body-2 text-accent-100 opacity-0 2xl:max-w-2xl 2xl:text-4xl"
           >
-            We are currently available for work. We are accepting new projects
+            I am currently available for work. I am accepting new projects
             starting from today.
           </p>
           <motion.form

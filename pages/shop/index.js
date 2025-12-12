@@ -68,7 +68,7 @@ const Shop = (props) => {
   const seoConfig = {
     ...defaultSEO,
     title: "Opulence Shop - Explore Our Range of Products and Services | OpulenceDeveloper",
-    description: "Browse Opulence Shop for a diverse range of products and services, including software solutions, telecommunications, writing agency services, catering, fashion, and much more. Elevate your business and personal projects with our top-notch offerings.",
+    description: "Browse Opulence Shop for a diverse range of products and services, including software solutions, telecommunications, writing agency services, catering, fashion, and much more. Elevate your business and personal projects with top-notch offerings.",
     keywords: generateKeywords(['Opulence Shop', 'Software Solutions', 'Telecommunications Services', 'Writing Agency', 'Catering Services', 'Fashion Store', 'E-commerce', 'Business Services', 'Product Marketplace']),
     canonical: "https://opulencedeveloper.com/shop",
     openGraph: {

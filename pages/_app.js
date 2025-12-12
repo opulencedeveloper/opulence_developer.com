@@ -25,24 +25,18 @@ export default function App({ Component, pageProps }) {
   }, []);
   const organizationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'OpulenceDeveloper',
-    legalName: 'OpulenceDeveloper LLC',
+    '@type': 'Person',
+    name: 'Amobi Victor Chukwuka',
     alternateName: 'OpulenceDeveloper',
     url: 'https://opulencedeveloper.com',
-    logo: 'https://opulencedeveloper.com/images/opulence-developer-social-preview-image.png',
-    description: 'Registered Limited Liability Company (LLC) led by CEO Amobi Victor Chukwuka, specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development. CAC certified.',
+    image: 'https://opulencedeveloper.com/images/opulence-developer-social-preview-image.png',
+    description: 'FullStack Software Engineer Amobi Victor Chukwuka, specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development. CAC certified.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Enugu',
       addressCountry: 'NG',
     },
-    founder: {
-      '@type': 'Person',
-      name: 'Amobi Victor Chukwuka',
-      alternateName: 'OpulenceDeveloper',
-      jobTitle: 'Chief Executive Officer',
-    },
+    jobTitle: 'FullStack Software Engineer',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Professional Services',

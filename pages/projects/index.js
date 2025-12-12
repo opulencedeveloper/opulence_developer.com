@@ -28,7 +28,7 @@ const projects = [
     type: "Mobile App.",
     technology: "Flutter, Node.js, MongoDB",
     status: "Deployed to Production",
-    description: "Find the perfect helping hand for your chores with our Housekeeper Hiring app! It's the easiest way to connect with reliable housekeepers who make your life easier. Browse through profiles, read reviews, and choose the right fit for your home.",
+    description: "Find the perfect helping hand for your chores with the Housekeeper Hiring app! It's the easiest way to connect with reliable housekeepers who make your life easier. Browse through profiles, read reviews, and choose the right fit for your home.",
     link: "https://play.google.com/store/apps/details?id=com.app.tidier",
   },
   {

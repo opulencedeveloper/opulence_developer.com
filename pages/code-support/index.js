@@ -62,19 +62,19 @@ const CodeSupport = () => {
             "Ah, it seems like you've encountered a stubborn bug within your
             code. But don't fret, there's no need to worry - I'm here to help!
             These sorts of challenges are right up my alley, and I'm confident
-            that together we can work through it. Just consider me your trusty
+            that I can work through it with you. Just consider me your trusty
             problem-solving companion. To get started, all you need to do is
             send me a message by clicking on the button below. Once you do that,
             I'll be able to dive into your code and take a closer look at what
             might be causing the issue. Remember, no problem is too big or too
-            small for us to tackle together. Bugs can be a bit tricky to pin
+            small for me to tackle. Bugs can be a bit tricky to pin
             down sometimes, but with your insights into the context and my
-            analytical capabilities, we can uncover the root cause of the
+            analytical capabilities, I can uncover the root cause of the
             problem. Whether it's a syntax error, a logic flaw, or something
             else entirely, I'm here to assist you in identifying it and
             suggesting a solution. So go ahead and click that button, and let's
             embark on a journey to debug and troubleshoot your code. By working
-            together, we'll not only squash this bug but also enhance your
+            together, I'll not only squash this bug but also enhance your
             coding skills in the process. Looking forward to our collaboration!"
           </p>
           <button

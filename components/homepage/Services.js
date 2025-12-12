@@ -30,8 +30,8 @@ export default function Services({ forwardedRef }) {
         <article aria-labelledby="expertises-heading">
           <ServiceUi
             title="expertises."
-            description="We focus on all things, tech and web related. With each of our
-            services, our goal is to deliver an impactful and elevating
+            description="I focus on all things, tech and web related. With each of my
+            services, my goal is to deliver an impactful and elevating
             digital experience for everyone."
             items={expertiseItems}
           />
@@ -39,7 +39,7 @@ export default function Services({ forwardedRef }) {
         <article aria-labelledby="toolbox-heading">
           <ServiceUi
             title="digital tool box."
-            description="These are our go to tech stack to make any projects happen. We are always eager of learning more about our current stack, and new technologies that could expand our horizons."
+            description="These are my go to tech stack to make any projects happen. I am always eager of learning more about my current stack, and new technologies that could expand my horizons."
             items={toolBoxItems}
           />
         </article>

@@ -50,7 +50,7 @@ export default function About({ forwardedRef }) {
      
       
       {/* Company Section */}
-      <div className="my-10">
+      {/* <div className="my-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -78,11 +78,19 @@ export default function About({ forwardedRef }) {
             with thoughtful design and industry best practices.
           </motion.p>
         </motion.div>
-      </div>
-
+      </div> */}
+      
       {/* Personal Section */}
       <div className="mt-20 pt-12 border-t border-secondary-600/10">
-       <Heading title="about our CEO" />
+       <motion.div
+         initial={{ opacity: 0, y: 50 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         viewport={{ once: true }}
+         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+       >
+         <Heading title="about me" />
+       </motion.div>
+       
         <div className="mt-10 flex flex-col items-start gap-8 md:flex-row lg:gap-10 ">
           <motion.div 
             className="top-28 overflow-hidden rounded-md md:sticky md:w-1/2"
@@ -129,17 +137,15 @@ export default function About({ forwardedRef }) {
                 viewport={{ once: true }}
                 transition={{ delay: 0.2, duration: 0.6 }}
               >
-                I am Amobi Victor Chukwuka, Chief Executive Officer and fullstack software engineer.
-                I lead our team in delivering scalable solutions across web, mobile, AI, and backend technologies.
+                I am Amobi Victor Chukwuka, a fullstack software engineer based in Enugu, Nigeria.
+                I specialize in website development, web applications, cross-platform mobile apps, AI applications, and backend systems.
                 <br />
                 <br />
-                Our approach combines technical expertise with strategic vision, ensuring that every project
-                transitions seamlessly from concept to launch. We are committed to maintaining high standards
-                through clean code architecture and thoughtful design principles.
+                I provide freelance services to clients worldwide and build my own products.
+                My approach combines clean code architecture with thoughtful design, delivering scalable solutions from concept to launch.
                 <br />
                 <br />
-                We continuously stay abreast of emerging technologies and industry best practices,
-                fostering a culture of continuous learning and innovation within our organization.
+                I continuously stay abreast of emerging technologies and industry best practices, fostering continuous learning and innovation in my work.
                 <motion.a
                   className="underline duration-300 ease-in-out hover:text-secondary-700 pl-1"
                   href="https://youtube.com/shorts/f7kedhflEpc?si=dXaI28b4v1SsK0M8"

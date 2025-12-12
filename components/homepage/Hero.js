@@ -146,7 +146,7 @@ export default function Hero() {
                  viewport={{ once: true }}
                  transition={{ duration: 0.6 }}
                >
-                 we write the code
+                 I write the code
                </motion.span>
              </motion.p>
            </motion.div>

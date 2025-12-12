@@ -68,7 +68,7 @@ const MainNavigation = () => {
               onInit={(typewriter) => {
                 typewriter.pauseFor(1500)
                   .typeString(
-                    '<span className="italic">God gives the logic, we write the code</span>'
+                    '<span className="italic">God gives the logic, I write the code</span>'
                   )
                   .start();
               }}

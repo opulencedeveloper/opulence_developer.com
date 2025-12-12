@@ -111,20 +111,20 @@ const HomePage = () => {
 
   const seoConfig = {
     ...defaultSEO,
-    title: "OpulenceDeveloper | Registered LLC - Software Development Company",
-    description: "Registered Limited Liability Company (LLC) led by CEO Amobi Victor Chukwuka, specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development. CAC certified. Expert in JavaScript, TypeScript, Flutter, React, Next.js, Node.js, MongoDB, and PostgreSQL.",
-    keywords: generateKeywords(['Software Development Company', 'LLC', 'CAC Registered', 'CAC Certified', 'Software Company Nigeria', 'Web Development Company', 'Mobile App Development Company']),
+    title: "OpulenceDeveloper | FullStack Software Engineer",
+    description: "FullStack Software Engineer Amobi Victor Chukwuka, specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development. CAC certified. Expert in JavaScript, TypeScript, Flutter, React, Next.js, Node.js, MongoDB, and PostgreSQL.",
+    keywords: generateKeywords(['FullStack Software Engineer', 'Software Developer', 'CAC Registered', 'CAC Certified', 'Software Developer Nigeria', 'Web Developer', 'Mobile App Developer']),
     canonical: "https://opulencedeveloper.com",
     openGraph: {
       ...defaultSEO.openGraph,
-      title: "OpulenceDeveloper | Registered LLC - Software Development Company",
-      description: "Registered Limited Liability Company (LLC) led by CEO Amobi Victor Chukwuka, specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development. CAC certified.",
+      title: "OpulenceDeveloper | FullStack Software Engineer",
+      description: "FullStack Software Engineer Amobi Victor Chukwuka, specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development. CAC certified.",
       url: "https://opulencedeveloper.com",
     },
     twitter: {
       ...defaultSEO.twitter,
-      title: "OpulenceDeveloper | Registered LLC - Software Development Company",
-      description: "Registered Limited Liability Company (LLC) led by CEO Amobi Victor Chukwuka, specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development. CAC certified.",
+      title: "OpulenceDeveloper | FullStack Software Engineer",
+      description: "FullStack Software Engineer Amobi Victor Chukwuka, specializing in AI Application Development, Web Development, Cross-Platform Mobile App Development, and Backend Development. CAC certified.",
     },
     additionalMetaTags: [
       ...defaultSEO.additionalMetaTags,
