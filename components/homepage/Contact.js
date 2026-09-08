@@ -12,7 +12,7 @@ import { toast } from "sonner";
 const sendMessageHandler = () => {
   handleWhatsAppClick(
     "Hello! 👋 I just visited your website and I'm truly inspired by your work. I'd love to connect and potentially discuss collaboration opportunities. Looking forward to chatting with you further! 🚀",
-    "+2348184297165"
+    "++2349037865253"
   );
 };
 

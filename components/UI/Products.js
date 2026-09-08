@@ -5,7 +5,7 @@ import handleWhatsAppClick from "@/helpers/whatsapp";
 const sendMessageHandler = (name, type) => {
   handleWhatsAppClick(
     `Hello, I hope you're having a good day. Could you please provide me with the cost estimate for the ${name} ${type}?`,
-    "+2348184297165"
+    "++2349037865253"
   );
 };
 

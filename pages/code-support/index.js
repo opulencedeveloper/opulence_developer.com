@@ -10,7 +10,7 @@ import { defaultSEO, generateKeywords } from "@/lib/seo";
 const sendMessageHandler = () => {
   handleWhatsAppClick(
     "I'm reaching out through your portfolio website as I've encountered a coding issue and believe you could provide valuable assistance.",
-    "+2348184297165"
+    "++2349037865253"
   );
 };
 const CodeSupport = () => {
